@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD2D24142BFF9C5200C97F36 /* iOS_FitAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24132BFF9C5200C97F36 /* iOS_FitAIApp.swift */; };
-		DD2D24162BFF9C5200C97F36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24152BFF9C5200C97F36 /* ContentView.swift */; };
+		DD2D24142BFF9C5200C97F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24132BFF9C5200C97F36 /* AppDelegate.swift */; };
 		DD2D24182BFF9C5300C97F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D24172BFF9C5300C97F36 /* Assets.xcassets */; };
 		DD2D241B2BFF9C5300C97F36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D241A2BFF9C5300C97F36 /* Preview Assets.xcassets */; };
 		DD2D24252BFF9C5300C97F36 /* iOS_FitAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24242BFF9C5300C97F36 /* iOS_FitAITests.swift */; };
 		DD2D242F2BFF9C5300C97F36 /* iOS_FitAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D242E2BFF9C5300C97F36 /* iOS_FitAIUITests.swift */; };
 		DD2D24312BFF9C5300C97F36 /* iOS_FitAIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24302BFF9C5300C97F36 /* iOS_FitAIUITestsLaunchTests.swift */; };
+		DD2D24422BFF9D9200C97F36 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24412BFF9D9200C97F36 /* Coordinator.swift */; };
+		DD2D24442BFF9DF200C97F36 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24432BFF9DF200C97F36 /* NavigationRouter.swift */; };
+		DD2D24462BFF9E1C00C97F36 /* NavigationTransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24452BFF9E1C00C97F36 /* NavigationTransitionStyle.swift */; };
+		DD2D24492BFF9E4300C97F36 /* FlowRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24482BFF9E4300C97F36 /* FlowRouter.swift */; };
+		DD2D244B2BFF9EFF00C97F36 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D244A2BFF9EFF00C97F36 /* Network.swift */; };
+		DD2D244F2BFF9F1900C97F36 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D244E2BFF9F1900C97F36 /* SplashView.swift */; };
+		DD2D24562BFF9FC600C97F36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24552BFF9FC600C97F36 /* SceneDelegate.swift */; };
+		DD2D24582BFFA11300C97F36 /* PersonalInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24572BFFA11300C97F36 /* PersonalInfos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +42,7 @@
 
 /* Begin PBXFileReference section */
 		DD2D24102BFF9C5200C97F36 /* iOS-FitAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-FitAI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD2D24132BFF9C5200C97F36 /* iOS_FitAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_FitAIApp.swift; sourceTree = "<group>"; };
-		DD2D24152BFF9C5200C97F36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DD2D24132BFF9C5200C97F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD2D24172BFF9C5300C97F36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD2D241A2BFF9C5300C97F36 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DD2D24202BFF9C5300C97F36 /* iOS-FitAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-FitAITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +50,14 @@
 		DD2D242A2BFF9C5300C97F36 /* iOS-FitAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-FitAIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2D242E2BFF9C5300C97F36 /* iOS_FitAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_FitAIUITests.swift; sourceTree = "<group>"; };
 		DD2D24302BFF9C5300C97F36 /* iOS_FitAIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_FitAIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DD2D24412BFF9D9200C97F36 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		DD2D24432BFF9DF200C97F36 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		DD2D24452BFF9E1C00C97F36 /* NavigationTransitionStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTransitionStyle.swift; sourceTree = "<group>"; };
+		DD2D24482BFF9E4300C97F36 /* FlowRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowRouter.swift; sourceTree = "<group>"; };
+		DD2D244A2BFF9EFF00C97F36 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		DD2D244E2BFF9F1900C97F36 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		DD2D24552BFF9FC600C97F36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DD2D24572BFFA11300C97F36 /* PersonalInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +108,12 @@
 		DD2D24122BFF9C5200C97F36 /* iOS-FitAI */ = {
 			isa = PBXGroup;
 			children = (
-				DD2D24132BFF9C5200C97F36 /* iOS_FitAIApp.swift */,
-				DD2D24152BFF9C5200C97F36 /* ContentView.swift */,
+				DD2D24542BFF9FB900C97F36 /* Delegates */,
+				DD2D24472BFF9E3500C97F36 /* Routers */,
+				DD2D24402BFF9CE800C97F36 /* Network */,
+				DD2D243F2BFF9CE200C97F36 /* Scene */,
+				DD2D243E2BFF9CCF00C97F36 /* Coordinator */,
+				DD2D243D2BFF9CC700C97F36 /* Utils */,
 				DD2D24172BFF9C5300C97F36 /* Assets.xcassets */,
 				DD2D24192BFF9C5300C97F36 /* Preview Content */,
 			);
@@ -125,6 +143,105 @@
 				DD2D24302BFF9C5300C97F36 /* iOS_FitAIUITestsLaunchTests.swift */,
 			);
 			path = "iOS-FitAIUITests";
+			sourceTree = "<group>";
+		};
+		DD2D243D2BFF9CC700C97F36 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DD2D243E2BFF9CCF00C97F36 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D24412BFF9D9200C97F36 /* Coordinator.swift */,
+				DD2D24432BFF9DF200C97F36 /* NavigationRouter.swift */,
+				DD2D24452BFF9E1C00C97F36 /* NavigationTransitionStyle.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		DD2D243F2BFF9CE200C97F36 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D24502BFF9F2700C97F36 /* PersonalInfos */,
+				DD2D244C2BFF9F0700C97F36 /* Splash */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		DD2D24402BFF9CE800C97F36 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D244A2BFF9EFF00C97F36 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DD2D24472BFF9E3500C97F36 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D24482BFF9E4300C97F36 /* FlowRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		DD2D244C2BFF9F0700C97F36 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D244D2BFF9F0F00C97F36 /* View */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		DD2D244D2BFF9F0F00C97F36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D244E2BFF9F1900C97F36 /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD2D24502BFF9F2700C97F36 /* PersonalInfos */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D24532BFF9F9F00C97F36 /* Model */,
+				DD2D24522BFF9F9700C97F36 /* ViewModel */,
+				DD2D24512BFF9F9300C97F36 /* View */,
+			);
+			path = PersonalInfos;
+			sourceTree = "<group>";
+		};
+		DD2D24512BFF9F9300C97F36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D24572BFFA11300C97F36 /* PersonalInfos.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD2D24522BFF9F9700C97F36 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DD2D24532BFF9F9F00C97F36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD2D24542BFF9FB900C97F36 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D24132BFF9C5200C97F36 /* AppDelegate.swift */,
+				DD2D24552BFF9FC600C97F36 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +374,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2D24162BFF9C5200C97F36 /* ContentView.swift in Sources */,
-				DD2D24142BFF9C5200C97F36 /* iOS_FitAIApp.swift in Sources */,
+				DD2D24462BFF9E1C00C97F36 /* NavigationTransitionStyle.swift in Sources */,
+				DD2D24582BFFA11300C97F36 /* PersonalInfos.swift in Sources */,
+				DD2D244F2BFF9F1900C97F36 /* SplashView.swift in Sources */,
+				DD2D24142BFF9C5200C97F36 /* AppDelegate.swift in Sources */,
+				DD2D24442BFF9DF200C97F36 /* NavigationRouter.swift in Sources */,
+				DD2D24492BFF9E4300C97F36 /* FlowRouter.swift in Sources */,
+				DD2D24562BFF9FC600C97F36 /* SceneDelegate.swift in Sources */,
+				DD2D244B2BFF9EFF00C97F36 /* Network.swift in Sources */,
+				DD2D24422BFF9D9200C97F36 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
