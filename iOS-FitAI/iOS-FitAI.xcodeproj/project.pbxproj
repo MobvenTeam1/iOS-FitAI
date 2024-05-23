@@ -20,11 +20,17 @@
 		DD2D244B2BFF9EFF00C97F36 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D244A2BFF9EFF00C97F36 /* Network.swift */; };
 		DD2D244F2BFF9F1900C97F36 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D244E2BFF9F1900C97F36 /* SplashView.swift */; };
 		DD2D24562BFF9FC600C97F36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24552BFF9FC600C97F36 /* SceneDelegate.swift */; };
-		DD2D24582BFFA11300C97F36 /* PersonalInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24572BFFA11300C97F36 /* PersonalInfos.swift */; };
+		DD2D24582BFFA11300C97F36 /* PersonalInfosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24572BFFA11300C97F36 /* PersonalInfosView.swift */; };
 		DD2D245A2BFFA1E200C97F36 /* PersonalInfosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24592BFFA1E200C97F36 /* PersonalInfosModel.swift */; };
 		DD2D245D2BFFA52E00C97F36 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D245C2BFFA52E00C97F36 /* Utils.swift */; };
 		DD2D245F2BFFA55300C97F36 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D245E2BFFA55300C97F36 /* Colors.xcassets */; };
 		DD2D24612BFFA56100C97F36 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D24602BFFA56100C97F36 /* Icons.xcassets */; };
+		DD2D24632BFFA5EE00C97F36 /* PersonalInfosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24622BFFA5EE00C97F36 /* PersonalInfosViewModel.swift */; };
+		DDEA0A032BFFADC300EEC4E6 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A022BFFADC300EEC4E6 /* GenderView.swift */; };
+		DDEA0A0C2BFFB5A900EEC4E6 /* MFAIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A0B2BFFB5A900EEC4E6 /* MFAIButton.swift */; };
+		DDEA0A0E2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A0D2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift */; };
+		DDEA0A102BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A0F2BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift */; };
+		DDEA0A122BFFBC0400EEC4E6 /* MFAITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A112BFFBC0400EEC4E6 /* MFAITextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,11 +67,17 @@
 		DD2D244A2BFF9EFF00C97F36 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		DD2D244E2BFF9F1900C97F36 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		DD2D24552BFF9FC600C97F36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD2D24572BFFA11300C97F36 /* PersonalInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfos.swift; sourceTree = "<group>"; };
+		DD2D24572BFFA11300C97F36 /* PersonalInfosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfosView.swift; sourceTree = "<group>"; };
 		DD2D24592BFFA1E200C97F36 /* PersonalInfosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfosModel.swift; sourceTree = "<group>"; };
 		DD2D245C2BFFA52E00C97F36 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		DD2D245E2BFFA55300C97F36 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		DD2D24602BFFA56100C97F36 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		DD2D24622BFFA5EE00C97F36 /* PersonalInfosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfosViewModel.swift; sourceTree = "<group>"; };
+		DDEA0A022BFFADC300EEC4E6 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
+		DDEA0A0B2BFFB5A900EEC4E6 /* MFAIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAIButton.swift; sourceTree = "<group>"; };
+		DDEA0A0D2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAISingleSelectionView.swift; sourceTree = "<group>"; };
+		DDEA0A0F2BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAIPersonalInfosHeaderView.swift; sourceTree = "<group>"; };
+		DDEA0A112BFFBC0400EEC4E6 /* MFAITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAITextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +186,7 @@
 		DD2D243F2BFF9CE200C97F36 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				DDEA0A042BFFAE0200EEC4E6 /* Subviews */,
 				DD2D24502BFF9F2700C97F36 /* PersonalInfos */,
 				DD2D244C2BFF9F0700C97F36 /* Splash */,
 			);
@@ -225,7 +238,8 @@
 		DD2D24512BFF9F9300C97F36 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DD2D24572BFFA11300C97F36 /* PersonalInfos.swift */,
+				DDEA0A002BFFAD8000EEC4E6 /* FlowViews */,
+				DD2D24572BFFA11300C97F36 /* PersonalInfosView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -233,6 +247,7 @@
 		DD2D24522BFF9F9700C97F36 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DD2D24622BFFA5EE00C97F36 /* PersonalInfosViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -262,6 +277,34 @@
 				DD2D24602BFFA56100C97F36 /* Icons.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDEA0A002BFFAD8000EEC4E6 /* FlowViews */ = {
+			isa = PBXGroup;
+			children = (
+				DDEA0A012BFFAD9500EEC4E6 /* Gender */,
+			);
+			path = FlowViews;
+			sourceTree = "<group>";
+		};
+		DDEA0A012BFFAD9500EEC4E6 /* Gender */ = {
+			isa = PBXGroup;
+			children = (
+				DDEA0A022BFFADC300EEC4E6 /* GenderView.swift */,
+			);
+			path = Gender;
+			sourceTree = "<group>";
+		};
+		DDEA0A042BFFAE0200EEC4E6 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				DDEA0A0B2BFFB5A900EEC4E6 /* MFAIButton.swift */,
+				DDEA0A0D2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift */,
+				DDEA0A0F2BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift */,
+				DDEA0A112BFFBC0400EEC4E6 /* MFAITextField.swift */,
+			);
+			name = Subviews;
+			path = PersonalInfos/View/Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,14 +440,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD2D24462BFF9E1C00C97F36 /* NavigationTransitionStyle.swift in Sources */,
-				DD2D24582BFFA11300C97F36 /* PersonalInfos.swift in Sources */,
+				DD2D24582BFFA11300C97F36 /* PersonalInfosView.swift in Sources */,
 				DD2D244F2BFF9F1900C97F36 /* SplashView.swift in Sources */,
+				DDEA0A102BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift in Sources */,
 				DD2D24142BFF9C5200C97F36 /* AppDelegate.swift in Sources */,
+				DDEA0A0C2BFFB5A900EEC4E6 /* MFAIButton.swift in Sources */,
+				DDEA0A032BFFADC300EEC4E6 /* GenderView.swift in Sources */,
+				DDEA0A122BFFBC0400EEC4E6 /* MFAITextField.swift in Sources */,
 				DD2D24442BFF9DF200C97F36 /* NavigationRouter.swift in Sources */,
 				DD2D245A2BFFA1E200C97F36 /* PersonalInfosModel.swift in Sources */,
+				DD2D24632BFFA5EE00C97F36 /* PersonalInfosViewModel.swift in Sources */,
 				DD2D24492BFF9E4300C97F36 /* FlowRouter.swift in Sources */,
 				DD2D245D2BFFA52E00C97F36 /* Utils.swift in Sources */,
 				DD2D24562BFF9FC600C97F36 /* SceneDelegate.swift in Sources */,
+				DDEA0A0E2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift in Sources */,
 				DD2D244B2BFF9EFF00C97F36 /* Network.swift in Sources */,
 				DD2D24422BFF9D9200C97F36 /* Coordinator.swift in Sources */,
 			);
