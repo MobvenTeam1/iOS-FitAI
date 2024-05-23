@@ -21,6 +21,10 @@
 		DD2D244F2BFF9F1900C97F36 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D244E2BFF9F1900C97F36 /* SplashView.swift */; };
 		DD2D24562BFF9FC600C97F36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24552BFF9FC600C97F36 /* SceneDelegate.swift */; };
 		DD2D24582BFFA11300C97F36 /* PersonalInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24572BFFA11300C97F36 /* PersonalInfos.swift */; };
+		DD2D245A2BFFA1E200C97F36 /* PersonalInfosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24592BFFA1E200C97F36 /* PersonalInfosModel.swift */; };
+		DD2D245D2BFFA52E00C97F36 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D245C2BFFA52E00C97F36 /* Utils.swift */; };
+		DD2D245F2BFFA55300C97F36 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D245E2BFFA55300C97F36 /* Colors.xcassets */; };
+		DD2D24612BFFA56100C97F36 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D24602BFFA56100C97F36 /* Icons.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		DD2D244E2BFF9F1900C97F36 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		DD2D24552BFF9FC600C97F36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DD2D24572BFFA11300C97F36 /* PersonalInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfos.swift; sourceTree = "<group>"; };
+		DD2D24592BFFA1E200C97F36 /* PersonalInfosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfosModel.swift; sourceTree = "<group>"; };
+		DD2D245C2BFFA52E00C97F36 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		DD2D245E2BFFA55300C97F36 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		DD2D24602BFFA56100C97F36 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,13 +116,13 @@
 		DD2D24122BFF9C5200C97F36 /* iOS-FitAI */ = {
 			isa = PBXGroup;
 			children = (
+				DD2D245B2BFFA51A00C97F36 /* Resources */,
 				DD2D24542BFF9FB900C97F36 /* Delegates */,
 				DD2D24472BFF9E3500C97F36 /* Routers */,
 				DD2D24402BFF9CE800C97F36 /* Network */,
 				DD2D243F2BFF9CE200C97F36 /* Scene */,
 				DD2D243E2BFF9CCF00C97F36 /* Coordinator */,
 				DD2D243D2BFF9CC700C97F36 /* Utils */,
-				DD2D24172BFF9C5300C97F36 /* Assets.xcassets */,
 				DD2D24192BFF9C5300C97F36 /* Preview Content */,
 			);
 			path = "iOS-FitAI";
@@ -148,6 +156,7 @@
 		DD2D243D2BFF9CC700C97F36 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				DD2D245C2BFFA52E00C97F36 /* Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -231,6 +240,7 @@
 		DD2D24532BFF9F9F00C97F36 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DD2D24592BFFA1E200C97F36 /* PersonalInfosModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -242,6 +252,16 @@
 				DD2D24552BFF9FC600C97F36 /* SceneDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		DD2D245B2BFFA51A00C97F36 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D24172BFF9C5300C97F36 /* Assets.xcassets */,
+				DD2D245E2BFFA55300C97F36 /* Colors.xcassets */,
+				DD2D24602BFFA56100C97F36 /* Icons.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,7 +368,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD2D245F2BFFA55300C97F36 /* Colors.xcassets in Resources */,
 				DD2D241B2BFF9C5300C97F36 /* Preview Assets.xcassets in Resources */,
+				DD2D24612BFFA56100C97F36 /* Icons.xcassets in Resources */,
 				DD2D24182BFF9C5300C97F36 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,7 +401,9 @@
 				DD2D244F2BFF9F1900C97F36 /* SplashView.swift in Sources */,
 				DD2D24142BFF9C5200C97F36 /* AppDelegate.swift in Sources */,
 				DD2D24442BFF9DF200C97F36 /* NavigationRouter.swift in Sources */,
+				DD2D245A2BFFA1E200C97F36 /* PersonalInfosModel.swift in Sources */,
 				DD2D24492BFF9E4300C97F36 /* FlowRouter.swift in Sources */,
+				DD2D245D2BFFA52E00C97F36 /* Utils.swift in Sources */,
 				DD2D24562BFF9FC600C97F36 /* SceneDelegate.swift in Sources */,
 				DD2D244B2BFF9EFF00C97F36 /* Network.swift in Sources */,
 				DD2D24422BFF9D9200C97F36 /* Coordinator.swift in Sources */,
