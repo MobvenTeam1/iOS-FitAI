@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GenderView: View {
     @ObservedObject var personelInfoVM: PersonalInfosViewModel
-    @State var genderList = ["Erkek","Kadın","Belirtilmeyen"]
+    @State var genderList = ["Erkek","Kadın","Belirtmek istemiyorum"]
     var body: some View {
         ZStack {
             VStack {
@@ -17,7 +17,7 @@ struct GenderView: View {
                 Spacer(minLength: 50)
                 MFAISingleSelectionView(selectionList: $genderList, selection: $personelInfoVM.personalInfoData.gender)
                 MFAIButton(buttontitle: "Kaydet") {
-                    personelInfoVM.pageStep = .height
+                   // personelInfoVM.pageStep = .height
                 }
             }
         }

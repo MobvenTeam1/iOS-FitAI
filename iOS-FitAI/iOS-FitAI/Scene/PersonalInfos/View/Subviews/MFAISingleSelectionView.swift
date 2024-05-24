@@ -36,8 +36,10 @@ struct MFAISingleSelectionView: View {
         }
         .frame(height: 50)
         .onTapGesture {
-            print("dokunduk ey halkım")
-            selection = title
+            DispatchQueue.main.async {
+                self.selection = title
+
+            }
         }
     }
     
@@ -56,5 +58,5 @@ struct MFAISingleSelectionView: View {
 }
 
 #Preview {
-    MFAISingleSelectionView(selectionList: .constant(["dd","ss"]), selection: .constant("ss"))
+    MFAISingleSelectionView(selectionList: .constant(["ddddd","ssssss"]), selection: .constant("ss"))
 }

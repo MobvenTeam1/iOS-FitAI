@@ -51,6 +51,7 @@ struct MFAIButton: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 30,height: 40)
+                        
                 }
             }
             .padding(.horizontal)

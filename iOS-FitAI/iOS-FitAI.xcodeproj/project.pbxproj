@@ -31,6 +31,7 @@
 		DDEA0A0E2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A0D2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift */; };
 		DDEA0A102BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A0F2BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift */; };
 		DDEA0A122BFFBC0400EEC4E6 /* MFAITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A112BFFBC0400EEC4E6 /* MFAITextField.swift */; };
+		DDEA0A142C00602E00EEC4E6 /* MFAIMultipleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A132C00602E00EEC4E6 /* MFAIMultipleSelectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		DDEA0A0D2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAISingleSelectionView.swift; sourceTree = "<group>"; };
 		DDEA0A0F2BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAIPersonalInfosHeaderView.swift; sourceTree = "<group>"; };
 		DDEA0A112BFFBC0400EEC4E6 /* MFAITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAITextField.swift; sourceTree = "<group>"; };
+		DDEA0A132C00602E00EEC4E6 /* MFAIMultipleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAIMultipleSelectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +304,7 @@
 				DDEA0A0D2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift */,
 				DDEA0A0F2BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift */,
 				DDEA0A112BFFBC0400EEC4E6 /* MFAITextField.swift */,
+				DDEA0A132C00602E00EEC4E6 /* MFAIMultipleSelectionView.swift */,
 			);
 			name = Subviews;
 			path = PersonalInfos/View/Subviews;
@@ -443,6 +446,7 @@
 				DD2D24582BFFA11300C97F36 /* PersonalInfosView.swift in Sources */,
 				DD2D244F2BFF9F1900C97F36 /* SplashView.swift in Sources */,
 				DDEA0A102BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift in Sources */,
+				DDEA0A142C00602E00EEC4E6 /* MFAIMultipleSelectionView.swift in Sources */,
 				DD2D24142BFF9C5200C97F36 /* AppDelegate.swift in Sources */,
 				DDEA0A0C2BFFB5A900EEC4E6 /* MFAIButton.swift in Sources */,
 				DDEA0A032BFFADC300EEC4E6 /* GenderView.swift in Sources */,
