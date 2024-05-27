@@ -27,7 +27,7 @@ public enum FlowRouter: NavigationRouter {
         case .splash:
             SplashView()
         case .personalInfos:
-            PersonalInfos()
+            PersonalInfosView()
         default:
             Text(verbatim: "There is nothing")
                 .foregroundStyle(.blue)
