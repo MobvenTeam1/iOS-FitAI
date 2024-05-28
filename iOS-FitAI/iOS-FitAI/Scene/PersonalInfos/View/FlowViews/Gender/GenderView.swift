@@ -10,20 +10,24 @@ import SwiftUI
 struct GenderView: View {
     @ObservedObject var personelInfoVM: PersonalInfosViewModel
     @State var genderList = ["Erkek","Kadın","Belirtmek istemiyorum"]
+    @Binding var progressBarValue: Double
     var body: some View {
         ZStack {
             VStack {
+                
                 MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.genderViewTitle)
                 Spacer(minLength: 50)
                 MFAISingleSelectionView(selectionList: $genderList, selection: $personelInfoVM.personalInfoData.gender)
                 MFAIButton(buttontitle: "Kaydet") {
-                   // personelInfoVM.pageStep = .height
+                    progressBarValue += 0.2
+                    personelInfoVM.pageStep = .height
                 }
+                
             }
         }
     }
 }
 
 #Preview {
-    GenderView(personelInfoVM: PersonalInfosViewModel())
+    GenderView(personelInfoVM: PersonalInfosViewModel(), progressBarValue: .constant(0.2))
 }

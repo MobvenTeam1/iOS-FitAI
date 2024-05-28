@@ -9,14 +9,21 @@ import SwiftUI
 
 struct PersonalInfosView: View {
     @StateObject var viewmodel = PersonalInfosViewModel()
-    
+    @State var progressBarValue: Double = 0.0
     
     var body: some View {
         ZStack {
-            if viewmodel.pageStep == .gender {
-                GenderView(personelInfoVM: viewmodel)
+            VStack{
+                ProgressView(value: progressBarValue)
+                
+                if viewmodel.pageStep == .gender {
+                    GenderView(personelInfoVM: viewmodel, progressBarValue: $progressBarValue)
+                }
+                else if viewmodel.pageStep == .height{
+                    HeightView(personalInfoVM: viewmodel, progressBarValue: $progressBarValue)
+                }
+                
             }
-            
         }
     }
 }
