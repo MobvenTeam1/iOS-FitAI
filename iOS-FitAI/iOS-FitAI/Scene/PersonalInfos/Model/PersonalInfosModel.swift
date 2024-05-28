@@ -11,10 +11,12 @@ import Foundation
 enum PersonalInfosModel {
     enum Constants {
         static let genderViewTitle = "Cinsiyetiniz nedir?"
+        static let heightViewTitle = "Boyunuz kaç?"
+        static let weightViewTitle = "Mevcut kilonuz kaç?"
     }
     
     struct PersonalInfos: Codable, RawRepresentable {
-        init(gender: String? = nil, height: Double? = nil, currentWeight: Double? = nil, targetWeight: Double? = nil, birthDate: String? = nil, targets: [String]? = nil, plansSelection: [String]? = nil, healthsIssue: [String]? = nil, selectedSportsActivites: [String]? = nil, sportsCount: [String]? = nil, targetAreas: [String]? = nil, selectAlergies: [String]? = nil, dietType: String? = nil, dailyActiveStatus: String? = nil, dailySleepHours: String? = nil, dailyWaterGlass: String? = nil) {
+        init(gender: String? = nil, height: String? = nil, currentWeight: Double? = nil, targetWeight: Double? = nil, birthDate: String? = nil, targets: [String]? = nil, plansSelection: [String]? = nil, healthsIssue: [String]? = nil, selectedSportsActivites: [String]? = nil, sportsCount: [String]? = nil, targetAreas: [String]? = nil, selectAlergies: [String]? = nil, dietType: String? = nil, dailyActiveStatus: String? = nil, dailySleepHours: String? = nil, dailyWaterGlass: String? = nil) {
             self.gender = gender
             self.height = height
             self.currentWeight = currentWeight
@@ -34,7 +36,7 @@ enum PersonalInfosModel {
         }
         
         var gender:String?
-        var height: Double?
+        var height: String?
         var currentWeight:Double?
         var targetWeight:Double?
         var birthDate: String?

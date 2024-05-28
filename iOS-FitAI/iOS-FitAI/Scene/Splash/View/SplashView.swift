@@ -13,7 +13,7 @@ struct SplashView: View {
     var body: some View {
         Text("Hello, World!")
             .onAppear(perform: {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 4, execute: {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
                     coordinator.show(.personalInfos)
                 })
             })

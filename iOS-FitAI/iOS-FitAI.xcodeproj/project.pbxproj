@@ -26,12 +26,17 @@
 		DD2D245F2BFFA55300C97F36 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D245E2BFFA55300C97F36 /* Colors.xcassets */; };
 		DD2D24612BFFA56100C97F36 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D24602BFFA56100C97F36 /* Icons.xcassets */; };
 		DD2D24632BFFA5EE00C97F36 /* PersonalInfosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24622BFFA5EE00C97F36 /* PersonalInfosViewModel.swift */; };
+		DDE9882F2C05D12600550643 /* WeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE9882E2C05D12600550643 /* WeightView.swift */; };
+		DDE988332C05D62900550643 /* TargetWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE988322C05D62900550643 /* TargetWeightView.swift */; };
+		DDE988352C05D63A00550643 /* BirthdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE988342C05D63A00550643 /* BirthdayView.swift */; };
 		DDEA0A032BFFADC300EEC4E6 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A022BFFADC300EEC4E6 /* GenderView.swift */; };
 		DDEA0A0C2BFFB5A900EEC4E6 /* MFAIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A0B2BFFB5A900EEC4E6 /* MFAIButton.swift */; };
 		DDEA0A0E2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A0D2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift */; };
 		DDEA0A102BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A0F2BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift */; };
 		DDEA0A122BFFBC0400EEC4E6 /* MFAITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A112BFFBC0400EEC4E6 /* MFAITextField.swift */; };
 		DDEA0A142C00602E00EEC4E6 /* MFAIMultipleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A132C00602E00EEC4E6 /* MFAIMultipleSelectionView.swift */; };
+		DDEA0A162C04981B00EEC4E6 /* MFAIText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A152C04981A00EEC4E6 /* MFAIText.swift */; };
+		DDEA0A1B2C04B62900EEC4E6 /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A1A2C04B62900EEC4E6 /* HeightView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,12 +79,17 @@
 		DD2D245E2BFFA55300C97F36 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		DD2D24602BFFA56100C97F36 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		DD2D24622BFFA5EE00C97F36 /* PersonalInfosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfosViewModel.swift; sourceTree = "<group>"; };
+		DDE9882E2C05D12600550643 /* WeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightView.swift; sourceTree = "<group>"; };
+		DDE988322C05D62900550643 /* TargetWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetWeightView.swift; sourceTree = "<group>"; };
+		DDE988342C05D63A00550643 /* BirthdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayView.swift; sourceTree = "<group>"; };
 		DDEA0A022BFFADC300EEC4E6 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
 		DDEA0A0B2BFFB5A900EEC4E6 /* MFAIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAIButton.swift; sourceTree = "<group>"; };
 		DDEA0A0D2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAISingleSelectionView.swift; sourceTree = "<group>"; };
 		DDEA0A0F2BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAIPersonalInfosHeaderView.swift; sourceTree = "<group>"; };
 		DDEA0A112BFFBC0400EEC4E6 /* MFAITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAITextField.swift; sourceTree = "<group>"; };
 		DDEA0A132C00602E00EEC4E6 /* MFAIMultipleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAIMultipleSelectionView.swift; sourceTree = "<group>"; };
+		DDEA0A152C04981A00EEC4E6 /* MFAIText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAIText.swift; sourceTree = "<group>"; };
+		DDEA0A1A2C04B62900EEC4E6 /* HeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeightView.swift; path = "iOS-FitAI/Scene/PersonalInfos/View/Subviews/HeightView.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,9 +291,37 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		DDE9882D2C05D10300550643 /* Weight */ = {
+			isa = PBXGroup;
+			children = (
+				DDE9882E2C05D12600550643 /* WeightView.swift */,
+			);
+			path = Weight;
+			sourceTree = "<group>";
+		};
+		DDE988302C05D5F300550643 /* TargetWeight */ = {
+			isa = PBXGroup;
+			children = (
+				DDE988322C05D62900550643 /* TargetWeightView.swift */,
+			);
+			path = TargetWeight;
+			sourceTree = "<group>";
+		};
+		DDE988312C05D60E00550643 /* Birthday */ = {
+			isa = PBXGroup;
+			children = (
+				DDE988342C05D63A00550643 /* BirthdayView.swift */,
+			);
+			path = Birthday;
+			sourceTree = "<group>";
+		};
 		DDEA0A002BFFAD8000EEC4E6 /* FlowViews */ = {
 			isa = PBXGroup;
 			children = (
+				DDE988312C05D60E00550643 /* Birthday */,
+				DDE988302C05D5F300550643 /* TargetWeight */,
+				DDE9882D2C05D10300550643 /* Weight */,
+				DDEA0A192C04B50300EEC4E6 /* Height */,
 				DDEA0A012BFFAD9500EEC4E6 /* Gender */,
 			);
 			path = FlowViews;
@@ -305,9 +343,18 @@
 				DDEA0A0F2BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift */,
 				DDEA0A112BFFBC0400EEC4E6 /* MFAITextField.swift */,
 				DDEA0A132C00602E00EEC4E6 /* MFAIMultipleSelectionView.swift */,
+				DDEA0A152C04981A00EEC4E6 /* MFAIText.swift */,
 			);
 			name = Subviews;
 			path = PersonalInfos/View/Subviews;
+			sourceTree = "<group>";
+		};
+		DDEA0A192C04B50300EEC4E6 /* Height */ = {
+			isa = PBXGroup;
+			children = (
+				DDEA0A1A2C04B62900EEC4E6 /* HeightView.swift */,
+			);
+			path = Height;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,19 +492,24 @@
 				DD2D24462BFF9E1C00C97F36 /* NavigationTransitionStyle.swift in Sources */,
 				DD2D24582BFFA11300C97F36 /* PersonalInfosView.swift in Sources */,
 				DD2D244F2BFF9F1900C97F36 /* SplashView.swift in Sources */,
+				DDEA0A1B2C04B62900EEC4E6 /* HeightView.swift in Sources */,
 				DDEA0A102BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift in Sources */,
 				DDEA0A142C00602E00EEC4E6 /* MFAIMultipleSelectionView.swift in Sources */,
 				DD2D24142BFF9C5200C97F36 /* AppDelegate.swift in Sources */,
+				DDEA0A162C04981B00EEC4E6 /* MFAIText.swift in Sources */,
 				DDEA0A0C2BFFB5A900EEC4E6 /* MFAIButton.swift in Sources */,
 				DDEA0A032BFFADC300EEC4E6 /* GenderView.swift in Sources */,
 				DDEA0A122BFFBC0400EEC4E6 /* MFAITextField.swift in Sources */,
 				DD2D24442BFF9DF200C97F36 /* NavigationRouter.swift in Sources */,
 				DD2D245A2BFFA1E200C97F36 /* PersonalInfosModel.swift in Sources */,
+				DDE988352C05D63A00550643 /* BirthdayView.swift in Sources */,
 				DD2D24632BFFA5EE00C97F36 /* PersonalInfosViewModel.swift in Sources */,
 				DD2D24492BFF9E4300C97F36 /* FlowRouter.swift in Sources */,
+				DDE988332C05D62900550643 /* TargetWeightView.swift in Sources */,
 				DD2D245D2BFFA52E00C97F36 /* Utils.swift in Sources */,
 				DD2D24562BFF9FC600C97F36 /* SceneDelegate.swift in Sources */,
 				DDEA0A0E2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift in Sources */,
+				DDE9882F2C05D12600550643 /* WeightView.swift in Sources */,
 				DD2D244B2BFF9EFF00C97F36 /* Network.swift in Sources */,
 				DD2D24422BFF9D9200C97F36 /* Coordinator.swift in Sources */,
 			);
