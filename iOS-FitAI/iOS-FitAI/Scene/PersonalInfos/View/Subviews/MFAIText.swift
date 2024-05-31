@@ -11,7 +11,7 @@ struct MFAIText: View {
     let title: String
     
     var body: some View {
-        Text("")
+        Text(title)
             .padding()
     }
 }

@@ -1,9 +1,9 @@
 //
-//  HeightView.swift
+//  HeightWeightView.swift
 //  iOS-FitAI
 //
-//  Created by Elif Tum on 27.05.2024.
-//
+//  Created by Elif Tum on 28.05.2024.
+
 
 import SwiftUI
 
@@ -17,11 +17,9 @@ struct HeightView: View {
                 Spacer(minLength: 50)
                 MFAITextField(title: "String", textfieldText: $personalInfoVM.personalInfoData.height.toUnwrapped(defaultValue: ""))
                 Spacer()
-                MFAIButton(buttontitle: "Kaydet") {
-                    progressBarValue += 0.2
-                    
-                    
-                    
+                MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext){
+                    progressBarValue += 0.16
+                    personalInfoVM.pageStep = .currentWeight
                 }
             }
         }
@@ -29,11 +27,6 @@ struct HeightView: View {
 }
 
 #Preview {
-    HeightView(personalInfoVM: PersonalInfosViewModel(),progressBarValue: .constant(0.2))
+    HeightView(personalInfoVM: PersonalInfosViewModel(), progressBarValue: .constant(0.2))
 }
 
-extension Binding {
-     func toUnwrapped<T>(defaultValue: T) -> Binding<T> where Value == Optional<T>  {
-        Binding<T>(get: { self.wrappedValue ?? defaultValue }, set: { self.wrappedValue = $0 })
-    }
-}

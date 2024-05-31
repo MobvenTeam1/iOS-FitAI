@@ -12,8 +12,8 @@ class PersonalInfosViewModel : ObservableObject {
     
     @Published var pageStep : PersonalInfosModel.PersonalInfosFlow = .gender
     
-    @AppStorage("personalInfos") static var personalInfoDataApp = PersonalInfosModel.PersonalInfos()
-    @Published var personalInfoData = PersonalInfosModel.PersonalInfos()
+    @AppStorage("personalInfos") static var personalInfoDataApp = PersonalInfosModel.PersonalInfos(targetWeight: "")
+    @Published var personalInfoData = PersonalInfosModel.PersonalInfos(targetWeight: "")
 
     
 }

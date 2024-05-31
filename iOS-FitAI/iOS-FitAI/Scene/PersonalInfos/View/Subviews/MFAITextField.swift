@@ -11,7 +11,7 @@ struct MFAITextField: View {
     let title: String
     @Binding var textfieldText: String
     var body: some View {
-        TextField("Lütfen Değer Giriniz", text: $textfieldText)
+        TextField(title, text: $textfieldText)
             .keyboardType(.decimalPad)
             .padding()
     }

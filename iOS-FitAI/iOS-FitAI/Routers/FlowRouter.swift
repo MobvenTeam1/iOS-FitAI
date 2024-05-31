@@ -12,7 +12,9 @@ import UIKit
 public enum FlowRouter: NavigationRouter {
 
     case splash
+    case onboarding
     case personalInfos
+    
     
     public var transition: NavigationTransitionStyle {
         switch self {
@@ -26,8 +28,11 @@ public enum FlowRouter: NavigationRouter {
         switch self {
         case .splash:
             SplashView()
+        case .onboarding:
+            OnboardingView()
         case .personalInfos:
             PersonalInfosView()
+       
         default:
             Text(verbatim: "There is nothing")
                 .foregroundStyle(.blue)
