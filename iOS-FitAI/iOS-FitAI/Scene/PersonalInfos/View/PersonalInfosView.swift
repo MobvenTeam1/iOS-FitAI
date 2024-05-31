@@ -18,9 +18,16 @@ struct PersonalInfosView: View {
                 
                 if viewmodel.pageStep == .gender {
                     GenderView(personelInfoVM: viewmodel, progressBarValue: $progressBarValue)
-                }
-                else if viewmodel.pageStep == .height{
+                }else if viewmodel.pageStep == .height{
                     HeightView(personalInfoVM: viewmodel, progressBarValue: $progressBarValue)
+                }else if viewmodel.pageStep == .currentWeight{
+                    CurrentWeightView(personalInfoVM: viewmodel, progressBarValue: $progressBarValue)
+                }else if viewmodel.pageStep == .targetWeight{
+                    TargetWeightView(personalInfoVM: viewmodel, progressBarValue: $progressBarValue)
+                }else if viewmodel.pageStep == .birthDate{
+                    BirthdayView(personalInfoVM: viewmodel, progressBarValue: $progressBarValue)
+                }else if viewmodel.pageStep == .targets{
+                    TargetsView(personalInfoVM: viewmodel, progressBarValue: $progressBarValue)
                 }
                 
             }

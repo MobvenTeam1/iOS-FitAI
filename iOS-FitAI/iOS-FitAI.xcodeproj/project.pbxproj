@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD2A75762C09E33300FFF114 /* Onboarding5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A75752C09E33300FFF114 /* Onboarding5View.swift */; };
 		DD2D24142BFF9C5200C97F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24132BFF9C5200C97F36 /* AppDelegate.swift */; };
 		DD2D24182BFF9C5300C97F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D24172BFF9C5300C97F36 /* Assets.xcassets */; };
 		DD2D241B2BFF9C5300C97F36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D241A2BFF9C5300C97F36 /* Preview Assets.xcassets */; };
@@ -26,7 +27,17 @@
 		DD2D245F2BFFA55300C97F36 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D245E2BFFA55300C97F36 /* Colors.xcassets */; };
 		DD2D24612BFFA56100C97F36 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D24602BFFA56100C97F36 /* Icons.xcassets */; };
 		DD2D24632BFFA5EE00C97F36 /* PersonalInfosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24622BFFA5EE00C97F36 /* PersonalInfosViewModel.swift */; };
-		DDE9882F2C05D12600550643 /* WeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE9882E2C05D12600550643 /* WeightView.swift */; };
+		DD5A0E8A2C07BD20006464D7 /* PersonalTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A0E892C07BD20006464D7 /* PersonalTargetView.swift */; };
+		DD5A0E8C2C07BD40006464D7 /* PersonalDietTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A0E8B2C07BD40006464D7 /* PersonalDietTypeView.swift */; };
+		DD5A0E8E2C07BD5E006464D7 /* PersonalExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A0E8D2C07BD5E006464D7 /* PersonalExerciseView.swift */; };
+		DD5A0E902C07BD79006464D7 /* DailyCalorieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A0E8F2C07BD79006464D7 /* DailyCalorieView.swift */; };
+		DD5A0E962C07BE1D006464D7 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A0E952C07BE1D006464D7 /* OnboardingView.swift */; };
+		DD5A0E992C07BFD6006464D7 /* TargetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A0E982C07BFD6006464D7 /* TargetsView.swift */; };
+		DD5A0E9C2C07C51C006464D7 /* BindingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A0E9B2C07C51C006464D7 /* BindingExtension.swift */; };
+		DD5A0ED42C088E08006464D7 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A0ED32C088E08006464D7 /* OnboardingModel.swift */; };
+		DDDFB3DE2C0997C200D2A117 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFB3DD2C0997C200D2A117 /* WelcomeView.swift */; };
+		DDDFB3E12C09D6CC00D2A117 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFB3E02C09D6CC00D2A117 /* OnboardingViewModel.swift */; };
+		DDE9882F2C05D12600550643 /* CurrentWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE9882E2C05D12600550643 /* CurrentWeightView.swift */; };
 		DDE988332C05D62900550643 /* TargetWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE988322C05D62900550643 /* TargetWeightView.swift */; };
 		DDE988352C05D63A00550643 /* BirthdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE988342C05D63A00550643 /* BirthdayView.swift */; };
 		DDEA0A032BFFADC300EEC4E6 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A022BFFADC300EEC4E6 /* GenderView.swift */; };
@@ -57,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD2A75752C09E33300FFF114 /* Onboarding5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding5View.swift; sourceTree = "<group>"; };
 		DD2D24102BFF9C5200C97F36 /* iOS-FitAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-FitAI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2D24132BFF9C5200C97F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD2D24172BFF9C5300C97F36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,7 +91,17 @@
 		DD2D245E2BFFA55300C97F36 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		DD2D24602BFFA56100C97F36 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		DD2D24622BFFA5EE00C97F36 /* PersonalInfosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfosViewModel.swift; sourceTree = "<group>"; };
-		DDE9882E2C05D12600550643 /* WeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightView.swift; sourceTree = "<group>"; };
+		DD5A0E892C07BD20006464D7 /* PersonalTargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTargetView.swift; sourceTree = "<group>"; };
+		DD5A0E8B2C07BD40006464D7 /* PersonalDietTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDietTypeView.swift; sourceTree = "<group>"; };
+		DD5A0E8D2C07BD5E006464D7 /* PersonalExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalExerciseView.swift; sourceTree = "<group>"; };
+		DD5A0E8F2C07BD79006464D7 /* DailyCalorieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCalorieView.swift; sourceTree = "<group>"; };
+		DD5A0E952C07BE1D006464D7 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		DD5A0E982C07BFD6006464D7 /* TargetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetsView.swift; sourceTree = "<group>"; };
+		DD5A0E9B2C07C51C006464D7 /* BindingExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExtension.swift; sourceTree = "<group>"; };
+		DD5A0ED32C088E08006464D7 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		DDDFB3DD2C0997C200D2A117 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		DDDFB3E02C09D6CC00D2A117 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingViewModel.swift; path = "iOS-FitAI/Scene/PersonalInfos/View/PersonalFlowViews/New Group/OnboardingViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		DDE9882E2C05D12600550643 /* CurrentWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeightView.swift; sourceTree = "<group>"; };
 		DDE988322C05D62900550643 /* TargetWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetWeightView.swift; sourceTree = "<group>"; };
 		DDE988342C05D63A00550643 /* BirthdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayView.swift; sourceTree = "<group>"; };
 		DDEA0A022BFFADC300EEC4E6 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
@@ -117,6 +139,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD0AE7222C08B50600EE447A /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				DDDFB3DF2C09D69500D2A117 /* ViewModel */,
+				DD0AE7242C08B54000EE447A /* New Group1 */,
+				DD0AE7232C08B52500EE447A /* New Group */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		DD0AE7232C08B52500EE447A /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A0ED32C088E08006464D7 /* OnboardingModel.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		DD0AE7242C08B54000EE447A /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A0E882C07BCE2006464D7 /* OnboardingFlowViews */,
+			);
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
 		DD2D24072BFF9C5200C97F36 = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +228,7 @@
 		DD2D243D2BFF9CC700C97F36 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				DD5A0E9A2C07C4F2006464D7 /* Binding+Extension */,
 				DD2D245C2BFFA52E00C97F36 /* Utils.swift */,
 			);
 			path = Utils;
@@ -199,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				DDEA0A042BFFAE0200EEC4E6 /* Subviews */,
+				DD0AE7222C08B50600EE447A /* New Group */,
 				DD2D24502BFF9F2700C97F36 /* PersonalInfos */,
 				DD2D244C2BFF9F0700C97F36 /* Splash */,
 			);
@@ -250,8 +300,8 @@
 		DD2D24512BFF9F9300C97F36 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DDEA0A002BFFAD8000EEC4E6 /* FlowViews */,
 				DD2D24572BFFA11300C97F36 /* PersonalInfosView.swift */,
+				DDEA0A002BFFAD8000EEC4E6 /* PersonalFlowViews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,12 +341,97 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		DDE9882D2C05D10300550643 /* Weight */ = {
+		DD5A0E882C07BCE2006464D7 /* OnboardingFlowViews */ = {
 			isa = PBXGroup;
 			children = (
-				DDE9882E2C05D12600550643 /* WeightView.swift */,
+				DD5A0E952C07BE1D006464D7 /* OnboardingView.swift */,
+				DD5A0ED72C0893C2006464D7 /* Onboarding-5 */,
+				DD5A0E942C07BDAF006464D7 /* DailyCalorie */,
+				DD5A0E932C07BDA2006464D7 /* PersonalExercise */,
+				DD5A0E922C07BD8B006464D7 /* PersonalDietType */,
+				DD5A0E912C07BD7D006464D7 /* PersonalTarget */,
 			);
-			path = Weight;
+			path = OnboardingFlowViews;
+			sourceTree = "<group>";
+		};
+		DD5A0E912C07BD7D006464D7 /* PersonalTarget */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A0E892C07BD20006464D7 /* PersonalTargetView.swift */,
+			);
+			path = PersonalTarget;
+			sourceTree = "<group>";
+		};
+		DD5A0E922C07BD8B006464D7 /* PersonalDietType */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A0E8B2C07BD40006464D7 /* PersonalDietTypeView.swift */,
+			);
+			path = PersonalDietType;
+			sourceTree = "<group>";
+		};
+		DD5A0E932C07BDA2006464D7 /* PersonalExercise */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A0E8D2C07BD5E006464D7 /* PersonalExerciseView.swift */,
+			);
+			path = PersonalExercise;
+			sourceTree = "<group>";
+		};
+		DD5A0E942C07BDAF006464D7 /* DailyCalorie */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A0E8F2C07BD79006464D7 /* DailyCalorieView.swift */,
+			);
+			path = DailyCalorie;
+			sourceTree = "<group>";
+		};
+		DD5A0E972C07BFC3006464D7 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A0E982C07BFD6006464D7 /* TargetsView.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		DD5A0E9A2C07C4F2006464D7 /* Binding+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A0E9B2C07C51C006464D7 /* BindingExtension.swift */,
+			);
+			path = "Binding+Extension";
+			sourceTree = "<group>";
+		};
+		DD5A0ED72C0893C2006464D7 /* Onboarding-5 */ = {
+			isa = PBXGroup;
+			children = (
+				DD2A75752C09E33300FFF114 /* Onboarding5View.swift */,
+			);
+			path = "Onboarding-5";
+			sourceTree = "<group>";
+		};
+		DDDFB3DC2C0997A400D2A117 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				DDDFB3DD2C0997C200D2A117 /* WelcomeView.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		DDDFB3DF2C09D69500D2A117 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DDDFB3E02C09D6CC00D2A117 /* OnboardingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DDE9882D2C05D10300550643 /* CurrentWeight */ = {
+			isa = PBXGroup;
+			children = (
+				DDE9882E2C05D12600550643 /* CurrentWeightView.swift */,
+			);
+			path = CurrentWeight;
 			sourceTree = "<group>";
 		};
 		DDE988302C05D5F300550643 /* TargetWeight */ = {
@@ -315,16 +450,18 @@
 			path = Birthday;
 			sourceTree = "<group>";
 		};
-		DDEA0A002BFFAD8000EEC4E6 /* FlowViews */ = {
+		DDEA0A002BFFAD8000EEC4E6 /* PersonalFlowViews */ = {
 			isa = PBXGroup;
 			children = (
+				DD5A0E972C07BFC3006464D7 /* Targets */,
 				DDE988312C05D60E00550643 /* Birthday */,
 				DDE988302C05D5F300550643 /* TargetWeight */,
-				DDE9882D2C05D10300550643 /* Weight */,
+				DDE9882D2C05D10300550643 /* CurrentWeight */,
 				DDEA0A192C04B50300EEC4E6 /* Height */,
 				DDEA0A012BFFAD9500EEC4E6 /* Gender */,
+				DDDFB3DC2C0997A400D2A117 /* New Group */,
 			);
-			path = FlowViews;
+			path = PersonalFlowViews;
 			sourceTree = "<group>";
 		};
 		DDEA0A012BFFAD9500EEC4E6 /* Gender */ = {
@@ -489,27 +626,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD5A0E8E2C07BD5E006464D7 /* PersonalExerciseView.swift in Sources */,
 				DD2D24462BFF9E1C00C97F36 /* NavigationTransitionStyle.swift in Sources */,
 				DD2D24582BFFA11300C97F36 /* PersonalInfosView.swift in Sources */,
 				DD2D244F2BFF9F1900C97F36 /* SplashView.swift in Sources */,
 				DDEA0A1B2C04B62900EEC4E6 /* HeightView.swift in Sources */,
+				DD2A75762C09E33300FFF114 /* Onboarding5View.swift in Sources */,
 				DDEA0A102BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift in Sources */,
 				DDEA0A142C00602E00EEC4E6 /* MFAIMultipleSelectionView.swift in Sources */,
 				DD2D24142BFF9C5200C97F36 /* AppDelegate.swift in Sources */,
+				DDDFB3E12C09D6CC00D2A117 /* OnboardingViewModel.swift in Sources */,
 				DDEA0A162C04981B00EEC4E6 /* MFAIText.swift in Sources */,
 				DDEA0A0C2BFFB5A900EEC4E6 /* MFAIButton.swift in Sources */,
+				DD5A0E8A2C07BD20006464D7 /* PersonalTargetView.swift in Sources */,
 				DDEA0A032BFFADC300EEC4E6 /* GenderView.swift in Sources */,
 				DDEA0A122BFFBC0400EEC4E6 /* MFAITextField.swift in Sources */,
+				DD5A0E962C07BE1D006464D7 /* OnboardingView.swift in Sources */,
 				DD2D24442BFF9DF200C97F36 /* NavigationRouter.swift in Sources */,
+				DD5A0E9C2C07C51C006464D7 /* BindingExtension.swift in Sources */,
 				DD2D245A2BFFA1E200C97F36 /* PersonalInfosModel.swift in Sources */,
+				DD5A0ED42C088E08006464D7 /* OnboardingModel.swift in Sources */,
 				DDE988352C05D63A00550643 /* BirthdayView.swift in Sources */,
 				DD2D24632BFFA5EE00C97F36 /* PersonalInfosViewModel.swift in Sources */,
 				DD2D24492BFF9E4300C97F36 /* FlowRouter.swift in Sources */,
 				DDE988332C05D62900550643 /* TargetWeightView.swift in Sources */,
+				DD5A0E8C2C07BD40006464D7 /* PersonalDietTypeView.swift in Sources */,
+				DD5A0E902C07BD79006464D7 /* DailyCalorieView.swift in Sources */,
 				DD2D245D2BFFA52E00C97F36 /* Utils.swift in Sources */,
 				DD2D24562BFF9FC600C97F36 /* SceneDelegate.swift in Sources */,
 				DDEA0A0E2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift in Sources */,
-				DDE9882F2C05D12600550643 /* WeightView.swift in Sources */,
+				DDDFB3DE2C0997C200D2A117 /* WelcomeView.swift in Sources */,
+				DD5A0E992C07BFD6006464D7 /* TargetsView.swift in Sources */,
+				DDE9882F2C05D12600550643 /* CurrentWeightView.swift in Sources */,
 				DD2D244B2BFF9EFF00C97F36 /* Network.swift in Sources */,
 				DD2D24422BFF9D9200C97F36 /* Coordinator.swift in Sources */,
 			);

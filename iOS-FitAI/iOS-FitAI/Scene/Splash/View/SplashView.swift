@@ -11,12 +11,24 @@ struct SplashView: View {
     @EnvironmentObject var coordinator: Coordinator<FlowRouter>
 
     var body: some View {
-        Text("Hello, World!")
-            .onAppear(perform: {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
-                    coordinator.show(.personalInfos)
+        ZStack{
+            VStack{
+                Image("FitAISplashScreen")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 84, height: 84)
+                
+                HStack{
+                    Text("Fit")
+                    Text("AI").bold()
+                    
+                }
+            }.onAppear(perform: {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+                    coordinator.show(.onboarding)
                 })
             })
+        }
     }
 }
 
