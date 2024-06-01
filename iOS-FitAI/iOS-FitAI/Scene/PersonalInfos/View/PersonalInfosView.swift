@@ -18,6 +18,8 @@ struct PersonalInfosView: View {
                 
                 if viewmodel.pageStep == .gender {
                     GenderView(personelInfoVM: viewmodel, progressBarValue: $progressBarValue)
+                }else if viewmodel.pageStep == .targets{
+                    TargetsView(personalInfoVM: viewmodel, progressBarValue: $progressBarValue)
                 }else if viewmodel.pageStep == .height{
                     HeightView(personalInfoVM: viewmodel, progressBarValue: $progressBarValue)
                 }else if viewmodel.pageStep == .currentWeight{
@@ -28,6 +30,8 @@ struct PersonalInfosView: View {
                     BirthdayView(personalInfoVM: viewmodel, progressBarValue: $progressBarValue)
                 }else if viewmodel.pageStep == .targets{
                     TargetsView(personalInfoVM: viewmodel, progressBarValue: $progressBarValue)
+                } else {
+                    Text("There is nothing")
                 }
                 
             }

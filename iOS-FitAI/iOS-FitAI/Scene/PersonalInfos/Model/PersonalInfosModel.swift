@@ -63,16 +63,7 @@ enum PersonalInfosModel {
             self.targetWeight = targetWeight
             self.birthDate = birthDate
             self.targets = targets
-            self.plansSelection = plansSelection
-            self.healthsIssue = healthsIssue
-            self.selectedSportsActivites = selectedSportsActivites
-            self.sportsCount = sportsCount
-            self.targetAreas = targetAreas
-            self.selectAlergies = selectAlergies
-            self.dietType = dietType
-            self.dailyActiveStatus = dailyActiveStatus
-            self.dailySleepHours = dailySleepHours
-            self.dailyWaterGlass = dailyWaterGlass
+        
         }
         var name: String?
         var surname: String?
@@ -86,25 +77,10 @@ enum PersonalInfosModel {
         var targetWeight: String?
         var birthDate: String?
         var targets:[String]?
-        var plansSelection:[String]?
-        var healthsIssue:[String]?
-        var selectedSportsActivites:[String]?
-        var sportsCount:[String]?
-        var targetAreas:[String]?
-        var selectAlergies:[String]?
-        var dietType: String?
-        var dailyActiveStatus:String?
-        var dailySleepHours:String?
-        var dailyWaterGlass:String?
+        
     }
     
     enum PersonalInfosFlow: String {
-        case name
-        case surname
-        case username
-        case ePosta
-        case password
-        case passwordConfirm
         case welcome
         case gender
         case height
@@ -112,16 +88,6 @@ enum PersonalInfosModel {
         case targetWeight
         case birthDate
         case targets
-        case plansSelection
-        case healthsIssue
-        case selectedSportsActivites
-        case sportsCount
-        case targetAreas
-        case selectAlergies
-        case dietType
-        case dailyActiveStatus
-        case dailySleepHours
-        case dailyWaterGlass
     }
     
     

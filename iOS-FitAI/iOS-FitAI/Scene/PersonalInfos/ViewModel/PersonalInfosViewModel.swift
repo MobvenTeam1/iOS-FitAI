@@ -10,10 +10,11 @@ import Foundation
 
 class PersonalInfosViewModel : ObservableObject {
     
-    @Published var pageStep : PersonalInfosModel.PersonalInfosFlow = .gender
+    @Published var pageStep : PersonalInfosModel.PersonalInfosFlow = .welcome
     
-    @AppStorage("personalInfos") static var personalInfoDataApp = PersonalInfosModel.PersonalInfos(targetWeight: "")
-    @Published var personalInfoData = PersonalInfosModel.PersonalInfos(targetWeight: "")
+    @AppStorage("personalInfos") static var personalInfoDataApp = PersonalInfosModel.PersonalInfos(gender: "",height: "", currentWeight: "", targetWeight: "", birthDate: "", targets: [""])
+    
+    @Published var personalInfoData = PersonalInfosModel.PersonalInfos(gender: "",height: "", currentWeight: "", targetWeight: "", birthDate: "", targets: [""])
 
     
 }
