@@ -1,6 +1,5 @@
 //
 //  Color + Ext.swift
-//  GrupProjeDeneme
 //
 //  Created by Ahmet Yasin Atakan on 25.05.2024.
 //

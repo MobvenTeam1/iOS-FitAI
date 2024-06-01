@@ -1,6 +1,5 @@
 //
 //  LogOutButton.swift
-//  GrupProjeDeneme
 //
 //  Created by Ahmet Yasin Atakan on 1.06.2024.
 //
