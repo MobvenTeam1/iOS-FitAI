@@ -14,6 +14,7 @@ public enum FlowRouter: NavigationRouter {
     case splash
     case onboarding
     case personalInfos
+    case login
     
     
     public var transition: NavigationTransitionStyle {
@@ -32,6 +33,8 @@ public enum FlowRouter: NavigationRouter {
             OnboardingView()
         case .personalInfos:
             PersonalInfosView()
+        case .login:
+            LoginView()
        
         default:
             Text(verbatim: "There is nothing")

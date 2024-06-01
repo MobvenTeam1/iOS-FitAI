@@ -34,4 +34,5 @@ struct SplashView: View {
 
 #Preview {
     SplashView()
+        .environmentObject(Coordinator<FlowRouter>())
 }
