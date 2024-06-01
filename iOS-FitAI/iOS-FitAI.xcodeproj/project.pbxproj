@@ -60,6 +60,21 @@
 		1FC20BEE2C0B6407005C7326 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BE82C0B6407005C7326 /* CardView.swift */; };
 		1FC20BEF2C0B6407005C7326 /* LogOutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BE92C0B6407005C7326 /* LogOutButton.swift */; };
 		1FC20BF12C0B6407005C7326 /* ScreenModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BEB2C0B6407005C7326 /* ScreenModeView.swift */; };
+		1FC20C042C0B9C2A005C7326 /* TrainingCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BF32C0B9C2A005C7326 /* TrainingCategoriesView.swift */; };
+		1FC20C052C0B9C2A005C7326 /* TrainingPlannedSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BF52C0B9C2A005C7326 /* TrainingPlannedSubView.swift */; };
+		1FC20C062C0B9C2A005C7326 /* TrainingPlannedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BF62C0B9C2A005C7326 /* TrainingPlannedView.swift */; };
+		1FC20C072C0B9C2A005C7326 /* MealCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BF72C0B9C2A005C7326 /* MealCategories.swift */; };
+		1FC20C082C0B9C2A005C7326 /* NutritionPlanningSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BF92C0B9C2A005C7326 /* NutritionPlanningSubView.swift */; };
+		1FC20C092C0B9C2A005C7326 /* NutritionPlanningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BFA2C0B9C2A005C7326 /* NutritionPlanningView.swift */; };
+		1FC20C0A2C0B9C2A005C7326 /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BFB2C0B9C2A005C7326 /* HelloView.swift */; };
+		1FC20C0B2C0B9C2A005C7326 /* CaloriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BFD2C0B9C2A005C7326 /* CaloriesView.swift */; };
+		1FC20C0C2C0B9C2A005C7326 /* DailyTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BFE2C0B9C2A005C7326 /* DailyTargetView.swift */; };
+		1FC20C0D2C0B9C2A005C7326 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BFF2C0B9C2A005C7326 /* CircularProgressView.swift */; };
+		1FC20C0E2C0B9C2A005C7326 /* DailyTargetButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20C002C0B9C2A005C7326 /* DailyTargetButtonsView.swift */; };
+		1FC20C0F2C0B9C2A005C7326 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20C022C0B9C2A005C7326 /* CalendarView.swift */; };
+		1FC20C102C0B9C2A005C7326 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20C032C0B9C2A005C7326 /* HomePageView.swift */; };
+		1FC20C132C0B9CF4005C7326 /* PersonalizedPlanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20C112C0B9CF4005C7326 /* PersonalizedPlanButton.swift */; };
+		1FC20C142C0B9CF4005C7326 /* RightCurvedRectangleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20C122C0B9CF4005C7326 /* RightCurvedRectangleShape.swift */; };
 		DD2A75762C09E33300FFF114 /* Onboarding5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A75752C09E33300FFF114 /* Onboarding5View.swift */; };
 		DD2D24142BFF9C5200C97F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24132BFF9C5200C97F36 /* AppDelegate.swift */; };
 		DD2D24182BFF9C5300C97F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D24172BFF9C5300C97F36 /* Assets.xcassets */; };
@@ -174,6 +189,21 @@
 		1FC20BE82C0B6407005C7326 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		1FC20BE92C0B6407005C7326 /* LogOutButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogOutButton.swift; sourceTree = "<group>"; };
 		1FC20BEB2C0B6407005C7326 /* ScreenModeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenModeView.swift; sourceTree = "<group>"; };
+		1FC20BF32C0B9C2A005C7326 /* TrainingCategoriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingCategoriesView.swift; sourceTree = "<group>"; };
+		1FC20BF52C0B9C2A005C7326 /* TrainingPlannedSubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingPlannedSubView.swift; sourceTree = "<group>"; };
+		1FC20BF62C0B9C2A005C7326 /* TrainingPlannedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingPlannedView.swift; sourceTree = "<group>"; };
+		1FC20BF72C0B9C2A005C7326 /* MealCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealCategories.swift; sourceTree = "<group>"; };
+		1FC20BF92C0B9C2A005C7326 /* NutritionPlanningSubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionPlanningSubView.swift; sourceTree = "<group>"; };
+		1FC20BFA2C0B9C2A005C7326 /* NutritionPlanningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionPlanningView.swift; sourceTree = "<group>"; };
+		1FC20BFB2C0B9C2A005C7326 /* HelloView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
+		1FC20BFD2C0B9C2A005C7326 /* CaloriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaloriesView.swift; sourceTree = "<group>"; };
+		1FC20BFE2C0B9C2A005C7326 /* DailyTargetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyTargetView.swift; sourceTree = "<group>"; };
+		1FC20BFF2C0B9C2A005C7326 /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		1FC20C002C0B9C2A005C7326 /* DailyTargetButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyTargetButtonsView.swift; sourceTree = "<group>"; };
+		1FC20C022C0B9C2A005C7326 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		1FC20C032C0B9C2A005C7326 /* HomePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		1FC20C112C0B9CF4005C7326 /* PersonalizedPlanButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalizedPlanButton.swift; sourceTree = "<group>"; };
+		1FC20C122C0B9CF4005C7326 /* RightCurvedRectangleShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightCurvedRectangleShape.swift; sourceTree = "<group>"; };
 		DD2A75752C09E33300FFF114 /* Onboarding5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding5View.swift; sourceTree = "<group>"; };
 		DD2D24102BFF9C5200C97F36 /* iOS-FitAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-FitAI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2D24132BFF9C5200C97F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -417,6 +447,60 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		1FC20BF22C0B9C2A005C7326 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				1FC20C032C0B9C2A005C7326 /* HomePageView.swift */,
+				1FC20BFB2C0B9C2A005C7326 /* HelloView.swift */,
+				1FC20C022C0B9C2A005C7326 /* CalendarView.swift */,
+				1FC20BF32C0B9C2A005C7326 /* TrainingCategoriesView.swift */,
+				1FC20BF72C0B9C2A005C7326 /* MealCategories.swift */,
+				1FC20BF42C0B9C2A005C7326 /* TrainingPlanning */,
+				1FC20BF82C0B9C2A005C7326 /* NutritionPlanning */,
+				1FC20BFC2C0B9C2A005C7326 /* DailyTarget */,
+				1FC20C012C0B9C2A005C7326 /* PersonalizedPlanButton */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		1FC20BF42C0B9C2A005C7326 /* TrainingPlanning */ = {
+			isa = PBXGroup;
+			children = (
+				1FC20BF52C0B9C2A005C7326 /* TrainingPlannedSubView.swift */,
+				1FC20BF62C0B9C2A005C7326 /* TrainingPlannedView.swift */,
+			);
+			path = TrainingPlanning;
+			sourceTree = "<group>";
+		};
+		1FC20BF82C0B9C2A005C7326 /* NutritionPlanning */ = {
+			isa = PBXGroup;
+			children = (
+				1FC20BF92C0B9C2A005C7326 /* NutritionPlanningSubView.swift */,
+				1FC20BFA2C0B9C2A005C7326 /* NutritionPlanningView.swift */,
+			);
+			path = NutritionPlanning;
+			sourceTree = "<group>";
+		};
+		1FC20BFC2C0B9C2A005C7326 /* DailyTarget */ = {
+			isa = PBXGroup;
+			children = (
+				1FC20BFE2C0B9C2A005C7326 /* DailyTargetView.swift */,
+				1FC20BFD2C0B9C2A005C7326 /* CaloriesView.swift */,
+				1FC20BFF2C0B9C2A005C7326 /* CircularProgressView.swift */,
+				1FC20C002C0B9C2A005C7326 /* DailyTargetButtonsView.swift */,
+			);
+			path = DailyTarget;
+			sourceTree = "<group>";
+		};
+		1FC20C012C0B9C2A005C7326 /* PersonalizedPlanButton */ = {
+			isa = PBXGroup;
+			children = (
+				1FC20C112C0B9CF4005C7326 /* PersonalizedPlanButton.swift */,
+				1FC20C122C0B9CF4005C7326 /* RightCurvedRectangleShape.swift */,
+			);
+			path = PersonalizedPlanButton;
+			sourceTree = "<group>";
+		};
 		DD0AE7222C08B50600EE447A /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,6 +613,7 @@
 		DD2D243F2BFF9CE200C97F36 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				1FC20BF22C0B9C2A005C7326 /* HomePage */,
 				1FC20BE52C0B6407005C7326 /* Profile */,
 				1FC20B742C0B42BE005C7326 /* LoginScreen */,
 				DDEA0A042BFFAE0200EEC4E6 /* Subviews */,
@@ -918,17 +1003,24 @@
 				1FC20BBA2C0B42BE005C7326 /* RememberMeSection.swift in Sources */,
 				1FC20BA02C0B42BE005C7326 /* FMPNumberSendCodeButton.swift in Sources */,
 				DD2D24462BFF9E1C00C97F36 /* NavigationTransitionStyle.swift in Sources */,
+				1FC20C072C0B9C2A005C7326 /* MealCategories.swift in Sources */,
 				DD2D24582BFFA11300C97F36 /* PersonalInfosView.swift in Sources */,
+				1FC20C0B2C0B9C2A005C7326 /* CaloriesView.swift in Sources */,
+				1FC20C092C0B9C2A005C7326 /* NutritionPlanningView.swift in Sources */,
 				1FC20BB82C0B42BE005C7326 /* ForgotPasswordLink.swift in Sources */,
+				1FC20C0E2C0B9C2A005C7326 /* DailyTargetButtonsView.swift in Sources */,
 				1FC20BA62C0B42BE005C7326 /* FMPEmailTextField.swift in Sources */,
 				DD2D244F2BFF9F1900C97F36 /* SplashView.swift in Sources */,
 				DDEA0A1B2C04B62900EEC4E6 /* HeightView.swift in Sources */,
 				1FC20B9C2C0B42BE005C7326 /* GSMNumber.swift in Sources */,
+				1FC20C062C0B9C2A005C7326 /* TrainingPlannedView.swift in Sources */,
+				1FC20C042C0B9C2A005C7326 /* TrainingCategoriesView.swift in Sources */,
 				DD2A75762C09E33300FFF114 /* Onboarding5View.swift in Sources */,
 				1FC20BA32C0B42BE005C7326 /* FMPEmailTextView.swift in Sources */,
 				DDEA0A102BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift in Sources */,
 				1FC20BAA2C0B42BE005C7326 /* PasswordCriteriaView.swift in Sources */,
 				1FC20BB32C0B42BE005C7326 /* SocialLoginButtons.swift in Sources */,
+				1FC20C082C0B9C2A005C7326 /* NutritionPlanningSubView.swift in Sources */,
 				1FC20BB12C0B42BE005C7326 /* CheckIfOTPCorrect.swift in Sources */,
 				1FC20BA52C0B42BE005C7326 /* FMPLoginWithNumberButton.swift in Sources */,
 				DDEA0A142C00602E00EEC4E6 /* MFAIMultipleSelectionView.swift in Sources */,
@@ -943,6 +1035,7 @@
 				DDEA0A032BFFADC300EEC4E6 /* GenderView.swift in Sources */,
 				DDEA0A122BFFBC0400EEC4E6 /* MFAITextField.swift in Sources */,
 				DD5A0E962C07BE1D006464D7 /* OnboardingView.swift in Sources */,
+				1FC20C0C2C0B9C2A005C7326 /* DailyTargetView.swift in Sources */,
 				1FC20BA72C0B42BE005C7326 /* PasswordChangedView.swift in Sources */,
 				1FC20B9F2C0B42BE005C7326 /* FMPNumberTextField.swift in Sources */,
 				DD2D24442BFF9DF200C97F36 /* NavigationRouter.swift in Sources */,
@@ -950,9 +1043,14 @@
 				1FC20B9D2C0B42BE005C7326 /* FMPNumberTextView.swift in Sources */,
 				1FC20BEC2C0B6407005C7326 /* ProfileSettingsView.swift in Sources */,
 				1FC20BB92C0B42BE005C7326 /* EmailTextField.swift in Sources */,
+				1FC20C0A2C0B9C2A005C7326 /* HelloView.swift in Sources */,
 				1FC20BEF2C0B6407005C7326 /* LogOutButton.swift in Sources */,
 				1FC20BB02C0B42BE005C7326 /* OTPEmail.swift in Sources */,
 				DD5A0E9C2C07C51C006464D7 /* BindingExtension.swift in Sources */,
+				1FC20C052C0B9C2A005C7326 /* TrainingPlannedSubView.swift in Sources */,
+				1FC20C0D2C0B9C2A005C7326 /* CircularProgressView.swift in Sources */,
+				1FC20C132C0B9CF4005C7326 /* PersonalizedPlanButton.swift in Sources */,
+				1FC20C0F2C0B9C2A005C7326 /* CalendarView.swift in Sources */,
 				DD2D245A2BFFA1E200C97F36 /* PersonalInfosModel.swift in Sources */,
 				1FC20BA92C0B42BE005C7326 /* PasswordChangedImageAndText.swift in Sources */,
 				DD5A0ED42C088E08006464D7 /* OnboardingModel.swift in Sources */,
@@ -965,11 +1063,13 @@
 				DD2D24492BFF9E4300C97F36 /* FlowRouter.swift in Sources */,
 				DDE988332C05D62900550643 /* TargetWeightView.swift in Sources */,
 				DD5A0E8C2C07BD40006464D7 /* PersonalDietTypeView.swift in Sources */,
+				1FC20C102C0B9C2A005C7326 /* HomePageView.swift in Sources */,
 				1FC20BA22C0B42BE005C7326 /* FMPEmailSendCodeButton.swift in Sources */,
 				DD5A0E902C07BD79006464D7 /* DailyCalorieView.swift in Sources */,
 				1FC20BA42C0B42BE005C7326 /* ForgotMyPasswordWithEmail.swift in Sources */,
 				1FC20BB62C0B42BE005C7326 /* LoginButton.swift in Sources */,
 				1FC20BAD2C0B42BE005C7326 /* GenericPasswordView.swift in Sources */,
+				1FC20C142C0B9CF4005C7326 /* RightCurvedRectangleShape.swift in Sources */,
 				1FC20BAF2C0B42BE005C7326 /* OTPTextField.swift in Sources */,
 				DD2D245D2BFFA52E00C97F36 /* Utils.swift in Sources */,
 				DD2D24562BFF9FC600C97F36 /* SceneDelegate.swift in Sources */,
