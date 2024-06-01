@@ -37,7 +37,7 @@ struct LoginView: View {
             .customLogoButton()
             .customBackButton()
             .navigationDestination(isPresented: $isLoginSuccessful) {
-//                HomePageView()
+                HomePageView()
             }
         }
     }
