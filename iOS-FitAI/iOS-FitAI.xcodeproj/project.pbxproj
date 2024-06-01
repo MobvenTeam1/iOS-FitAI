@@ -55,6 +55,11 @@
 		1FC20BDE2C0B430E005C7326 /* CountdownTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BD22C0B430E005C7326 /* CountdownTimerView.swift */; };
 		1FC20BDF2C0B430E005C7326 /* GreenButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BD32C0B430E005C7326 /* GreenButtonView.swift */; };
 		1FC20BE42C0B4A5B005C7326 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BE32C0B4A5B005C7326 /* OnboardingViewModel.swift */; };
+		1FC20BEC2C0B6407005C7326 /* ProfileSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BE62C0B6407005C7326 /* ProfileSettingsView.swift */; };
+		1FC20BED2C0B6407005C7326 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BE72C0B6407005C7326 /* ProfileView.swift */; };
+		1FC20BEE2C0B6407005C7326 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BE82C0B6407005C7326 /* CardView.swift */; };
+		1FC20BEF2C0B6407005C7326 /* LogOutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BE92C0B6407005C7326 /* LogOutButton.swift */; };
+		1FC20BF12C0B6407005C7326 /* ScreenModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BEB2C0B6407005C7326 /* ScreenModeView.swift */; };
 		DD2A75762C09E33300FFF114 /* Onboarding5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A75752C09E33300FFF114 /* Onboarding5View.swift */; };
 		DD2D24142BFF9C5200C97F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24132BFF9C5200C97F36 /* AppDelegate.swift */; };
 		DD2D24182BFF9C5300C97F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D24172BFF9C5300C97F36 /* Assets.xcassets */; };
@@ -164,6 +169,11 @@
 		1FC20BD32C0B430E005C7326 /* GreenButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenButtonView.swift; sourceTree = "<group>"; };
 		1FC20BE02C0B464F005C7326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1FC20BE32C0B4A5B005C7326 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		1FC20BE62C0B6407005C7326 /* ProfileSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSettingsView.swift; sourceTree = "<group>"; };
+		1FC20BE72C0B6407005C7326 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		1FC20BE82C0B6407005C7326 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		1FC20BE92C0B6407005C7326 /* LogOutButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogOutButton.swift; sourceTree = "<group>"; };
+		1FC20BEB2C0B6407005C7326 /* ScreenModeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenModeView.swift; sourceTree = "<group>"; };
 		DD2A75752C09E33300FFF114 /* Onboarding5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding5View.swift; sourceTree = "<group>"; };
 		DD2D24102BFF9C5200C97F36 /* iOS-FitAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-FitAI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2D24132BFF9C5200C97F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -395,6 +405,18 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		1FC20BE52C0B6407005C7326 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1FC20BE72C0B6407005C7326 /* ProfileView.swift */,
+				1FC20BE62C0B6407005C7326 /* ProfileSettingsView.swift */,
+				1FC20BE82C0B6407005C7326 /* CardView.swift */,
+				1FC20BE92C0B6407005C7326 /* LogOutButton.swift */,
+				1FC20BEB2C0B6407005C7326 /* ScreenModeView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		DD0AE7222C08B50600EE447A /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,6 +529,7 @@
 		DD2D243F2BFF9CE200C97F36 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				1FC20BE52C0B6407005C7326 /* Profile */,
 				1FC20B742C0B42BE005C7326 /* LoginScreen */,
 				DDEA0A042BFFAE0200EEC4E6 /* Subviews */,
 				DD0AE7222C08B50600EE447A /* Onboarding */,
@@ -923,8 +946,11 @@
 				1FC20BA72C0B42BE005C7326 /* PasswordChangedView.swift in Sources */,
 				1FC20B9F2C0B42BE005C7326 /* FMPNumberTextField.swift in Sources */,
 				DD2D24442BFF9DF200C97F36 /* NavigationRouter.swift in Sources */,
+				1FC20BF12C0B6407005C7326 /* ScreenModeView.swift in Sources */,
 				1FC20B9D2C0B42BE005C7326 /* FMPNumberTextView.swift in Sources */,
+				1FC20BEC2C0B6407005C7326 /* ProfileSettingsView.swift in Sources */,
 				1FC20BB92C0B42BE005C7326 /* EmailTextField.swift in Sources */,
+				1FC20BEF2C0B6407005C7326 /* LogOutButton.swift in Sources */,
 				1FC20BB02C0B42BE005C7326 /* OTPEmail.swift in Sources */,
 				DD5A0E9C2C07C51C006464D7 /* BindingExtension.swift in Sources */,
 				DD2D245A2BFFA1E200C97F36 /* PersonalInfosModel.swift in Sources */,
@@ -932,6 +958,7 @@
 				DD5A0ED42C088E08006464D7 /* OnboardingModel.swift in Sources */,
 				DDE988352C05D63A00550643 /* BirthdayView.swift in Sources */,
 				1FC20BC22C0B4302005C7326 /* CustomLogoButton.swift in Sources */,
+				1FC20BEE2C0B6407005C7326 /* CardView.swift in Sources */,
 				1FC20BB42C0B42BE005C7326 /* DividerWithText.swift in Sources */,
 				DD2D24632BFFA5EE00C97F36 /* PersonalInfosViewModel.swift in Sources */,
 				1FC20BDE2C0B430E005C7326 /* CountdownTimerView.swift in Sources */,
@@ -950,6 +977,7 @@
 				DDDFB3DE2C0997C200D2A117 /* WelcomeView.swift in Sources */,
 				1FC20BE42C0B4A5B005C7326 /* OnboardingViewModel.swift in Sources */,
 				1FC20BC32C0B4302005C7326 /* CustomBackButton.swift in Sources */,
+				1FC20BED2C0B6407005C7326 /* ProfileView.swift in Sources */,
 				DD5A0E992C07BFD6006464D7 /* TargetsView.swift in Sources */,
 				1FC20BBE2C0B42F5005C7326 /* Color + Ext.swift in Sources */,
 				1FC20BDF2C0B430E005C7326 /* GreenButtonView.swift in Sources */,
