@@ -2,6 +2,7 @@
 //  LogOutButton.swift
 //
 //  Created by Ahmet Yasin Atakan on 1.06.2024.
+//
 
 import SwiftUI
 

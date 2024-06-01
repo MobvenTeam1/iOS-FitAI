@@ -2,6 +2,7 @@
 //  ScreenModeView.swift
 //
 //  Created by Ahmet Yasin Atakan on 30.05.2024.
+//
 
 import SwiftUI
 
