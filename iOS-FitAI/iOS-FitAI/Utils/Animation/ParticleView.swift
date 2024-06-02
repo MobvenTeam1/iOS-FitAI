@@ -1,6 +1,6 @@
 //
 //  ParticleView.swift
-//  FitAI-Project
+//  iOS-FitAI
 //
 //  Created by Ahmet Yasin Atakan on 2.06.2024.
 //
@@ -18,7 +18,7 @@ struct ParticleView: View {
             .resizable()
             .frame(width: 10, height: 10)
             .opacity(opacity)
-            .onAppear {
+            .onAppear { // It gives random offsets to the particles.
                 self.randomX = CGFloat.random(in: -300...300)
                 self.randomY = CGFloat.random(in: -300...350)
                 self.opacity = 0

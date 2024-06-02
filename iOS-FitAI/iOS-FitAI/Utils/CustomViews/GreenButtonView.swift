@@ -1,6 +1,6 @@
 //
 //  GreenButtonView.swift
-//  GrupProjeDeneme
+//  iOS-FitAI
 //
 //  Created by Ahmet Yasin Atakan on 31.05.2024.
 //

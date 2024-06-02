@@ -1,6 +1,6 @@
 //
 //  AISupportedTrainingPlan.swift
-//  FitAI-Project
+//  iOS-FitAI
 //
 //  Created by Ahmet Yasin Atakan on 2.06.2024.
 //

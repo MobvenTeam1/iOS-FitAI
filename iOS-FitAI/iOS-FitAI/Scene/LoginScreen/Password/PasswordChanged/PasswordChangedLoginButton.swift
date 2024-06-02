@@ -1,11 +1,4 @@
-//
-//  PasswordChangedLoginButton.swift
-//  GrupProjeDeneme
-//
-//  Created by Ahmet Yasin Atakan on 31.05.2024.
-//
-
-import SwiftUI
+-import SwiftUI
 
 struct PasswordChangedLoginButton: View {
     var body: some View {

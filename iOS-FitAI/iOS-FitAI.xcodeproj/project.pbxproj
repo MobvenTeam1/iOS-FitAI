@@ -369,9 +369,9 @@
 		1F156AFF2C0C7A5200F0E0DC /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				1F156B022C0C7A5200F0E0DC /* TabBarView.swift */,
 				1F156B002C0C7A5200F0E0DC /* CustomTabBarView.swift */,
 				1F156B012C0C7A5200F0E0DC /* TabBarButtonView.swift */,
-				1F156B022C0C7A5200F0E0DC /* TabBarView.swift */,
 				1F156B032C0C7A5200F0E0DC /* TabBarShape.swift */,
 			);
 			path = TabBar;
@@ -412,8 +412,8 @@
 		1F156B0C2C0C7A6A00F0E0DC /* ForgotMyPasswordWithNumber */ = {
 			isa = PBXGroup;
 			children = (
-				1F156B0D2C0C7A6A00F0E0DC /* FMPNumberTextView.swift */,
 				1F156B0E2C0C7A6A00F0E0DC /* ForgotMyPasswordWithNumber.swift */,
+				1F156B0D2C0C7A6A00F0E0DC /* FMPNumberTextView.swift */,
 				1F156B0F2C0C7A6A00F0E0DC /* FMPNumberTextField.swift */,
 				1F156B102C0C7A6A00F0E0DC /* FMPNumberSendCodeButton.swift */,
 				1F156B112C0C7A6A00F0E0DC /* FMPLoginWithEmailButton.swift */,
@@ -424,9 +424,9 @@
 		1F156B122C0C7A6A00F0E0DC /* ForgotMyPasswordWithEmail */ = {
 			isa = PBXGroup;
 			children = (
+				1F156B152C0C7A6A00F0E0DC /* ForgotMyPasswordWithEmail.swift */,
 				1F156B132C0C7A6A00F0E0DC /* FMPEmailSendCodeButton.swift */,
 				1F156B142C0C7A6A00F0E0DC /* FMPEmailTextView.swift */,
-				1F156B152C0C7A6A00F0E0DC /* ForgotMyPasswordWithEmail.swift */,
 				1F156B162C0C7A6A00F0E0DC /* FMPLoginWithNumberButton.swift */,
 				1F156B172C0C7A6A00F0E0DC /* FMPEmailTextField.swift */,
 			);
@@ -446,9 +446,9 @@
 		1F156B1C2C0C7A6A00F0E0DC /* CreateNewPassword */ = {
 			isa = PBXGroup;
 			children = (
+				1F156B1F2C0C7A6A00F0E0DC /* CreateNewPassword.swift */,
 				1F156B1D2C0C7A6A00F0E0DC /* PasswordCriteriaView.swift */,
 				1F156B1E2C0C7A6A00F0E0DC /* CreateNewPasswordTextView.swift */,
-				1F156B1F2C0C7A6A00F0E0DC /* CreateNewPassword.swift */,
 			);
 			path = CreateNewPassword;
 			sourceTree = "<group>";
@@ -483,16 +483,12 @@
 		1F156B312C0C7A6A00F0E0DC /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				1F156B322C0C7A6A00F0E0DC /* TrainingCategoriesView.swift */,
+				1F156B932C0C9F0300F0E0DC /* HomePageView */,
 				1F156B332C0C7A6A00F0E0DC /* TrainingPlanning */,
 				1F156B362C0C7A6A00F0E0DC /* AISupportedTrainingPlan */,
-				1F156B3C2C0C7A6A00F0E0DC /* MealCategories.swift */,
 				1F156B3D2C0C7A6A00F0E0DC /* NutritionPlanning */,
-				1F156B402C0C7A6A00F0E0DC /* HelloView.swift */,
 				1F156B412C0C7A6A00F0E0DC /* DailyTarget */,
 				1F156B462C0C7A6A00F0E0DC /* PersonalizedPlanButton */,
-				1F156B492C0C7A6A00F0E0DC /* CalendarView.swift */,
-				1F156B4A2C0C7A6A00F0E0DC /* HomePageView.swift */,
 				1F156B4B2C0C7A6A00F0E0DC /* AISupportedNutritionPlan */,
 			);
 			path = HomePage;
@@ -510,8 +506,8 @@
 		1F156B362C0C7A6A00F0E0DC /* AISupportedTrainingPlan */ = {
 			isa = PBXGroup;
 			children = (
-				1F156B372C0C7A6A00F0E0DC /* InitialView.swift */,
 				1F156B382C0C7A6A00F0E0DC /* AISupportedTrainingPlan.swift */,
+				1F156B372C0C7A6A00F0E0DC /* InitialView.swift */,
 				1F156B392C0C7A6A00F0E0DC /* StartButton.swift */,
 				1F156B3A2C0C7A6A00F0E0DC /* AnimatedStarView.swift */,
 				1F156B3B2C0C7A6A00F0E0DC /* StarImageView.swift */,
@@ -559,8 +555,8 @@
 		1F156B822C0C7A7300F0E0DC /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				1F156B832C0C7A7300F0E0DC /* ProfileSettingsView.swift */,
 				1F156B842C0C7A7300F0E0DC /* ProfileView.swift */,
+				1F156B832C0C7A7300F0E0DC /* ProfileSettingsView.swift */,
 				1F156B852C0C7A7300F0E0DC /* CardView.swift */,
 				1F156B862C0C7A7300F0E0DC /* LogOutButton.swift */,
 				1F156B872C0C7A7300F0E0DC /* ScreenModeView.swift */,
@@ -582,6 +578,18 @@
 				1F156B902C0C7CDE00F0E0DC /* HandleScreens.swift */,
 			);
 			path = HandleScreens;
+			sourceTree = "<group>";
+		};
+		1F156B932C0C9F0300F0E0DC /* HomePageView */ = {
+			isa = PBXGroup;
+			children = (
+				1F156B4A2C0C7A6A00F0E0DC /* HomePageView.swift */,
+				1F156B322C0C7A6A00F0E0DC /* TrainingCategoriesView.swift */,
+				1F156B3C2C0C7A6A00F0E0DC /* MealCategories.swift */,
+				1F156B402C0C7A6A00F0E0DC /* HelloView.swift */,
+				1F156B492C0C7A6A00F0E0DC /* CalendarView.swift */,
+			);
+			path = HomePageView;
 			sourceTree = "<group>";
 		};
 		1FC20BE22C0B4A4B005C7326 /* ViewModel */ = {

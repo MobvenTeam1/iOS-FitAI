@@ -1,10 +1,3 @@
-//
-//  NutritionPlanningView.swift
-//  GrupProjeDeneme
-//
-//  Created by Ahmet Yasin Atakan on 29.05.2024.
-//
-
 import SwiftUI
 
 struct NutritionPlanningView: View {

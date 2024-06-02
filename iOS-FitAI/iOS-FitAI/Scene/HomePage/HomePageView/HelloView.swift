@@ -1,10 +1,3 @@
-//
-//  HelloView.swift
-//  
-//
-//  Created by Ahmet Yasin Atakan on 26.05.2024.
-//
-
 import SwiftUI
 
 struct HelloView: View {

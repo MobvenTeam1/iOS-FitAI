@@ -1,10 +1,3 @@
-//
-//  LoginButton.swift
-//  GrupProjeDeneme
-//
-//  Created by Ahmet Yasin Atakan on 31.05.2024.
-//
-
 import SwiftUI
 
 struct LoginButton: View {
@@ -12,7 +5,6 @@ struct LoginButton: View {
     var password: String
     @Binding var showError: Bool
     @Binding var errorMessage: String
-//    @Binding var isLoginSuccessful: Bool
     @EnvironmentObject var isLoginSuccessful: AppState
     var body: some View {
         GreenButtonView(text: "Giriş Yap") {

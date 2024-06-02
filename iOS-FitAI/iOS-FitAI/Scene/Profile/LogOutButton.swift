@@ -1,16 +1,9 @@
-//
-//  LogOutButton.swift
-//  GrupProjeDeneme
-//
-//  Created by Ahmet Yasin Atakan on 1.06.2024.
-//
-
 import SwiftUI
 
 struct LogOutButton: View {
     var body: some View {
         Button {
-            
+            // TODO: //
         }label: {
             ZStack {
                 Color.white

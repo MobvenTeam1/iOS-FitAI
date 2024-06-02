@@ -1,6 +1,6 @@
 //
 //  ProfileView.swift
-//  GrupProjeDeneme
+//  iOS-FitAI
 //
 //  Created by Ahmet Yasin Atakan on 29.05.2024.
 //

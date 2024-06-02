@@ -1,6 +1,6 @@
 //
 //  CustomTabBarView.swift
-//  GrupProjeDeneme
+//  iOS-FitAI
 //
 //  Created by Ahmet Yasin Atakan on 30.05.2024.
 //

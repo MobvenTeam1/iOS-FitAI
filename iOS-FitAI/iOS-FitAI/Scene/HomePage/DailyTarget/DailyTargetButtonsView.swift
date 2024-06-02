@@ -1,10 +1,3 @@
-//
-//  DailyTargetButtonsView.swift
-//  GrupProjeDeneme
-//
-//  Created by Ahmet Yasin Atakan on 31.05.2024.
-//
-
 import SwiftUI
 
 struct DailyTargetButtonsView: View {

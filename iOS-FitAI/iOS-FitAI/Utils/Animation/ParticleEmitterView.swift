@@ -1,6 +1,6 @@
 //
 //  ParticleEmitterView.swift
-//  FitAI-Project
+//  iOS-FitAI
 //
 //  Created by Ahmet Yasin Atakan on 2.06.2024.
 //
@@ -14,7 +14,7 @@ struct ParticleEmitterView: View {
 
     var body: some View {
         ZStack {
-            ForEach(0..<particles, id: \.self) { _ in
+            ForEach(0..<particles, id: \.self) { _ in // It creates number of particles with the image I set
                 ParticleView(image: image)
                     .animation(
                         Animation.easeOut(duration: duration)
@@ -26,5 +26,5 @@ struct ParticleEmitterView: View {
 }
 
 #Preview {
-    ParticleEmitterView(particles: 500, duration: 2, image: Image("starforanimation"))
+    ParticleEmitterView(particles: 50, duration: 2, image: Image("starforanimation"))
 }
