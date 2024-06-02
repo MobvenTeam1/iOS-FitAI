@@ -89,6 +89,8 @@
 		1F156C2B2C0D22CD00F0E0DC /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BEC2C0D22CC00F0E0DC /* EmailTextField.swift */; };
 		1F156C2C2C0D22CD00F0E0DC /* RememberMeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BED2C0D22CC00F0E0DC /* RememberMeSection.swift */; };
 		1F156C2F2C0D240500F0E0DC /* HandleScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156C2E2C0D240500F0E0DC /* HandleScreens.swift */; };
+		1F156C312C0D2F7300F0E0DC /* NavigationLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156C302C0D2F7300F0E0DC /* NavigationLinks.swift */; };
+		1F156C332C0D309000F0E0DC /* AIPlanButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156C322C0D309000F0E0DC /* AIPlanButtons.swift */; };
 		1FC20BBD2C0B42F5005C7326 /* Font + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BBB2C0B42F4005C7326 /* Font + Ext.swift */; };
 		1FC20BBE2C0B42F5005C7326 /* Color + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BBC2C0B42F4005C7326 /* Color + Ext.swift */; };
 		1FC20BE42C0B4A5B005C7326 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BE32C0B4A5B005C7326 /* OnboardingViewModel.swift */; };
@@ -234,6 +236,8 @@
 		1F156BEC2C0D22CC00F0E0DC /* EmailTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
 		1F156BED2C0D22CC00F0E0DC /* RememberMeSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RememberMeSection.swift; sourceTree = "<group>"; };
 		1F156C2E2C0D240500F0E0DC /* HandleScreens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandleScreens.swift; sourceTree = "<group>"; };
+		1F156C302C0D2F7300F0E0DC /* NavigationLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinks.swift; sourceTree = "<group>"; };
+		1F156C322C0D309000F0E0DC /* AIPlanButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIPlanButtons.swift; sourceTree = "<group>"; };
 		1FC20BBB2C0B42F4005C7326 /* Font + Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font + Ext.swift"; sourceTree = "<group>"; };
 		1FC20BBC2C0B42F4005C7326 /* Color + Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color + Ext.swift"; sourceTree = "<group>"; };
 		1FC20BE02C0B464F005C7326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -383,7 +387,6 @@
 				1F156BA12C0D22CC00F0E0DC /* TrainingPlanning */,
 				1F156BA42C0D22CC00F0E0DC /* AISupportedTrainingPlan */,
 				1F156BAA2C0D22CC00F0E0DC /* NutritionPlanning */,
-				1F156BAD2C0D22CC00F0E0DC /* DailyTarget */,
 				1F156BB22C0D22CC00F0E0DC /* PersonalizedPlanButton */,
 				1F156BB52C0D22CC00F0E0DC /* AISupportedNutritionPlan */,
 			);
@@ -394,10 +397,13 @@
 			isa = PBXGroup;
 			children = (
 				1F156BA02C0D22CC00F0E0DC /* HomePageView.swift */,
-				1F156B9C2C0D22CC00F0E0DC /* TrainingCategoriesView.swift */,
-				1F156B9D2C0D22CC00F0E0DC /* MealCategories.swift */,
 				1F156B9E2C0D22CC00F0E0DC /* HelloView.swift */,
 				1F156B9F2C0D22CC00F0E0DC /* CalendarView.swift */,
+				1F156BAD2C0D22CC00F0E0DC /* DailyTarget */,
+				1F156C322C0D309000F0E0DC /* AIPlanButtons.swift */,
+				1F156B9C2C0D22CC00F0E0DC /* TrainingCategoriesView.swift */,
+				1F156B9D2C0D22CC00F0E0DC /* MealCategories.swift */,
+				1F156C302C0D2F7300F0E0DC /* NavigationLinks.swift */,
 			);
 			path = HomePageView;
 			sourceTree = "<group>";
@@ -435,8 +441,8 @@
 		1F156BAD2C0D22CC00F0E0DC /* DailyTarget */ = {
 			isa = PBXGroup;
 			children = (
-				1F156BAE2C0D22CC00F0E0DC /* CaloriesView.swift */,
 				1F156BAF2C0D22CC00F0E0DC /* DailyTargetView.swift */,
+				1F156BAE2C0D22CC00F0E0DC /* CaloriesView.swift */,
 				1F156BB02C0D22CC00F0E0DC /* CircularProgressView.swift */,
 				1F156BB12C0D22CC00F0E0DC /* DailyTargetButtonsView.swift */,
 			);
@@ -1129,6 +1135,7 @@
 				1F156C212C0D22CC00F0E0DC /* OTPEmail.swift in Sources */,
 				1F156C1D2C0D22CC00F0E0DC /* CreateNewPassword.swift in Sources */,
 				DD5A0E8E2C07BD5E006464D7 /* PersonalExerciseView.swift in Sources */,
+				1F156C312C0D2F7300F0E0DC /* NavigationLinks.swift in Sources */,
 				1F156BF12C0D22CC00F0E0DC /* CalendarView.swift in Sources */,
 				1F156C112C0D22CC00F0E0DC /* FMPNumberSendCodeButton.swift in Sources */,
 				1F156AFB2C0C7A4200F0E0DC /* CustomLogoButton.swift in Sources */,
@@ -1225,6 +1232,7 @@
 				DDE9882F2C05D12600550643 /* CurrentWeightView.swift in Sources */,
 				1F156C2C2C0D22CD00F0E0DC /* RememberMeSection.swift in Sources */,
 				1F156C232C0D22CC00F0E0DC /* Onboarding5.swift in Sources */,
+				1F156C332C0D309000F0E0DC /* AIPlanButtons.swift in Sources */,
 				DD2D244B2BFF9EFF00C97F36 /* Network.swift in Sources */,
 				1F156BF22C0D22CC00F0E0DC /* HomePageView.swift in Sources */,
 				1F156BF92C0D22CC00F0E0DC /* StarImageView.swift in Sources */,

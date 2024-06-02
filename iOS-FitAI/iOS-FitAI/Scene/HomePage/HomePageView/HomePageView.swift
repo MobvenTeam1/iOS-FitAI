@@ -12,75 +12,40 @@ struct HomePageView: View {
     @State private var goToNutritionAIPage: Bool = false
     @EnvironmentObject var appState: AppState
     var body: some View {
-            NavigationStack {
-                ScrollView(.vertical, showsIndicators: false) {
-                    VStack {
-                        HelloView(userName: "Simge")
-                            .frame(height: 187)
-                        ZStack(alignment: .center) {
-                            Color.white
-                                .ignoresSafeArea()
-                                .clipShape(UnevenRoundedRectangle(cornerRadii: .init(topLeading: 30, topTrailing: 30)))
-                                .offset(y: -40)
-                            VStack(spacing: 0) {
-                                CalendarView()
-                                DailyTargetView()
-                                VStack(spacing: -12) {
-                                    if !appState.isTrainingPlanned {
-                                        PersonalizedPlanButton(imageName: "dumbell",text: "Kişiselleştirilmiş Antrenman\nPlanını Oluştur ") {
-                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                                appState.isTrainingPlanned = true
-                                            }
-                                            goToTrainingAIPage = true
-                                        }
-                                    } else {
-                                        TrainingPlannedSubView(isTrainingTapped: $appState.isTrainingTapped,
-                                                               typeOfExercise: "Pilates",
-                                                               duration: "15 dakika",
-                                                               calories: "150 kcal")
-                                    }
-                                    if !appState.isNutritionPlanned {
-                                        PersonalizedPlanButton(imageName: "beslenme", text: "Kişiselleştirilmiş Beslenme\nPlanını Oluştur ") {
-                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                                appState.isNutritionPlanned = true
-                                            }
-                                            goToNutritionAIPage = true
-                                        }
-                                    } else {
-                                        NutritionPlanningSubView(isNutritionTapped: $appState.isNutritionTapped,
-                                                                 typeOfMeal: "Kahvaltı",
-                                                                 duration: "15 dakika",
-                                                                 calories: "515 kcal")
-                                    }
-                                    
-                                }
-                                TrainingCategoriesView(imageName: ["pilates", "fitness", "HIIT", "HIIT"])
-                                MealCategories(imageName: ["kahvaltı", "kahvaltı", "kahvaltı", "kahvaltı"],
-                                               actions: [
-                                                { print("Kahvaltı tıklandı")},
-                                                { print("Kahvaltı tıklandı2")},
-                                                { print("Kahvaltı tıklandı3")},
-                                                { print("Kahvaltı tıklandı4")}
-                                               ])
-                            }
-                        }
-                        NavigationLink(destination: AISupportedTrainingPlan(), isActive: $goToTrainingAIPage) {
-                            EmptyView()
-                        }
-                        NavigationLink(destination: AISupportedNutritionPlan(), isActive: $goToNutritionAIPage) {
-                            EmptyView()
+        NavigationStack {
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack {
+                    HelloView(userName: "Simge")
+                        .frame(height: 187)
+                    ZStack(alignment: .center) {
+                        Color.white
+                            .ignoresSafeArea()
+                            .clipShape(UnevenRoundedRectangle(cornerRadii: .init(topLeading: 30, topTrailing: 30)))
+                            .offset(y: -40)
+                        VStack {
+                            CalendarView()
+                            DailyTargetView()
+                            AIPlanButtons(goToTrainingAIPage: $goToTrainingAIPage, goToNutritionAIPage: $goToNutritionAIPage)
+                            TrainingCategoriesView(imageName: ["pilates", "fitness", "HIIT", "yoga"])
+                            MealCategories(imageName: ["kahvaltı", "AraÖğünBackground"],
+                                           actions: [
+                                            { print("Kahvaltı tıklandı")},
+                                            { print("Ara Öğün tıklandı2")}
+                                           ])
                         }
                     }
-                    .padding(.bottom, 123)
+                    NavigationLinks(goToTrainingAIPage: $goToTrainingAIPage,
+                                    goToNutritionAIPage: $goToNutritionAIPage)
                 }
-                .toolbar(.hidden)
-                .ignoresSafeArea()
+                .padding(.bottom, 123)
             }
-            
+            .toolbar(.hidden)
+            .ignoresSafeArea()
+        }
     }
 }
-//
+
 #Preview {
-    HomePageView()
+    TabBarView()
         .environmentObject(AppState())
 }
