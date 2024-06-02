@@ -47,8 +47,4 @@ struct NutritionPlanningSubView: View {
     }
 }
 
-#Preview {
-    HomePageView()
-}
-
 

@@ -25,7 +25,3 @@ struct AISupportedNutritionPlan: View {
         .toolbar(.hidden)
     }
 }
-
-#Preview {
-    HomePageView()
-}

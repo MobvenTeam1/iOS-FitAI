@@ -3,7 +3,7 @@ import SwiftUI
 struct LogOutButton: View {
     var body: some View {
         Button {
-            // TODO: //
+            
         }label: {
             ZStack {
                 Color.white

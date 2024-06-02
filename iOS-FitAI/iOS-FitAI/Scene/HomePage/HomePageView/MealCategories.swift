@@ -35,7 +35,3 @@ struct MealCategories: View {
         .padding(.leading, 24)
     }
 }
-
-#Preview {
-    HomePageView()
-}

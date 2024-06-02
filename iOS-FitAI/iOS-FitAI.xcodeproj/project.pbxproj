@@ -24,70 +24,71 @@
 		1F156AFC2C0C7A4200F0E0DC /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156AEB2C0C7A4200F0E0DC /* CustomBackButton.swift */; };
 		1F156AFD2C0C7A4200F0E0DC /* CountdownTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156AED2C0C7A4200F0E0DC /* CountdownTimerView.swift */; };
 		1F156AFE2C0C7A4200F0E0DC /* GreenButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156AEE2C0C7A4200F0E0DC /* GreenButtonView.swift */; };
-		1F156B042C0C7A5200F0E0DC /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B002C0C7A5200F0E0DC /* CustomTabBarView.swift */; };
-		1F156B052C0C7A5200F0E0DC /* TabBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B012C0C7A5200F0E0DC /* TabBarButtonView.swift */; };
-		1F156B062C0C7A5200F0E0DC /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B022C0C7A5200F0E0DC /* TabBarView.swift */; };
-		1F156B072C0C7A5200F0E0DC /* TabBarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B032C0C7A5200F0E0DC /* TabBarShape.swift */; };
-		1F156B4D2C0C7A6A00F0E0DC /* GSMNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B0A2C0C7A6A00F0E0DC /* GSMNumber.swift */; };
-		1F156B4E2C0C7A6A00F0E0DC /* FMPNumberTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B0D2C0C7A6A00F0E0DC /* FMPNumberTextView.swift */; };
-		1F156B4F2C0C7A6A00F0E0DC /* ForgotMyPasswordWithNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B0E2C0C7A6A00F0E0DC /* ForgotMyPasswordWithNumber.swift */; };
-		1F156B502C0C7A6A00F0E0DC /* FMPNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B0F2C0C7A6A00F0E0DC /* FMPNumberTextField.swift */; };
-		1F156B512C0C7A6A00F0E0DC /* FMPNumberSendCodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B102C0C7A6A00F0E0DC /* FMPNumberSendCodeButton.swift */; };
-		1F156B522C0C7A6A00F0E0DC /* FMPLoginWithEmailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B112C0C7A6A00F0E0DC /* FMPLoginWithEmailButton.swift */; };
-		1F156B532C0C7A6A00F0E0DC /* FMPEmailSendCodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B132C0C7A6A00F0E0DC /* FMPEmailSendCodeButton.swift */; };
-		1F156B542C0C7A6A00F0E0DC /* FMPEmailTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B142C0C7A6A00F0E0DC /* FMPEmailTextView.swift */; };
-		1F156B552C0C7A6A00F0E0DC /* ForgotMyPasswordWithEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B152C0C7A6A00F0E0DC /* ForgotMyPasswordWithEmail.swift */; };
-		1F156B562C0C7A6A00F0E0DC /* FMPLoginWithNumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B162C0C7A6A00F0E0DC /* FMPLoginWithNumberButton.swift */; };
-		1F156B572C0C7A6A00F0E0DC /* FMPEmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B172C0C7A6A00F0E0DC /* FMPEmailTextField.swift */; };
-		1F156B582C0C7A6A00F0E0DC /* PasswordChangedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B192C0C7A6A00F0E0DC /* PasswordChangedView.swift */; };
-		1F156B592C0C7A6A00F0E0DC /* PasswordChangedLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B1A2C0C7A6A00F0E0DC /* PasswordChangedLoginButton.swift */; };
-		1F156B5A2C0C7A6A00F0E0DC /* PasswordChangedImageAndText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B1B2C0C7A6A00F0E0DC /* PasswordChangedImageAndText.swift */; };
-		1F156B5B2C0C7A6A00F0E0DC /* PasswordCriteriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B1D2C0C7A6A00F0E0DC /* PasswordCriteriaView.swift */; };
-		1F156B5C2C0C7A6A00F0E0DC /* CreateNewPasswordTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B1E2C0C7A6A00F0E0DC /* CreateNewPasswordTextView.swift */; };
-		1F156B5D2C0C7A6A00F0E0DC /* CreateNewPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B1F2C0C7A6A00F0E0DC /* CreateNewPassword.swift */; };
-		1F156B5E2C0C7A6A00F0E0DC /* GenericPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B202C0C7A6A00F0E0DC /* GenericPasswordView.swift */; };
-		1F156B5F2C0C7A6A00F0E0DC /* OTPNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B222C0C7A6A00F0E0DC /* OTPNumber.swift */; };
-		1F156B602C0C7A6A00F0E0DC /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B232C0C7A6A00F0E0DC /* OTPTextField.swift */; };
-		1F156B612C0C7A6A00F0E0DC /* OTPEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B242C0C7A6A00F0E0DC /* OTPEmail.swift */; };
-		1F156B622C0C7A6A00F0E0DC /* CheckIfOTPCorrect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B252C0C7A6A00F0E0DC /* CheckIfOTPCorrect.swift */; };
-		1F156B632C0C7A6A00F0E0DC /* Onboarding5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B262C0C7A6A00F0E0DC /* Onboarding5.swift */; };
-		1F156B642C0C7A6A00F0E0DC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B282C0C7A6A00F0E0DC /* LoginView.swift */; };
-		1F156B652C0C7A6A00F0E0DC /* SocialLoginButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B292C0C7A6A00F0E0DC /* SocialLoginButtons.swift */; };
-		1F156B662C0C7A6A00F0E0DC /* DividerWithText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B2A2C0C7A6A00F0E0DC /* DividerWithText.swift */; };
-		1F156B672C0C7A6A00F0E0DC /* WelcomeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B2B2C0C7A6A00F0E0DC /* WelcomeTextView.swift */; };
-		1F156B682C0C7A6A00F0E0DC /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B2C2C0C7A6A00F0E0DC /* LoginButton.swift */; };
-		1F156B692C0C7A6A00F0E0DC /* SignUpLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B2D2C0C7A6A00F0E0DC /* SignUpLink.swift */; };
-		1F156B6A2C0C7A6A00F0E0DC /* ForgotPasswordLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B2E2C0C7A6A00F0E0DC /* ForgotPasswordLink.swift */; };
-		1F156B6B2C0C7A6A00F0E0DC /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B2F2C0C7A6A00F0E0DC /* EmailTextField.swift */; };
-		1F156B6C2C0C7A6A00F0E0DC /* RememberMeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B302C0C7A6A00F0E0DC /* RememberMeSection.swift */; };
-		1F156B6D2C0C7A6A00F0E0DC /* TrainingCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B322C0C7A6A00F0E0DC /* TrainingCategoriesView.swift */; };
-		1F156B6E2C0C7A6A00F0E0DC /* TrainingPlannedSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B342C0C7A6A00F0E0DC /* TrainingPlannedSubView.swift */; };
-		1F156B6F2C0C7A6A00F0E0DC /* TrainingPlannedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B352C0C7A6A00F0E0DC /* TrainingPlannedView.swift */; };
-		1F156B702C0C7A6A00F0E0DC /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B372C0C7A6A00F0E0DC /* InitialView.swift */; };
-		1F156B712C0C7A6A00F0E0DC /* AISupportedTrainingPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B382C0C7A6A00F0E0DC /* AISupportedTrainingPlan.swift */; };
-		1F156B722C0C7A6A00F0E0DC /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B392C0C7A6A00F0E0DC /* StartButton.swift */; };
-		1F156B732C0C7A6A00F0E0DC /* AnimatedStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B3A2C0C7A6A00F0E0DC /* AnimatedStarView.swift */; };
-		1F156B742C0C7A6A00F0E0DC /* StarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B3B2C0C7A6A00F0E0DC /* StarImageView.swift */; };
-		1F156B752C0C7A6A00F0E0DC /* MealCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B3C2C0C7A6A00F0E0DC /* MealCategories.swift */; };
-		1F156B762C0C7A6A00F0E0DC /* NutritionPlanningSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B3E2C0C7A6A00F0E0DC /* NutritionPlanningSubView.swift */; };
-		1F156B772C0C7A6A00F0E0DC /* NutritionPlanningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B3F2C0C7A6A00F0E0DC /* NutritionPlanningView.swift */; };
-		1F156B782C0C7A6A00F0E0DC /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B402C0C7A6A00F0E0DC /* HelloView.swift */; };
-		1F156B792C0C7A6A00F0E0DC /* CaloriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B422C0C7A6A00F0E0DC /* CaloriesView.swift */; };
-		1F156B7A2C0C7A6A00F0E0DC /* DailyTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B432C0C7A6A00F0E0DC /* DailyTargetView.swift */; };
-		1F156B7B2C0C7A6A00F0E0DC /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B442C0C7A6A00F0E0DC /* CircularProgressView.swift */; };
-		1F156B7C2C0C7A6A00F0E0DC /* DailyTargetButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B452C0C7A6A00F0E0DC /* DailyTargetButtonsView.swift */; };
-		1F156B7D2C0C7A6A00F0E0DC /* PersonalizedPlanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B472C0C7A6A00F0E0DC /* PersonalizedPlanButton.swift */; };
-		1F156B7E2C0C7A6A00F0E0DC /* RightCurvedRectangleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B482C0C7A6A00F0E0DC /* RightCurvedRectangleShape.swift */; };
-		1F156B7F2C0C7A6A00F0E0DC /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B492C0C7A6A00F0E0DC /* CalendarView.swift */; };
-		1F156B802C0C7A6A00F0E0DC /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B4A2C0C7A6A00F0E0DC /* HomePageView.swift */; };
-		1F156B812C0C7A6A00F0E0DC /* AISupportedNutritionPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B4C2C0C7A6A00F0E0DC /* AISupportedNutritionPlan.swift */; };
-		1F156B882C0C7A7300F0E0DC /* ProfileSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B832C0C7A7300F0E0DC /* ProfileSettingsView.swift */; };
-		1F156B892C0C7A7300F0E0DC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B842C0C7A7300F0E0DC /* ProfileView.swift */; };
-		1F156B8A2C0C7A7300F0E0DC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B852C0C7A7300F0E0DC /* CardView.swift */; };
-		1F156B8B2C0C7A7300F0E0DC /* LogOutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B862C0C7A7300F0E0DC /* LogOutButton.swift */; };
-		1F156B8C2C0C7A7300F0E0DC /* ScreenModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B872C0C7A7300F0E0DC /* ScreenModeView.swift */; };
 		1F156B8F2C0C7A8300F0E0DC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B8E2C0C7A8300F0E0DC /* AppState.swift */; };
-		1F156B912C0C7CDE00F0E0DC /* HandleScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B902C0C7CDE00F0E0DC /* HandleScreens.swift */; };
+		1F156BEE2C0D22CC00F0E0DC /* TrainingCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B9C2C0D22CC00F0E0DC /* TrainingCategoriesView.swift */; };
+		1F156BEF2C0D22CC00F0E0DC /* MealCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B9D2C0D22CC00F0E0DC /* MealCategories.swift */; };
+		1F156BF02C0D22CC00F0E0DC /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B9E2C0D22CC00F0E0DC /* HelloView.swift */; };
+		1F156BF12C0D22CC00F0E0DC /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156B9F2C0D22CC00F0E0DC /* CalendarView.swift */; };
+		1F156BF22C0D22CC00F0E0DC /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BA02C0D22CC00F0E0DC /* HomePageView.swift */; };
+		1F156BF32C0D22CC00F0E0DC /* TrainingPlannedSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BA22C0D22CC00F0E0DC /* TrainingPlannedSubView.swift */; };
+		1F156BF42C0D22CC00F0E0DC /* TrainingPlannedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BA32C0D22CC00F0E0DC /* TrainingPlannedView.swift */; };
+		1F156BF52C0D22CC00F0E0DC /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BA52C0D22CC00F0E0DC /* InitialView.swift */; };
+		1F156BF62C0D22CC00F0E0DC /* AISupportedTrainingPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BA62C0D22CC00F0E0DC /* AISupportedTrainingPlan.swift */; };
+		1F156BF72C0D22CC00F0E0DC /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BA72C0D22CC00F0E0DC /* StartButton.swift */; };
+		1F156BF82C0D22CC00F0E0DC /* AnimatedStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BA82C0D22CC00F0E0DC /* AnimatedStarView.swift */; };
+		1F156BF92C0D22CC00F0E0DC /* StarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BA92C0D22CC00F0E0DC /* StarImageView.swift */; };
+		1F156BFA2C0D22CC00F0E0DC /* NutritionPlanningSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BAB2C0D22CC00F0E0DC /* NutritionPlanningSubView.swift */; };
+		1F156BFB2C0D22CC00F0E0DC /* NutritionPlanningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BAC2C0D22CC00F0E0DC /* NutritionPlanningView.swift */; };
+		1F156BFC2C0D22CC00F0E0DC /* CaloriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BAE2C0D22CC00F0E0DC /* CaloriesView.swift */; };
+		1F156BFD2C0D22CC00F0E0DC /* DailyTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BAF2C0D22CC00F0E0DC /* DailyTargetView.swift */; };
+		1F156BFE2C0D22CC00F0E0DC /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BB02C0D22CC00F0E0DC /* CircularProgressView.swift */; };
+		1F156BFF2C0D22CC00F0E0DC /* DailyTargetButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BB12C0D22CC00F0E0DC /* DailyTargetButtonsView.swift */; };
+		1F156C002C0D22CC00F0E0DC /* PersonalizedPlanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BB32C0D22CC00F0E0DC /* PersonalizedPlanButton.swift */; };
+		1F156C012C0D22CC00F0E0DC /* RightCurvedRectangleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BB42C0D22CC00F0E0DC /* RightCurvedRectangleShape.swift */; };
+		1F156C022C0D22CC00F0E0DC /* AISupportedNutritionPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BB62C0D22CC00F0E0DC /* AISupportedNutritionPlan.swift */; };
+		1F156C032C0D22CC00F0E0DC /* AddPlanFromPlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BB92C0D22CC00F0E0DC /* AddPlanFromPlusButton.swift */; };
+		1F156C042C0D22CC00F0E0DC /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BBB2C0D22CC00F0E0DC /* CustomTabBarView.swift */; };
+		1F156C052C0D22CC00F0E0DC /* TabBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BBC2C0D22CC00F0E0DC /* TabBarButtonView.swift */; };
+		1F156C062C0D22CC00F0E0DC /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BBD2C0D22CC00F0E0DC /* TabBarView.swift */; };
+		1F156C072C0D22CC00F0E0DC /* TabBarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BBE2C0D22CC00F0E0DC /* TabBarShape.swift */; };
+		1F156C082C0D22CC00F0E0DC /* ProfileSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BC02C0D22CC00F0E0DC /* ProfileSettingsView.swift */; };
+		1F156C092C0D22CC00F0E0DC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BC12C0D22CC00F0E0DC /* ProfileView.swift */; };
+		1F156C0A2C0D22CC00F0E0DC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BC22C0D22CC00F0E0DC /* CardView.swift */; };
+		1F156C0B2C0D22CC00F0E0DC /* LogOutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BC32C0D22CC00F0E0DC /* LogOutButton.swift */; };
+		1F156C0C2C0D22CC00F0E0DC /* ScreenModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BC42C0D22CC00F0E0DC /* ScreenModeView.swift */; };
+		1F156C0D2C0D22CC00F0E0DC /* GSMNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BC72C0D22CC00F0E0DC /* GSMNumber.swift */; };
+		1F156C0E2C0D22CC00F0E0DC /* FMPNumberTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BCA2C0D22CC00F0E0DC /* FMPNumberTextView.swift */; };
+		1F156C0F2C0D22CC00F0E0DC /* ForgotMyPasswordWithNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BCB2C0D22CC00F0E0DC /* ForgotMyPasswordWithNumber.swift */; };
+		1F156C102C0D22CC00F0E0DC /* FMPNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BCC2C0D22CC00F0E0DC /* FMPNumberTextField.swift */; };
+		1F156C112C0D22CC00F0E0DC /* FMPNumberSendCodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BCD2C0D22CC00F0E0DC /* FMPNumberSendCodeButton.swift */; };
+		1F156C122C0D22CC00F0E0DC /* FMPLoginWithEmailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BCE2C0D22CC00F0E0DC /* FMPLoginWithEmailButton.swift */; };
+		1F156C132C0D22CC00F0E0DC /* FMPEmailSendCodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BD02C0D22CC00F0E0DC /* FMPEmailSendCodeButton.swift */; };
+		1F156C142C0D22CC00F0E0DC /* FMPEmailTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BD12C0D22CC00F0E0DC /* FMPEmailTextView.swift */; };
+		1F156C152C0D22CC00F0E0DC /* ForgotMyPasswordWithEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BD22C0D22CC00F0E0DC /* ForgotMyPasswordWithEmail.swift */; };
+		1F156C162C0D22CC00F0E0DC /* FMPLoginWithNumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BD32C0D22CC00F0E0DC /* FMPLoginWithNumberButton.swift */; };
+		1F156C172C0D22CC00F0E0DC /* FMPEmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BD42C0D22CC00F0E0DC /* FMPEmailTextField.swift */; };
+		1F156C182C0D22CC00F0E0DC /* PasswordChangedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BD62C0D22CC00F0E0DC /* PasswordChangedView.swift */; };
+		1F156C192C0D22CC00F0E0DC /* PasswordChangedLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BD72C0D22CC00F0E0DC /* PasswordChangedLoginButton.swift */; };
+		1F156C1A2C0D22CC00F0E0DC /* PasswordChangedImageAndText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BD82C0D22CC00F0E0DC /* PasswordChangedImageAndText.swift */; };
+		1F156C1B2C0D22CC00F0E0DC /* PasswordCriteriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BDA2C0D22CC00F0E0DC /* PasswordCriteriaView.swift */; };
+		1F156C1C2C0D22CC00F0E0DC /* CreateNewPasswordTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BDB2C0D22CC00F0E0DC /* CreateNewPasswordTextView.swift */; };
+		1F156C1D2C0D22CC00F0E0DC /* CreateNewPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BDC2C0D22CC00F0E0DC /* CreateNewPassword.swift */; };
+		1F156C1E2C0D22CC00F0E0DC /* GenericPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BDD2C0D22CC00F0E0DC /* GenericPasswordView.swift */; };
+		1F156C1F2C0D22CC00F0E0DC /* OTPNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BDF2C0D22CC00F0E0DC /* OTPNumber.swift */; };
+		1F156C202C0D22CC00F0E0DC /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BE02C0D22CC00F0E0DC /* OTPTextField.swift */; };
+		1F156C212C0D22CC00F0E0DC /* OTPEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BE12C0D22CC00F0E0DC /* OTPEmail.swift */; };
+		1F156C222C0D22CC00F0E0DC /* CheckIfOTPCorrect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BE22C0D22CC00F0E0DC /* CheckIfOTPCorrect.swift */; };
+		1F156C232C0D22CC00F0E0DC /* Onboarding5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BE32C0D22CC00F0E0DC /* Onboarding5.swift */; };
+		1F156C242C0D22CC00F0E0DC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BE52C0D22CC00F0E0DC /* LoginView.swift */; };
+		1F156C252C0D22CD00F0E0DC /* SocialLoginButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BE62C0D22CC00F0E0DC /* SocialLoginButtons.swift */; };
+		1F156C262C0D22CD00F0E0DC /* DividerWithText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BE72C0D22CC00F0E0DC /* DividerWithText.swift */; };
+		1F156C272C0D22CD00F0E0DC /* WelcomeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BE82C0D22CC00F0E0DC /* WelcomeTextView.swift */; };
+		1F156C282C0D22CD00F0E0DC /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BE92C0D22CC00F0E0DC /* LoginButton.swift */; };
+		1F156C292C0D22CD00F0E0DC /* SignUpLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BEA2C0D22CC00F0E0DC /* SignUpLink.swift */; };
+		1F156C2A2C0D22CD00F0E0DC /* ForgotPasswordLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BEB2C0D22CC00F0E0DC /* ForgotPasswordLink.swift */; };
+		1F156C2B2C0D22CD00F0E0DC /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BEC2C0D22CC00F0E0DC /* EmailTextField.swift */; };
+		1F156C2C2C0D22CD00F0E0DC /* RememberMeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BED2C0D22CC00F0E0DC /* RememberMeSection.swift */; };
+		1F156C2F2C0D240500F0E0DC /* HandleScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156C2E2C0D240500F0E0DC /* HandleScreens.swift */; };
 		1FC20BBD2C0B42F5005C7326 /* Font + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BBB2C0B42F4005C7326 /* Font + Ext.swift */; };
 		1FC20BBE2C0B42F5005C7326 /* Color + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BBC2C0B42F4005C7326 /* Color + Ext.swift */; };
 		1FC20BE42C0B4A5B005C7326 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BE32C0B4A5B005C7326 /* OnboardingViewModel.swift */; };
@@ -168,70 +169,71 @@
 		1F156AEB2C0C7A4200F0E0DC /* CustomBackButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
 		1F156AED2C0C7A4200F0E0DC /* CountdownTimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownTimerView.swift; sourceTree = "<group>"; };
 		1F156AEE2C0C7A4200F0E0DC /* GreenButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenButtonView.swift; sourceTree = "<group>"; };
-		1F156B002C0C7A5200F0E0DC /* CustomTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
-		1F156B012C0C7A5200F0E0DC /* TabBarButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarButtonView.swift; sourceTree = "<group>"; };
-		1F156B022C0C7A5200F0E0DC /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
-		1F156B032C0C7A5200F0E0DC /* TabBarShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarShape.swift; sourceTree = "<group>"; };
-		1F156B0A2C0C7A6A00F0E0DC /* GSMNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSMNumber.swift; sourceTree = "<group>"; };
-		1F156B0D2C0C7A6A00F0E0DC /* FMPNumberTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMPNumberTextView.swift; sourceTree = "<group>"; };
-		1F156B0E2C0C7A6A00F0E0DC /* ForgotMyPasswordWithNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotMyPasswordWithNumber.swift; sourceTree = "<group>"; };
-		1F156B0F2C0C7A6A00F0E0DC /* FMPNumberTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMPNumberTextField.swift; sourceTree = "<group>"; };
-		1F156B102C0C7A6A00F0E0DC /* FMPNumberSendCodeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMPNumberSendCodeButton.swift; sourceTree = "<group>"; };
-		1F156B112C0C7A6A00F0E0DC /* FMPLoginWithEmailButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMPLoginWithEmailButton.swift; sourceTree = "<group>"; };
-		1F156B132C0C7A6A00F0E0DC /* FMPEmailSendCodeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMPEmailSendCodeButton.swift; sourceTree = "<group>"; };
-		1F156B142C0C7A6A00F0E0DC /* FMPEmailTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMPEmailTextView.swift; sourceTree = "<group>"; };
-		1F156B152C0C7A6A00F0E0DC /* ForgotMyPasswordWithEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotMyPasswordWithEmail.swift; sourceTree = "<group>"; };
-		1F156B162C0C7A6A00F0E0DC /* FMPLoginWithNumberButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMPLoginWithNumberButton.swift; sourceTree = "<group>"; };
-		1F156B172C0C7A6A00F0E0DC /* FMPEmailTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMPEmailTextField.swift; sourceTree = "<group>"; };
-		1F156B192C0C7A6A00F0E0DC /* PasswordChangedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordChangedView.swift; sourceTree = "<group>"; };
-		1F156B1A2C0C7A6A00F0E0DC /* PasswordChangedLoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordChangedLoginButton.swift; sourceTree = "<group>"; };
-		1F156B1B2C0C7A6A00F0E0DC /* PasswordChangedImageAndText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordChangedImageAndText.swift; sourceTree = "<group>"; };
-		1F156B1D2C0C7A6A00F0E0DC /* PasswordCriteriaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordCriteriaView.swift; sourceTree = "<group>"; };
-		1F156B1E2C0C7A6A00F0E0DC /* CreateNewPasswordTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewPasswordTextView.swift; sourceTree = "<group>"; };
-		1F156B1F2C0C7A6A00F0E0DC /* CreateNewPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewPassword.swift; sourceTree = "<group>"; };
-		1F156B202C0C7A6A00F0E0DC /* GenericPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericPasswordView.swift; sourceTree = "<group>"; };
-		1F156B222C0C7A6A00F0E0DC /* OTPNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPNumber.swift; sourceTree = "<group>"; };
-		1F156B232C0C7A6A00F0E0DC /* OTPTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
-		1F156B242C0C7A6A00F0E0DC /* OTPEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPEmail.swift; sourceTree = "<group>"; };
-		1F156B252C0C7A6A00F0E0DC /* CheckIfOTPCorrect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckIfOTPCorrect.swift; sourceTree = "<group>"; };
-		1F156B262C0C7A6A00F0E0DC /* Onboarding5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding5.swift; sourceTree = "<group>"; };
-		1F156B282C0C7A6A00F0E0DC /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		1F156B292C0C7A6A00F0E0DC /* SocialLoginButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialLoginButtons.swift; sourceTree = "<group>"; };
-		1F156B2A2C0C7A6A00F0E0DC /* DividerWithText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividerWithText.swift; sourceTree = "<group>"; };
-		1F156B2B2C0C7A6A00F0E0DC /* WelcomeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeTextView.swift; sourceTree = "<group>"; };
-		1F156B2C2C0C7A6A00F0E0DC /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
-		1F156B2D2C0C7A6A00F0E0DC /* SignUpLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpLink.swift; sourceTree = "<group>"; };
-		1F156B2E2C0C7A6A00F0E0DC /* ForgotPasswordLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordLink.swift; sourceTree = "<group>"; };
-		1F156B2F2C0C7A6A00F0E0DC /* EmailTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
-		1F156B302C0C7A6A00F0E0DC /* RememberMeSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RememberMeSection.swift; sourceTree = "<group>"; };
-		1F156B322C0C7A6A00F0E0DC /* TrainingCategoriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingCategoriesView.swift; sourceTree = "<group>"; };
-		1F156B342C0C7A6A00F0E0DC /* TrainingPlannedSubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingPlannedSubView.swift; sourceTree = "<group>"; };
-		1F156B352C0C7A6A00F0E0DC /* TrainingPlannedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingPlannedView.swift; sourceTree = "<group>"; };
-		1F156B372C0C7A6A00F0E0DC /* InitialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
-		1F156B382C0C7A6A00F0E0DC /* AISupportedTrainingPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AISupportedTrainingPlan.swift; sourceTree = "<group>"; };
-		1F156B392C0C7A6A00F0E0DC /* StartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
-		1F156B3A2C0C7A6A00F0E0DC /* AnimatedStarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedStarView.swift; sourceTree = "<group>"; };
-		1F156B3B2C0C7A6A00F0E0DC /* StarImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarImageView.swift; sourceTree = "<group>"; };
-		1F156B3C2C0C7A6A00F0E0DC /* MealCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealCategories.swift; sourceTree = "<group>"; };
-		1F156B3E2C0C7A6A00F0E0DC /* NutritionPlanningSubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionPlanningSubView.swift; sourceTree = "<group>"; };
-		1F156B3F2C0C7A6A00F0E0DC /* NutritionPlanningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionPlanningView.swift; sourceTree = "<group>"; };
-		1F156B402C0C7A6A00F0E0DC /* HelloView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
-		1F156B422C0C7A6A00F0E0DC /* CaloriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaloriesView.swift; sourceTree = "<group>"; };
-		1F156B432C0C7A6A00F0E0DC /* DailyTargetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyTargetView.swift; sourceTree = "<group>"; };
-		1F156B442C0C7A6A00F0E0DC /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
-		1F156B452C0C7A6A00F0E0DC /* DailyTargetButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyTargetButtonsView.swift; sourceTree = "<group>"; };
-		1F156B472C0C7A6A00F0E0DC /* PersonalizedPlanButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalizedPlanButton.swift; sourceTree = "<group>"; };
-		1F156B482C0C7A6A00F0E0DC /* RightCurvedRectangleShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightCurvedRectangleShape.swift; sourceTree = "<group>"; };
-		1F156B492C0C7A6A00F0E0DC /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		1F156B4A2C0C7A6A00F0E0DC /* HomePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
-		1F156B4C2C0C7A6A00F0E0DC /* AISupportedNutritionPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AISupportedNutritionPlan.swift; sourceTree = "<group>"; };
-		1F156B832C0C7A7300F0E0DC /* ProfileSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSettingsView.swift; sourceTree = "<group>"; };
-		1F156B842C0C7A7300F0E0DC /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		1F156B852C0C7A7300F0E0DC /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		1F156B862C0C7A7300F0E0DC /* LogOutButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogOutButton.swift; sourceTree = "<group>"; };
-		1F156B872C0C7A7300F0E0DC /* ScreenModeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenModeView.swift; sourceTree = "<group>"; };
 		1F156B8E2C0C7A8300F0E0DC /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		1F156B902C0C7CDE00F0E0DC /* HandleScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleScreens.swift; sourceTree = "<group>"; };
+		1F156B9C2C0D22CC00F0E0DC /* TrainingCategoriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingCategoriesView.swift; sourceTree = "<group>"; };
+		1F156B9D2C0D22CC00F0E0DC /* MealCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealCategories.swift; sourceTree = "<group>"; };
+		1F156B9E2C0D22CC00F0E0DC /* HelloView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
+		1F156B9F2C0D22CC00F0E0DC /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		1F156BA02C0D22CC00F0E0DC /* HomePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		1F156BA22C0D22CC00F0E0DC /* TrainingPlannedSubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingPlannedSubView.swift; sourceTree = "<group>"; };
+		1F156BA32C0D22CC00F0E0DC /* TrainingPlannedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingPlannedView.swift; sourceTree = "<group>"; };
+		1F156BA52C0D22CC00F0E0DC /* InitialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		1F156BA62C0D22CC00F0E0DC /* AISupportedTrainingPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AISupportedTrainingPlan.swift; sourceTree = "<group>"; };
+		1F156BA72C0D22CC00F0E0DC /* StartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
+		1F156BA82C0D22CC00F0E0DC /* AnimatedStarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedStarView.swift; sourceTree = "<group>"; };
+		1F156BA92C0D22CC00F0E0DC /* StarImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarImageView.swift; sourceTree = "<group>"; };
+		1F156BAB2C0D22CC00F0E0DC /* NutritionPlanningSubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionPlanningSubView.swift; sourceTree = "<group>"; };
+		1F156BAC2C0D22CC00F0E0DC /* NutritionPlanningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionPlanningView.swift; sourceTree = "<group>"; };
+		1F156BAE2C0D22CC00F0E0DC /* CaloriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaloriesView.swift; sourceTree = "<group>"; };
+		1F156BAF2C0D22CC00F0E0DC /* DailyTargetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyTargetView.swift; sourceTree = "<group>"; };
+		1F156BB02C0D22CC00F0E0DC /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		1F156BB12C0D22CC00F0E0DC /* DailyTargetButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyTargetButtonsView.swift; sourceTree = "<group>"; };
+		1F156BB32C0D22CC00F0E0DC /* PersonalizedPlanButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalizedPlanButton.swift; sourceTree = "<group>"; };
+		1F156BB42C0D22CC00F0E0DC /* RightCurvedRectangleShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightCurvedRectangleShape.swift; sourceTree = "<group>"; };
+		1F156BB62C0D22CC00F0E0DC /* AISupportedNutritionPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AISupportedNutritionPlan.swift; sourceTree = "<group>"; };
+		1F156BB92C0D22CC00F0E0DC /* AddPlanFromPlusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlanFromPlusButton.swift; sourceTree = "<group>"; };
+		1F156BBB2C0D22CC00F0E0DC /* CustomTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		1F156BBC2C0D22CC00F0E0DC /* TabBarButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarButtonView.swift; sourceTree = "<group>"; };
+		1F156BBD2C0D22CC00F0E0DC /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		1F156BBE2C0D22CC00F0E0DC /* TabBarShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarShape.swift; sourceTree = "<group>"; };
+		1F156BC02C0D22CC00F0E0DC /* ProfileSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSettingsView.swift; sourceTree = "<group>"; };
+		1F156BC12C0D22CC00F0E0DC /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		1F156BC22C0D22CC00F0E0DC /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		1F156BC32C0D22CC00F0E0DC /* LogOutButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogOutButton.swift; sourceTree = "<group>"; };
+		1F156BC42C0D22CC00F0E0DC /* ScreenModeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenModeView.swift; sourceTree = "<group>"; };
+		1F156BC72C0D22CC00F0E0DC /* GSMNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSMNumber.swift; sourceTree = "<group>"; };
+		1F156BCA2C0D22CC00F0E0DC /* FMPNumberTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMPNumberTextView.swift; sourceTree = "<group>"; };
+		1F156BCB2C0D22CC00F0E0DC /* ForgotMyPasswordWithNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotMyPasswordWithNumber.swift; sourceTree = "<group>"; };
+		1F156BCC2C0D22CC00F0E0DC /* FMPNumberTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMPNumberTextField.swift; sourceTree = "<group>"; };
+		1F156BCD2C0D22CC00F0E0DC /* FMPNumberSendCodeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMPNumberSendCodeButton.swift; sourceTree = "<group>"; };
+		1F156BCE2C0D22CC00F0E0DC /* FMPLoginWithEmailButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMPLoginWithEmailButton.swift; sourceTree = "<group>"; };
+		1F156BD02C0D22CC00F0E0DC /* FMPEmailSendCodeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMPEmailSendCodeButton.swift; sourceTree = "<group>"; };
+		1F156BD12C0D22CC00F0E0DC /* FMPEmailTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMPEmailTextView.swift; sourceTree = "<group>"; };
+		1F156BD22C0D22CC00F0E0DC /* ForgotMyPasswordWithEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotMyPasswordWithEmail.swift; sourceTree = "<group>"; };
+		1F156BD32C0D22CC00F0E0DC /* FMPLoginWithNumberButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMPLoginWithNumberButton.swift; sourceTree = "<group>"; };
+		1F156BD42C0D22CC00F0E0DC /* FMPEmailTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMPEmailTextField.swift; sourceTree = "<group>"; };
+		1F156BD62C0D22CC00F0E0DC /* PasswordChangedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordChangedView.swift; sourceTree = "<group>"; };
+		1F156BD72C0D22CC00F0E0DC /* PasswordChangedLoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordChangedLoginButton.swift; sourceTree = "<group>"; };
+		1F156BD82C0D22CC00F0E0DC /* PasswordChangedImageAndText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordChangedImageAndText.swift; sourceTree = "<group>"; };
+		1F156BDA2C0D22CC00F0E0DC /* PasswordCriteriaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordCriteriaView.swift; sourceTree = "<group>"; };
+		1F156BDB2C0D22CC00F0E0DC /* CreateNewPasswordTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewPasswordTextView.swift; sourceTree = "<group>"; };
+		1F156BDC2C0D22CC00F0E0DC /* CreateNewPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewPassword.swift; sourceTree = "<group>"; };
+		1F156BDD2C0D22CC00F0E0DC /* GenericPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericPasswordView.swift; sourceTree = "<group>"; };
+		1F156BDF2C0D22CC00F0E0DC /* OTPNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPNumber.swift; sourceTree = "<group>"; };
+		1F156BE02C0D22CC00F0E0DC /* OTPTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		1F156BE12C0D22CC00F0E0DC /* OTPEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPEmail.swift; sourceTree = "<group>"; };
+		1F156BE22C0D22CC00F0E0DC /* CheckIfOTPCorrect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckIfOTPCorrect.swift; sourceTree = "<group>"; };
+		1F156BE32C0D22CC00F0E0DC /* Onboarding5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding5.swift; sourceTree = "<group>"; };
+		1F156BE52C0D22CC00F0E0DC /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1F156BE62C0D22CC00F0E0DC /* SocialLoginButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialLoginButtons.swift; sourceTree = "<group>"; };
+		1F156BE72C0D22CC00F0E0DC /* DividerWithText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividerWithText.swift; sourceTree = "<group>"; };
+		1F156BE82C0D22CC00F0E0DC /* WelcomeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeTextView.swift; sourceTree = "<group>"; };
+		1F156BE92C0D22CC00F0E0DC /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		1F156BEA2C0D22CC00F0E0DC /* SignUpLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpLink.swift; sourceTree = "<group>"; };
+		1F156BEB2C0D22CC00F0E0DC /* ForgotPasswordLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordLink.swift; sourceTree = "<group>"; };
+		1F156BEC2C0D22CC00F0E0DC /* EmailTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
+		1F156BED2C0D22CC00F0E0DC /* RememberMeSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RememberMeSection.swift; sourceTree = "<group>"; };
+		1F156C2E2C0D240500F0E0DC /* HandleScreens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandleScreens.swift; sourceTree = "<group>"; };
 		1FC20BBB2C0B42F4005C7326 /* Font + Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font + Ext.swift"; sourceTree = "<group>"; };
 		1FC20BBC2C0B42F4005C7326 /* Color + Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color + Ext.swift"; sourceTree = "<group>"; };
 		1FC20BE02C0B464F005C7326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -366,204 +368,6 @@
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
-		1F156AFF2C0C7A5200F0E0DC /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				1F156B022C0C7A5200F0E0DC /* TabBarView.swift */,
-				1F156B002C0C7A5200F0E0DC /* CustomTabBarView.swift */,
-				1F156B012C0C7A5200F0E0DC /* TabBarButtonView.swift */,
-				1F156B032C0C7A5200F0E0DC /* TabBarShape.swift */,
-			);
-			path = TabBar;
-			sourceTree = "<group>";
-		};
-		1F156B082C0C7A6A00F0E0DC /* LoginScreen */ = {
-			isa = PBXGroup;
-			children = (
-				1F156B092C0C7A6A00F0E0DC /* GSMNumber */,
-				1F156B0B2C0C7A6A00F0E0DC /* Password */,
-				1F156B212C0C7A6A00F0E0DC /* OTP */,
-				1F156B262C0C7A6A00F0E0DC /* Onboarding5.swift */,
-				1F156B272C0C7A6A00F0E0DC /* LoginView */,
-			);
-			path = LoginScreen;
-			sourceTree = "<group>";
-		};
-		1F156B092C0C7A6A00F0E0DC /* GSMNumber */ = {
-			isa = PBXGroup;
-			children = (
-				1F156B0A2C0C7A6A00F0E0DC /* GSMNumber.swift */,
-			);
-			path = GSMNumber;
-			sourceTree = "<group>";
-		};
-		1F156B0B2C0C7A6A00F0E0DC /* Password */ = {
-			isa = PBXGroup;
-			children = (
-				1F156B0C2C0C7A6A00F0E0DC /* ForgotMyPasswordWithNumber */,
-				1F156B122C0C7A6A00F0E0DC /* ForgotMyPasswordWithEmail */,
-				1F156B182C0C7A6A00F0E0DC /* PasswordChanged */,
-				1F156B1C2C0C7A6A00F0E0DC /* CreateNewPassword */,
-				1F156B202C0C7A6A00F0E0DC /* GenericPasswordView.swift */,
-			);
-			path = Password;
-			sourceTree = "<group>";
-		};
-		1F156B0C2C0C7A6A00F0E0DC /* ForgotMyPasswordWithNumber */ = {
-			isa = PBXGroup;
-			children = (
-				1F156B0E2C0C7A6A00F0E0DC /* ForgotMyPasswordWithNumber.swift */,
-				1F156B0D2C0C7A6A00F0E0DC /* FMPNumberTextView.swift */,
-				1F156B0F2C0C7A6A00F0E0DC /* FMPNumberTextField.swift */,
-				1F156B102C0C7A6A00F0E0DC /* FMPNumberSendCodeButton.swift */,
-				1F156B112C0C7A6A00F0E0DC /* FMPLoginWithEmailButton.swift */,
-			);
-			path = ForgotMyPasswordWithNumber;
-			sourceTree = "<group>";
-		};
-		1F156B122C0C7A6A00F0E0DC /* ForgotMyPasswordWithEmail */ = {
-			isa = PBXGroup;
-			children = (
-				1F156B152C0C7A6A00F0E0DC /* ForgotMyPasswordWithEmail.swift */,
-				1F156B132C0C7A6A00F0E0DC /* FMPEmailSendCodeButton.swift */,
-				1F156B142C0C7A6A00F0E0DC /* FMPEmailTextView.swift */,
-				1F156B162C0C7A6A00F0E0DC /* FMPLoginWithNumberButton.swift */,
-				1F156B172C0C7A6A00F0E0DC /* FMPEmailTextField.swift */,
-			);
-			path = ForgotMyPasswordWithEmail;
-			sourceTree = "<group>";
-		};
-		1F156B182C0C7A6A00F0E0DC /* PasswordChanged */ = {
-			isa = PBXGroup;
-			children = (
-				1F156B192C0C7A6A00F0E0DC /* PasswordChangedView.swift */,
-				1F156B1A2C0C7A6A00F0E0DC /* PasswordChangedLoginButton.swift */,
-				1F156B1B2C0C7A6A00F0E0DC /* PasswordChangedImageAndText.swift */,
-			);
-			path = PasswordChanged;
-			sourceTree = "<group>";
-		};
-		1F156B1C2C0C7A6A00F0E0DC /* CreateNewPassword */ = {
-			isa = PBXGroup;
-			children = (
-				1F156B1F2C0C7A6A00F0E0DC /* CreateNewPassword.swift */,
-				1F156B1D2C0C7A6A00F0E0DC /* PasswordCriteriaView.swift */,
-				1F156B1E2C0C7A6A00F0E0DC /* CreateNewPasswordTextView.swift */,
-			);
-			path = CreateNewPassword;
-			sourceTree = "<group>";
-		};
-		1F156B212C0C7A6A00F0E0DC /* OTP */ = {
-			isa = PBXGroup;
-			children = (
-				1F156B222C0C7A6A00F0E0DC /* OTPNumber.swift */,
-				1F156B232C0C7A6A00F0E0DC /* OTPTextField.swift */,
-				1F156B242C0C7A6A00F0E0DC /* OTPEmail.swift */,
-				1F156B252C0C7A6A00F0E0DC /* CheckIfOTPCorrect.swift */,
-			);
-			path = OTP;
-			sourceTree = "<group>";
-		};
-		1F156B272C0C7A6A00F0E0DC /* LoginView */ = {
-			isa = PBXGroup;
-			children = (
-				1F156B282C0C7A6A00F0E0DC /* LoginView.swift */,
-				1F156B292C0C7A6A00F0E0DC /* SocialLoginButtons.swift */,
-				1F156B2A2C0C7A6A00F0E0DC /* DividerWithText.swift */,
-				1F156B2B2C0C7A6A00F0E0DC /* WelcomeTextView.swift */,
-				1F156B2C2C0C7A6A00F0E0DC /* LoginButton.swift */,
-				1F156B2D2C0C7A6A00F0E0DC /* SignUpLink.swift */,
-				1F156B2E2C0C7A6A00F0E0DC /* ForgotPasswordLink.swift */,
-				1F156B2F2C0C7A6A00F0E0DC /* EmailTextField.swift */,
-				1F156B302C0C7A6A00F0E0DC /* RememberMeSection.swift */,
-			);
-			path = LoginView;
-			sourceTree = "<group>";
-		};
-		1F156B312C0C7A6A00F0E0DC /* HomePage */ = {
-			isa = PBXGroup;
-			children = (
-				1F156B932C0C9F0300F0E0DC /* HomePageView */,
-				1F156B332C0C7A6A00F0E0DC /* TrainingPlanning */,
-				1F156B362C0C7A6A00F0E0DC /* AISupportedTrainingPlan */,
-				1F156B3D2C0C7A6A00F0E0DC /* NutritionPlanning */,
-				1F156B412C0C7A6A00F0E0DC /* DailyTarget */,
-				1F156B462C0C7A6A00F0E0DC /* PersonalizedPlanButton */,
-				1F156B4B2C0C7A6A00F0E0DC /* AISupportedNutritionPlan */,
-			);
-			path = HomePage;
-			sourceTree = "<group>";
-		};
-		1F156B332C0C7A6A00F0E0DC /* TrainingPlanning */ = {
-			isa = PBXGroup;
-			children = (
-				1F156B342C0C7A6A00F0E0DC /* TrainingPlannedSubView.swift */,
-				1F156B352C0C7A6A00F0E0DC /* TrainingPlannedView.swift */,
-			);
-			path = TrainingPlanning;
-			sourceTree = "<group>";
-		};
-		1F156B362C0C7A6A00F0E0DC /* AISupportedTrainingPlan */ = {
-			isa = PBXGroup;
-			children = (
-				1F156B382C0C7A6A00F0E0DC /* AISupportedTrainingPlan.swift */,
-				1F156B372C0C7A6A00F0E0DC /* InitialView.swift */,
-				1F156B392C0C7A6A00F0E0DC /* StartButton.swift */,
-				1F156B3A2C0C7A6A00F0E0DC /* AnimatedStarView.swift */,
-				1F156B3B2C0C7A6A00F0E0DC /* StarImageView.swift */,
-			);
-			path = AISupportedTrainingPlan;
-			sourceTree = "<group>";
-		};
-		1F156B3D2C0C7A6A00F0E0DC /* NutritionPlanning */ = {
-			isa = PBXGroup;
-			children = (
-				1F156B3E2C0C7A6A00F0E0DC /* NutritionPlanningSubView.swift */,
-				1F156B3F2C0C7A6A00F0E0DC /* NutritionPlanningView.swift */,
-			);
-			path = NutritionPlanning;
-			sourceTree = "<group>";
-		};
-		1F156B412C0C7A6A00F0E0DC /* DailyTarget */ = {
-			isa = PBXGroup;
-			children = (
-				1F156B422C0C7A6A00F0E0DC /* CaloriesView.swift */,
-				1F156B432C0C7A6A00F0E0DC /* DailyTargetView.swift */,
-				1F156B442C0C7A6A00F0E0DC /* CircularProgressView.swift */,
-				1F156B452C0C7A6A00F0E0DC /* DailyTargetButtonsView.swift */,
-			);
-			path = DailyTarget;
-			sourceTree = "<group>";
-		};
-		1F156B462C0C7A6A00F0E0DC /* PersonalizedPlanButton */ = {
-			isa = PBXGroup;
-			children = (
-				1F156B472C0C7A6A00F0E0DC /* PersonalizedPlanButton.swift */,
-				1F156B482C0C7A6A00F0E0DC /* RightCurvedRectangleShape.swift */,
-			);
-			path = PersonalizedPlanButton;
-			sourceTree = "<group>";
-		};
-		1F156B4B2C0C7A6A00F0E0DC /* AISupportedNutritionPlan */ = {
-			isa = PBXGroup;
-			children = (
-				1F156B4C2C0C7A6A00F0E0DC /* AISupportedNutritionPlan.swift */,
-			);
-			path = AISupportedNutritionPlan;
-			sourceTree = "<group>";
-		};
-		1F156B822C0C7A7300F0E0DC /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				1F156B842C0C7A7300F0E0DC /* ProfileView.swift */,
-				1F156B832C0C7A7300F0E0DC /* ProfileSettingsView.swift */,
-				1F156B852C0C7A7300F0E0DC /* CardView.swift */,
-				1F156B862C0C7A7300F0E0DC /* LogOutButton.swift */,
-				1F156B872C0C7A7300F0E0DC /* ScreenModeView.swift */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
 		1F156B8D2C0C7A8300F0E0DC /* AppState */ = {
 			isa = PBXGroup;
 			children = (
@@ -572,24 +376,239 @@
 			path = AppState;
 			sourceTree = "<group>";
 		};
-		1F156B922C0C7E4F00F0E0DC /* HandleScreens */ = {
+		1F156B9A2C0D22CC00F0E0DC /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				1F156B902C0C7CDE00F0E0DC /* HandleScreens.swift */,
+				1F156B9B2C0D22CC00F0E0DC /* HomePageView */,
+				1F156BA12C0D22CC00F0E0DC /* TrainingPlanning */,
+				1F156BA42C0D22CC00F0E0DC /* AISupportedTrainingPlan */,
+				1F156BAA2C0D22CC00F0E0DC /* NutritionPlanning */,
+				1F156BAD2C0D22CC00F0E0DC /* DailyTarget */,
+				1F156BB22C0D22CC00F0E0DC /* PersonalizedPlanButton */,
+				1F156BB52C0D22CC00F0E0DC /* AISupportedNutritionPlan */,
 			);
-			path = HandleScreens;
+			path = HomePage;
 			sourceTree = "<group>";
 		};
-		1F156B932C0C9F0300F0E0DC /* HomePageView */ = {
+		1F156B9B2C0D22CC00F0E0DC /* HomePageView */ = {
 			isa = PBXGroup;
 			children = (
-				1F156B4A2C0C7A6A00F0E0DC /* HomePageView.swift */,
-				1F156B322C0C7A6A00F0E0DC /* TrainingCategoriesView.swift */,
-				1F156B3C2C0C7A6A00F0E0DC /* MealCategories.swift */,
-				1F156B402C0C7A6A00F0E0DC /* HelloView.swift */,
-				1F156B492C0C7A6A00F0E0DC /* CalendarView.swift */,
+				1F156BA02C0D22CC00F0E0DC /* HomePageView.swift */,
+				1F156B9C2C0D22CC00F0E0DC /* TrainingCategoriesView.swift */,
+				1F156B9D2C0D22CC00F0E0DC /* MealCategories.swift */,
+				1F156B9E2C0D22CC00F0E0DC /* HelloView.swift */,
+				1F156B9F2C0D22CC00F0E0DC /* CalendarView.swift */,
 			);
 			path = HomePageView;
+			sourceTree = "<group>";
+		};
+		1F156BA12C0D22CC00F0E0DC /* TrainingPlanning */ = {
+			isa = PBXGroup;
+			children = (
+				1F156BA22C0D22CC00F0E0DC /* TrainingPlannedSubView.swift */,
+				1F156BA32C0D22CC00F0E0DC /* TrainingPlannedView.swift */,
+			);
+			path = TrainingPlanning;
+			sourceTree = "<group>";
+		};
+		1F156BA42C0D22CC00F0E0DC /* AISupportedTrainingPlan */ = {
+			isa = PBXGroup;
+			children = (
+				1F156BA52C0D22CC00F0E0DC /* InitialView.swift */,
+				1F156BA62C0D22CC00F0E0DC /* AISupportedTrainingPlan.swift */,
+				1F156BA72C0D22CC00F0E0DC /* StartButton.swift */,
+				1F156BA82C0D22CC00F0E0DC /* AnimatedStarView.swift */,
+				1F156BA92C0D22CC00F0E0DC /* StarImageView.swift */,
+			);
+			path = AISupportedTrainingPlan;
+			sourceTree = "<group>";
+		};
+		1F156BAA2C0D22CC00F0E0DC /* NutritionPlanning */ = {
+			isa = PBXGroup;
+			children = (
+				1F156BAB2C0D22CC00F0E0DC /* NutritionPlanningSubView.swift */,
+				1F156BAC2C0D22CC00F0E0DC /* NutritionPlanningView.swift */,
+			);
+			path = NutritionPlanning;
+			sourceTree = "<group>";
+		};
+		1F156BAD2C0D22CC00F0E0DC /* DailyTarget */ = {
+			isa = PBXGroup;
+			children = (
+				1F156BAE2C0D22CC00F0E0DC /* CaloriesView.swift */,
+				1F156BAF2C0D22CC00F0E0DC /* DailyTargetView.swift */,
+				1F156BB02C0D22CC00F0E0DC /* CircularProgressView.swift */,
+				1F156BB12C0D22CC00F0E0DC /* DailyTargetButtonsView.swift */,
+			);
+			path = DailyTarget;
+			sourceTree = "<group>";
+		};
+		1F156BB22C0D22CC00F0E0DC /* PersonalizedPlanButton */ = {
+			isa = PBXGroup;
+			children = (
+				1F156BB32C0D22CC00F0E0DC /* PersonalizedPlanButton.swift */,
+				1F156BB42C0D22CC00F0E0DC /* RightCurvedRectangleShape.swift */,
+			);
+			path = PersonalizedPlanButton;
+			sourceTree = "<group>";
+		};
+		1F156BB52C0D22CC00F0E0DC /* AISupportedNutritionPlan */ = {
+			isa = PBXGroup;
+			children = (
+				1F156BB62C0D22CC00F0E0DC /* AISupportedNutritionPlan.swift */,
+			);
+			path = AISupportedNutritionPlan;
+			sourceTree = "<group>";
+		};
+		1F156BB72C0D22CC00F0E0DC /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				1F156BB82C0D22CC00F0E0DC /* AddPlanFromPlusButton */,
+				1F156BBA2C0D22CC00F0E0DC /* TabBarView */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		1F156BB82C0D22CC00F0E0DC /* AddPlanFromPlusButton */ = {
+			isa = PBXGroup;
+			children = (
+				1F156BB92C0D22CC00F0E0DC /* AddPlanFromPlusButton.swift */,
+			);
+			path = AddPlanFromPlusButton;
+			sourceTree = "<group>";
+		};
+		1F156BBA2C0D22CC00F0E0DC /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				1F156BBB2C0D22CC00F0E0DC /* CustomTabBarView.swift */,
+				1F156BBC2C0D22CC00F0E0DC /* TabBarButtonView.swift */,
+				1F156BBD2C0D22CC00F0E0DC /* TabBarView.swift */,
+				1F156BBE2C0D22CC00F0E0DC /* TabBarShape.swift */,
+			);
+			path = TabBarView;
+			sourceTree = "<group>";
+		};
+		1F156BBF2C0D22CC00F0E0DC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1F156BC02C0D22CC00F0E0DC /* ProfileSettingsView.swift */,
+				1F156BC12C0D22CC00F0E0DC /* ProfileView.swift */,
+				1F156BC22C0D22CC00F0E0DC /* CardView.swift */,
+				1F156BC32C0D22CC00F0E0DC /* LogOutButton.swift */,
+				1F156BC42C0D22CC00F0E0DC /* ScreenModeView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1F156BC52C0D22CC00F0E0DC /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1F156BC62C0D22CC00F0E0DC /* GSMNumber */,
+				1F156BC82C0D22CC00F0E0DC /* Password */,
+				1F156BDE2C0D22CC00F0E0DC /* OTP */,
+				1F156BE32C0D22CC00F0E0DC /* Onboarding5.swift */,
+				1F156BE42C0D22CC00F0E0DC /* LoginView */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		1F156BC62C0D22CC00F0E0DC /* GSMNumber */ = {
+			isa = PBXGroup;
+			children = (
+				1F156BC72C0D22CC00F0E0DC /* GSMNumber.swift */,
+			);
+			path = GSMNumber;
+			sourceTree = "<group>";
+		};
+		1F156BC82C0D22CC00F0E0DC /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				1F156BC92C0D22CC00F0E0DC /* ForgotMyPasswordWithNumber */,
+				1F156BCF2C0D22CC00F0E0DC /* ForgotMyPasswordWithEmail */,
+				1F156BD52C0D22CC00F0E0DC /* PasswordChanged */,
+				1F156BD92C0D22CC00F0E0DC /* CreateNewPassword */,
+				1F156BDD2C0D22CC00F0E0DC /* GenericPasswordView.swift */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		1F156BC92C0D22CC00F0E0DC /* ForgotMyPasswordWithNumber */ = {
+			isa = PBXGroup;
+			children = (
+				1F156BCA2C0D22CC00F0E0DC /* FMPNumberTextView.swift */,
+				1F156BCB2C0D22CC00F0E0DC /* ForgotMyPasswordWithNumber.swift */,
+				1F156BCC2C0D22CC00F0E0DC /* FMPNumberTextField.swift */,
+				1F156BCD2C0D22CC00F0E0DC /* FMPNumberSendCodeButton.swift */,
+				1F156BCE2C0D22CC00F0E0DC /* FMPLoginWithEmailButton.swift */,
+			);
+			path = ForgotMyPasswordWithNumber;
+			sourceTree = "<group>";
+		};
+		1F156BCF2C0D22CC00F0E0DC /* ForgotMyPasswordWithEmail */ = {
+			isa = PBXGroup;
+			children = (
+				1F156BD02C0D22CC00F0E0DC /* FMPEmailSendCodeButton.swift */,
+				1F156BD12C0D22CC00F0E0DC /* FMPEmailTextView.swift */,
+				1F156BD22C0D22CC00F0E0DC /* ForgotMyPasswordWithEmail.swift */,
+				1F156BD32C0D22CC00F0E0DC /* FMPLoginWithNumberButton.swift */,
+				1F156BD42C0D22CC00F0E0DC /* FMPEmailTextField.swift */,
+			);
+			path = ForgotMyPasswordWithEmail;
+			sourceTree = "<group>";
+		};
+		1F156BD52C0D22CC00F0E0DC /* PasswordChanged */ = {
+			isa = PBXGroup;
+			children = (
+				1F156BD62C0D22CC00F0E0DC /* PasswordChangedView.swift */,
+				1F156BD72C0D22CC00F0E0DC /* PasswordChangedLoginButton.swift */,
+				1F156BD82C0D22CC00F0E0DC /* PasswordChangedImageAndText.swift */,
+			);
+			path = PasswordChanged;
+			sourceTree = "<group>";
+		};
+		1F156BD92C0D22CC00F0E0DC /* CreateNewPassword */ = {
+			isa = PBXGroup;
+			children = (
+				1F156BDA2C0D22CC00F0E0DC /* PasswordCriteriaView.swift */,
+				1F156BDB2C0D22CC00F0E0DC /* CreateNewPasswordTextView.swift */,
+				1F156BDC2C0D22CC00F0E0DC /* CreateNewPassword.swift */,
+			);
+			path = CreateNewPassword;
+			sourceTree = "<group>";
+		};
+		1F156BDE2C0D22CC00F0E0DC /* OTP */ = {
+			isa = PBXGroup;
+			children = (
+				1F156BDF2C0D22CC00F0E0DC /* OTPNumber.swift */,
+				1F156BE02C0D22CC00F0E0DC /* OTPTextField.swift */,
+				1F156BE12C0D22CC00F0E0DC /* OTPEmail.swift */,
+				1F156BE22C0D22CC00F0E0DC /* CheckIfOTPCorrect.swift */,
+			);
+			path = OTP;
+			sourceTree = "<group>";
+		};
+		1F156BE42C0D22CC00F0E0DC /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				1F156BE52C0D22CC00F0E0DC /* LoginView.swift */,
+				1F156BE62C0D22CC00F0E0DC /* SocialLoginButtons.swift */,
+				1F156BE72C0D22CC00F0E0DC /* DividerWithText.swift */,
+				1F156BE82C0D22CC00F0E0DC /* WelcomeTextView.swift */,
+				1F156BE92C0D22CC00F0E0DC /* LoginButton.swift */,
+				1F156BEA2C0D22CC00F0E0DC /* SignUpLink.swift */,
+				1F156BEB2C0D22CC00F0E0DC /* ForgotPasswordLink.swift */,
+				1F156BEC2C0D22CC00F0E0DC /* EmailTextField.swift */,
+				1F156BED2C0D22CC00F0E0DC /* RememberMeSection.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		1F156C2D2C0D240500F0E0DC /* HandleScreens */ = {
+			isa = PBXGroup;
+			children = (
+				1F156C2E2C0D240500F0E0DC /* HandleScreens.swift */,
+			);
+			path = HandleScreens;
 			sourceTree = "<group>";
 		};
 		1FC20BE22C0B4A4B005C7326 /* ViewModel */ = {
@@ -714,13 +733,13 @@
 		DD2D243F2BFF9CE200C97F36 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				1F156B922C0C7E4F00F0E0DC /* HandleScreens */,
+				1F156C2D2C0D240500F0E0DC /* HandleScreens */,
+				1F156BC52C0D22CC00F0E0DC /* LoginScreen */,
+				1F156B9A2C0D22CC00F0E0DC /* HomePage */,
+				1F156BBF2C0D22CC00F0E0DC /* Profile */,
+				1F156BB72C0D22CC00F0E0DC /* TabBar */,
 				DD2D244C2BFF9F0700C97F36 /* Splash */,
 				DD0AE7222C08B50600EE447A /* Onboarding */,
-				1F156B082C0C7A6A00F0E0DC /* LoginScreen */,
-				1F156B312C0C7A6A00F0E0DC /* HomePage */,
-				1F156B822C0C7A7300F0E0DC /* Profile */,
-				1F156AFF2C0C7A5200F0E0DC /* TabBar */,
 				DDEA0A042BFFAE0200EEC4E6 /* Subviews */,
 				DD2D24502BFF9F2700C97F36 /* PersonalInfos */,
 			);
@@ -1103,113 +1122,114 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F156B5E2C0C7A6A00F0E0DC /* GenericPasswordView.swift in Sources */,
+				1F156C1F2C0D22CC00F0E0DC /* OTPNumber.swift in Sources */,
+				1F156C052C0D22CC00F0E0DC /* TabBarButtonView.swift in Sources */,
+				1F156C0E2C0D22CC00F0E0DC /* FMPNumberTextView.swift in Sources */,
+				1F156BEF2C0D22CC00F0E0DC /* MealCategories.swift in Sources */,
+				1F156C212C0D22CC00F0E0DC /* OTPEmail.swift in Sources */,
+				1F156C1D2C0D22CC00F0E0DC /* CreateNewPassword.swift in Sources */,
 				DD5A0E8E2C07BD5E006464D7 /* PersonalExerciseView.swift in Sources */,
-				1F156B532C0C7A6A00F0E0DC /* FMPEmailSendCodeButton.swift in Sources */,
-				1F156B642C0C7A6A00F0E0DC /* LoginView.swift in Sources */,
-				1F156B512C0C7A6A00F0E0DC /* FMPNumberSendCodeButton.swift in Sources */,
-				1F156B5D2C0C7A6A00F0E0DC /* CreateNewPassword.swift in Sources */,
-				1F156B672C0C7A6A00F0E0DC /* WelcomeTextView.swift in Sources */,
+				1F156BF12C0D22CC00F0E0DC /* CalendarView.swift in Sources */,
+				1F156C112C0D22CC00F0E0DC /* FMPNumberSendCodeButton.swift in Sources */,
 				1F156AFB2C0C7A4200F0E0DC /* CustomLogoButton.swift in Sources */,
 				1F156AFD2C0C7A4200F0E0DC /* CountdownTimerView.swift in Sources */,
+				1F156C0D2C0D22CC00F0E0DC /* GSMNumber.swift in Sources */,
+				1F156BFD2C0D22CC00F0E0DC /* DailyTargetView.swift in Sources */,
+				1F156C2F2C0D240500F0E0DC /* HandleScreens.swift in Sources */,
 				1F156AF02C0C7A4200F0E0DC /* ParticleView.swift in Sources */,
+				1F156BF72C0D22CC00F0E0DC /* StartButton.swift in Sources */,
+				1F156BF32C0D22CC00F0E0DC /* TrainingPlannedSubView.swift in Sources */,
 				DD2D24462BFF9E1C00C97F36 /* NavigationTransitionStyle.swift in Sources */,
-				1F156B8C2C0C7A7300F0E0DC /* ScreenModeView.swift in Sources */,
-				1F156B692C0C7A6A00F0E0DC /* SignUpLink.swift in Sources */,
+				1F156C0C2C0D22CC00F0E0DC /* ScreenModeView.swift in Sources */,
 				DD2D24582BFFA11300C97F36 /* PersonalInfosView.swift in Sources */,
+				1F156C022C0D22CC00F0E0DC /* AISupportedNutritionPlan.swift in Sources */,
 				DD2D244F2BFF9F1900C97F36 /* SplashView.swift in Sources */,
-				1F156B7D2C0C7A6A00F0E0DC /* PersonalizedPlanButton.swift in Sources */,
+				1F156C1E2C0D22CC00F0E0DC /* GenericPasswordView.swift in Sources */,
 				DDEA0A1B2C04B62900EEC4E6 /* HeightView.swift in Sources */,
+				1F156C292C0D22CD00F0E0DC /* SignUpLink.swift in Sources */,
+				1F156C032C0D22CC00F0E0DC /* AddPlanFromPlusButton.swift in Sources */,
 				DD2A75762C09E33300FFF114 /* Onboarding5View.swift in Sources */,
+				1F156C202C0D22CC00F0E0DC /* OTPTextField.swift in Sources */,
+				1F156C002C0D22CC00F0E0DC /* PersonalizedPlanButton.swift in Sources */,
 				DDEA0A102BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift in Sources */,
-				1F156B4D2C0C7A6A00F0E0DC /* GSMNumber.swift in Sources */,
+				1F156C082C0D22CC00F0E0DC /* ProfileSettingsView.swift in Sources */,
+				1F156C062C0D22CC00F0E0DC /* TabBarView.swift in Sources */,
+				1F156C262C0D22CD00F0E0DC /* DividerWithText.swift in Sources */,
+				1F156C242C0D22CC00F0E0DC /* LoginView.swift in Sources */,
 				DDEA0A142C00602E00EEC4E6 /* MFAIMultipleSelectionView.swift in Sources */,
-				1F156B712C0C7A6A00F0E0DC /* AISupportedTrainingPlan.swift in Sources */,
-				1F156B572C0C7A6A00F0E0DC /* FMPEmailTextField.swift in Sources */,
-				1F156B762C0C7A6A00F0E0DC /* NutritionPlanningSubView.swift in Sources */,
 				1F156AFE2C0C7A4200F0E0DC /* GreenButtonView.swift in Sources */,
+				1F156BEE2C0D22CC00F0E0DC /* TrainingCategoriesView.swift in Sources */,
 				DD2D24142BFF9C5200C97F36 /* AppDelegate.swift in Sources */,
-				1F156B732C0C7A6A00F0E0DC /* AnimatedStarView.swift in Sources */,
 				1F156B8F2C0C7A8300F0E0DC /* AppState.swift in Sources */,
-				1F156B7C2C0C7A6A00F0E0DC /* DailyTargetButtonsView.swift in Sources */,
 				DDEA0A162C04981B00EEC4E6 /* MFAIText.swift in Sources */,
-				1F156B782C0C7A6A00F0E0DC /* HelloView.swift in Sources */,
 				DDEA0A0C2BFFB5A900EEC4E6 /* MFAIButton.swift in Sources */,
-				1F156B652C0C7A6A00F0E0DC /* SocialLoginButtons.swift in Sources */,
-				1F156B702C0C7A6A00F0E0DC /* InitialView.swift in Sources */,
-				1F156B5C2C0C7A6A00F0E0DC /* CreateNewPasswordTextView.swift in Sources */,
-				1F156B632C0C7A6A00F0E0DC /* Onboarding5.swift in Sources */,
-				1F156B8A2C0C7A7300F0E0DC /* CardView.swift in Sources */,
+				1F156C1B2C0D22CC00F0E0DC /* PasswordCriteriaView.swift in Sources */,
 				1FC20BBD2C0B42F5005C7326 /* Font + Ext.swift in Sources */,
-				1F156B622C0C7A6A00F0E0DC /* CheckIfOTPCorrect.swift in Sources */,
-				1F156B812C0C7A6A00F0E0DC /* AISupportedNutritionPlan.swift in Sources */,
+				1F156BF52C0D22CC00F0E0DC /* InitialView.swift in Sources */,
+				1F156C192C0D22CC00F0E0DC /* PasswordChangedLoginButton.swift in Sources */,
 				DD5A0E8A2C07BD20006464D7 /* PersonalTargetView.swift in Sources */,
-				1F156B542C0C7A6A00F0E0DC /* FMPEmailTextView.swift in Sources */,
-				1F156B592C0C7A6A00F0E0DC /* PasswordChangedLoginButton.swift in Sources */,
+				1F156BF02C0D22CC00F0E0DC /* HelloView.swift in Sources */,
+				1F156C2B2C0D22CD00F0E0DC /* EmailTextField.swift in Sources */,
+				1F156C182C0D22CC00F0E0DC /* PasswordChangedView.swift in Sources */,
 				1F156AEF2C0C7A4200F0E0DC /* ParticleEmitterView.swift in Sources */,
+				1F156C102C0D22CC00F0E0DC /* FMPNumberTextField.swift in Sources */,
+				1F156BFE2C0D22CC00F0E0DC /* CircularProgressView.swift in Sources */,
 				DDEA0A032BFFADC300EEC4E6 /* GenderView.swift in Sources */,
 				1F156AFC2C0C7A4200F0E0DC /* CustomBackButton.swift in Sources */,
+				1F156C1A2C0D22CC00F0E0DC /* PasswordChangedImageAndText.swift in Sources */,
+				1F156BFB2C0D22CC00F0E0DC /* NutritionPlanningView.swift in Sources */,
 				DDEA0A122BFFBC0400EEC4E6 /* MFAITextField.swift in Sources */,
+				1F156C1C2C0D22CC00F0E0DC /* CreateNewPasswordTextView.swift in Sources */,
+				1F156C252C0D22CD00F0E0DC /* SocialLoginButtons.swift in Sources */,
 				DD5A0E962C07BE1D006464D7 /* OnboardingView.swift in Sources */,
-				1F156B792C0C7A6A00F0E0DC /* CaloriesView.swift in Sources */,
-				1F156B562C0C7A6A00F0E0DC /* FMPLoginWithNumberButton.swift in Sources */,
-				1F156B912C0C7CDE00F0E0DC /* HandleScreens.swift in Sources */,
-				1F156B6C2C0C7A6A00F0E0DC /* RememberMeSection.swift in Sources */,
 				DD2D24442BFF9DF200C97F36 /* NavigationRouter.swift in Sources */,
 				DD5A0E9C2C07C51C006464D7 /* BindingExtension.swift in Sources */,
-				1F156B052C0C7A5200F0E0DC /* TabBarButtonView.swift in Sources */,
-				1F156B742C0C7A6A00F0E0DC /* StarImageView.swift in Sources */,
 				DD2D245A2BFFA1E200C97F36 /* PersonalInfosModel.swift in Sources */,
 				DD5A0ED42C088E08006464D7 /* OnboardingModel.swift in Sources */,
+				1F156C172C0D22CC00F0E0DC /* FMPEmailTextField.swift in Sources */,
+				1F156C0F2C0D22CC00F0E0DC /* ForgotMyPasswordWithNumber.swift in Sources */,
+				1F156BFF2C0D22CC00F0E0DC /* DailyTargetButtonsView.swift in Sources */,
+				1F156C012C0D22CC00F0E0DC /* RightCurvedRectangleShape.swift in Sources */,
 				DDE988352C05D63A00550643 /* BirthdayView.swift in Sources */,
-				1F156B602C0C7A6A00F0E0DC /* OTPTextField.swift in Sources */,
 				DD2D24632BFFA5EE00C97F36 /* PersonalInfosViewModel.swift in Sources */,
-				1F156B502C0C7A6A00F0E0DC /* FMPNumberTextField.swift in Sources */,
-				1F156B072C0C7A5200F0E0DC /* TabBarShape.swift in Sources */,
+				1F156BF62C0D22CC00F0E0DC /* AISupportedTrainingPlan.swift in Sources */,
+				1F156BFC2C0D22CC00F0E0DC /* CaloriesView.swift in Sources */,
 				DD2D24492BFF9E4300C97F36 /* FlowRouter.swift in Sources */,
-				1F156B4F2C0C7A6A00F0E0DC /* ForgotMyPasswordWithNumber.swift in Sources */,
 				DDE988332C05D62900550643 /* TargetWeightView.swift in Sources */,
-				1F156B6D2C0C7A6A00F0E0DC /* TrainingCategoriesView.swift in Sources */,
+				1F156C042C0D22CC00F0E0DC /* CustomTabBarView.swift in Sources */,
+				1F156C222C0D22CC00F0E0DC /* CheckIfOTPCorrect.swift in Sources */,
 				DD5A0E8C2C07BD40006464D7 /* PersonalDietTypeView.swift in Sources */,
+				1F156C272C0D22CD00F0E0DC /* WelcomeTextView.swift in Sources */,
 				DD5A0E902C07BD79006464D7 /* DailyCalorieView.swift in Sources */,
-				1F156B722C0C7A6A00F0E0DC /* StartButton.swift in Sources */,
-				1F156B8B2C0C7A7300F0E0DC /* LogOutButton.swift in Sources */,
 				1F156AD82C0C7A1200F0E0DC /* View + Ext.swift in Sources */,
-				1F156B4E2C0C7A6A00F0E0DC /* FMPNumberTextView.swift in Sources */,
-				1F156B5A2C0C7A6A00F0E0DC /* PasswordChangedImageAndText.swift in Sources */,
-				1F156B682C0C7A6A00F0E0DC /* LoginButton.swift in Sources */,
 				DD2D245D2BFFA52E00C97F36 /* Utils.swift in Sources */,
-				1F156B5F2C0C7A6A00F0E0DC /* OTPNumber.swift in Sources */,
-				1F156B522C0C7A6A00F0E0DC /* FMPLoginWithEmailButton.swift in Sources */,
 				DD2D24562BFF9FC600C97F36 /* SceneDelegate.swift in Sources */,
-				1F156B7A2C0C7A6A00F0E0DC /* DailyTargetView.swift in Sources */,
-				1F156B752C0C7A6A00F0E0DC /* MealCategories.swift in Sources */,
+				1F156BF42C0D22CC00F0E0DC /* TrainingPlannedView.swift in Sources */,
+				1F156C142C0D22CC00F0E0DC /* FMPEmailTextView.swift in Sources */,
+				1F156C072C0D22CC00F0E0DC /* TabBarShape.swift in Sources */,
 				DDEA0A0E2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift in Sources */,
 				DDDFB3DE2C0997C200D2A117 /* WelcomeView.swift in Sources */,
-				1F156B582C0C7A6A00F0E0DC /* PasswordChangedView.swift in Sources */,
 				1FC20BE42C0B4A5B005C7326 /* OnboardingViewModel.swift in Sources */,
-				1F156B552C0C7A6A00F0E0DC /* ForgotMyPasswordWithEmail.swift in Sources */,
-				1F156B5B2C0C7A6A00F0E0DC /* PasswordCriteriaView.swift in Sources */,
-				1F156B772C0C7A6A00F0E0DC /* NutritionPlanningView.swift in Sources */,
-				1F156B7B2C0C7A6A00F0E0DC /* CircularProgressView.swift in Sources */,
-				1F156B612C0C7A6A00F0E0DC /* OTPEmail.swift in Sources */,
-				1F156B7E2C0C7A6A00F0E0DC /* RightCurvedRectangleShape.swift in Sources */,
+				1F156BFA2C0D22CC00F0E0DC /* NutritionPlanningSubView.swift in Sources */,
+				1F156C122C0D22CC00F0E0DC /* FMPLoginWithEmailButton.swift in Sources */,
+				1F156C2A2C0D22CD00F0E0DC /* ForgotPasswordLink.swift in Sources */,
 				DD5A0E992C07BFD6006464D7 /* TargetsView.swift in Sources */,
+				1F156C162C0D22CC00F0E0DC /* FMPLoginWithNumberButton.swift in Sources */,
+				1F156C132C0D22CC00F0E0DC /* FMPEmailSendCodeButton.swift in Sources */,
+				1F156C092C0D22CC00F0E0DC /* ProfileView.swift in Sources */,
 				1FC20BBE2C0B42F5005C7326 /* Color + Ext.swift in Sources */,
+				1F156C0A2C0D22CC00F0E0DC /* CardView.swift in Sources */,
+				1F156C152C0D22CC00F0E0DC /* ForgotMyPasswordWithEmail.swift in Sources */,
+				1F156BF82C0D22CC00F0E0DC /* AnimatedStarView.swift in Sources */,
+				1F156C282C0D22CD00F0E0DC /* LoginButton.swift in Sources */,
 				DDE9882F2C05D12600550643 /* CurrentWeightView.swift in Sources */,
-				1F156B6E2C0C7A6A00F0E0DC /* TrainingPlannedSubView.swift in Sources */,
-				1F156B062C0C7A5200F0E0DC /* TabBarView.swift in Sources */,
+				1F156C2C2C0D22CD00F0E0DC /* RememberMeSection.swift in Sources */,
+				1F156C232C0D22CC00F0E0DC /* Onboarding5.swift in Sources */,
 				DD2D244B2BFF9EFF00C97F36 /* Network.swift in Sources */,
-				1F156B662C0C7A6A00F0E0DC /* DividerWithText.swift in Sources */,
-				1F156B7F2C0C7A6A00F0E0DC /* CalendarView.swift in Sources */,
-				1F156B892C0C7A7300F0E0DC /* ProfileView.swift in Sources */,
-				1F156B882C0C7A7300F0E0DC /* ProfileSettingsView.swift in Sources */,
-				1F156B6F2C0C7A6A00F0E0DC /* TrainingPlannedView.swift in Sources */,
-				1F156B6B2C0C7A6A00F0E0DC /* EmailTextField.swift in Sources */,
-				1F156B6A2C0C7A6A00F0E0DC /* ForgotPasswordLink.swift in Sources */,
+				1F156BF22C0D22CC00F0E0DC /* HomePageView.swift in Sources */,
+				1F156BF92C0D22CC00F0E0DC /* StarImageView.swift in Sources */,
 				DD2D24422BFF9D9200C97F36 /* Coordinator.swift in Sources */,
-				1F156B802C0C7A6A00F0E0DC /* HomePageView.swift in Sources */,
-				1F156B042C0C7A5200F0E0DC /* CustomTabBarView.swift in Sources */,
+				1F156C0B2C0D22CC00F0E0DC /* LogOutButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

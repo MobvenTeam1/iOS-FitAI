@@ -27,7 +27,3 @@ struct DailyTargetButtonsView: View {
         )
     }
 }
-
-#Preview {
-    HomePageView()
-}

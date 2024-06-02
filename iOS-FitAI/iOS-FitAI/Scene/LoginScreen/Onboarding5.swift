@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-// Figma Screen Size: 375, 812
+// 375, 812
 struct Onboarding5: View {
     var body: some View {
         NavigationStack {
@@ -21,10 +21,12 @@ struct Onboarding5: View {
                         Image("fitaiimage")
                             .resizable()
                             .frame(width: 72, height: 81)
+//                            .offset(x: geometry.size.width / 2 , y: geometry.size.height / 2 - 81)
                             .offset(y: -40)
                         Image("FitAIText")
                             .resizable()
                             .frame(width: 107, height: 72)
+//                            .offset(x: geometry.size.width / 2.46, y: geometry.size.height / 1.83 - 63)
                             .offset(y: -40)
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
@@ -35,9 +37,11 @@ struct Onboarding5: View {
                                 Color.green177_235
                                 Text("Kayıt Ol")
                                     .foregroundStyle(.black)
+                                
                             }.clipShape(RoundedRectangle(cornerRadius: 8))
                                 .frame(width: geometry.size.width / 1.2, height: geometry.size.height / 14.5)
                                 .padding(.top, 60)
+                                
                         }
                         NavigationLink {
                             LoginView()
@@ -51,6 +55,7 @@ struct Onboarding5: View {
                                     .stroke(.black, lineWidth: 1)
                             )
                             .frame(width: geometry.size.width / 1.2, height: geometry.size.height / 14.5)
+                            
                         }
                         .padding(.top, 5)
                     }
