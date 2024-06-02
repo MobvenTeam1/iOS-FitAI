@@ -1,7 +1,15 @@
+//
+//  HelloView.swift
+//  
+//
+//  Created by Ahmet Yasin Atakan on 26.05.2024.
+//
+
 import SwiftUI
 
 struct HelloView: View {
     @State private var currentDate: String = ""
+    @EnvironmentObject var checkIfUserLogined: AppState
     let userName: String
     var body: some View {
             ZStack(alignment: .top) {
@@ -18,8 +26,8 @@ struct HelloView: View {
                     }
                     .foregroundStyle(.white)
                     Spacer()
-                    NavigationLink {
-                        ProfileView()
+                    Button {
+                        checkIfUserLogined.selectedIndex = 3
                     }label: {
                         Image("notification")
                     }
@@ -27,6 +35,7 @@ struct HelloView: View {
                 }
                 .padding(.top, 60)
                 .padding(.horizontal, 22)
+                
             }
     }
     func getCurrentDate() -> String {

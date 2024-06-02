@@ -1,3 +1,10 @@
+//
+//  CircularProgressView.swift
+//  GrupProjeDeneme
+//
+//  Created by Ahmet Yasin Atakan on 15.05.2024.
+//
+
 import SwiftUI
 
 struct CircularProgressView: View {

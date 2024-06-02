@@ -1,3 +1,10 @@
+//
+//  DailyTargetView.swift
+//  GrupProjeDeneme
+//
+//  Created by Ahmet Yasin Atakan on 29.05.2024.
+//
+
 import SwiftUI
 
 struct DailyTargetView: View {
@@ -11,10 +18,10 @@ struct DailyTargetView: View {
                 .padding(.leading, 33)
             HStack(spacing: 8) {
                 DailyTargetButtonsView(imageName: "egzersiz", text: "Egzersiz Ekle") {
-                    // TODO: //
+                    
                 }
                 DailyTargetButtonsView(imageName: "besin", text: "Besin Ekle") {
-                    // TODO: //
+                    
                 }
             }
             CircularProgressView(totalKgToLose: 10, kgToLoseForTarget: 5)

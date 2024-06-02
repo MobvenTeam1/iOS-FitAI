@@ -1,5 +1,6 @@
 //
 //  CountdownTimerView.swift
+//  GrupProjeDeneme
 //
 //  Created by Ahmet Yasin Atakan on 23.05.2024.
 //
@@ -32,18 +33,20 @@ struct CountdownTimerView: View {
                                 Text("Kod almadınız mı?")
                                     .font(.urbanistRegular(size: 15))
                                     .foregroundStyle(Color.black84_84)
+                                    .padding(.top, 24)
                                 Text("Tekrar gönder")
-                                    .foregroundStyle(Color.black84_84)
                                     .font(.urbanistBold(size: 15))
+                                    .foregroundStyle(Color.black84_84)
                             }
                         }
-                         if isOTPCorrect.isOTPCorrect == false {
+                        if isOTPCorrect.isOTPCorrect == false {
                             Text("Yanlış kod, lütfen tekrar deneyin")
-                                 .foregroundStyle(Color.red235_67)
+                                .foregroundStyle(Color.red235_67)
                                 .font(.urbanistRegular(size: 15))
-                            Text("Tekrar kod gönder")
-                                 .foregroundStyle(Color.black84_84)
-                                 .font(.urbanistBold(size: 15))
+                                .padding(.top, 24)
+                            Text("**Tekrar kod gönder**")
+                                .foregroundStyle(Color.black84_84)
+                                .font(.urbanistBold(size: 15))
                         }
                     }
                 }
@@ -53,10 +56,10 @@ struct CountdownTimerView: View {
             startTimer()
         }
         .onChange(of: isOTPCorrect.isOTPCorrect) { newValue in
-                    if newValue == false { // false olduğu anda çağırır.
-                        stopTimerAndReset()
-                    }
-                }
+            if newValue == false { // false olduğu anda çağırır.
+                stopTimerAndReset()
+            }
+        }
     }
     
     func startTimer() {
@@ -71,10 +74,10 @@ struct CountdownTimerView: View {
         }
     }
     func stopTimerAndReset() {
-           timerActive = false
-           timer?.invalidate()
-           timer = nil
-       }
+        timerActive = false
+        timer?.invalidate()
+        timer = nil
+    }
 }
 
 #Preview {

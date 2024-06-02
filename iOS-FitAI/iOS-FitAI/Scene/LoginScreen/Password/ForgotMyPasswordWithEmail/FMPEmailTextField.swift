@@ -1,3 +1,10 @@
+//
+//  EmailTextField.swift
+//  GrupProjeDeneme
+//
+//  Created by Ahmet Yasin Atakan on 31.05.2024.
+//
+
 import SwiftUI
 
 struct FMPEmailTextField: View {
@@ -7,6 +14,7 @@ struct FMPEmailTextField: View {
             .placeholder(when: email.isEmpty, placeholder: {
                 Text("E-posta")
             })
+            .autocapitalization(.none)
             .padding(.leading, 18)
             .frame(width: 327, height: 56)
             .background(Color.white247_248)

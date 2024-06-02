@@ -1,6 +1,6 @@
 //
 //  PasswordView.swift
-//  iOS-FitAI
+//  GrupProjeDeneme
 //
 //  Created by Ahmet Yasin Atakan on 23.05.2024.
 //
@@ -18,11 +18,13 @@ struct GenericPasswordView: View {
                     .placeholder(when: password.isEmpty, placeholder: {
                         Text(placeholder)
                     })
+                    .autocapitalization(.none)
             } else {
                 SecureField("", text: $password)
                     .placeholder(when: password.isEmpty, placeholder: {
                         Text(placeholder)
                     })
+                    .autocapitalization(.none)
             }
             Button {
                 isPasswordVisible.toggle()

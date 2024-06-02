@@ -1,6 +1,6 @@
 //
 //  OTPEmail.swift
-//  iOS-FitAI
+//  GrupProjeDeneme
 //
 //  Created by Ahmet Yasin Atakan on 23.05.2024.
 //

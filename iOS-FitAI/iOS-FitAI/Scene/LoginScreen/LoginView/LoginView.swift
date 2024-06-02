@@ -1,6 +1,6 @@
 //
 //  LoginView.swift
-//  iOS-FitAI
+//  GrupProjeDeneme
 //
 //  Created by Ahmet Yasin Atakan on 23.05.2024.
 //
@@ -27,7 +27,7 @@ struct LoginView: View {
                     Spacer()
                     ForgotPasswordLink()
                 }
-                LoginButton(email: email, password: password, showError: $showError, errorMessage: $errorMessage, isLoginSuccessful: $isLoginSuccessful)
+                LoginButton(email: email, password: password, showError: $showError, errorMessage: $errorMessage)
                 DividerWithText()
                 SocialLoginButtons()
                 Spacer()
@@ -43,7 +43,7 @@ struct LoginView: View {
     }
 }
 
-#Preview {
-    LoginView()
-        .environmentObject(GSMNumber())
-}
+//#Preview {
+//    LoginView()
+//        .environmentObject(GSMNumber())
+//}

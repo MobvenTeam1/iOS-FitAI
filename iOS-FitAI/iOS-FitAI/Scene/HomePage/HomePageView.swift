@@ -1,6 +1,6 @@
 //
 //  HomePageView.swift
-//  iOS-FitAI
+//  GrupProjeDeneme
 //
 //  Created by Ahmet Yasin Atakan on 28.05.2024.
 //
@@ -12,7 +12,8 @@ struct HomePageView: View {
     @State private var isNutritionPlanned: Bool = false
     @State private var isNutritionTapped: Bool = false
     @State private var isTrainingTapped: Bool = false
-
+    @State private var goToTrainingAIPage: Bool = false
+    @State private var goToNutritionAIPage: Bool = false
     var body: some View {
         NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
@@ -30,8 +31,12 @@ struct HomePageView: View {
                             VStack(spacing: -12) {
                                 if !isTrainingPlanned {
                                     PersonalizedPlanButton(imageName: "dumbell",text: "Kişiselleştirilmiş Antrenman\nPlanını Oluştur ") {
-                                        isTrainingPlanned.toggle()
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                            isTrainingPlanned = true
+                                        }
+                                        goToTrainingAIPage = true
                                     }
+                                    //
                                 } else {
                                     TrainingPlannedSubView(isTrainingTapped: $isTrainingTapped,
                                                            typeOfExercise: "Pilates",
@@ -40,7 +45,10 @@ struct HomePageView: View {
                                 }
                                 if !isNutritionPlanned {
                                     PersonalizedPlanButton(imageName: "beslenme", text: "Kişiselleştirilmiş Beslenme\nPlanını Oluştur ") {
-                                        isNutritionPlanned.toggle()
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                            isNutritionPlanned = true
+                                        }
+                                        goToNutritionAIPage = true
                                     }
                                 } else {
                                     NutritionPlanningSubView(isNutritionTapped: $isNutritionTapped,
@@ -60,6 +68,12 @@ struct HomePageView: View {
                                            ])
                         }
                     }
+                    NavigationLink(destination: AISupportedTrainingPlan(), isActive: $goToTrainingAIPage) {
+                        EmptyView()
+                    }
+                    NavigationLink(destination: AISupportedNutritionPlan(), isActive: $goToNutritionAIPage) {
+                        EmptyView()
+                    }
                 }
                 .padding(.bottom, 123)
             }
@@ -70,5 +84,5 @@ struct HomePageView: View {
 }
 
 #Preview {
-  HomePageView()
+    HomePageView()
 }

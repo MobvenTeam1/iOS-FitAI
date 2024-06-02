@@ -1,12 +1,4 @@
-//
-//  ForgotMyPasswordWithNumber.swift
-//  iOS-FitAI
-//
-//  Created by Ahmet Yasin Atakan on 31.05.2024.
-//
-
 import SwiftUI
-
 struct ForgotMyPasswordWithNumber: View {
     @EnvironmentObject var gsmNumber: GSMNumber
     var body: some View {
