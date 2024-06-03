@@ -13,14 +13,17 @@ struct WorkoutPlansView: View {
         ZStack{
             VStack{
                 Spacer()
-                Image(systemName: "circlebadge.fill")
+                Image("specialEllipse")
                     .resizable()
                     .frame(width: 176, height: 176)
-                
+                    .padding()
                 MFAIText(title: ExerciseProgramModel.Constants.workoutPlansViewTitle)
+                    .bold()
+                    .font(.title2)
                 MFAIText(title: ExerciseProgramModel.Constants.workoutPlansViewContent)
+                    .padding()
                 Spacer()
-                MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextStart){
+                MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextStart,buttonBackgroundColor: .buttonGreen){
                     exerciseVM.pageStep = .healthProblem
                 }
             

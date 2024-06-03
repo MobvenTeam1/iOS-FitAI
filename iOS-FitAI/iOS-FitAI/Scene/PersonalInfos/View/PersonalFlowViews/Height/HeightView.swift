@@ -14,14 +14,34 @@ struct HeightView: View {
         ZStack{
             VStack{
                 MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.heightViewTitle)
-                Spacer(minLength: 50)
-                MFAITextField(title: "String", textfieldText: $personalInfoVM.personalInfoData.height.toUnwrapped(defaultValue: ""))
+                MFAITextField(title: "155 cm",
+                              keyboardType: .decimalPad,
+                              textfieldText: $personalInfoVM.personalInfoData.height.toUnwrapped(defaultValue: ""))
                 Spacer()
-                MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext){
+                MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext,buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.16
                     personalInfoVM.pageStep = .currentWeight
                 }
             }
+            .navigationBarBackButtonHidden(true)
+               .toolbar {
+                   ToolbarItem(placement: .topBarLeading) {
+                       Button(action: {
+                           personalInfoVM.pageStep = .gender
+                       }, label: {
+                           Image("back")
+                               .resizable()
+                               .frame(width: 41, height: 41)
+                       })
+                   }
+               }
+               .toolbar {
+                         ToolbarItem(placement: .topBarTrailing) {
+                                 Image("Onboarding-5-Icon")
+                                     .resizable()
+                                     .frame(width: 32, height: 36)
+                         }
+                     }
         }
     }
 }

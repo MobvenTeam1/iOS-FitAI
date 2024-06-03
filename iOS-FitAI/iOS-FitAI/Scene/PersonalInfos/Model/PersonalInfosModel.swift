@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 
 enum PersonalInfosModel {
@@ -18,12 +19,13 @@ enum PersonalInfosModel {
         static let targetWeightViewTitle = "Hedef kilonuz kaç?"
         static let birthdayViewTitle = "Doğum gününüz nedir?"
         static let targetsViewTitle = "Hedefleriniz nelerdir?"
+        static let conditionAndPrivacy = "Şartları ve gizlilik politikasını kabul ediyorum."
         
     }
     enum ButtonTextContext{
         static let buttonTextNext = "Sonraki"
-        static let buttonTextOK = "Tamamlandı"
-        
+        static let buttonTextOK = "Tamamlandı"  
+        static let haveAnAccount = "Zaten hesabınız var mı? Giriş Yap"
     }
     
     struct PersonalInfos: Codable, RawRepresentable{
@@ -51,10 +53,10 @@ enum PersonalInfosModel {
             dailySleepHours: String? = nil,
             dailyWaterGlass: String? = nil)
         {
-            self.name = name
-            self.surname = surname
+            self.firstname = name
+            self.lastName = surname
             self.username = username
-            self.ePosta = ePosta
+            self.email = ePosta
             self.password = password
             self.passwordConfirm = passwordConfirm
             self.gender = gender
@@ -65,10 +67,10 @@ enum PersonalInfosModel {
             self.targets = targets
         
         }
-        var name: String?
-        var surname: String?
+        var firstname: String?
+        var lastName: String?
         var username: String?
-        var ePosta: String?
+        var email: String?
         var password: String?
         var passwordConfirm:String?
         var gender: String?
@@ -120,5 +122,25 @@ extension PersonalInfosModel.PersonalInfos {
             print("Hata: \(error)")
             return "[]"
         }
+    }
+}
+
+struct CustomProgressViewStyle: ProgressViewStyle {
+    var trackColor: Color
+    var progressColor: Color
+
+    func makeBody(configuration: Configuration) -> some View {
+        ZStack(alignment: .leading) {
+            Rectangle()
+                .frame(height: 4)
+                .foregroundColor(trackColor)
+                .cornerRadius(4)
+
+            Rectangle()
+                .frame(width: (configuration.fractionCompleted ?? 0) * UIScreen.main.bounds.width, height: 8)
+                .foregroundColor(progressColor)
+                .cornerRadius(4)
+        }
+        .frame(height: 8)
     }
 }

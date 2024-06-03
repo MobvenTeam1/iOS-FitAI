@@ -10,18 +10,39 @@ import SwiftUI
 struct SportFrequencyView: View {
     @ObservedObject var exerciseVM: ExerciseProgramViewModel
     @State var sportFrequency = ["Bana önerilen kadar","Haftada 1-2","Haftada 3-4","Her gün"]
+    @State var sportFrequencyIcon = ["","","",""]
     @Binding var progressBarValue: Double
     var body: some View {
         ZStack{
             VStack{
                 MFAIPersonalInfosHeaderView(title: ExerciseProgramModel.Constants.sportFrequencyViewTitle)
-                MFAISingleSelectionView(selectionList: $sportFrequency, selection: $exerciseVM.exerciseProgramData.sportFrequency)
+                    Spacer()
+                MFAISingleSelectionView(selectionList: $sportFrequency, selectionIconList: $sportFrequencyIcon, selection: $exerciseVM.exerciseProgramData.sportFrequency)
                 Spacer()
-                MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextNext){
+                MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextNext,buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.25
                     exerciseVM.pageStep = .focusArea
                 }
             }
+            .navigationBarBackButtonHidden(true)
+               .toolbar {
+                   ToolbarItem(placement: .topBarLeading) {
+                       Button(action: {
+                           exerciseVM.pageStep = .sportOption
+                       }, label: {
+                           Image("back")
+                               .resizable()
+                               .frame(width: 41, height: 41)
+                       })
+                   }
+               }
+               .toolbar {
+                         ToolbarItem(placement: .topBarTrailing) {
+                                 Image("Onboarding-5-Icon")
+                                     .resizable()
+                                     .frame(width: 32, height: 36)
+                         }
+                     }
         }
     }
 }

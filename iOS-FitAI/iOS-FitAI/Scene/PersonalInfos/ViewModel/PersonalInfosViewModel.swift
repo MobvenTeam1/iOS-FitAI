@@ -7,10 +7,13 @@
 
 import SwiftUI
 import Foundation
+import Combine
 
 class PersonalInfosViewModel : ObservableObject {
-    
     @Published var pageStep : PersonalInfosModel.PersonalInfosFlow = .welcome
+    @Published var kVKKEnabled = false
+    
+    var cancellables = Set<AnyCancellable>()
     
     @AppStorage("personalInfos") static var personalInfoDataApp = PersonalInfosModel.PersonalInfos(gender: "",height: "", currentWeight: "", targetWeight: "", birthDate: "", targets: [""])
     

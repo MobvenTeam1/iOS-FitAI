@@ -12,10 +12,12 @@ struct MFAIText: View {
     
     var body: some View {
         Text(title)
-            .padding()
+            .padding(20)
+            .padding(.trailing)
+            
     }
 }
 
 #Preview {
-    MFAIText(title: "String")
+    MFAIText(title: "Günlük yediklerinizi kaydedin, kalori takibi ile sağlıklı alışkanlıklar edinin")
 }

@@ -11,16 +11,37 @@ struct FocusAreaView: View {
     @ObservedObject var exerciseVM: ExerciseProgramViewModel
     @Binding var progressBarValue: Double
     @State var focusArea = ["Hepsi","Kolar","Göğüs","Bel","Kalça","Bacaklar"]
+    @State var focusAreaIcon = ["all","arms","chest","waist","butt","leg"]
     var body: some View {
         ZStack{
             VStack{
                 MFAIPersonalInfosHeaderView(title: ExerciseProgramModel.Constants.focusAreaViewtitle)
-                MFAIMultipleSelectionView(selectionList: $focusArea, selections: $exerciseVM.exerciseProgramData.focusArea)
                 Spacer()
-                MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextCreate){
+                MFAIMultipleSelectionView(selectionList: $focusArea, selectionIconList: $focusAreaIcon, selections: $exerciseVM.exerciseProgramData.focusArea)
+                Spacer()
+                MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextCreate,buttonBackgroundColor: .buttonGreen){
                     exerciseVM.pageStep = .specialPlan
                 }
             }
+            .navigationBarBackButtonHidden(true)
+               .toolbar {
+                   ToolbarItem(placement: .topBarLeading) {
+                       Button(action: {
+                           exerciseVM.pageStep = .sportFrequency
+                       }, label: {
+                           Image("back")
+                               .resizable()
+                               .frame(width: 41, height: 41)
+                       })
+                   }
+               }
+               .toolbar {
+                         ToolbarItem(placement: .topBarTrailing) {
+                                 Image("Onboarding-5-Icon")
+                                     .resizable()
+                                     .frame(width: 32, height: 36)
+                         }
+                     }
         }
     }
 }

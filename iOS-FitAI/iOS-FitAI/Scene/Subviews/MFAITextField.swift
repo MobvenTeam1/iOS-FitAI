@@ -9,11 +9,21 @@ import SwiftUI
 
 struct MFAITextField: View {
     let title: String
+    var keyboardType: UIKeyboardType = .default
     @Binding var textfieldText: String
     var body: some View {
         TextField(title, text: $textfieldText)
-            .keyboardType(.decimalPad)
+            .keyboardType(keyboardType)
+            .frame(width: 327, height: 56)
+            .background {
+                Color.welcomeTextField
+            }
+            .border(.textFieldBorder, width: 2)
+            .clipShape(RoundedRectangle(cornerRadius: 8))
             .padding()
+         
+
+            
     }
 }
 

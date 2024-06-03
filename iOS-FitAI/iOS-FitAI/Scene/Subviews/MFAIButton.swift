@@ -26,10 +26,6 @@ struct MFAIButton: View {
     let buttonBackgroundColor: Color
     let action: (() -> ())?
     
-    
-    
-    
-    
     var body: some View {
         Button(action: {
             action?()
@@ -46,6 +42,7 @@ struct MFAIButton: View {
                     .font(.title2)
                     .foregroundStyle(.black)
                     .fontWeight(.medium)
+                    
                 if let buttonBackImage {
                     buttonBackImage
                         .resizable()
@@ -55,11 +52,18 @@ struct MFAIButton: View {
                 }
             }
             .padding(.horizontal)
-            .foregroundStyle(buttonBackgroundColor)
+          
         })
+        .border(.clear, width: 2)
+        .background{
+            buttonBackgroundColor
+                .frame(width: 327, height: 60)
+                .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+        }
+       
     }
 }
 
 #Preview {
-    MFAIButton(buttontitle: "title")
+    MFAIButton(buttontitle: "title",buttonBackgroundColor: .buttonGreen )
 }

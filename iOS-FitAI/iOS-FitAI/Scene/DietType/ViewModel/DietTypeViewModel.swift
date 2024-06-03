@@ -11,7 +11,7 @@ class DietTypeViewModel: ObservableObject{
     
     @Published var pageStep: DietTypeModel.DietTypeFlow = .dietTypePlans
     
-    @AppStorage("dietType") static var dietTypeDataApp = DietTypeModel.DietTypeInfo(knownHealthProblem: [""] ,foodAllergy:[""],dietType: "" )
+    @AppStorage("dietType") static var dietTypeDataApp = DietTypeModel.DietTypeInfo(knownHealthProblem: [""] ,foodAllergy:"",dietType: [""] )
     
-    @Published var dietTypeData = DietTypeModel.DietTypeInfo(knownHealthProblem: [""], foodAllergy: [""], dietType: "")
+    @Published var dietTypeData = DietTypeModel.DietTypeInfo(knownHealthProblem: [""], foodAllergy: "", dietType: [""])
 }

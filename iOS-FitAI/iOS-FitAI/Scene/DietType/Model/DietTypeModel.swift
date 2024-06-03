@@ -21,18 +21,19 @@ enum DietTypeModel{
         static let buttonTextStart = "Başla"
         static let buttonTextNext = "Sonraki"
         static let buttonTextCreate = "Oluştur"
+        static let buttonTextNo = "Yok / Belirtmek İstemiyorum"
     }
     enum DietTypeFlow: String{
         case dietTypePlans
         case knownHealthProblem
         case foodAllergy
         case dietType
-        case specialPlan
+        case dietSpecialType
     }
     struct DietTypeInfo: Codable, RawRepresentable{
-        init(knownHealthProblem: [String]? = nil, 
-             foodAllergy: [String]? = nil,
-             dietType: String? = nil)
+        init(knownHealthProblem: [String]? = nil,
+             foodAllergy: String? = nil,
+             dietType: [String]? = nil)
         {
             self.knownHealthProblem = knownHealthProblem
             self.foodAllergy = foodAllergy
@@ -40,8 +41,8 @@ enum DietTypeModel{
         }
     
         var knownHealthProblem: [String]?
-        var foodAllergy: [String]?
-        var dietType: String?
+        var foodAllergy: String?
+        var dietType: [String]?
     }
 }
 

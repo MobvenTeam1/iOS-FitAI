@@ -9,29 +9,31 @@ import SwiftUI
 
 struct MFAIMultipleSelectionView: View {
     @Binding var selectionList: [String]
+    @Binding var selectionIconList: [String]
     @Binding var selections: [String]?
     
     var body: some View {
-        ForEach(selectionList,id: \.self) { title in
+        ForEach(Array(zip(selectionList, selectionIconList)),id: \.0) { title, iconSelected in
             VStack {
-                singleRow(title: title)
+                singleRow(title: title, iconSelected: iconSelected)
             }
         }
     }
-        func singleRow(title: String) -> some View {
+        func singleRow(title: String, iconSelected: String) -> some View {
             HStack {
-                Image(systemName: "person.crop.circle.badge.exclam.fill")
+                Image(iconSelected)
                     .resizable()
-                    .frame(width: 50,height: 40)
+                    .frame(width: 30,height: 30)
                     .aspectRatio(contentMode: .fit)
                     .padding(.leading)
                 Text(title)
-                    .font(.title2)
-                    .fontWeight(.bold)
+                    .font(.subheadline)
+                    .fontWeight(.regular)
                     .padding(.trailing)
                 Spacer(minLength: 20)
                 selectionTickChecker(title: title)
                     .padding(.trailing)
+                    .frame(width: 30, height: 30)
             }
             .frame(height: 50)
             .onTapGesture {
@@ -51,7 +53,8 @@ struct MFAIMultipleSelectionView: View {
             let image: Image
             if let selections{
                 if selections.contains(title){
-                    image =  Image(systemName: "checkmark.circle.fill")
+                    image =  Image(.check)
+                        .resizable()
                 }else {
                     image = Image(.ellipse)
                         .resizable()
@@ -66,5 +69,5 @@ struct MFAIMultipleSelectionView: View {
 
 
 #Preview {
-    MFAIMultipleSelectionView(selectionList: .constant(["aaaa","bbbb"]), selections: .constant(["cccc","ddddd"]))
+    MFAIMultipleSelectionView(selectionList: .constant(["aaaa","bbbb"]), selectionIconList: .constant(["aaaa","bbbb"]), selections: .constant(["cccc","ddddd"]))
 }

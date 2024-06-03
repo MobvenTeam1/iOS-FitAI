@@ -9,26 +9,26 @@ import SwiftUI
 
 struct MFAISingleSelectionView: View {
     @Binding var selectionList: [String]
+    @Binding var selectionIconList: [String]
     @Binding var selection: String?
     var body: some View {
-        ForEach(selectionList,id: \.self) { title in
+        ForEach(Array(zip(selectionList, selectionIconList)),id: \.0) { title, iconSelected in
             VStack {
-                singleRow(title: title)
+                singleRow(title: title, iconSelected: iconSelected)
             }
         }
     }
     
-    
-    func singleRow(title: String) -> some View {
+    func singleRow(title: String, iconSelected: String) -> some View {
         HStack {
-            Image(systemName: "person.crop.circle.badge.exclam.fill")
+            Image(iconSelected)
                 .resizable()
-                .frame(width: 50,height: 40)
+                .frame(width:30,height: 30)
                 .aspectRatio(contentMode: .fit)
                 .padding(.leading)
             Text(title)
-                .font(.title3)
-                .fontWeight(.bold)
+                .font(.subheadline)
+                .fontWeight(.regular)
                 .padding(.trailing)
                 
             Spacer(minLength: 20)
@@ -49,7 +49,7 @@ struct MFAISingleSelectionView: View {
     func selectionTickChecker(title: String) -> Image {
         let image: Image
         if selection == title {
-           image =  Image(systemName: "checkmark.circle.fill")
+            image =  Image(.check)
                 .resizable()
         } else {
             image = Image(.ellipse)
@@ -61,5 +61,5 @@ struct MFAISingleSelectionView: View {
 }
 
 #Preview {
-    MFAISingleSelectionView(selectionList: .constant(["ddddd","ssssss"]), selection: .constant("ss"))
+    MFAISingleSelectionView(selectionList: .constant(["ddddd","ssssss"]), selectionIconList: .constant(["ddddd","ddddd"]), selection: .constant("ss"))
 }

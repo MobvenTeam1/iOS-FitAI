@@ -14,6 +14,7 @@ public enum FlowRouter: NavigationRouter {
     case splash
     case onboarding
     case personalInfos
+    case homepage
     
     
     public var transition: NavigationTransitionStyle {

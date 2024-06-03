@@ -16,14 +16,16 @@ struct HealthProblemView: View {
                 MFAIPersonalInfosHeaderView(title: ExerciseProgramModel.Constants.healthProblemViewTitle)
                 MFAITextField(title: "Hamilelik,hamilelik sonrası, minüsküs yırtığı..", textfieldText: $exerciseVM.exerciseProgramData.healthProblem.toUnwrapped(defaultValue: "") )
                 Spacer()
-                MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextNo){
+                MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextNo, buttonBackgroundColor: .white)
+                {
                     progressBarValue += 0.25
                     exerciseVM.pageStep = .sportOption
                 }
-                MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextNext){
+                MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextNext, buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.25
                     exerciseVM.pageStep = .sportOption
                 }
+                .padding(50)
             }
         }
     }

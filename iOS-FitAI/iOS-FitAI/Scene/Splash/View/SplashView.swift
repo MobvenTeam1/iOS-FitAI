@@ -22,7 +22,8 @@ struct SplashView: View {
                     Text("Fit")
                     Text("AI").bold()
                     
-                }
+                }.frame(width: 107, height: 72, alignment: .center)
+                    .font(.largeTitle)
             }.onAppear(perform: {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
                     coordinator.show(.onboarding)
@@ -33,5 +34,6 @@ struct SplashView: View {
 }
 
 #Preview {
-    SplashView()
+    @State var env = Coordinator<FlowRouter>()
+    return SplashView().environmentObject(env)
 }

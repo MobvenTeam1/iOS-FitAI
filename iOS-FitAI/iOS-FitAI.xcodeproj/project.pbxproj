@@ -35,6 +35,7 @@
 		DD5A0E992C07BFD6006464D7 /* TargetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A0E982C07BFD6006464D7 /* TargetsView.swift */; };
 		DD5A0E9C2C07C51C006464D7 /* BindingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A0E9B2C07C51C006464D7 /* BindingExtension.swift */; };
 		DD5A0ED42C088E08006464D7 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A0ED32C088E08006464D7 /* OnboardingModel.swift */; };
+		DD7E51A12C0C803400053555 /* DietSpecialTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E51A02C0C803400053555 /* DietSpecialTypeView.swift */; };
 		DDB406FD2C0BA4AE00D4223E /* DietTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB406FC2C0BA4AE00D4223E /* DietTypeModel.swift */; };
 		DDB406FF2C0BA51200D4223E /* DietTypeflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB406FE2C0BA51200D4223E /* DietTypeflow.swift */; };
 		DDB407042C0BA5F500D4223E /* KnownHealthProblemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB407032C0BA5F500D4223E /* KnownHealthProblemView.swift */; };
@@ -117,6 +118,7 @@
 		DD5A0E982C07BFD6006464D7 /* TargetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetsView.swift; sourceTree = "<group>"; };
 		DD5A0E9B2C07C51C006464D7 /* BindingExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExtension.swift; sourceTree = "<group>"; };
 		DD5A0ED32C088E08006464D7 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		DD7E51A02C0C803400053555 /* DietSpecialTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietSpecialTypeView.swift; sourceTree = "<group>"; };
 		DDB406FC2C0BA4AE00D4223E /* DietTypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietTypeModel.swift; sourceTree = "<group>"; };
 		DDB406FE2C0BA51200D4223E /* DietTypeflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietTypeflow.swift; sourceTree = "<group>"; };
 		DDB407032C0BA5F500D4223E /* KnownHealthProblemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownHealthProblemView.swift; sourceTree = "<group>"; };
@@ -458,6 +460,7 @@
 		DDB407062C0BA6C900D4223E /* SpecialPlan */ = {
 			isa = PBXGroup;
 			children = (
+				DD7E51A02C0C803400053555 /* DietSpecialTypeView.swift */,
 			);
 			path = SpecialPlan;
 			sourceTree = "<group>";
@@ -855,6 +858,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7E51A12C0C803400053555 /* DietSpecialTypeView.swift in Sources */,
 				DD5A0E8E2C07BD5E006464D7 /* PersonalExerciseView.swift in Sources */,
 				DD2D24462BFF9E1C00C97F36 /* NavigationTransitionStyle.swift in Sources */,
 				DD2D24582BFFA11300C97F36 /* PersonalInfosView.swift in Sources */,

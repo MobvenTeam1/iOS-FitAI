@@ -14,14 +14,17 @@ struct DietTypePlansIView: View {
         ZStack{
             VStack{
                 Spacer()
-                Image(systemName: "circlebadge.fill")
+                Image("specialEllipse")
                     .resizable()
                     .frame(width: 176, height: 176)
                 
                 MFAIText(title: DietTypeModel.Constants.dietTypePlansViewTitle)
+                    .bold()
+                    .font( .title2)
+                    .padding()
                 MFAIText(title: DietTypeModel.Constants.dietTypePlansViewContent)
                 Spacer()
-                MFAIButton(buttontitle: DietTypeModel.ButtonTextContext.buttonTextStart){
+                MFAIButton(buttontitle: DietTypeModel.ButtonTextContext.buttonTextStart,buttonBackgroundColor: .buttonGreen ){
                     dietVM.pageStep = .knownHealthProblem
                 }
             }
