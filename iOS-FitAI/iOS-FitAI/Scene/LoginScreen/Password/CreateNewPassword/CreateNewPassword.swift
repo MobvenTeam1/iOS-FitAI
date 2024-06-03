@@ -76,7 +76,6 @@ struct CreateNewPassword: View {
 
 #Preview {
     CreateNewPassword()
-        .environmentObject(GSMNumber())
-        .environmentObject(CheckIfOTPCorrect())
+        .environmentObject(AppState())
 }
 

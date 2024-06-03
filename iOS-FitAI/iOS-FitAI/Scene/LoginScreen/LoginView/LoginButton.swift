@@ -1,9 +1,3 @@
-//
-//  LoginButton.swift
-//
-//  Created by Ahmet Yasin Atakan on 31.05.2024.
-//
-
 import SwiftUI
 
 struct LoginButton: View {
@@ -11,8 +5,7 @@ struct LoginButton: View {
     var password: String
     @Binding var showError: Bool
     @Binding var errorMessage: String
-    @Binding var isLoginSuccessful: Bool
-
+    @EnvironmentObject var appState: AppState
     var body: some View {
         GreenButtonView(text: "Giriş Yap") {
             validateInputs()
@@ -33,7 +26,7 @@ struct LoginButton: View {
         } else {
             showError = false
             errorMessage = ""
-            isLoginSuccessful = true
+            appState.isLoginSuccessful = true
         }
     }
 

@@ -1,3 +1,10 @@
+//
+//  DailyTargetView.swift
+//  iOS-FitAI
+//
+//  Created by Ahmet Yasin Atakan on 29.05.2024.
+//
+
 import SwiftUI
 
 struct DailyTargetView: View {
@@ -11,10 +18,10 @@ struct DailyTargetView: View {
                 .padding(.leading, 33)
             HStack(spacing: 8) {
                 DailyTargetButtonsView(imageName: "egzersiz", text: "Egzersiz Ekle") {
-                    // TODO: //
+                    
                 }
                 DailyTargetButtonsView(imageName: "besin", text: "Besin Ekle") {
-                    // TODO: //
+                    
                 }
             }
             CircularProgressView(totalKgToLose: 10, kgToLoseForTarget: 5)
@@ -22,15 +29,11 @@ struct DailyTargetView: View {
             HStack(spacing: 8) {
                 CaloriesView(imageName: "alınan", firstText: "Alınan Kalori", calorieText: "950 cal")
                 CaloriesView(imageName: "harcanan", firstText: "Harcanan Kalori", calorieText: "1300 cal")
-                CaloriesView(imageName: "günlükkalori", firstText: "Günlük Hedef", calorieText: "-2500 cal")
+                CaloriesView(imageName: "günlükkalori", firstText: "Günlük Hedef", calorieText: "2500 cal")
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.leading, 33)
         }
         .padding(.top, 20)
     }
-}
-
-#Preview {
-   HomePageView()
 }

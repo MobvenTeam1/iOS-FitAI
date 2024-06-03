@@ -27,11 +27,9 @@ open class Coordinator<Router: NavigationRouter>: ObservableObject {
     public func show(_ route: Router, animated: Bool = true) {
         let view = route.view()
         let viewWithCoordinator = view.environmentObject(self)
-            .environmentObject(GSMNumber())
-            .environmentObject(CheckIfOTPCorrect())
+            .environmentObject(AppState())
+            .navigationBarHidden(true)
         let viewController = UIHostingController(rootView: viewWithCoordinator)
-        navigationController.navigationBar.topItem?.hidesBackButton = true
-        navigationController.navigationBar.backItem?.hidesBackButton = true
         switch route.transition {
         case .push:
             navigationController.pushViewController(viewController, animated: animated)

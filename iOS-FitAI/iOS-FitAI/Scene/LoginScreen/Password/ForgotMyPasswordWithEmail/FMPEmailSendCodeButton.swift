@@ -10,7 +10,7 @@ struct FMPEmailSendCodeButton: View {
                     .frame(width: 327, height: 56)
                     .clipShape(RoundedRectangle(cornerRadius: 12))
                 Text("Kod Gönder")
-                    .foregroundStyle(Color.green177_235)
+                    .foregroundStyle(Color.black11_11)
                     .font(.urbanistSemibold(size: 16))
             }
         }

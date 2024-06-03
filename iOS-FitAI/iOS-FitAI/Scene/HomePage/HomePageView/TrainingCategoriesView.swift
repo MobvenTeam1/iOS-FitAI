@@ -30,7 +30,3 @@ struct TrainingCategoriesView: View {
         .padding(.leading, 24)
     }
 }
-
-#Preview {
-    HomePageView()
-}

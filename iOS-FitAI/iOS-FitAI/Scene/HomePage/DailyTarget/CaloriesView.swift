@@ -34,7 +34,3 @@ struct CaloriesView: View {
         
     }
 }
-
-#Preview {
-    HomePageView()
-}

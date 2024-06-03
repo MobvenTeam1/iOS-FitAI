@@ -6,7 +6,7 @@ struct CustomLogoButton: ViewModifier {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink {
-                        HomePageView()
+                        HomePageView() // TODO: its gonna change
                     } label: {
                         Image("fitaiimage")
                             .resizable()

@@ -46,7 +46,3 @@ struct TrainingPlannedSubView: View {
         }
     }
 }
-
-#Preview {
-    HomePageView()
-}

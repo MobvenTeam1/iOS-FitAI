@@ -40,7 +40,3 @@ struct PersonalizedPlanButton: View {
         .padding(.top, 24)
     }
 }
-
-#Preview {
-    HomePageView()
-}

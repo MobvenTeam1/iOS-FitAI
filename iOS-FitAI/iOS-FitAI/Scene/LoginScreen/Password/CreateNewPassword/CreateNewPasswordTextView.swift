@@ -1,10 +1,3 @@
-//
-//  CreateNewPasswordTextView.swift
-//  iOS-FitAI
-//
-//  Created by Ahmet Yasin Atakan on 31.05.2024.
-//
-
 import SwiftUI
 
 struct CreateNewPasswordTextView: View {

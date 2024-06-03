@@ -1,14 +1,7 @@
-//
-//  OTPNumber.swift
-//  iOS-FitAI
-//
-//  Created by Ahmet Yasin Atakan on 23.05.2024.
-//
-
 import SwiftUI
 
 struct OTPNumber: View {
-    @EnvironmentObject var gsmNumber: GSMNumber
+    @EnvironmentObject var appState: AppState
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading, spacing: 10) {
@@ -16,7 +9,7 @@ struct OTPNumber: View {
                     .font(.urbanistBold(size: 30))
                     .foregroundStyle(Color.gray30_35)
                     .padding(.top, 28)
-                Text(gsmNumber.number)
+                Text(appState.number)
                     .font(.urbanistMedium(size: 16))
                     .foregroundStyle(Color.black102_102) +
                 Text(" nolu numaranıza gönderdiğimiz doğrulama kodunu girin.")
@@ -33,13 +26,12 @@ struct OTPNumber: View {
             .customBackButton()
         }
         .onDisappear {
-            gsmNumber.number = ""
+            appState.number = ""
         }
     }
 }
 
 #Preview {
     OTPNumber()
-        .environmentObject(GSMNumber())
-        .environmentObject(CheckIfOTPCorrect())
+        .environmentObject(AppState())
 }

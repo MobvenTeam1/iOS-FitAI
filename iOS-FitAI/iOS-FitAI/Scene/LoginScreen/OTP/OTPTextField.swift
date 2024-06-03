@@ -6,18 +6,18 @@
 //
 
 import SwiftUI
+
 struct OTPTextField: View {
     let numberOfFields: Int
     @State var enterValue: [String]
     @FocusState private var fieldFocus: Int?
     @State private var oldValue = ""
-    @EnvironmentObject var isOTPCorrect: CheckIfOTPCorrect
+    @EnvironmentObject var appState: AppState
     @State private var navigateToNextScreen = false
     init(numberOfFields: Int) {
         self.numberOfFields = numberOfFields
         self.enterValue = Array(repeating: "", count: numberOfFields)
     }
-    
     var body: some View {
         NavigationStack {
             VStack {
@@ -33,7 +33,7 @@ struct OTPTextField: View {
                     .background(Color.white247_248)
                     .overlay(
                         RoundedRectangle(cornerRadius: 8)
-                            .stroke(isOTPCorrect.isOTPCorrect == false ? Color.red : Color.gray232_232)
+                            .stroke(appState.isOTPCorrect == false ? Color.red : Color.gray232_232)
                     )
                     .multilineTextAlignment(.center)
                     .focused($fieldFocus, equals: index)
@@ -68,15 +68,10 @@ struct OTPTextField: View {
     func checkOTP() {
         let otp = enterValue.joined()
         if otp == "1111" {
-            isOTPCorrect.isOTPCorrect = true
+            appState.isOTPCorrect = true
             navigateToNextScreen = true
         } else {
-            isOTPCorrect.isOTPCorrect = false
+            appState.isOTPCorrect = false
         }
     }
 }
-
-
-//#Preview {
-//    OTPTextField(numberOfFields: 4)
-//}

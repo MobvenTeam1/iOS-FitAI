@@ -17,7 +17,7 @@ struct EmailTextField: View {
                     RoundedRectangle(cornerRadius: 8)
                         .stroke(Color.gray232_232, lineWidth: 1)
                 )
-                .textInputAutocapitalization(.none)
+                .autocapitalization(.none)
                 .keyboardType(.emailAddress)
                 .textContentType(.emailAddress)
             if showError {
@@ -33,18 +33,4 @@ struct EmailTextField: View {
 
 #Preview {
     LoginView()
-}
-extension View {
-    func placeholder<Content: View>(
-        when shouldShow: Bool,
-        alignment: Alignment = .leading,
-        @ViewBuilder placeholder: () -> Content) -> some View {
-
-        ZStack(alignment: alignment) {
-            placeholder().opacity(shouldShow ? 1 : 0)
-            .foregroundStyle(Color.black102_102)
-            .font(.urbanistMedium(size: 16))
-            self
-        }
-    }
 }

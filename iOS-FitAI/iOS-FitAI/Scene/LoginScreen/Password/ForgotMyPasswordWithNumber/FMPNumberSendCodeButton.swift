@@ -11,6 +11,7 @@ struct FMPNumberSendCodeButton: View {
                     .clipShape(RoundedRectangle(cornerRadius: 12))
                 Text("Kod Gönder")
                     .foregroundStyle(Color.black11_11)
+                    .font(.urbanistSemibold(size: 16))
             }
         }
     }

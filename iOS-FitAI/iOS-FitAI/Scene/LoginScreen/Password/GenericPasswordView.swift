@@ -18,11 +18,13 @@ struct GenericPasswordView: View {
                     .placeholder(when: password.isEmpty, placeholder: {
                         Text(placeholder)
                     })
+                    .autocapitalization(.none)
             } else {
                 SecureField("", text: $password)
                     .placeholder(when: password.isEmpty, placeholder: {
                         Text(placeholder)
                     })
+                    .autocapitalization(.none)
             }
             Button {
                 isPasswordVisible.toggle()
