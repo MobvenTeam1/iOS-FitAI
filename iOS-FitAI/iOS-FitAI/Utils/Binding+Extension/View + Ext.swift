@@ -8,15 +8,6 @@
 import SwiftUI
 
 extension View {
-    func applyEnvironmentObjects(gsmNumber: GSMNumber, checkIfOTPCorrect: CheckIfOTPCorrect , appState: AppState) -> some View {
-        self
-            .environmentObject(gsmNumber)
-            .environmentObject(checkIfOTPCorrect)
-            .environmentObject(appState)
-    }
-}
-
-extension View {
     func placeholder<Content: View>(
         when shouldShow: Bool,
         alignment: Alignment = .leading,

@@ -1,6 +1,5 @@
 import SwiftUI
 struct ForgotMyPasswordWithNumber: View {
-    @EnvironmentObject var gsmNumber: GSMNumber
     var body: some View {
         NavigationStack {
             VStack(alignment: .center, spacing: 10) {
@@ -20,6 +19,5 @@ struct ForgotMyPasswordWithNumber: View {
 
 #Preview {
     ForgotMyPasswordWithNumber()
-        .environmentObject(GSMNumber())
-        .environmentObject(CheckIfOTPCorrect())
+        .environmentObject(AppState())
 }

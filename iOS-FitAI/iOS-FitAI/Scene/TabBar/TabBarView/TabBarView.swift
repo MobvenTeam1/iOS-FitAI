@@ -71,7 +71,5 @@ struct TabBarView: View {
 
 #Preview {
     TabBarView()
-        .environmentObject(GSMNumber())
-        .environmentObject(CheckIfOTPCorrect())
         .environmentObject(AppState())
 }

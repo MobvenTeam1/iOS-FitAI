@@ -14,4 +14,7 @@ class AppState: ObservableObject {
     @Published var isTrainingTapped: Bool = false
     @Published var isNutritionPlanned: Bool = false
     @Published var isNutritionTapped: Bool = false
+    @Published  var isOTPCorrect: Bool? = nil
+    @Published var number: String = ""
+    
 }

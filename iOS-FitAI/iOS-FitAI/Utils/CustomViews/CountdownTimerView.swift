@@ -10,7 +10,7 @@ struct CountdownTimerView: View {
     @State private var timeRemaining = 20
     @State private var timerActive = false
     @State private var timer: Timer?
-    @EnvironmentObject var isOTPCorrect: CheckIfOTPCorrect
+    @EnvironmentObject var appState: AppState
     
     var body: some View {
         VStack {
@@ -22,11 +22,11 @@ struct CountdownTimerView: View {
             } else {
                 Button {
                     startTimer()
-                    isOTPCorrect.isOTPCorrect = nil
+                    appState.isOTPCorrect = nil
                 }label: {
                     VStack(spacing: 4) {
                         if timeRemaining == 0 {
-                            if isOTPCorrect.isOTPCorrect == false {
+                            if appState.isOTPCorrect == false {
                                 Text("")
                             }
                             else {
@@ -39,7 +39,7 @@ struct CountdownTimerView: View {
                                     .foregroundStyle(Color.black84_84)
                             }
                         }
-                        if isOTPCorrect.isOTPCorrect == false {
+                        if appState.isOTPCorrect == false {
                             Text("Yanlış kod, lütfen tekrar deneyin")
                                 .foregroundStyle(Color.red235_67)
                                 .font(.urbanistRegular(size: 15))
@@ -55,7 +55,7 @@ struct CountdownTimerView: View {
         .onAppear {
             startTimer()
         }
-        .onChange(of: isOTPCorrect.isOTPCorrect) { newValue in
+        .onChange(of: appState.isOTPCorrect) { newValue in
             if newValue == false { // false olduğu anda çağırır.
                 stopTimerAndReset()
             }
@@ -81,8 +81,6 @@ struct CountdownTimerView: View {
 }
 
 #Preview {
-    //    CountdownTimerView()
     OTPNumber()
-        .environmentObject(CheckIfOTPCorrect())
-        .environmentObject(GSMNumber())
+        .environmentObject(AppState())
 }

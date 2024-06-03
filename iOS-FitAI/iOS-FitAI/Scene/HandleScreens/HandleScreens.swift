@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct HandleScreens: View {
-    @EnvironmentObject var gsmNumber: GSMNumber
-    @EnvironmentObject var checkIfOTPCorrect: CheckIfOTPCorrect
     @EnvironmentObject var appState: AppState
     var body: some View {
         if appState.isLoginSuccessful {
@@ -22,4 +20,5 @@ struct HandleScreens: View {
 
 #Preview {
     HandleScreens()
+        .environmentObject(AppState())
 }

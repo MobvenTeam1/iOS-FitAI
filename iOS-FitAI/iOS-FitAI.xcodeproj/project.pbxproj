@@ -56,7 +56,6 @@
 		1F156C0A2C0D22CC00F0E0DC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BC22C0D22CC00F0E0DC /* CardView.swift */; };
 		1F156C0B2C0D22CC00F0E0DC /* LogOutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BC32C0D22CC00F0E0DC /* LogOutButton.swift */; };
 		1F156C0C2C0D22CC00F0E0DC /* ScreenModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BC42C0D22CC00F0E0DC /* ScreenModeView.swift */; };
-		1F156C0D2C0D22CC00F0E0DC /* GSMNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BC72C0D22CC00F0E0DC /* GSMNumber.swift */; };
 		1F156C0E2C0D22CC00F0E0DC /* FMPNumberTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BCA2C0D22CC00F0E0DC /* FMPNumberTextView.swift */; };
 		1F156C0F2C0D22CC00F0E0DC /* ForgotMyPasswordWithNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BCB2C0D22CC00F0E0DC /* ForgotMyPasswordWithNumber.swift */; };
 		1F156C102C0D22CC00F0E0DC /* FMPNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BCC2C0D22CC00F0E0DC /* FMPNumberTextField.swift */; };
@@ -77,7 +76,6 @@
 		1F156C1F2C0D22CC00F0E0DC /* OTPNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BDF2C0D22CC00F0E0DC /* OTPNumber.swift */; };
 		1F156C202C0D22CC00F0E0DC /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BE02C0D22CC00F0E0DC /* OTPTextField.swift */; };
 		1F156C212C0D22CC00F0E0DC /* OTPEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BE12C0D22CC00F0E0DC /* OTPEmail.swift */; };
-		1F156C222C0D22CC00F0E0DC /* CheckIfOTPCorrect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BE22C0D22CC00F0E0DC /* CheckIfOTPCorrect.swift */; };
 		1F156C232C0D22CC00F0E0DC /* Onboarding5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BE32C0D22CC00F0E0DC /* Onboarding5.swift */; };
 		1F156C242C0D22CC00F0E0DC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BE52C0D22CC00F0E0DC /* LoginView.swift */; };
 		1F156C252C0D22CD00F0E0DC /* SocialLoginButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BE62C0D22CC00F0E0DC /* SocialLoginButtons.swift */; };
@@ -203,7 +201,6 @@
 		1F156BC22C0D22CC00F0E0DC /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		1F156BC32C0D22CC00F0E0DC /* LogOutButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogOutButton.swift; sourceTree = "<group>"; };
 		1F156BC42C0D22CC00F0E0DC /* ScreenModeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenModeView.swift; sourceTree = "<group>"; };
-		1F156BC72C0D22CC00F0E0DC /* GSMNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSMNumber.swift; sourceTree = "<group>"; };
 		1F156BCA2C0D22CC00F0E0DC /* FMPNumberTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMPNumberTextView.swift; sourceTree = "<group>"; };
 		1F156BCB2C0D22CC00F0E0DC /* ForgotMyPasswordWithNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotMyPasswordWithNumber.swift; sourceTree = "<group>"; };
 		1F156BCC2C0D22CC00F0E0DC /* FMPNumberTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMPNumberTextField.swift; sourceTree = "<group>"; };
@@ -224,7 +221,6 @@
 		1F156BDF2C0D22CC00F0E0DC /* OTPNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPNumber.swift; sourceTree = "<group>"; };
 		1F156BE02C0D22CC00F0E0DC /* OTPTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
 		1F156BE12C0D22CC00F0E0DC /* OTPEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPEmail.swift; sourceTree = "<group>"; };
-		1F156BE22C0D22CC00F0E0DC /* CheckIfOTPCorrect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckIfOTPCorrect.swift; sourceTree = "<group>"; };
 		1F156BE32C0D22CC00F0E0DC /* Onboarding5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding5.swift; sourceTree = "<group>"; };
 		1F156BE52C0D22CC00F0E0DC /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1F156BE62C0D22CC00F0E0DC /* SocialLoginButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialLoginButtons.swift; sourceTree = "<group>"; };
@@ -384,6 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				1F156B9B2C0D22CC00F0E0DC /* HomePageView */,
+				1F156BAD2C0D22CC00F0E0DC /* DailyTarget */,
 				1F156BA12C0D22CC00F0E0DC /* TrainingPlanning */,
 				1F156BA42C0D22CC00F0E0DC /* AISupportedTrainingPlan */,
 				1F156BAA2C0D22CC00F0E0DC /* NutritionPlanning */,
@@ -399,7 +396,6 @@
 				1F156BA02C0D22CC00F0E0DC /* HomePageView.swift */,
 				1F156B9E2C0D22CC00F0E0DC /* HelloView.swift */,
 				1F156B9F2C0D22CC00F0E0DC /* CalendarView.swift */,
-				1F156BAD2C0D22CC00F0E0DC /* DailyTarget */,
 				1F156C322C0D309000F0E0DC /* AIPlanButtons.swift */,
 				1F156B9C2C0D22CC00F0E0DC /* TrainingCategoriesView.swift */,
 				1F156B9D2C0D22CC00F0E0DC /* MealCategories.swift */,
@@ -509,21 +505,12 @@
 		1F156BC52C0D22CC00F0E0DC /* LoginScreen */ = {
 			isa = PBXGroup;
 			children = (
-				1F156BC62C0D22CC00F0E0DC /* GSMNumber */,
+				1F156BE42C0D22CC00F0E0DC /* LoginView */,
 				1F156BC82C0D22CC00F0E0DC /* Password */,
 				1F156BDE2C0D22CC00F0E0DC /* OTP */,
 				1F156BE32C0D22CC00F0E0DC /* Onboarding5.swift */,
-				1F156BE42C0D22CC00F0E0DC /* LoginView */,
 			);
 			path = LoginScreen;
-			sourceTree = "<group>";
-		};
-		1F156BC62C0D22CC00F0E0DC /* GSMNumber */ = {
-			isa = PBXGroup;
-			children = (
-				1F156BC72C0D22CC00F0E0DC /* GSMNumber.swift */,
-			);
-			path = GSMNumber;
 			sourceTree = "<group>";
 		};
 		1F156BC82C0D22CC00F0E0DC /* Password */ = {
@@ -575,9 +562,9 @@
 		1F156BD92C0D22CC00F0E0DC /* CreateNewPassword */ = {
 			isa = PBXGroup;
 			children = (
+				1F156BDC2C0D22CC00F0E0DC /* CreateNewPassword.swift */,
 				1F156BDA2C0D22CC00F0E0DC /* PasswordCriteriaView.swift */,
 				1F156BDB2C0D22CC00F0E0DC /* CreateNewPasswordTextView.swift */,
-				1F156BDC2C0D22CC00F0E0DC /* CreateNewPassword.swift */,
 			);
 			path = CreateNewPassword;
 			sourceTree = "<group>";
@@ -586,9 +573,8 @@
 			isa = PBXGroup;
 			children = (
 				1F156BDF2C0D22CC00F0E0DC /* OTPNumber.swift */,
-				1F156BE02C0D22CC00F0E0DC /* OTPTextField.swift */,
 				1F156BE12C0D22CC00F0E0DC /* OTPEmail.swift */,
-				1F156BE22C0D22CC00F0E0DC /* CheckIfOTPCorrect.swift */,
+				1F156BE02C0D22CC00F0E0DC /* OTPTextField.swift */,
 			);
 			path = OTP;
 			sourceTree = "<group>";
@@ -1140,7 +1126,6 @@
 				1F156C112C0D22CC00F0E0DC /* FMPNumberSendCodeButton.swift in Sources */,
 				1F156AFB2C0C7A4200F0E0DC /* CustomLogoButton.swift in Sources */,
 				1F156AFD2C0C7A4200F0E0DC /* CountdownTimerView.swift in Sources */,
-				1F156C0D2C0D22CC00F0E0DC /* GSMNumber.swift in Sources */,
 				1F156BFD2C0D22CC00F0E0DC /* DailyTargetView.swift in Sources */,
 				1F156C2F2C0D240500F0E0DC /* HandleScreens.swift in Sources */,
 				1F156AF02C0C7A4200F0E0DC /* ParticleView.swift in Sources */,
@@ -1204,7 +1189,6 @@
 				DD2D24492BFF9E4300C97F36 /* FlowRouter.swift in Sources */,
 				DDE988332C05D62900550643 /* TargetWeightView.swift in Sources */,
 				1F156C042C0D22CC00F0E0DC /* CustomTabBarView.swift in Sources */,
-				1F156C222C0D22CC00F0E0DC /* CheckIfOTPCorrect.swift in Sources */,
 				DD5A0E8C2C07BD40006464D7 /* PersonalDietTypeView.swift in Sources */,
 				1F156C272C0D22CD00F0E0DC /* WelcomeTextView.swift in Sources */,
 				DD5A0E902C07BD79006464D7 /* DailyCalorieView.swift in Sources */,

@@ -10,7 +10,6 @@ struct PasswordChangedLoginButton: View {
             Color.green177_235
                 .frame(width: 327, height: 56)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
-            
             Text("Giriş Yap")
                 .font(.urbanistSemibold(size: 16))
                 .foregroundStyle(Color.black11_11)

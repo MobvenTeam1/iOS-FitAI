@@ -27,9 +27,7 @@ open class Coordinator<Router: NavigationRouter>: ObservableObject {
     public func show(_ route: Router, animated: Bool = true) {
         let view = route.view()
         let viewWithCoordinator = view.environmentObject(self)
-            .applyEnvironmentObjects(gsmNumber: GSMNumber(), 
-                                     checkIfOTPCorrect: CheckIfOTPCorrect(),
-                                     appState: AppState())
+            .environmentObject(AppState())
             .navigationBarHidden(true)
         let viewController = UIHostingController(rootView: viewWithCoordinator)
         switch route.transition {

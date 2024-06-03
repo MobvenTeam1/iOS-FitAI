@@ -17,17 +17,20 @@ struct LoginView: View {
     var body: some View {
         NavigationStack {
             Spacer()
-            VStack(alignment: .center,spacing: 10) {
+            VStack(alignment: .center, spacing: 10) {
                 WelcomeTextView()
                 EmailTextField(showError: $showError, errorMessage: $errorMessage, email: $email)
-               
                 GenericPasswordView(password: $password, placeholder: "Parola")
                 HStack {
                     RememberMeSection(rememberMeClicked: $rememberMeClicked)
                     Spacer()
                     ForgotPasswordLink()
                 }
-                LoginButton(email: email, password: password, showError: $showError, errorMessage: $errorMessage)
+                LoginButton(email: email,
+                            password: password,
+                            showError: $showError,
+                            errorMessage: $errorMessage
+                )
                 DividerWithText()
                 SocialLoginButtons()
                 Spacer()
@@ -43,7 +46,7 @@ struct LoginView: View {
     }
 }
 
-//#Preview {
-//    LoginView()
-//        .environmentObject(GSMNumber())
-//}
+#Preview {
+    LoginView()
+        .environmentObject(AppState())
+}

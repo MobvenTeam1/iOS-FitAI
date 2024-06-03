@@ -23,8 +23,8 @@ struct Onboarding5: View {
                             .frame(width: 72, height: 81)
                             .offset(y: -40)
                         Image("FitAIText")
-                            .resizable()
-                            .frame(width: 107, height: 72)
+//                            .resizable()
+//                            .frame(width: 107, height: 72)
                             .offset(y: -40)
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
@@ -34,10 +34,12 @@ struct Onboarding5: View {
                             ZStack {
                                 Color.green177_235
                                 Text("Kayıt Ol")
-                                    .foregroundStyle(.black)
-                            }.clipShape(RoundedRectangle(cornerRadius: 8))
-                                .frame(width: geometry.size.width / 1.2, height: geometry.size.height / 14.5)
-                                .padding(.top, 60)
+                                    .font(.urbanistSemibold(size: 16))
+                                    .foregroundStyle(Color.black11_11)
+                            }
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                            .frame(width: geometry.size.width / 1.2, height: geometry.size.height / 14.5)
+                            .padding(.top, 60)
                         }
                         NavigationLink {
                             LoginView()
@@ -45,19 +47,16 @@ struct Onboarding5: View {
                             ZStack {
                                 Color.white
                                 Text("Giriş Yap")
-                                    .foregroundStyle(.black)
+                                    .font(.urbanistSemibold(size: 16))
+                                    .foregroundStyle(Color.black11_11)
                             } .overlay(
-                                RoundedRectangle(cornerRadius: 8)
-                                    .stroke(.black, lineWidth: 1)
+                                RoundedRectangle(cornerRadius: 12)
+                                    .stroke(Color.black11_11, lineWidth: 1)
                             )
                             .frame(width: geometry.size.width / 1.2, height: geometry.size.height / 14.5)
                         }
                         .padding(.top, 5)
                     }
-                    .font(
-                        Font.custom("Urbanist", size: 15)
-                            .weight(.semibold)
-                    )
                     .padding(.leading, geometry.size.width / 15.625)
                     .padding(geometry.size.width / 37.5)
                     .padding(.top, geometry.size.height / 1.5)
@@ -69,6 +68,5 @@ struct Onboarding5: View {
 
 #Preview {
     Onboarding5()
-        .environmentObject(GSMNumber())
-        .environmentObject(CheckIfOTPCorrect())
+        .environmentObject(AppState())
 }

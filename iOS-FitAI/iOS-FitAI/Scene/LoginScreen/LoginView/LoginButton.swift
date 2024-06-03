@@ -5,8 +5,7 @@ struct LoginButton: View {
     var password: String
     @Binding var showError: Bool
     @Binding var errorMessage: String
-//    @Binding var isLoginSuccessful: Bool
-    @EnvironmentObject var isLoginSuccessful: AppState
+    @EnvironmentObject var appState: AppState
     var body: some View {
         GreenButtonView(text: "Giriş Yap") {
             validateInputs()
@@ -27,7 +26,7 @@ struct LoginButton: View {
         } else {
             showError = false
             errorMessage = ""
-            isLoginSuccessful.isLoginSuccessful = true
+            appState.isLoginSuccessful = true
         }
     }
 

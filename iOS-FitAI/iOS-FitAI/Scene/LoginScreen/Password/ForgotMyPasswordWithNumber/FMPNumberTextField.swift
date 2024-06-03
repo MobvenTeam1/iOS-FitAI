@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct FMPNumberTextField: View {
-    @EnvironmentObject var gsmNumber: GSMNumber
+    @EnvironmentObject var appState: AppState
     var body: some View {
-        TextField("", text: $gsmNumber.number)
-            .placeholder(when: gsmNumber.number.isEmpty, placeholder: {
+        TextField("", text: $appState.number)
+            .placeholder(when: appState.number.isEmpty, placeholder: {
                 Text("Number")
             })
             .keyboardType(.numberPad)
