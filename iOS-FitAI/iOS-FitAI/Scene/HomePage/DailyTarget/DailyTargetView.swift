@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DailyTargetView: View {
     @State private var kgLeftToTarget: Int = 5
+    @State private var addExercise: Bool = false
     var body: some View {
         VStack(alignment: .center, spacing: 12) {
             Text("Günlük Hedefler")
@@ -18,7 +19,7 @@ struct DailyTargetView: View {
                 .padding(.leading, 33)
             HStack(spacing: 8) {
                 DailyTargetButtonsView(imageName: "egzersiz", text: "Egzersiz Ekle") {
-                    
+                    addExercise = true
                 }
                 DailyTargetButtonsView(imageName: "besin", text: "Besin Ekle") {
                     
@@ -35,5 +36,8 @@ struct DailyTargetView: View {
             .padding(.leading, 33)
         }
         .padding(.top, 20)
+        .navigationDestination(isPresented: $addExercise) {
+            AddExerciseView()
+        }
     }
 }

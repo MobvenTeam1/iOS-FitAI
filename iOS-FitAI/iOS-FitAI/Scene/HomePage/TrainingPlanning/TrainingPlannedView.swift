@@ -30,7 +30,6 @@ struct TrainingPlannedView: View {
                                 Text("Mat")
                                     .font(.urbanistRegular(size: 14))
                                     .foregroundStyle(Color.black102_102)
-//
                             }
                             Spacer()
                             Image("setlerimage")
