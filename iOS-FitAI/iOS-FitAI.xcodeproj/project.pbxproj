@@ -94,6 +94,17 @@
 		1F675D692C0FCA60000F073A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D682C0FCA60000F073A /* HeaderView.swift */; };
 		1F675D6B2C0FCAFC000F073A /* FoodDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D6A2C0FCAFC000F073A /* FoodDetailsView.swift */; };
 		1F675D6D2C0FCB43000F073A /* UpdateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D6C2C0FCB43000F073A /* UpdateButton.swift */; };
+		1F675D702C1075D3000F073A /* AddExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D6F2C1075D3000F073A /* AddExerciseView.swift */; };
+		1F675D722C107ECA000F073A /* AddExerciseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D712C107ECA000F073A /* AddExerciseHeaderView.swift */; };
+		1F675D742C107EE7000F073A /* SearchForExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D732C107EE7000F073A /* SearchForExerciseView.swift */; };
+		1F675D762C107FB9000F073A /* AddExerciseSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D752C107FB9000F073A /* AddExerciseSearchBar.swift */; };
+		1F675D792C10C087000F073A /* SFECustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D782C10C087000F073A /* SFECustomButton.swift */; };
+		1F675D7B2C10C0BD000F073A /* SFECustomButtonControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D7A2C10C0BD000F073A /* SFECustomButtonControl.swift */; };
+		1F675D7D2C10C0E6000F073A /* SFECard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D7C2C10C0E6000F073A /* SFECard.swift */; };
+		1F675D7F2C10D044000F073A /* CheckIfSearching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D7E2C10D044000F073A /* CheckIfSearching.swift */; };
+		1F675D812C110357000F073A /* MyExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D802C110357000F073A /* MyExerciseView.swift */; };
+		1F675D832C110DEB000F073A /* DurationForExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D822C110DEB000F073A /* DurationForExercise.swift */; };
+		1F675D862C110EC8000F073A /* AddExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D852C110EC8000F073A /* AddExercise.swift */; };
 		1FC20BBD2C0B42F5005C7326 /* Font + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BBB2C0B42F4005C7326 /* Font + Ext.swift */; };
 		1FC20BBE2C0B42F5005C7326 /* Color + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BBC2C0B42F4005C7326 /* Color + Ext.swift */; };
 		1FC20BE42C0B4A5B005C7326 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BE32C0B4A5B005C7326 /* OnboardingViewModel.swift */; };
@@ -244,6 +255,17 @@
 		1F675D682C0FCA60000F073A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		1F675D6A2C0FCAFC000F073A /* FoodDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailsView.swift; sourceTree = "<group>"; };
 		1F675D6C2C0FCB43000F073A /* UpdateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateButton.swift; sourceTree = "<group>"; };
+		1F675D6F2C1075D3000F073A /* AddExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseView.swift; sourceTree = "<group>"; };
+		1F675D712C107ECA000F073A /* AddExerciseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseHeaderView.swift; sourceTree = "<group>"; };
+		1F675D732C107EE7000F073A /* SearchForExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForExerciseView.swift; sourceTree = "<group>"; };
+		1F675D752C107FB9000F073A /* AddExerciseSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseSearchBar.swift; sourceTree = "<group>"; };
+		1F675D782C10C087000F073A /* SFECustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFECustomButton.swift; sourceTree = "<group>"; };
+		1F675D7A2C10C0BD000F073A /* SFECustomButtonControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFECustomButtonControl.swift; sourceTree = "<group>"; };
+		1F675D7C2C10C0E6000F073A /* SFECard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFECard.swift; sourceTree = "<group>"; };
+		1F675D7E2C10D044000F073A /* CheckIfSearching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIfSearching.swift; sourceTree = "<group>"; };
+		1F675D802C110357000F073A /* MyExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyExerciseView.swift; sourceTree = "<group>"; };
+		1F675D822C110DEB000F073A /* DurationForExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationForExercise.swift; sourceTree = "<group>"; };
+		1F675D852C110EC8000F073A /* AddExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExercise.swift; sourceTree = "<group>"; };
 		1FC20BBB2C0B42F4005C7326 /* Font + Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font + Ext.swift"; sourceTree = "<group>"; };
 		1FC20BBC2C0B42F4005C7326 /* Color + Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color + Ext.swift"; sourceTree = "<group>"; };
 		1FC20BE02C0B464F005C7326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -389,9 +411,10 @@
 		1F156B9A2C0D22CC00F0E0DC /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				1F675D6E2C1075BE000F073A /* AddExercise */,
 				1F675D642C0FC92A000F073A /* Model */,
-				1F156C342C0E7C5C00F0E0DC /* AIUpdateFoodSuggestion */,
 				1F156B9B2C0D22CC00F0E0DC /* HomePageView */,
+				1F156C342C0E7C5C00F0E0DC /* AIUpdateFoodSuggestion */,
 				1F156BAD2C0D22CC00F0E0DC /* DailyTarget */,
 				1F156BA12C0D22CC00F0E0DC /* TrainingPlanning */,
 				1F156BAA2C0D22CC00F0E0DC /* NutritionPlanning */,
@@ -629,6 +652,7 @@
 		1F675D642C0FC92A000F073A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1F675D842C110EB2000F073A /* AddExercise */,
 				1F675D652C0FC933000F073A /* FoodItem */,
 			);
 			path = Model;
@@ -640,6 +664,47 @@
 				1F675D662C0FC940000F073A /* FoodItem.swift */,
 			);
 			path = FoodItem;
+			sourceTree = "<group>";
+		};
+		1F675D6E2C1075BE000F073A /* AddExercise */ = {
+			isa = PBXGroup;
+			children = (
+				1F675D872C111208000F073A /* AddExerciseView */,
+				1F675D772C10BF63000F073A /* SearchForExercise */,
+			);
+			path = AddExercise;
+			sourceTree = "<group>";
+		};
+		1F675D772C10BF63000F073A /* SearchForExercise */ = {
+			isa = PBXGroup;
+			children = (
+				1F675D732C107EE7000F073A /* SearchForExerciseView.swift */,
+				1F675D782C10C087000F073A /* SFECustomButton.swift */,
+				1F675D7A2C10C0BD000F073A /* SFECustomButtonControl.swift */,
+				1F675D7C2C10C0E6000F073A /* SFECard.swift */,
+				1F675D7E2C10D044000F073A /* CheckIfSearching.swift */,
+				1F675D752C107FB9000F073A /* AddExerciseSearchBar.swift */,
+				1F675D822C110DEB000F073A /* DurationForExercise.swift */,
+				1F675D802C110357000F073A /* MyExerciseView.swift */,
+			);
+			path = SearchForExercise;
+			sourceTree = "<group>";
+		};
+		1F675D842C110EB2000F073A /* AddExercise */ = {
+			isa = PBXGroup;
+			children = (
+				1F675D852C110EC8000F073A /* AddExercise.swift */,
+			);
+			path = AddExercise;
+			sourceTree = "<group>";
+		};
+		1F675D872C111208000F073A /* AddExerciseView */ = {
+			isa = PBXGroup;
+			children = (
+				1F675D6F2C1075D3000F073A /* AddExerciseView.swift */,
+				1F675D712C107ECA000F073A /* AddExerciseHeaderView.swift */,
+			);
+			path = AddExerciseView;
 			sourceTree = "<group>";
 		};
 		1FC20BE22C0B4A4B005C7326 /* ViewModel */ = {
@@ -1172,9 +1237,12 @@
 				1F156BF32C0D22CC00F0E0DC /* TrainingPlannedSubView.swift in Sources */,
 				1F156C362C0E7C9600F0E0DC /* AIUpdateFoodSuggestion.swift in Sources */,
 				DD2D24462BFF9E1C00C97F36 /* NavigationTransitionStyle.swift in Sources */,
+				1F675D792C10C087000F073A /* SFECustomButton.swift in Sources */,
 				1F156C0C2C0D22CC00F0E0DC /* ScreenModeView.swift in Sources */,
+				1F675D722C107ECA000F073A /* AddExerciseHeaderView.swift in Sources */,
 				DD2D24582BFFA11300C97F36 /* PersonalInfosView.swift in Sources */,
 				1F156C022C0D22CC00F0E0DC /* AISupportedNutritionPlan.swift in Sources */,
+				1F675D812C110357000F073A /* MyExerciseView.swift in Sources */,
 				DD2D244F2BFF9F1900C97F36 /* SplashView.swift in Sources */,
 				1F156C1E2C0D22CC00F0E0DC /* GenericPasswordView.swift in Sources */,
 				DDEA0A1B2C04B62900EEC4E6 /* HeightView.swift in Sources */,
@@ -1192,6 +1260,7 @@
 				1F156AFE2C0C7A4200F0E0DC /* GreenButtonView.swift in Sources */,
 				1F156BEE2C0D22CC00F0E0DC /* TrainingCategoriesView.swift in Sources */,
 				DD2D24142BFF9C5200C97F36 /* AppDelegate.swift in Sources */,
+				1F675D762C107FB9000F073A /* AddExerciseSearchBar.swift in Sources */,
 				1F156B8F2C0C7A8300F0E0DC /* AppState.swift in Sources */,
 				DDEA0A162C04981B00EEC4E6 /* MFAIText.swift in Sources */,
 				DDEA0A0C2BFFB5A900EEC4E6 /* MFAIButton.swift in Sources */,
@@ -1206,17 +1275,21 @@
 				1F156C182C0D22CC00F0E0DC /* PasswordChangedView.swift in Sources */,
 				1F156AEF2C0C7A4200F0E0DC /* ParticleEmitterView.swift in Sources */,
 				1F156C102C0D22CC00F0E0DC /* FMPNumberTextField.swift in Sources */,
+				1F675D7D2C10C0E6000F073A /* SFECard.swift in Sources */,
 				1F156BFE2C0D22CC00F0E0DC /* CircularProgressView.swift in Sources */,
 				DDEA0A032BFFADC300EEC4E6 /* GenderView.swift in Sources */,
 				1F675D672C0FC940000F073A /* FoodItem.swift in Sources */,
 				1F156AFC2C0C7A4200F0E0DC /* CustomBackButton.swift in Sources */,
 				1F156C1A2C0D22CC00F0E0DC /* PasswordChangedImageAndText.swift in Sources */,
+				1F675D702C1075D3000F073A /* AddExerciseView.swift in Sources */,
 				1F156BFB2C0D22CC00F0E0DC /* NutritionPlanningView.swift in Sources */,
 				DDEA0A122BFFBC0400EEC4E6 /* MFAITextField.swift in Sources */,
 				1F156C1C2C0D22CC00F0E0DC /* CreateNewPasswordTextView.swift in Sources */,
 				1F156C252C0D22CD00F0E0DC /* SocialLoginButtons.swift in Sources */,
+				1F675D832C110DEB000F073A /* DurationForExercise.swift in Sources */,
 				DD5A0E962C07BE1D006464D7 /* OnboardingView.swift in Sources */,
 				DD2D24442BFF9DF200C97F36 /* NavigationRouter.swift in Sources */,
+				1F675D7F2C10D044000F073A /* CheckIfSearching.swift in Sources */,
 				DD5A0E9C2C07C51C006464D7 /* BindingExtension.swift in Sources */,
 				DD2D245A2BFFA1E200C97F36 /* PersonalInfosModel.swift in Sources */,
 				DD5A0ED42C088E08006464D7 /* OnboardingModel.swift in Sources */,
@@ -1241,6 +1314,7 @@
 				1F156BF42C0D22CC00F0E0DC /* TrainingPlannedView.swift in Sources */,
 				1F156C142C0D22CC00F0E0DC /* FMPEmailTextView.swift in Sources */,
 				1F156C072C0D22CC00F0E0DC /* TabBarShape.swift in Sources */,
+				1F675D742C107EE7000F073A /* SearchForExerciseView.swift in Sources */,
 				DDEA0A0E2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift in Sources */,
 				DDDFB3DE2C0997C200D2A117 /* WelcomeView.swift in Sources */,
 				1FC20BE42C0B4A5B005C7326 /* OnboardingViewModel.swift in Sources */,
@@ -1249,6 +1323,7 @@
 				1F156C2A2C0D22CD00F0E0DC /* ForgotPasswordLink.swift in Sources */,
 				DD5A0E992C07BFD6006464D7 /* TargetsView.swift in Sources */,
 				1F156C162C0D22CC00F0E0DC /* FMPLoginWithNumberButton.swift in Sources */,
+				1F675D862C110EC8000F073A /* AddExercise.swift in Sources */,
 				1F156C132C0D22CC00F0E0DC /* FMPEmailSendCodeButton.swift in Sources */,
 				1F156C092C0D22CC00F0E0DC /* ProfileView.swift in Sources */,
 				1FC20BBE2C0B42F5005C7326 /* Color + Ext.swift in Sources */,
@@ -1258,6 +1333,7 @@
 				1F156C282C0D22CD00F0E0DC /* LoginButton.swift in Sources */,
 				DDE9882F2C05D12600550643 /* CurrentWeightView.swift in Sources */,
 				1F156C2C2C0D22CD00F0E0DC /* RememberMeSection.swift in Sources */,
+				1F675D7B2C10C0BD000F073A /* SFECustomButtonControl.swift in Sources */,
 				1F156C232C0D22CC00F0E0DC /* Onboarding5.swift in Sources */,
 				1F675D6B2C0FCAFC000F073A /* FoodDetailsView.swift in Sources */,
 				1F156C332C0D309000F0E0DC /* AIPlanButtons.swift in Sources */,

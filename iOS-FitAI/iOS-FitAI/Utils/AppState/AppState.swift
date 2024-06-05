@@ -22,4 +22,5 @@ class AppState: ObservableObject {
     @Published var updateFoodTargetIndex: Int? = nil
     @Published var updatedFoodItem: FoodItem? = nil
     //b
+    @Published var isAddExerciseButtonTapped: Bool = false
 }
