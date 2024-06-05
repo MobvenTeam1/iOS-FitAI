@@ -2,7 +2,7 @@ import SwiftUI
 
 struct HelloView: View {
     @State private var currentDate: String = ""
-    @EnvironmentObject var checkIfUserLogined: AppState
+    @EnvironmentObject var appState: AppState
     let userName: String
     var body: some View {
             ZStack(alignment: .top) {
@@ -20,7 +20,7 @@ struct HelloView: View {
                     .foregroundStyle(.white)
                     Spacer()
                     Button {
-                        checkIfUserLogined.selectedIndex = 3
+                        appState.selectedIndex = 3
                     }label: {
                         Image("notification")
                     }

@@ -5,6 +5,13 @@ struct NutritionPlanningSubView: View {
     let typeOfMeal: String
     let duration: String
     let calories: String
+    @EnvironmentObject var appState: AppState
+    @State private var foodItems: [FoodItem] = [
+            FoodItem(name: "Haşlanmış Yumurta", imageName: "yumurta", secondaryText: "2 tane, 180 kcal"),
+            FoodItem(name: "Avokado", imageName: "avokado", secondaryText: "Yarım, 200kcal"),
+            FoodItem(name: "Ezine Peyniri", imageName: "ezinepeyniri", secondaryText: "1 Porsiyon, 100 kcal")
+        ]
+    
     var body: some View {
         VStack {
             Text("Kişiselleştirilmiş Beslenme Planı")
@@ -15,7 +22,7 @@ struct NutritionPlanningSubView: View {
                 .padding(.top, 22)
             Button(action: { isNutritionTapped.toggle() }) {
                 ZStack {
-                        Image("kahvaltıbackground")
+                    Image("kahvaltıbackground")
                     HStack {
                         Text(typeOfMeal)
                             .foregroundStyle(.white)
@@ -41,10 +48,10 @@ struct NutritionPlanningSubView: View {
                 .frame(width: 327, height: 102)
             }
             if isNutritionTapped {
-                NutritionPlanningView(headerImageName: "kahvaltı2", foodImageName: "yumurta", foodName: "Haşlanmış Yumurta", secondaryText: "2 tane 180kcal")
-            }
+                            NutritionPlanningView(
+                                foodItems: $foodItems
+                            )
+                        }
         }
     }
 }
-
-

@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct NutritionPlanningView: View {
-    // TODO: Veri geldiğinde bunları arraye çevirip gelen verinin sayısına göre foreach içerisinde düzenleme yap.
-    let headerImageName: String
-    let foodImageName: String
-    let foodName: String
-    let secondaryText: String // Burası gelecek veriye göre 2 ayrı stringe bölünebilir.
+    @Binding var foodItems: [FoodItem]
+    @State private var isChangeSuggestionTapped: Bool = false
+    @State private var selectedFoodName: String = ""
+    @EnvironmentObject var appState: AppState
+
     var body: some View {
         VStack(spacing: 12) {
             Text("Besinler")
@@ -21,45 +21,62 @@ struct NutritionPlanningView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 52)
             VStack(spacing: 8) {
-            ForEach(0..<5) { _ in
+                ForEach(foodItems.indices, id: \.self) { index in
                     ZStack {
                         Color.white
                             .cornerRadius(12)
                             .shadow(color: Color.black.opacity(0.1), radius: 10, x: 1, y: 1)
                         HStack {
-                            Image(foodImageName)
+                            if let imageName = foodItems[index].imageName {
+                                Image(imageName)
+                                    .resizable()
+                                    .frame(width: 36, height: 35)
+                            }
+                            else {
+                                Color.white247_248
+                                    .frame(width: 36, height: 35)
+                            }
                             VStack(alignment: .leading) {
-                                Text(foodName)
+                                Text(foodItems[index].name)
                                     .font(.urbanistBold(size: 16))
                                     .foregroundStyle(.black)
-                                Text(secondaryText)
+                                Text(foodItems[index].secondaryText)
                                     .font(.urbanistRegular(size: 14))
                             }
                             Spacer()
-                            Image("setlerimage")
+                            Button {
+                                selectedFoodName = foodItems[index].name
+                                appState.updateFoodTargetIndex = index
+                                isChangeSuggestionTapped = true
+                            } label: {
+                                Image("setlerimage")
+                            }
+                            .sheet(isPresented: $isChangeSuggestionTapped) {
+                                                            AIUpdateFoodSuggestion(
+                                                                selectedFoodName: selectedFoodName,
+                                                                foodItems: [
+                                                                    FoodItem(name: "Muz", imageName: "muz", secondaryText: "1 tane orta, 180 kcal"),
+                                                                    FoodItem(name: "Fıstık Ezmesi", imageName: "fıstıkezmesi", secondaryText: "2 kaşık, 180 kcal"),
+                                                                    FoodItem(name: "Kinoa", imageName: "kinoa", secondaryText: "200gr, 180 kcal"),
+                                                                    FoodItem(name: "Keten Tohumu", imageName: "ketentohumu", secondaryText: "2 kaşık, 180 kcal")
+                                                                ]
+                                                            )
+                                                            .presentationDetents([.large, .fraction(0.7)])
+                                                        }
                         }
-                        .padding(.horizontal)
+                        .padding()
                     }
-                    .frame(width: 287, height: 74)
+                    .frame(width: 287, height: 82)
                 }
             }
-            .padding(.top, 4)
-            NavigationLink {
-                HomePageView()
-            }label: {
-                ZStack {
-                    Color.green177_235
-                        .frame(width: 327, height: 56)
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
-                    Text("Öğünü Tamamla")
-                        .font(.urbanistSemibold(size: 16))
-                        .foregroundStyle(Color.black11_11)
-                }
-            }
+            .padding(.horizontal, 16)
         }
+        .onChange(of: appState.isUserUpdateFood) { isUserUpdateFood in
+                    if isUserUpdateFood, let index = appState.selectedFoodIndex, let updatedItem = appState.updatedFoodItem,
+                       index < foodItems.count {
+                        appState.isUserUpdateFood = false
+                        foodItems[index] = updatedItem
+                    }
+                }
     }
-}
-
-#Preview {
-    NutritionPlanningView(headerImageName: "kahvaltı2", foodImageName: "yumurta", foodName: "Haşlanmış Yumurta", secondaryText: "2 tane 180 kcal")
 }
