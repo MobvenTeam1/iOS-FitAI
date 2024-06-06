@@ -7,13 +7,14 @@
 
 import SwiftUI
 
-struct AddExerciseHeaderView: View {
+struct AddHeaderView: View {
     @Environment(\.dismiss) var dismiss
+    let text: String
     var body: some View {
         ZStack(alignment: .top) {
             Color.black.opacity(0.9)
             HStack {
-                Text("Egzersiz Ekle")
+                Text(text)
                     .font(.urbanistSemibold(size: 24))
                     .foregroundColor(.white)
                 Spacer()
@@ -34,8 +35,4 @@ struct AddExerciseHeaderView: View {
         }
         .frame(width: UIScreen.main.bounds.width, height: 167)
     }
-}
-
-#Preview {
-    AddExerciseHeaderView()
 }

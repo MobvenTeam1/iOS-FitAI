@@ -13,7 +13,7 @@ struct LoginView: View {
     @State private var password: String = ""
     @State private var showError: Bool = false
     @State private var errorMessage: String = ""
-    @State private var isLoginSuccessful: Bool = false
+//    @State private var isLoginSuccessful: Bool = false
     var body: some View {
         NavigationStack {
             Spacer()
@@ -39,9 +39,9 @@ struct LoginView: View {
             .padding(.horizontal, 24)
             .customLogoButton()
             .customBackButton()
-            .navigationDestination(isPresented: $isLoginSuccessful) {
-                HomePageView()
-            }
+//            .navigationDestination(isPresented: $isLoginSuccessful) {
+//                HomePageView()
+//            }
         }
     }
 }

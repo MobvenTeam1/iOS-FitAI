@@ -11,7 +11,7 @@ struct AddExerciseView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack {
-                AddExerciseHeaderView()
+                AddHeaderView(text: "Egzersiz Ekle")
                 SearchForExerciseView()
             }
         }

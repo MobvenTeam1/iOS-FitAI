@@ -11,7 +11,7 @@ struct CheckIfSearching: View {
     let searchText: String
     @Binding var selectedButton: String
     let buttons: [String]
-    let searchResults: [Exercise]
+    let searchResults: [Any]
     var body: some View {
         if searchText.isEmpty {
             SFECustomButtonControl(selectedButton: $selectedButton, buttons: buttons)

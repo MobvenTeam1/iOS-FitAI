@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AddExerciseSearchBar: View {
+struct AddSearchBar: View {
     @Binding var text: String
     
     var body: some View {
