@@ -10,6 +10,7 @@ import SwiftUI
 struct DailyTargetView: View {
     @State private var kgLeftToTarget: Int = 5
     @State private var addExercise: Bool = false
+    @State private var addFood: Bool = false
     var body: some View {
         VStack(alignment: .center, spacing: 12) {
             Text("Günlük Hedefler")
@@ -22,7 +23,7 @@ struct DailyTargetView: View {
                     addExercise = true
                 }
                 DailyTargetButtonsView(imageName: "besin", text: "Besin Ekle") {
-                    
+                    addFood = true
                 }
             }
             CircularProgressView(totalKgToLose: 10, kgToLoseForTarget: 5)
@@ -38,6 +39,9 @@ struct DailyTargetView: View {
         .padding(.top, 20)
         .navigationDestination(isPresented: $addExercise) {
             AddExerciseView()
+        }
+        .navigationDestination(isPresented: $addFood) {
+            AddFoodView()
         }
     }
 }

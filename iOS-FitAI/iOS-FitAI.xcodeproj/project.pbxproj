@@ -90,14 +90,18 @@
 		1F156C312C0D2F7300F0E0DC /* NavigationLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156C302C0D2F7300F0E0DC /* NavigationLinks.swift */; };
 		1F156C332C0D309000F0E0DC /* AIPlanButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156C322C0D309000F0E0DC /* AIPlanButtons.swift */; };
 		1F156C362C0E7C9600F0E0DC /* AIUpdateFoodSuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156C352C0E7C9600F0E0DC /* AIUpdateFoodSuggestion.swift */; };
+		1F63DDC12C1121FB0060B7D0 /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63DDC02C1121FB0060B7D0 /* AddFoodView.swift */; };
+		1F63DDC52C11A9D90060B7D0 /* AddFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63DDC42C11A9D90060B7D0 /* AddFood.swift */; };
+		1F63DDC72C11B1520060B7D0 /* AddFoodCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63DDC62C11B1520060B7D0 /* AddFoodCard.swift */; };
+		1F63DDC92C11B6000060B7D0 /* BarcodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63DDC82C11B6000060B7D0 /* BarcodeView.swift */; };
 		1F675D672C0FC940000F073A /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D662C0FC940000F073A /* FoodItem.swift */; };
 		1F675D692C0FCA60000F073A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D682C0FCA60000F073A /* HeaderView.swift */; };
 		1F675D6B2C0FCAFC000F073A /* FoodDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D6A2C0FCAFC000F073A /* FoodDetailsView.swift */; };
 		1F675D6D2C0FCB43000F073A /* UpdateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D6C2C0FCB43000F073A /* UpdateButton.swift */; };
 		1F675D702C1075D3000F073A /* AddExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D6F2C1075D3000F073A /* AddExerciseView.swift */; };
-		1F675D722C107ECA000F073A /* AddExerciseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D712C107ECA000F073A /* AddExerciseHeaderView.swift */; };
+		1F675D722C107ECA000F073A /* AddHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D712C107ECA000F073A /* AddHeaderView.swift */; };
 		1F675D742C107EE7000F073A /* SearchForExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D732C107EE7000F073A /* SearchForExerciseView.swift */; };
-		1F675D762C107FB9000F073A /* AddExerciseSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D752C107FB9000F073A /* AddExerciseSearchBar.swift */; };
+		1F675D762C107FB9000F073A /* AddSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D752C107FB9000F073A /* AddSearchBar.swift */; };
 		1F675D792C10C087000F073A /* SFECustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D782C10C087000F073A /* SFECustomButton.swift */; };
 		1F675D7B2C10C0BD000F073A /* SFECustomButtonControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D7A2C10C0BD000F073A /* SFECustomButtonControl.swift */; };
 		1F675D7D2C10C0E6000F073A /* SFECard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D7C2C10C0E6000F073A /* SFECard.swift */; };
@@ -251,14 +255,18 @@
 		1F156C302C0D2F7300F0E0DC /* NavigationLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinks.swift; sourceTree = "<group>"; };
 		1F156C322C0D309000F0E0DC /* AIPlanButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIPlanButtons.swift; sourceTree = "<group>"; };
 		1F156C352C0E7C9600F0E0DC /* AIUpdateFoodSuggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIUpdateFoodSuggestion.swift; sourceTree = "<group>"; };
+		1F63DDC02C1121FB0060B7D0 /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
+		1F63DDC42C11A9D90060B7D0 /* AddFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFood.swift; sourceTree = "<group>"; };
+		1F63DDC62C11B1520060B7D0 /* AddFoodCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodCard.swift; sourceTree = "<group>"; };
+		1F63DDC82C11B6000060B7D0 /* BarcodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeView.swift; sourceTree = "<group>"; };
 		1F675D662C0FC940000F073A /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		1F675D682C0FCA60000F073A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		1F675D6A2C0FCAFC000F073A /* FoodDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailsView.swift; sourceTree = "<group>"; };
 		1F675D6C2C0FCB43000F073A /* UpdateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateButton.swift; sourceTree = "<group>"; };
 		1F675D6F2C1075D3000F073A /* AddExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseView.swift; sourceTree = "<group>"; };
-		1F675D712C107ECA000F073A /* AddExerciseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseHeaderView.swift; sourceTree = "<group>"; };
+		1F675D712C107ECA000F073A /* AddHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHeaderView.swift; sourceTree = "<group>"; };
 		1F675D732C107EE7000F073A /* SearchForExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForExerciseView.swift; sourceTree = "<group>"; };
-		1F675D752C107FB9000F073A /* AddExerciseSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseSearchBar.swift; sourceTree = "<group>"; };
+		1F675D752C107FB9000F073A /* AddSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSearchBar.swift; sourceTree = "<group>"; };
 		1F675D782C10C087000F073A /* SFECustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFECustomButton.swift; sourceTree = "<group>"; };
 		1F675D7A2C10C0BD000F073A /* SFECustomButtonControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFECustomButtonControl.swift; sourceTree = "<group>"; };
 		1F675D7C2C10C0E6000F073A /* SFECard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFECard.swift; sourceTree = "<group>"; };
@@ -411,6 +419,7 @@
 		1F156B9A2C0D22CC00F0E0DC /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				1F63DDBF2C1121C00060B7D0 /* AddFood */,
 				1F675D6E2C1075BE000F073A /* AddExercise */,
 				1F675D642C0FC92A000F073A /* Model */,
 				1F156B9B2C0D22CC00F0E0DC /* HomePageView */,
@@ -649,6 +658,33 @@
 			path = AIUpdateFoodSuggestion;
 			sourceTree = "<group>";
 		};
+		1F63DDBF2C1121C00060B7D0 /* AddFood */ = {
+			isa = PBXGroup;
+			children = (
+				1F63DDC22C11A9A90060B7D0 /* Model */,
+				1F63DDC02C1121FB0060B7D0 /* AddFoodView.swift */,
+				1F63DDC62C11B1520060B7D0 /* AddFoodCard.swift */,
+				1F63DDC82C11B6000060B7D0 /* BarcodeView.swift */,
+			);
+			path = AddFood;
+			sourceTree = "<group>";
+		};
+		1F63DDC22C11A9A90060B7D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F63DDC42C11A9D90060B7D0 /* AddFood.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1F63DDC32C11A9B80060B7D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F675D842C110EB2000F073A /* AddExercise */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1F675D642C0FC92A000F073A /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -669,6 +705,7 @@
 		1F675D6E2C1075BE000F073A /* AddExercise */ = {
 			isa = PBXGroup;
 			children = (
+				1F63DDC32C11A9B80060B7D0 /* Model */,
 				1F675D872C111208000F073A /* AddExerciseView */,
 				1F675D772C10BF63000F073A /* SearchForExercise */,
 			);
@@ -683,7 +720,7 @@
 				1F675D7A2C10C0BD000F073A /* SFECustomButtonControl.swift */,
 				1F675D7C2C10C0E6000F073A /* SFECard.swift */,
 				1F675D7E2C10D044000F073A /* CheckIfSearching.swift */,
-				1F675D752C107FB9000F073A /* AddExerciseSearchBar.swift */,
+				1F675D752C107FB9000F073A /* AddSearchBar.swift */,
 				1F675D822C110DEB000F073A /* DurationForExercise.swift */,
 				1F675D802C110357000F073A /* MyExerciseView.swift */,
 			);
@@ -702,7 +739,7 @@
 			isa = PBXGroup;
 			children = (
 				1F675D6F2C1075D3000F073A /* AddExerciseView.swift */,
-				1F675D712C107ECA000F073A /* AddExerciseHeaderView.swift */,
+				1F675D712C107ECA000F073A /* AddHeaderView.swift */,
 			);
 			path = AddExerciseView;
 			sourceTree = "<group>";
@@ -1239,7 +1276,7 @@
 				DD2D24462BFF9E1C00C97F36 /* NavigationTransitionStyle.swift in Sources */,
 				1F675D792C10C087000F073A /* SFECustomButton.swift in Sources */,
 				1F156C0C2C0D22CC00F0E0DC /* ScreenModeView.swift in Sources */,
-				1F675D722C107ECA000F073A /* AddExerciseHeaderView.swift in Sources */,
+				1F675D722C107ECA000F073A /* AddHeaderView.swift in Sources */,
 				DD2D24582BFFA11300C97F36 /* PersonalInfosView.swift in Sources */,
 				1F156C022C0D22CC00F0E0DC /* AISupportedNutritionPlan.swift in Sources */,
 				1F675D812C110357000F073A /* MyExerciseView.swift in Sources */,
@@ -1260,7 +1297,7 @@
 				1F156AFE2C0C7A4200F0E0DC /* GreenButtonView.swift in Sources */,
 				1F156BEE2C0D22CC00F0E0DC /* TrainingCategoriesView.swift in Sources */,
 				DD2D24142BFF9C5200C97F36 /* AppDelegate.swift in Sources */,
-				1F675D762C107FB9000F073A /* AddExerciseSearchBar.swift in Sources */,
+				1F675D762C107FB9000F073A /* AddSearchBar.swift in Sources */,
 				1F156B8F2C0C7A8300F0E0DC /* AppState.swift in Sources */,
 				DDEA0A162C04981B00EEC4E6 /* MFAIText.swift in Sources */,
 				DDEA0A0C2BFFB5A900EEC4E6 /* MFAIButton.swift in Sources */,
@@ -1273,11 +1310,13 @@
 				1F156BF02C0D22CC00F0E0DC /* HelloView.swift in Sources */,
 				1F156C2B2C0D22CD00F0E0DC /* EmailTextField.swift in Sources */,
 				1F156C182C0D22CC00F0E0DC /* PasswordChangedView.swift in Sources */,
+				1F63DDC92C11B6000060B7D0 /* BarcodeView.swift in Sources */,
 				1F156AEF2C0C7A4200F0E0DC /* ParticleEmitterView.swift in Sources */,
 				1F156C102C0D22CC00F0E0DC /* FMPNumberTextField.swift in Sources */,
 				1F675D7D2C10C0E6000F073A /* SFECard.swift in Sources */,
 				1F156BFE2C0D22CC00F0E0DC /* CircularProgressView.swift in Sources */,
 				DDEA0A032BFFADC300EEC4E6 /* GenderView.swift in Sources */,
+				1F63DDC12C1121FB0060B7D0 /* AddFoodView.swift in Sources */,
 				1F675D672C0FC940000F073A /* FoodItem.swift in Sources */,
 				1F156AFC2C0C7A4200F0E0DC /* CustomBackButton.swift in Sources */,
 				1F156C1A2C0D22CC00F0E0DC /* PasswordChangedImageAndText.swift in Sources */,
@@ -1301,6 +1340,7 @@
 				DD2D24632BFFA5EE00C97F36 /* PersonalInfosViewModel.swift in Sources */,
 				1F156BF62C0D22CC00F0E0DC /* AISupportedTrainingPlan.swift in Sources */,
 				1F156BFC2C0D22CC00F0E0DC /* CaloriesView.swift in Sources */,
+				1F63DDC72C11B1520060B7D0 /* AddFoodCard.swift in Sources */,
 				DD2D24492BFF9E4300C97F36 /* FlowRouter.swift in Sources */,
 				DDE988332C05D62900550643 /* TargetWeightView.swift in Sources */,
 				1F156C042C0D22CC00F0E0DC /* CustomTabBarView.swift in Sources */,
@@ -1338,6 +1378,7 @@
 				1F675D6B2C0FCAFC000F073A /* FoodDetailsView.swift in Sources */,
 				1F156C332C0D309000F0E0DC /* AIPlanButtons.swift in Sources */,
 				DD2D244B2BFF9EFF00C97F36 /* Network.swift in Sources */,
+				1F63DDC52C11A9D90060B7D0 /* AddFood.swift in Sources */,
 				1F156BF22C0D22CC00F0E0DC /* HomePageView.swift in Sources */,
 				1F156BF92C0D22CC00F0E0DC /* StarImageView.swift in Sources */,
 				DD2D24422BFF9D9200C97F36 /* Coordinator.swift in Sources */,

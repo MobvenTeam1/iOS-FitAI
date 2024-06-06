@@ -12,7 +12,7 @@ struct FMPNumberSendCodeButton: View {
                 Text("Kod Gönder")
                     .foregroundStyle(Color.black11_11)
                     .font(.urbanistSemibold(size: 16))
-            }
+            }            
         }
     }
 }
