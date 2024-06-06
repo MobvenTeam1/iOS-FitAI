@@ -688,6 +688,7 @@
 		1F675D642C0FC92A000F073A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1F675D842C110EB2000F073A /* AddExercise */,
 				1F675D652C0FC933000F073A /* FoodItem */,
 			);
 			path = Model;

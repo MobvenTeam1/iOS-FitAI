@@ -11,20 +11,16 @@ struct SearchForExerciseView: View {
     @State private var searchText: String = ""
     @State private var selectedButton = "Geçmiş"
     @EnvironmentObject var appState: AppState
-    
     let buttons = ["Geçmiş", "Favoriler"]
-
     private var searchResults: [Exercise] {
         searchText.isEmpty ? Exercise.exercises : Exercise.exercises.filter  { $0.name.lowercased().contains(searchText.lowercased()) }
     }
-    
     var body: some View {
         ZStack(alignment: .top) {
             Color.white
                 .ignoresSafeArea()
                 .clipShape(UnevenRoundedRectangle(cornerRadii: .init(topLeading: 30, topTrailing: 30)))
                 .offset(y: -40)
-            
             VStack {
                 AddSearchBar(text: $searchText)
                     .padding(.top, 16)
