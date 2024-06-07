@@ -23,6 +23,7 @@ struct GenderView: View {
                     progressBarValue += 0.16
                     personelInfoVM.pageStep = .height
                 }   
+                .padding(.bottom, 30)
             }    .navigationBarBackButtonHidden(true)
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {

@@ -11,8 +11,6 @@ import SwiftUI
 
 enum PersonalInfosModel {
     enum Constants {
-        static let welcomeViewTitle = "Hoşgeldin!"
-        static let welcomeViewContent = "Sağlıklı yaşama adım atmak için kayıt olun"
         static let genderViewTitle = "Cinsiyetiniz nedir?"
         static let heightViewTitle = "Boyunuz kaç?"
         static let currentWeightViewTitle = "Mevcut kilonuz kaç?"
@@ -30,35 +28,14 @@ enum PersonalInfosModel {
     
     struct PersonalInfos: Codable, RawRepresentable{
         init(
-            name: String? = nil,
-            surname: String? = nil,
-            username: String? = nil,
-            ePosta: String? = nil,
-            password: String? = nil,
-            passwordConfirm: String? = nil,
             gender: String? = nil,
             height: String? = nil,
             currentWeight: String? = nil,
             targetWeight: String? = nil,
             birthDate: String? = nil,
-            targets: [String]? = nil,
-            plansSelection: [String]? = nil,
-            healthsIssue: [String]? = nil,
-            selectedSportsActivites: [String]? = nil,
-            sportsCount: [String]? = nil,
-            targetAreas: [String]? = nil,
-            selectAlergies: [String]? = nil,
-            dietType: String? = nil,
-            dailyActiveStatus: String? = nil,
-            dailySleepHours: String? = nil,
-            dailyWaterGlass: String? = nil)
+            targets: [String]? = nil)
         {
-            self.firstname = name
-            self.lastName = surname
-            self.username = username
-            self.email = ePosta
-            self.password = password
-            self.passwordConfirm = passwordConfirm
+            
             self.gender = gender
             self.height = height
             self.currentWeight = currentWeight
@@ -67,12 +44,7 @@ enum PersonalInfosModel {
             self.targets = targets
         
         }
-        var firstname: String?
-        var lastName: String?
-        var username: String?
-        var email: String?
-        var password: String?
-        var passwordConfirm:String?
+        
         var gender: String?
         var height: String?
         var currentWeight: String?

@@ -22,7 +22,7 @@ struct PersonalDietTypeView: View {
                         .bold()
                         .padding(.trailing, 50)
                     MFAIText(title: OnboardingModel.ContentConstants.personalDietTypeViewContent)
-                        .padding(.top, -25)
+                        .padding(.top, -40)
                     MFAIButton(buttontitle: OnboardingModel.ButtonContent.buttonTextSkip, buttonBackgroundColor: .white){
                         onboardingScreen.pageStep = .onboarding5
                     }

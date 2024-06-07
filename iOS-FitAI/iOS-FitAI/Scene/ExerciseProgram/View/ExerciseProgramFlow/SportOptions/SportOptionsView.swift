@@ -23,6 +23,7 @@ struct SportOptionsView: View {
                     progressBarValue += 0.25
                     exerciseVM.pageStep = .sportFrequency
                 }
+                .padding(.bottom, 30)
             }
             .navigationBarBackButtonHidden(true)
                .toolbar {

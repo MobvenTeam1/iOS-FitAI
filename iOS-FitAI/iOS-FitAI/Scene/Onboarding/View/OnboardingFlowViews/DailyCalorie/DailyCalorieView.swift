@@ -22,7 +22,7 @@ struct DailyCalorieView: View {
                         .bold()
                         .padding(.trailing, 175)
                     MFAIText(title: OnboardingModel.ContentConstants.dailyCalorieViewContent)
-                        .padding(.top, -25)
+                        .padding(.top, -40)
                     MFAIButton(buttontitle: OnboardingModel.ButtonContent.buttonTextSkip, buttonBackgroundColor: .white){
                         onboardingScreen.pageStep = .onboarding5
                     }

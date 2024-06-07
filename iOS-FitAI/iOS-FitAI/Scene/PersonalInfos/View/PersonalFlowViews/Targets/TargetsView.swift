@@ -22,7 +22,7 @@ struct TargetsView: View {
                 MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextOK,buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.2
                 }
-                .padding(.all, 20)
+                .padding(30)
             }
             .navigationBarBackButtonHidden(true)
                .toolbar {

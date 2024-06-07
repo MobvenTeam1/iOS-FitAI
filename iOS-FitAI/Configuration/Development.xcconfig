@@ -1,0 +1,11 @@
+//
+//  Development.xcconfig
+//  iOS-FitAI
+//
+//  Created by Elif Tum on 6.06.2024.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BASE_URL = https:\/\/165.22.93.225:5001/api/\

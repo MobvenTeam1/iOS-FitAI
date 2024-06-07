@@ -14,6 +14,7 @@ struct MFAITextField: View {
     var body: some View {
         TextField(title, text: $textfieldText)
             .keyboardType(keyboardType)
+            .padding(.leading, 18)
             .frame(width: 327, height: 56)
             .background {
                 Color.welcomeTextField
@@ -21,9 +22,6 @@ struct MFAITextField: View {
             .border(.textFieldBorder, width: 2)
             .clipShape(RoundedRectangle(cornerRadius: 8))
             .padding()
-         
-
-            
     }
 }
 

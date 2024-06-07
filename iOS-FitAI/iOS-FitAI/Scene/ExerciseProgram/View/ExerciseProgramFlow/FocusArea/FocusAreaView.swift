@@ -22,6 +22,7 @@ struct FocusAreaView: View {
                 MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextCreate,buttonBackgroundColor: .buttonGreen){
                     exerciseVM.pageStep = .specialPlan
                 }
+                .padding(.bottom, 30)
             }
             .navigationBarBackButtonHidden(true)
                .toolbar {

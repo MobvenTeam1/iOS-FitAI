@@ -21,12 +21,15 @@ struct DietTypePlansIView: View {
                 MFAIText(title: DietTypeModel.Constants.dietTypePlansViewTitle)
                     .bold()
                     .font( .title2)
-                    .padding()
+                    .padding(.bottom, -30)
+                    .multilineTextAlignment(.center)
                 MFAIText(title: DietTypeModel.Constants.dietTypePlansViewContent)
+                    .multilineTextAlignment(.center)
                 Spacer()
                 MFAIButton(buttontitle: DietTypeModel.ButtonTextContext.buttonTextStart,buttonBackgroundColor: .buttonGreen ){
                     dietVM.pageStep = .knownHealthProblem
                 }
+                .padding(.bottom, 30)
             }
         }
     }

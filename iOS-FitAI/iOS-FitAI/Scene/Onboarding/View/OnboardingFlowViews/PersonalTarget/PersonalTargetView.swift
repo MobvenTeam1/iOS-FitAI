@@ -22,8 +22,7 @@ struct PersonalTargetView: View {
                         .bold()
                         .padding(.trailing)
                     MFAIText(title: OnboardingModel.ContentConstants.personalTargetViewContent)
-                        .frame(alignment: .center)
-                        .padding(.top, -25)
+                        .padding(.top, -40)
                     MFAIButton(buttontitle: OnboardingModel.ButtonContent.buttonTextSkip,buttonBackgroundColor:
                         .white)
                         {

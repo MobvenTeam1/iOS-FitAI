@@ -37,7 +37,7 @@ struct Onboarding5View: View {
         }.ignoresSafeArea()
         .onAppear(perform: {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-                coordinator.show(.personalInfos)
+                coordinator.show(.register)
             })
         })
         

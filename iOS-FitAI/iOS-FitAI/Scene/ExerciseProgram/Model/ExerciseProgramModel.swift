@@ -78,3 +78,4 @@ extension ExerciseProgramModel.ExerciseProgramInfo{
         }
     }
 }
+

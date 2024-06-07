@@ -22,7 +22,7 @@ struct PersonalExerciseView: View {
                         .bold()
                         .padding(.trailing, 120)
                     MFAIText(title: OnboardingModel.ContentConstants.personalExerciseViewContent)
-                        .padding(.top, -25)
+                        .padding(.top, -40)
                     MFAIButton(buttontitle: OnboardingModel.ButtonContent.buttonTextSkip,buttonBackgroundColor: .white){
                         onboardingScreen.pageStep = .onboarding5
                     }

@@ -20,12 +20,16 @@ struct WorkoutPlansView: View {
                 MFAIText(title: ExerciseProgramModel.Constants.workoutPlansViewTitle)
                     .bold()
                     .font(.title2)
+                    .multilineTextAlignment(.center)
+                    .padding(.bottom, -30)
                 MFAIText(title: ExerciseProgramModel.Constants.workoutPlansViewContent)
                     .padding()
+                    .multilineTextAlignment(.center)
                 Spacer()
                 MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextStart,buttonBackgroundColor: .buttonGreen){
                     exerciseVM.pageStep = .healthProblem
                 }
+                .padding(.bottom, 30)
             
             }
         }

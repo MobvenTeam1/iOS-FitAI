@@ -18,9 +18,7 @@ struct PersonalInfosView: View {
                     .progressViewStyle(CustomProgressViewStyle(trackColor: .gray, progressColor: .buttonGreen))
                     .padding()
                                     
-                if viewmodel.pageStep == .welcome {
-                    WelcomeView(personalInfoVM: viewmodel)
-                }else if viewmodel.pageStep == .gender{
+                if viewmodel.pageStep == .gender{
                     GenderView(personelInfoVM: viewmodel, progressBarValue: $progressBarValue)
                 }else if viewmodel.pageStep == .height{
                     HeightView(personalInfoVM: viewmodel, progressBarValue: $progressBarValue)

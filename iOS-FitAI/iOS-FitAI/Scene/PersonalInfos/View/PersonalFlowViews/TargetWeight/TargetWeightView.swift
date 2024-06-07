@@ -20,6 +20,7 @@ struct TargetWeightView: View {
                     progressBarValue += 0.16
                     personalInfoVM.pageStep = .birthDate
                 }
+                .padding(.bottom, 30)
             }
             .navigationBarBackButtonHidden(true)
                .toolbar {

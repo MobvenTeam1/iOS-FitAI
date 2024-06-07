@@ -45,6 +45,7 @@ struct BirthdayView: View {
                     progressBarValue += 0.16
                     personalInfoVM.pageStep = .targets
                 }
+                .padding(.bottom, 30)
             }
             .navigationBarBackButtonHidden(true)
                .toolbar {

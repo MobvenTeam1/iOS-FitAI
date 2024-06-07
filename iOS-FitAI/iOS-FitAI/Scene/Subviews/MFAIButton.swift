@@ -54,11 +54,11 @@ struct MFAIButton: View {
             .padding(.horizontal)
           
         })
-        .border(.clear, width: 2)
+        .border(.clear, width: 12)
         .background{
             buttonBackgroundColor
                 .frame(width: 327, height: 60)
-                .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+                .cornerRadius(12)
         }
        
     }

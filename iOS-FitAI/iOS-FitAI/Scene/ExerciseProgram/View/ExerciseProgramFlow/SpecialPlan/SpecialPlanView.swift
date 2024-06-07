@@ -20,8 +20,10 @@ struct SpecialPlanView: View {
                 MFAIText(title: ExerciseProgramModel.Constants.specialPlansViewTitle)
                     .bold()
                     .font(.title2)
-                    .padding()
+                    .padding(.bottom, -30)
+                    .multilineTextAlignment(.center)
                 MFAIText(title: ExerciseProgramModel.Constants.specialPlansViewContent)
+                    .multilineTextAlignment(.center)
                 Spacer()
             }
         }

@@ -20,8 +20,10 @@ struct DietSpecialTypeView: View {
                 MFAIText(title: DietTypeModel.Constants.specialPlanViewTitle)
                     .bold()
                     .font(.title2)
-                    .padding()
+                    .padding(.bottom, -30)
+                    .multilineTextAlignment(.center)
                 MFAIText(title: DietTypeModel.Constants.specialPlanViewContent)
+                    .multilineTextAlignment(.center)
                 Spacer()
             }
         }
