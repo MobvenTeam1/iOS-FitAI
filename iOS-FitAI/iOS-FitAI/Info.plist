@@ -9,5 +9,15 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Urbanist-Bold.ttf</string>
+		<string>Urbanist-Regular.ttf</string>
+		<string>Urbanist-Thin.ttf</string>
+		<string>Urbanist-SemiBold.ttf</string>
+		<string>Urbanist-Light.ttf</string>
+		<string>Urbanist-Medium.ttf</string>
+		<string>Urbanist-Black.ttf</string>
+	</array>
 </dict>
 </plist>

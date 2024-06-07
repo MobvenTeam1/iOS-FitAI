@@ -45,7 +45,7 @@ struct TargetsView: View {
                      }
             .onAppear(perform: {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-                    coordinator.show(.homepage)
+                    coordinator.show(.login)
                 })
             })
         }
