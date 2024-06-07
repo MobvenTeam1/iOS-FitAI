@@ -90,6 +90,7 @@
 		1F156C312C0D2F7300F0E0DC /* NavigationLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156C302C0D2F7300F0E0DC /* NavigationLinks.swift */; };
 		1F156C332C0D309000F0E0DC /* AIPlanButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156C322C0D309000F0E0DC /* AIPlanButtons.swift */; };
 		1F156C362C0E7C9600F0E0DC /* AIUpdateFoodSuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156C352C0E7C9600F0E0DC /* AIUpdateFoodSuggestion.swift */; };
+		1F2614D62C1334BA0092EE1F /* AddExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2614D52C1334BA0092EE1F /* AddExercise.swift */; };
 		1F63DDC12C1121FB0060B7D0 /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63DDC02C1121FB0060B7D0 /* AddFoodView.swift */; };
 		1F63DDC52C11A9D90060B7D0 /* AddFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63DDC42C11A9D90060B7D0 /* AddFood.swift */; };
 		1F63DDC72C11B1520060B7D0 /* AddFoodCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63DDC62C11B1520060B7D0 /* AddFoodCard.swift */; };
@@ -108,7 +109,6 @@
 		1F675D7F2C10D044000F073A /* CheckIfSearching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D7E2C10D044000F073A /* CheckIfSearching.swift */; };
 		1F675D812C110357000F073A /* MyExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D802C110357000F073A /* MyExerciseView.swift */; };
 		1F675D832C110DEB000F073A /* DurationForExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D822C110DEB000F073A /* DurationForExercise.swift */; };
-		1F675D862C110EC8000F073A /* AddExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D852C110EC8000F073A /* AddExercise.swift */; };
 		1FC20BBD2C0B42F5005C7326 /* Font + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BBB2C0B42F4005C7326 /* Font + Ext.swift */; };
 		1FC20BBE2C0B42F5005C7326 /* Color + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BBC2C0B42F4005C7326 /* Color + Ext.swift */; };
 		1FC20BE42C0B4A5B005C7326 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BE32C0B4A5B005C7326 /* OnboardingViewModel.swift */; };
@@ -255,6 +255,7 @@
 		1F156C302C0D2F7300F0E0DC /* NavigationLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinks.swift; sourceTree = "<group>"; };
 		1F156C322C0D309000F0E0DC /* AIPlanButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIPlanButtons.swift; sourceTree = "<group>"; };
 		1F156C352C0E7C9600F0E0DC /* AIUpdateFoodSuggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIUpdateFoodSuggestion.swift; sourceTree = "<group>"; };
+		1F2614D52C1334BA0092EE1F /* AddExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExercise.swift; sourceTree = "<group>"; };
 		1F63DDC02C1121FB0060B7D0 /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
 		1F63DDC42C11A9D90060B7D0 /* AddFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFood.swift; sourceTree = "<group>"; };
 		1F63DDC62C11B1520060B7D0 /* AddFoodCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodCard.swift; sourceTree = "<group>"; };
@@ -273,7 +274,6 @@
 		1F675D7E2C10D044000F073A /* CheckIfSearching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIfSearching.swift; sourceTree = "<group>"; };
 		1F675D802C110357000F073A /* MyExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyExerciseView.swift; sourceTree = "<group>"; };
 		1F675D822C110DEB000F073A /* DurationForExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationForExercise.swift; sourceTree = "<group>"; };
-		1F675D852C110EC8000F073A /* AddExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExercise.swift; sourceTree = "<group>"; };
 		1FC20BBB2C0B42F4005C7326 /* Font + Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font + Ext.swift"; sourceTree = "<group>"; };
 		1FC20BBC2C0B42F4005C7326 /* Color + Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color + Ext.swift"; sourceTree = "<group>"; };
 		1FC20BE02C0B464F005C7326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -680,7 +680,7 @@
 		1F63DDC32C11A9B80060B7D0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1F675D842C110EB2000F073A /* AddExercise */,
+				1F2614D52C1334BA0092EE1F /* AddExercise.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -688,7 +688,6 @@
 		1F675D642C0FC92A000F073A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1F675D842C110EB2000F073A /* AddExercise */,
 				1F675D652C0FC933000F073A /* FoodItem */,
 			);
 			path = Model;
@@ -725,14 +724,6 @@
 				1F675D802C110357000F073A /* MyExerciseView.swift */,
 			);
 			path = SearchForExercise;
-			sourceTree = "<group>";
-		};
-		1F675D842C110EB2000F073A /* AddExercise */ = {
-			isa = PBXGroup;
-			children = (
-				1F675D852C110EC8000F073A /* AddExercise.swift */,
-			);
-			path = AddExercise;
 			sourceTree = "<group>";
 		};
 		1F675D872C111208000F073A /* AddExerciseView */ = {
@@ -1363,12 +1354,12 @@
 				1F156C2A2C0D22CD00F0E0DC /* ForgotPasswordLink.swift in Sources */,
 				DD5A0E992C07BFD6006464D7 /* TargetsView.swift in Sources */,
 				1F156C162C0D22CC00F0E0DC /* FMPLoginWithNumberButton.swift in Sources */,
-				1F675D862C110EC8000F073A /* AddExercise.swift in Sources */,
 				1F156C132C0D22CC00F0E0DC /* FMPEmailSendCodeButton.swift in Sources */,
 				1F156C092C0D22CC00F0E0DC /* ProfileView.swift in Sources */,
 				1FC20BBE2C0B42F5005C7326 /* Color + Ext.swift in Sources */,
 				1F156C0A2C0D22CC00F0E0DC /* CardView.swift in Sources */,
 				1F156C152C0D22CC00F0E0DC /* ForgotMyPasswordWithEmail.swift in Sources */,
+				1F2614D62C1334BA0092EE1F /* AddExercise.swift in Sources */,
 				1F156BF82C0D22CC00F0E0DC /* AnimatedStarView.swift in Sources */,
 				1F156C282C0D22CD00F0E0DC /* LoginButton.swift in Sources */,
 				DDE9882F2C05D12600550643 /* CurrentWeightView.swift in Sources */,
