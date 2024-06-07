@@ -50,6 +50,8 @@
 		DD7E529D2C11D57600053555 /* RegisterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E529C2C11D57600053555 /* RegisterVM.swift */; };
 		DDAF84EC2C125931009D2BB9 /* AppStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAF84EB2C125931009D2BB9 /* AppStorageManager.swift */; };
 		DDAF84EF2C125D05009D2BB9 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAF84EE2C125D05009D2BB9 /* String+Extension.swift */; };
+		DDAF84FD2C12E361009D2BB9 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAF84FC2C12E361009D2BB9 /* LoginVM.swift */; };
+		DDAF84FF2C12E373009D2BB9 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAF84FE2C12E373009D2BB9 /* LoginModel.swift */; };
 		DDB406FD2C0BA4AE00D4223E /* DietTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB406FC2C0BA4AE00D4223E /* DietTypeModel.swift */; };
 		DDB406FF2C0BA51200D4223E /* DietTypeflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB406FE2C0BA51200D4223E /* DietTypeflow.swift */; };
 		DDB407042C0BA5F500D4223E /* KnownHealthProblemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB407032C0BA5F500D4223E /* KnownHealthProblemView.swift */; };
@@ -150,6 +152,8 @@
 		DDAF84EB2C125931009D2BB9 /* AppStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageManager.swift; sourceTree = "<group>"; };
 		DDAF84EE2C125D05009D2BB9 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		DDAF84F02C125F17009D2BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DDAF84FC2C12E361009D2BB9 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		DDAF84FE2C12E373009D2BB9 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		DDB406FC2C0BA4AE00D4223E /* DietTypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietTypeModel.swift; sourceTree = "<group>"; };
 		DDB406FE2C0BA51200D4223E /* DietTypeflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietTypeflow.swift; sourceTree = "<group>"; };
 		DDB407032C0BA5F500D4223E /* KnownHealthProblemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownHealthProblemView.swift; sourceTree = "<group>"; };
@@ -294,7 +298,7 @@
 		DD2D243F2BFF9CE200C97F36 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				DDAF84F92C12E248009D2BB9 /* New Group */,
+				DDAF84F92C12E248009D2BB9 /* Login */,
 				DD7E52942C11D13900053555 /* Register */,
 				DDB407112C0BB32600D4223E /* Subviews */,
 				DDE586D42C0B8223007B3A1A /* Onboarding */,
@@ -545,11 +549,29 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		DDAF84F92C12E248009D2BB9 /* New Group */ = {
+		DDAF84F92C12E248009D2BB9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				DDAF84FB2C12E347009D2BB9 /* Model */,
+				DDAF84FA2C12E33E009D2BB9 /* ViewModel */,
 			);
-			path = "New Group";
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DDAF84FA2C12E33E009D2BB9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DDAF84FC2C12E361009D2BB9 /* LoginVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DDAF84FB2C12E347009D2BB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDAF84FE2C12E373009D2BB9 /* LoginModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DDB407002C0BA51800D4223E /* KnownHealthProblem */ = {
@@ -999,9 +1021,11 @@
 				DDB407192C0BB34800D4223E /* MFAIText.swift in Sources */,
 				DD2D24142BFF9C5200C97F36 /* AppDelegate.swift in Sources */,
 				DD7E527C2C107CBE00053555 /* FitAI+Request.swift in Sources */,
+				DDAF84FF2C12E373009D2BB9 /* LoginModel.swift in Sources */,
 				DDE586E92C0B85FC007B3A1A /* HealthProblemView.swift in Sources */,
 				DDDFB3E12C09D6CC00D2A117 /* OnboardingViewModel.swift in Sources */,
 				DD7E52992C11D17400053555 /* RegisterView.swift in Sources */,
+				DDAF84FD2C12E361009D2BB9 /* LoginVM.swift in Sources */,
 				DD5A0E8A2C07BD20006464D7 /* PersonalTargetView.swift in Sources */,
 				DDEA0A032BFFADC300EEC4E6 /* GenderView.swift in Sources */,
 				DD7E529B2C11D20A00053555 /* RegisterModel.swift in Sources */,
