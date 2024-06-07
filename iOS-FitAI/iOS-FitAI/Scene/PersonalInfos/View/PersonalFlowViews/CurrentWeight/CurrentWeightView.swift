@@ -15,14 +15,33 @@ struct CurrentWeightView: View {
         ZStack{
             VStack{
                 MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.currentWeightViewTitle)
-                Spacer(minLength: 50)
-                MFAITextField(title: "String", textfieldText: $personalInfoVM.personalInfoData.currentWeight.toUnwrapped(defaultValue: ""))
+                MFAITextField(title: "50kg", keyboardType: .decimalPad, textfieldText: $personalInfoVM.personalInfoData.currentWeight.toUnwrapped(defaultValue: ""))
                 Spacer()
-                MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext){
+                MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext,buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.16
                     personalInfoVM.pageStep = .targetWeight
                 }
+                .padding(.bottom, 30)
             }
+            .navigationBarBackButtonHidden(true)
+               .toolbar {
+                   ToolbarItem(placement: .topBarLeading) {
+                       Button(action: {
+                           personalInfoVM.pageStep = .height
+                       }, label: {
+                           Image("back")
+                               .resizable()
+                               .frame(width: 41, height: 41)
+                       })
+                   }
+               }
+               .toolbar {
+                         ToolbarItem(placement: .topBarTrailing) {
+                                 Image("Onboarding-5-Icon")
+                                     .resizable()
+                                     .frame(width: 32, height: 36)
+                         }
+                     }
         }
     }
 }

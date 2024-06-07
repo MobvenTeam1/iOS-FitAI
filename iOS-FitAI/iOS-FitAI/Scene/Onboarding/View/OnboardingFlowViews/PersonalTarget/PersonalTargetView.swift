@@ -10,23 +10,36 @@ import SwiftUI
 struct PersonalTargetView: View {
     @ObservedObject var onboardingScreen: OnboardingViewModel
     var body: some View {
-        GeometryReader{ geometry in
-            ZStack(alignment: .topLeading){
-                Image("PersonalTarget")
-                    .resizable()
-                    .frame(width: geometry.size.width, height: geometry.size.height)
+        ZStack{
+            Image("PersonalTarget")
+                .resizable()
                     .aspectRatio(contentMode: .fill)
                     .ignoresSafeArea()
                 VStack{
                     Spacer()
                     MFAIText(title: OnboardingModel.Constants.personalTargetView)
+                        .font(.title)
+                        .bold()
+                        .padding(.trailing)
                     MFAIText(title: OnboardingModel.ContentConstants.personalTargetViewContent)
-                    MFAIButton(buttontitle: OnboardingModel.ButtonContent.buttonTextSkip){
-                        onboardingScreen.pageStep = .personalDietType
-                    }
+                        .padding(.top, -40)
+                    MFAIButton(buttontitle: OnboardingModel.ButtonContent.buttonTextSkip,buttonBackgroundColor:
+                        .white)
+                        {
+                        onboardingScreen.pageStep = .onboarding5
+                }
+                        .padding(.bottom, 100 )
+            }
+                .navigationBarBackButtonHidden(true)
+        }
+    .gesture(
+        DragGesture()
+            .onEnded { value in
+                if value.translation.width < -50 {
+                    onboardingScreen.pageStep = .personalDietType
                 }
             }
-        }
+        )
     }
 }
 

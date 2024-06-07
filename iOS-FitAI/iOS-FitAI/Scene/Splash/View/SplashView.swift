@@ -20,12 +20,19 @@ struct SplashView: View {
                 
                 HStack{
                     Text("Fit")
+                        .padding(.trailing, -10)
                     Text("AI").bold()
                     
-                }
+                }.frame(width: 107, height: 72, alignment: .center)
+                    .font(.largeTitle)
+                    .padding(.top, -20)
             }.onAppear(perform: {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-                    coordinator.show(.onboarding)
+                    if AppStorageManager.shared.accessToken.isEmpty {
+                        coordinator.show(.onboarding)
+                    }else {
+                        coordinator.show(.onboarding)
+                    }
                 })
             })
         }
@@ -33,6 +40,6 @@ struct SplashView: View {
 }
 
 #Preview {
-    SplashView()
-        .environmentObject(Coordinator<FlowRouter>())
+    @State var env = Coordinator<FlowRouter>()
+    return SplashView().environmentObject(env)
 }

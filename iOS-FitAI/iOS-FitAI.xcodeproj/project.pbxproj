@@ -123,7 +123,6 @@
 		DD2D24442BFF9DF200C97F36 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24432BFF9DF200C97F36 /* NavigationRouter.swift */; };
 		DD2D24462BFF9E1C00C97F36 /* NavigationTransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24452BFF9E1C00C97F36 /* NavigationTransitionStyle.swift */; };
 		DD2D24492BFF9E4300C97F36 /* FlowRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24482BFF9E4300C97F36 /* FlowRouter.swift */; };
-		DD2D244B2BFF9EFF00C97F36 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D244A2BFF9EFF00C97F36 /* Network.swift */; };
 		DD2D244F2BFF9F1900C97F36 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D244E2BFF9F1900C97F36 /* SplashView.swift */; };
 		DD2D24562BFF9FC600C97F36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24552BFF9FC600C97F36 /* SceneDelegate.swift */; };
 		DD2D24582BFFA11300C97F36 /* PersonalInfosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24572BFFA11300C97F36 /* PersonalInfosView.swift */; };
@@ -140,18 +139,55 @@
 		DD5A0E992C07BFD6006464D7 /* TargetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A0E982C07BFD6006464D7 /* TargetsView.swift */; };
 		DD5A0E9C2C07C51C006464D7 /* BindingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A0E9B2C07C51C006464D7 /* BindingExtension.swift */; };
 		DD5A0ED42C088E08006464D7 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A0ED32C088E08006464D7 /* OnboardingModel.swift */; };
+		DD7E51A12C0C803400053555 /* DietSpecialTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E51A02C0C803400053555 /* DietSpecialTypeView.swift */; };
+		DD7E527A2C107C8400053555 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E52792C107C8400053555 /* API.swift */; };
+		DD7E527C2C107CBE00053555 /* FitAI+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E527B2C107CBE00053555 /* FitAI+Request.swift */; };
+		DD7E527E2C107D0000053555 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E527D2C107D0000053555 /* Response.swift */; };
+		DD7E52802C107D1800053555 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E527F2C107D1800053555 /* RequestMethod.swift */; };
+		DD7E52822C107D2B00053555 /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E52812C107D2B00053555 /* ContentType.swift */; };
+		DD7E52842C107D4400053555 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E52832C107D4400053555 /* URL+Extension.swift */; };
+		DD7E52862C107D5900053555 /* NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E52852C107D5900053555 /* NSError.swift */; };
+		DD7E52882C107D7100053555 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E52872C107D7100053555 /* Bundle+Extension.swift */; };
+		DD7E528A2C107D8A00053555 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E52892C107D8A00053555 /* Networkable.swift */; };
+		DD7E528C2C107DA800053555 /* Networkable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E528B2C107DA800053555 /* Networkable+Extension.swift */; };
+		DD7E52992C11D17400053555 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E52982C11D17400053555 /* RegisterView.swift */; };
+		DD7E529B2C11D20A00053555 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E529A2C11D20A00053555 /* RegisterModel.swift */; };
+		DD7E529D2C11D57600053555 /* RegisterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E529C2C11D57600053555 /* RegisterVM.swift */; };
+		DDAF84EC2C125931009D2BB9 /* AppStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAF84EB2C125931009D2BB9 /* AppStorageManager.swift */; };
+		DDAF84EF2C125D05009D2BB9 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAF84EE2C125D05009D2BB9 /* String+Extension.swift */; };
+		DDAF84FD2C12E361009D2BB9 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAF84FC2C12E361009D2BB9 /* LoginVM.swift */; };
+		DDAF84FF2C12E373009D2BB9 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAF84FE2C12E373009D2BB9 /* LoginModel.swift */; };
+		DDB406FD2C0BA4AE00D4223E /* DietTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB406FC2C0BA4AE00D4223E /* DietTypeModel.swift */; };
+		DDB406FF2C0BA51200D4223E /* DietTypeflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB406FE2C0BA51200D4223E /* DietTypeflow.swift */; };
+		DDB407042C0BA5F500D4223E /* KnownHealthProblemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB407032C0BA5F500D4223E /* KnownHealthProblemView.swift */; };
+		DDB407082C0BAA9F00D4223E /* DietTypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB407072C0BAA9F00D4223E /* DietTypeViewModel.swift */; };
+		DDB4070A2C0BACD200D4223E /* DietTypePlansIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB407092C0BACD200D4223E /* DietTypePlansIView.swift */; };
+		DDB4070C2C0BACE900D4223E /* FoodAllergyIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4070B2C0BACE900D4223E /* FoodAllergyIView.swift */; };
+		DDB4070E2C0BACFD00D4223E /* DietTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4070D2C0BACFD00D4223E /* DietTypeView.swift */; };
+		DDB407182C0BB34800D4223E /* MFAIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB407122C0BB34800D4223E /* MFAIButton.swift */; };
+		DDB407192C0BB34800D4223E /* MFAIText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB407132C0BB34800D4223E /* MFAIText.swift */; };
+		DDB4071A2C0BB34800D4223E /* MFAIPersonalInfosHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB407142C0BB34800D4223E /* MFAIPersonalInfosHeaderView.swift */; };
+		DDB4071B2C0BB34800D4223E /* MFAISingleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB407152C0BB34800D4223E /* MFAISingleSelectionView.swift */; };
+		DDB4071C2C0BB34800D4223E /* MFAIMultipleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB407162C0BB34800D4223E /* MFAIMultipleSelectionView.swift */; };
+		DDB4071D2C0BB34800D4223E /* MFAITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB407172C0BB34800D4223E /* MFAITextField.swift */; };
+		DDB4071F2C0BB3BA00D4223E /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4071E2C0BB3BA00D4223E /* HeightView.swift */; };
+		DDB407242C0BBB2F00D4223E /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB407232C0BBB2F00D4223E /* AlertManager.swift */; };
+		DDB407272C0BBBD100D4223E /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB407262C0BBBD100D4223E /* UIApplication+Extension.swift */; };
 		DDDFB3DE2C0997C200D2A117 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFB3DD2C0997C200D2A117 /* WelcomeView.swift */; };
+		DDDFB3E12C09D6CC00D2A117 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFB3E02C09D6CC00D2A117 /* OnboardingViewModel.swift */; };
+		DDE586DB2C0B844C007B3A1A /* ExerciseProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE586DA2C0B844C007B3A1A /* ExerciseProgramView.swift */; };
+		DDE586E32C0B859B007B3A1A /* ExerciseProgramViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE586E22C0B859B007B3A1A /* ExerciseProgramViewModel.swift */; };
+		DDE586E52C0B85AE007B3A1A /* ExerciseProgramModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE586E42C0B85AE007B3A1A /* ExerciseProgramModel.swift */; };
+		DDE586E72C0B85E7007B3A1A /* WorkoutPlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE586E62C0B85E7007B3A1A /* WorkoutPlansView.swift */; };
+		DDE586E92C0B85FC007B3A1A /* HealthProblemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE586E82C0B85FC007B3A1A /* HealthProblemView.swift */; };
+		DDE586EB2C0B8613007B3A1A /* SportOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE586EA2C0B8613007B3A1A /* SportOptionsView.swift */; };
+		DDE586ED2C0B8627007B3A1A /* SportFrequencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE586EC2C0B8627007B3A1A /* SportFrequencyView.swift */; };
+		DDE586EF2C0B8639007B3A1A /* FocusAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE586EE2C0B8639007B3A1A /* FocusAreaView.swift */; };
+		DDE586F12C0B8649007B3A1A /* SpecialPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE586F02C0B8649007B3A1A /* SpecialPlanView.swift */; };
 		DDE9882F2C05D12600550643 /* CurrentWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE9882E2C05D12600550643 /* CurrentWeightView.swift */; };
 		DDE988332C05D62900550643 /* TargetWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE988322C05D62900550643 /* TargetWeightView.swift */; };
 		DDE988352C05D63A00550643 /* BirthdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE988342C05D63A00550643 /* BirthdayView.swift */; };
 		DDEA0A032BFFADC300EEC4E6 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A022BFFADC300EEC4E6 /* GenderView.swift */; };
-		DDEA0A0C2BFFB5A900EEC4E6 /* MFAIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A0B2BFFB5A900EEC4E6 /* MFAIButton.swift */; };
-		DDEA0A0E2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A0D2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift */; };
-		DDEA0A102BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A0F2BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift */; };
-		DDEA0A122BFFBC0400EEC4E6 /* MFAITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A112BFFBC0400EEC4E6 /* MFAITextField.swift */; };
-		DDEA0A142C00602E00EEC4E6 /* MFAIMultipleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A132C00602E00EEC4E6 /* MFAIMultipleSelectionView.swift */; };
-		DDEA0A162C04981B00EEC4E6 /* MFAIText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A152C04981A00EEC4E6 /* MFAIText.swift */; };
-		DDEA0A1B2C04B62900EEC4E6 /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0A1A2C04B62900EEC4E6 /* HeightView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -292,7 +328,6 @@
 		DD2D24432BFF9DF200C97F36 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
 		DD2D24452BFF9E1C00C97F36 /* NavigationTransitionStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTransitionStyle.swift; sourceTree = "<group>"; };
 		DD2D24482BFF9E4300C97F36 /* FlowRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowRouter.swift; sourceTree = "<group>"; };
-		DD2D244A2BFF9EFF00C97F36 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		DD2D244E2BFF9F1900C97F36 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		DD2D24552BFF9FC600C97F36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DD2D24572BFFA11300C97F36 /* PersonalInfosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfosView.swift; sourceTree = "<group>"; };
@@ -309,18 +344,58 @@
 		DD5A0E982C07BFD6006464D7 /* TargetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetsView.swift; sourceTree = "<group>"; };
 		DD5A0E9B2C07C51C006464D7 /* BindingExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExtension.swift; sourceTree = "<group>"; };
 		DD5A0ED32C088E08006464D7 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		DD7E51A02C0C803400053555 /* DietSpecialTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietSpecialTypeView.swift; sourceTree = "<group>"; };
+		DD7E52792C107C8400053555 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		DD7E527B2C107CBE00053555 /* FitAI+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FitAI+Request.swift"; sourceTree = "<group>"; };
+		DD7E527D2C107D0000053555 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		DD7E527F2C107D1800053555 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		DD7E52812C107D2B00053555 /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
+		DD7E52832C107D4400053555 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		DD7E52852C107D5900053555 /* NSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSError.swift; sourceTree = "<group>"; };
+		DD7E52872C107D7100053555 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		DD7E52892C107D8A00053555 /* Networkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		DD7E528B2C107DA800053555 /* Networkable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Networkable+Extension.swift"; sourceTree = "<group>"; };
+		DD7E52922C11832F00053555 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		DD7E52932C11833F00053555 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		DD7E52982C11D17400053555 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		DD7E529A2C11D20A00053555 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		DD7E529C2C11D57600053555 /* RegisterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVM.swift; sourceTree = "<group>"; };
+		DDAF84EB2C125931009D2BB9 /* AppStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageManager.swift; sourceTree = "<group>"; };
+		DDAF84EE2C125D05009D2BB9 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		DDAF84F02C125F17009D2BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DDAF84FC2C12E361009D2BB9 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		DDAF84FE2C12E373009D2BB9 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		DDB406FC2C0BA4AE00D4223E /* DietTypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietTypeModel.swift; sourceTree = "<group>"; };
+		DDB406FE2C0BA51200D4223E /* DietTypeflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietTypeflow.swift; sourceTree = "<group>"; };
+		DDB407032C0BA5F500D4223E /* KnownHealthProblemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownHealthProblemView.swift; sourceTree = "<group>"; };
+		DDB407072C0BAA9F00D4223E /* DietTypeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietTypeViewModel.swift; sourceTree = "<group>"; };
+		DDB407092C0BACD200D4223E /* DietTypePlansIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietTypePlansIView.swift; sourceTree = "<group>"; };
+		DDB4070B2C0BACE900D4223E /* FoodAllergyIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAllergyIView.swift; sourceTree = "<group>"; };
+		DDB4070D2C0BACFD00D4223E /* DietTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietTypeView.swift; sourceTree = "<group>"; };
+		DDB407122C0BB34800D4223E /* MFAIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFAIButton.swift; sourceTree = "<group>"; };
+		DDB407132C0BB34800D4223E /* MFAIText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFAIText.swift; sourceTree = "<group>"; };
+		DDB407142C0BB34800D4223E /* MFAIPersonalInfosHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFAIPersonalInfosHeaderView.swift; sourceTree = "<group>"; };
+		DDB407152C0BB34800D4223E /* MFAISingleSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFAISingleSelectionView.swift; sourceTree = "<group>"; };
+		DDB407162C0BB34800D4223E /* MFAIMultipleSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFAIMultipleSelectionView.swift; sourceTree = "<group>"; };
+		DDB407172C0BB34800D4223E /* MFAITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFAITextField.swift; sourceTree = "<group>"; };
+		DDB4071E2C0BB3BA00D4223E /* HeightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeightView.swift; sourceTree = "<group>"; };
+		DDB407232C0BBB2F00D4223E /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		DDB407262C0BBBD100D4223E /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		DDDFB3DD2C0997C200D2A117 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		DDDFB3E02C09D6CC00D2A117 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingViewModel.swift; path = "iOS-FitAI/Scene/Onboarding/ViewModel/OnboardingViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		DDE586DA2C0B844C007B3A1A /* ExerciseProgramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgramView.swift; sourceTree = "<group>"; };
+		DDE586E22C0B859B007B3A1A /* ExerciseProgramViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgramViewModel.swift; sourceTree = "<group>"; };
+		DDE586E42C0B85AE007B3A1A /* ExerciseProgramModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgramModel.swift; sourceTree = "<group>"; };
+		DDE586E62C0B85E7007B3A1A /* WorkoutPlansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPlansView.swift; sourceTree = "<group>"; };
+		DDE586E82C0B85FC007B3A1A /* HealthProblemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthProblemView.swift; sourceTree = "<group>"; };
+		DDE586EA2C0B8613007B3A1A /* SportOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportOptionsView.swift; sourceTree = "<group>"; };
+		DDE586EC2C0B8627007B3A1A /* SportFrequencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportFrequencyView.swift; sourceTree = "<group>"; };
+		DDE586EE2C0B8639007B3A1A /* FocusAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusAreaView.swift; sourceTree = "<group>"; };
+		DDE586F02C0B8649007B3A1A /* SpecialPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialPlanView.swift; sourceTree = "<group>"; };
 		DDE9882E2C05D12600550643 /* CurrentWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeightView.swift; sourceTree = "<group>"; };
 		DDE988322C05D62900550643 /* TargetWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetWeightView.swift; sourceTree = "<group>"; };
 		DDE988342C05D63A00550643 /* BirthdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayView.swift; sourceTree = "<group>"; };
 		DDEA0A022BFFADC300EEC4E6 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
-		DDEA0A0B2BFFB5A900EEC4E6 /* MFAIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAIButton.swift; sourceTree = "<group>"; };
-		DDEA0A0D2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAISingleSelectionView.swift; sourceTree = "<group>"; };
-		DDEA0A0F2BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAIPersonalInfosHeaderView.swift; sourceTree = "<group>"; };
-		DDEA0A112BFFBC0400EEC4E6 /* MFAITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAITextField.swift; sourceTree = "<group>"; };
-		DDEA0A132C00602E00EEC4E6 /* MFAIMultipleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAIMultipleSelectionView.swift; sourceTree = "<group>"; };
-		DDEA0A152C04981A00EEC4E6 /* MFAIText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAIText.swift; sourceTree = "<group>"; };
-		DDEA0A1A2C04B62900EEC4E6 /* HeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeightView.swift; path = "iOS-FitAI/Scene/PersonalInfos/View/Subviews/HeightView.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -772,6 +847,7 @@
 		DD2D24072BFF9C5200C97F36 = {
 			isa = PBXGroup;
 			children = (
+				DD7E52912C1182F300053555 /* Configuration */,
 				DD2D24122BFF9C5200C97F36 /* iOS-FitAI */,
 				DD2D24232BFF9C5300C97F36 /* iOS-FitAITests */,
 				DD2D242D2BFF9C5300C97F36 /* iOS-FitAIUITests */,
@@ -833,6 +909,9 @@
 		DD2D243D2BFF9CC700C97F36 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				DD7E529E2C12568A00053555 /* Managers */,
+				DDB407212C0BB8EA00D4223E /* UIKits */,
+				DDB407222C0BB91200D4223E /* Extensions */,
 				1F156B8D2C0C7A8300F0E0DC /* AppState */,
 				1F156AD92C0C7A4200F0E0DC /* Animation */,
 				1F156AE92C0C7A4200F0E0DC /* CustomButtons */,
@@ -857,6 +936,13 @@
 		DD2D243F2BFF9CE200C97F36 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				DDAF84F92C12E248009D2BB9 /* Login */,
+				DD7E52942C11D13900053555 /* Register */,
+				DDB407112C0BB32600D4223E /* Subviews */,
+				DDE586D42C0B8223007B3A1A /* Onboarding */,
+				DDE586D02C0B81FD007B3A1A /* ExerciseProgram */,
+				DDE586CC2C0B81C7007B3A1A /* DietType */,
+				DD2D24502BFF9F2700C97F36 /* PersonalInfos */,
 				1F156C2D2C0D240500F0E0DC /* HandleScreens */,
 				1F156BC52C0D22CC00F0E0DC /* LoginScreen */,
 				1F156B9A2C0D22CC00F0E0DC /* HomePage */,
@@ -873,7 +959,11 @@
 		DD2D24402BFF9CE800C97F36 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				DD2D244A2BFF9EFF00C97F36 /* Network.swift */,
+				DD7E52792C107C8400053555 /* API.swift */,
+				DD7E527B2C107CBE00053555 /* FitAI+Request.swift */,
+				DD7E52902C10ACB900053555 /* Base */,
+				DD7E528F2C10AC9300053555 /* Extension */,
+				DD7E528D2C10AC4200053555 /* Networkable */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -905,9 +995,9 @@
 		DD2D24502BFF9F2700C97F36 /* PersonalInfos */ = {
 			isa = PBXGroup;
 			children = (
+				DD2D24512BFF9F9300C97F36 /* View */,
 				DD2D24532BFF9F9F00C97F36 /* Model */,
 				DD2D24522BFF9F9700C97F36 /* ViewModel */,
-				DD2D24512BFF9F9300C97F36 /* View */,
 			);
 			path = PersonalInfos;
 			sourceTree = "<group>";
@@ -1028,12 +1118,357 @@
 			path = "Onboarding-5";
 			sourceTree = "<group>";
 		};
-		DDDFB3DC2C0997A400D2A117 /* Welcome */ = {
+		DD7E528D2C10AC4200053555 /* Networkable */ = {
+			isa = PBXGroup;
+			children = (
+				DD7E528B2C107DA800053555 /* Networkable+Extension.swift */,
+				DD7E52892C107D8A00053555 /* Networkable.swift */,
+			);
+			path = Networkable;
+			sourceTree = "<group>";
+		};
+		DD7E528F2C10AC9300053555 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DD7E52832C107D4400053555 /* URL+Extension.swift */,
+				DD7E52852C107D5900053555 /* NSError.swift */,
+				DD7E52872C107D7100053555 /* Bundle+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DD7E52902C10ACB900053555 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DD7E527D2C107D0000053555 /* Response.swift */,
+				DD7E527F2C107D1800053555 /* RequestMethod.swift */,
+				DD7E52812C107D2B00053555 /* ContentType.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DD7E52912C1182F300053555 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				DD7E52922C11832F00053555 /* Development.xcconfig */,
+				DD7E52932C11833F00053555 /* Production.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		DD7E52942C11D13900053555 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				DD7E52972C11D15400053555 /* Model */,
+				DD7E52962C11D14D00053555 /* ViewModel */,
+				DD7E52952C11D14700053555 /* View */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		DD7E52952C11D14700053555 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD7E52982C11D17400053555 /* RegisterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD7E52962C11D14D00053555 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DD7E529C2C11D57600053555 /* RegisterVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DD7E52972C11D15400053555 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD7E529A2C11D20A00053555 /* RegisterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD7E529E2C12568A00053555 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DDAF84EB2C125931009D2BB9 /* AppStorageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		DDAF84F92C12E248009D2BB9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DDAF84FB2C12E347009D2BB9 /* Model */,
+				DDAF84FA2C12E33E009D2BB9 /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DDAF84FA2C12E33E009D2BB9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DDAF84FC2C12E361009D2BB9 /* LoginVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DDAF84FB2C12E347009D2BB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDAF84FE2C12E373009D2BB9 /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDB407002C0BA51800D4223E /* KnownHealthProblem */ = {
+			isa = PBXGroup;
+			children = (
+				DDB407032C0BA5F500D4223E /* KnownHealthProblemView.swift */,
+			);
+			path = KnownHealthProblem;
+			sourceTree = "<group>";
+		};
+		DDB407012C0BA53300D4223E /* FoodAllergy */ = {
+			isa = PBXGroup;
+			children = (
+				DDB4070B2C0BACE900D4223E /* FoodAllergyIView.swift */,
+			);
+			path = FoodAllergy;
+			sourceTree = "<group>";
+		};
+		DDB407022C0BA5B700D4223E /* DietType */ = {
+			isa = PBXGroup;
+			children = (
+				DDB4070D2C0BACFD00D4223E /* DietTypeView.swift */,
+			);
+			path = DietType;
+			sourceTree = "<group>";
+		};
+		DDB407052C0BA66C00D4223E /* DietTypePlans */ = {
+			isa = PBXGroup;
+			children = (
+				DDB407092C0BACD200D4223E /* DietTypePlansIView.swift */,
+			);
+			path = DietTypePlans;
+			sourceTree = "<group>";
+		};
+		DDB407062C0BA6C900D4223E /* SpecialPlan */ = {
+			isa = PBXGroup;
+			children = (
+				DD7E51A02C0C803400053555 /* DietSpecialTypeView.swift */,
+			);
+			path = SpecialPlan;
+			sourceTree = "<group>";
+		};
+		DDB407112C0BB32600D4223E /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				DDB407122C0BB34800D4223E /* MFAIButton.swift */,
+				DDB407162C0BB34800D4223E /* MFAIMultipleSelectionView.swift */,
+				DDB407142C0BB34800D4223E /* MFAIPersonalInfosHeaderView.swift */,
+				DDB407152C0BB34800D4223E /* MFAISingleSelectionView.swift */,
+				DDB407132C0BB34800D4223E /* MFAIText.swift */,
+				DDB407172C0BB34800D4223E /* MFAITextField.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		DDB407212C0BB8EA00D4223E /* UIKits */ = {
+			isa = PBXGroup;
+			children = (
+				DDB407232C0BBB2F00D4223E /* AlertManager.swift */,
+			);
+			path = UIKits;
+			sourceTree = "<group>";
+		};
+		DDB407222C0BB91200D4223E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A0E9A2C07C4F2006464D7 /* Binding+Extension */,
+				DDB407262C0BBBD100D4223E /* UIApplication+Extension.swift */,
+				DDAF84EE2C125D05009D2BB9 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DDE586CC2C0B81C7007B3A1A /* DietType */ = {
+			isa = PBXGroup;
+			children = (
+				DDE586CF2C0B81F0007B3A1A /* Model */,
+				DDE586CE2C0B81E8007B3A1A /* ViewModel */,
+				DDE586CD2C0B81E0007B3A1A /* View */,
+			);
+			path = DietType;
+			sourceTree = "<group>";
+		};
+		DDE586CD2C0B81E0007B3A1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDB407052C0BA66C00D4223E /* DietTypePlans */,
+				DDB407002C0BA51800D4223E /* KnownHealthProblem */,
+				DDB407012C0BA53300D4223E /* FoodAllergy */,
+				DDB407022C0BA5B700D4223E /* DietType */,
+				DDB407062C0BA6C900D4223E /* SpecialPlan */,
+				DDB406FE2C0BA51200D4223E /* DietTypeflow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDE586CE2C0B81E8007B3A1A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DDB407072C0BAA9F00D4223E /* DietTypeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DDE586CF2C0B81F0007B3A1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDB406FC2C0BA4AE00D4223E /* DietTypeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDE586D02C0B81FD007B3A1A /* ExerciseProgram */ = {
+			isa = PBXGroup;
+			children = (
+				DDE586D32C0B821B007B3A1A /* Model */,
+				DDE586D22C0B8213007B3A1A /* ViewModel */,
+				DDE586D12C0B820E007B3A1A /* View */,
+			);
+			path = ExerciseProgram;
+			sourceTree = "<group>";
+		};
+		DDE586D12C0B820E007B3A1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDE586DA2C0B844C007B3A1A /* ExerciseProgramView.swift */,
+				DDE586D92C0B841C007B3A1A /* ExerciseProgramFlow */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDE586D22C0B8213007B3A1A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DDE586E22C0B859B007B3A1A /* ExerciseProgramViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DDE586D32C0B821B007B3A1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDE586E42C0B85AE007B3A1A /* ExerciseProgramModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDE586D42C0B8223007B3A1A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DDE586D72C0B8243007B3A1A /* View */,
+				DDE586D62C0B823D007B3A1A /* Model */,
+				DDE586D52C0B8233007B3A1A /* ViewModel */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DDE586D52C0B8233007B3A1A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DDDFB3E02C09D6CC00D2A117 /* OnboardingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DDE586D62C0B823D007B3A1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A0ED32C088E08006464D7 /* OnboardingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDE586D72C0B8243007B3A1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A0E882C07BCE2006464D7 /* OnboardingFlowViews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDE586D82C0B8272007B3A1A /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
 				DDDFB3DD2C0997C200D2A117 /* WelcomeView.swift */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		DDE586D92C0B841C007B3A1A /* ExerciseProgramFlow */ = {
+			isa = PBXGroup;
+			children = (
+				DDE586E12C0B8576007B3A1A /* SpecialPlan */,
+				DDE586E02C0B8565007B3A1A /* FocusArea */,
+				DDE586DF2C0B8540007B3A1A /* SportFrequency */,
+				DDE586DE2C0B8524007B3A1A /* SportOptions */,
+				DDE586DD2C0B84ED007B3A1A /* HealthProblem */,
+				DDE586DC2C0B84DB007B3A1A /* WorkoutPlans */,
+			);
+			path = ExerciseProgramFlow;
+			sourceTree = "<group>";
+		};
+		DDE586DC2C0B84DB007B3A1A /* WorkoutPlans */ = {
+			isa = PBXGroup;
+			children = (
+				DDE586E62C0B85E7007B3A1A /* WorkoutPlansView.swift */,
+			);
+			path = WorkoutPlans;
+			sourceTree = "<group>";
+		};
+		DDE586DD2C0B84ED007B3A1A /* HealthProblem */ = {
+			isa = PBXGroup;
+			children = (
+				DDE586E82C0B85FC007B3A1A /* HealthProblemView.swift */,
+			);
+			path = HealthProblem;
+			sourceTree = "<group>";
+		};
+		DDE586DE2C0B8524007B3A1A /* SportOptions */ = {
+			isa = PBXGroup;
+			children = (
+				DDE586EA2C0B8613007B3A1A /* SportOptionsView.swift */,
+			);
+			path = SportOptions;
+			sourceTree = "<group>";
+		};
+		DDE586DF2C0B8540007B3A1A /* SportFrequency */ = {
+			isa = PBXGroup;
+			children = (
+				DDE586EC2C0B8627007B3A1A /* SportFrequencyView.swift */,
+			);
+			path = SportFrequency;
+			sourceTree = "<group>";
+		};
+		DDE586E02C0B8565007B3A1A /* FocusArea */ = {
+			isa = PBXGroup;
+			children = (
+				DDE586EE2C0B8639007B3A1A /* FocusAreaView.swift */,
+			);
+			path = FocusArea;
+			sourceTree = "<group>";
+		};
+		DDE586E12C0B8576007B3A1A /* SpecialPlan */ = {
+			isa = PBXGroup;
+			children = (
+				DDE586F02C0B8649007B3A1A /* SpecialPlanView.swift */,
+			);
+			path = SpecialPlan;
 			sourceTree = "<group>";
 		};
 		DDE9882D2C05D10300550643 /* CurrentWeight */ = {
@@ -1063,13 +1498,13 @@
 		DDEA0A002BFFAD8000EEC4E6 /* PersonalFlowViews */ = {
 			isa = PBXGroup;
 			children = (
+				DDE586D82C0B8272007B3A1A /* Welcome */,
 				DD5A0E972C07BFC3006464D7 /* Targets */,
 				DDE988312C05D60E00550643 /* Birthday */,
 				DDE988302C05D5F300550643 /* TargetWeight */,
 				DDE9882D2C05D10300550643 /* CurrentWeight */,
 				DDEA0A192C04B50300EEC4E6 /* Height */,
 				DDEA0A012BFFAD9500EEC4E6 /* Gender */,
-				DDDFB3DC2C0997A400D2A117 /* Welcome */,
 			);
 			path = PersonalFlowViews;
 			sourceTree = "<group>";
@@ -1082,24 +1517,10 @@
 			path = Gender;
 			sourceTree = "<group>";
 		};
-		DDEA0A042BFFAE0200EEC4E6 /* Subviews */ = {
-			isa = PBXGroup;
-			children = (
-				DDEA0A0B2BFFB5A900EEC4E6 /* MFAIButton.swift */,
-				DDEA0A0D2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift */,
-				DDEA0A0F2BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift */,
-				DDEA0A112BFFBC0400EEC4E6 /* MFAITextField.swift */,
-				DDEA0A132C00602E00EEC4E6 /* MFAIMultipleSelectionView.swift */,
-				DDEA0A152C04981A00EEC4E6 /* MFAIText.swift */,
-			);
-			name = Subviews;
-			path = PersonalInfos/View/Subviews;
-			sourceTree = "<group>";
-		};
 		DDEA0A192C04B50300EEC4E6 /* Height */ = {
 			isa = PBXGroup;
 			children = (
-				DDEA0A1A2C04B62900EEC4E6 /* HeightView.swift */,
+				DDB4071E2C0BB3BA00D4223E /* HeightView.swift */,
 			);
 			path = Height;
 			sourceTree = "<group>";
@@ -1246,6 +1667,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7E51A12C0C803400053555 /* DietSpecialTypeView.swift in Sources */,
 				1F156C1F2C0D22CC00F0E0DC /* OTPNumber.swift in Sources */,
 				1F156C052C0D22CC00F0E0DC /* TabBarButtonView.swift in Sources */,
 				1F156C0E2C0D22CC00F0E0DC /* FMPNumberTextView.swift in Sources */,
@@ -1269,6 +1691,20 @@
 				1F156C0C2C0D22CC00F0E0DC /* ScreenModeView.swift in Sources */,
 				1F675D722C107ECA000F073A /* AddHeaderView.swift in Sources */,
 				DD2D24582BFFA11300C97F36 /* PersonalInfosView.swift in Sources */,
+				DDE586F12C0B8649007B3A1A /* SpecialPlanView.swift in Sources */,
+				DD7E529D2C11D57600053555 /* RegisterVM.swift in Sources */,
+				DD2D244F2BFF9F1900C97F36 /* SplashView.swift in Sources */,
+				DD7E52842C107D4400053555 /* URL+Extension.swift in Sources */,
+				DDAF84EF2C125D05009D2BB9 /* String+Extension.swift in Sources */,
+				DD2A75762C09E33300FFF114 /* Onboarding5View.swift in Sources */,
+				DDB407192C0BB34800D4223E /* MFAIText.swift in Sources */,
+				DD2D24142BFF9C5200C97F36 /* AppDelegate.swift in Sources */,
+				DD7E527C2C107CBE00053555 /* FitAI+Request.swift in Sources */,
+				DDAF84FF2C12E373009D2BB9 /* LoginModel.swift in Sources */,
+				DDE586E92C0B85FC007B3A1A /* HealthProblemView.swift in Sources */,
+				DDDFB3E12C09D6CC00D2A117 /* OnboardingViewModel.swift in Sources */,
+				DD7E52992C11D17400053555 /* RegisterView.swift in Sources */,
+				DDAF84FD2C12E361009D2BB9 /* LoginVM.swift in Sources */,
 				1F156C022C0D22CC00F0E0DC /* AISupportedNutritionPlan.swift in Sources */,
 				1F675D812C110357000F073A /* MyExerciseView.swift in Sources */,
 				DD2D244F2BFF9F1900C97F36 /* SplashView.swift in Sources */,
@@ -1307,6 +1743,11 @@
 				1F675D7D2C10C0E6000F073A /* SFECard.swift in Sources */,
 				1F156BFE2C0D22CC00F0E0DC /* CircularProgressView.swift in Sources */,
 				DDEA0A032BFFADC300EEC4E6 /* GenderView.swift in Sources */,
+				DD7E529B2C11D20A00053555 /* RegisterModel.swift in Sources */,
+				DD5A0E962C07BE1D006464D7 /* OnboardingView.swift in Sources */,
+				DD2D24442BFF9DF200C97F36 /* NavigationRouter.swift in Sources */,
+				DDB4071A2C0BB34800D4223E /* MFAIPersonalInfosHeaderView.swift in Sources */,
+				DD7E528A2C107D8A00053555 /* Networkable.swift in Sources */,
 				1F63DDC12C1121FB0060B7D0 /* AddFoodView.swift in Sources */,
 				1F675D672C0FC940000F073A /* FoodItem.swift in Sources */,
 				1F156AFC2C0C7A4200F0E0DC /* CustomBackButton.swift in Sources */,
@@ -1321,7 +1762,10 @@
 				DD2D24442BFF9DF200C97F36 /* NavigationRouter.swift in Sources */,
 				1F675D7F2C10D044000F073A /* CheckIfSearching.swift in Sources */,
 				DD5A0E9C2C07C51C006464D7 /* BindingExtension.swift in Sources */,
+				DDB4071C2C0BB34800D4223E /* MFAIMultipleSelectionView.swift in Sources */,
+				DD7E52822C107D2B00053555 /* ContentType.swift in Sources */,
 				DD2D245A2BFFA1E200C97F36 /* PersonalInfosModel.swift in Sources */,
+				DDB4071B2C0BB34800D4223E /* MFAISingleSelectionView.swift in Sources */,
 				DD5A0ED42C088E08006464D7 /* OnboardingModel.swift in Sources */,
 				1F156C172C0D22CC00F0E0DC /* FMPEmailTextField.swift in Sources */,
 				1F156C0F2C0D22CC00F0E0DC /* ForgotMyPasswordWithNumber.swift in Sources */,
@@ -1329,6 +1773,16 @@
 				1F156C012C0D22CC00F0E0DC /* RightCurvedRectangleShape.swift in Sources */,
 				DDE988352C05D63A00550643 /* BirthdayView.swift in Sources */,
 				DD2D24632BFFA5EE00C97F36 /* PersonalInfosViewModel.swift in Sources */,
+				DDB4071D2C0BB34800D4223E /* MFAITextField.swift in Sources */,
+				DDB4070E2C0BACFD00D4223E /* DietTypeView.swift in Sources */,
+				DD2D24492BFF9E4300C97F36 /* FlowRouter.swift in Sources */,
+				DDE988332C05D62900550643 /* TargetWeightView.swift in Sources */,
+				DDB4070C2C0BACE900D4223E /* FoodAllergyIView.swift in Sources */,
+				DD5A0E8C2C07BD40006464D7 /* PersonalDietTypeView.swift in Sources */,
+				DD7E52882C107D7100053555 /* Bundle+Extension.swift in Sources */,
+				DDE586E52C0B85AE007B3A1A /* ExerciseProgramModel.swift in Sources */,
+				DDB407082C0BAA9F00D4223E /* DietTypeViewModel.swift in Sources */,
+				DDE586E32C0B859B007B3A1A /* ExerciseProgramViewModel.swift in Sources */,
 				1F156BF62C0D22CC00F0E0DC /* AISupportedTrainingPlan.swift in Sources */,
 				1F156BFC2C0D22CC00F0E0DC /* CaloriesView.swift in Sources */,
 				1F63DDC72C11B1520060B7D0 /* AddFoodCard.swift in Sources */,
@@ -1341,7 +1795,30 @@
 				DD5A0E902C07BD79006464D7 /* DailyCalorieView.swift in Sources */,
 				1F156AD82C0C7A1200F0E0DC /* View + Ext.swift in Sources */,
 				DD2D245D2BFFA52E00C97F36 /* Utils.swift in Sources */,
+				DD7E527A2C107C8400053555 /* API.swift in Sources */,
 				DD2D24562BFF9FC600C97F36 /* SceneDelegate.swift in Sources */,
+				DDE586ED2C0B8627007B3A1A /* SportFrequencyView.swift in Sources */,
+				DDB407242C0BBB2F00D4223E /* AlertManager.swift in Sources */,
+				DDE586EB2C0B8613007B3A1A /* SportOptionsView.swift in Sources */,
+				DDB406FF2C0BA51200D4223E /* DietTypeflow.swift in Sources */,
+				DDB407272C0BBBD100D4223E /* UIApplication+Extension.swift in Sources */,
+				DD7E528C2C107DA800053555 /* Networkable+Extension.swift in Sources */,
+				DDE586E72C0B85E7007B3A1A /* WorkoutPlansView.swift in Sources */,
+				DDDFB3DE2C0997C200D2A117 /* WelcomeView.swift in Sources */,
+				DDB407042C0BA5F500D4223E /* KnownHealthProblemView.swift in Sources */,
+				DD5A0E992C07BFD6006464D7 /* TargetsView.swift in Sources */,
+				DDAF84EC2C125931009D2BB9 /* AppStorageManager.swift in Sources */,
+				DDE586DB2C0B844C007B3A1A /* ExerciseProgramView.swift in Sources */,
+				DDE586EF2C0B8639007B3A1A /* FocusAreaView.swift in Sources */,
+				DD7E527E2C107D0000053555 /* Response.swift in Sources */,
+				DDE9882F2C05D12600550643 /* CurrentWeightView.swift in Sources */,
+				DDB4070A2C0BACD200D4223E /* DietTypePlansIView.swift in Sources */,
+				DD7E52802C107D1800053555 /* RequestMethod.swift in Sources */,
+				DD2D24422BFF9D9200C97F36 /* Coordinator.swift in Sources */,
+				DDB407182C0BB34800D4223E /* MFAIButton.swift in Sources */,
+				DDB4071F2C0BB3BA00D4223E /* HeightView.swift in Sources */,
+				DDB406FD2C0BA4AE00D4223E /* DietTypeModel.swift in Sources */,
+				DD7E52862C107D5900053555 /* NSError.swift in Sources */,
 				1F156BF42C0D22CC00F0E0DC /* TrainingPlannedView.swift in Sources */,
 				1F156C142C0D22CC00F0E0DC /* FMPEmailTextView.swift in Sources */,
 				1F156C072C0D22CC00F0E0DC /* TabBarShape.swift in Sources */,
@@ -1410,8 +1887,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		DD2D24322BFF9C5300C97F36 /* Debug */ = {
+		DD2D24322BFF9C5300C97F36 /* DevelopmentDebug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7E52922C11832F00053555 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -1471,10 +1949,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = DevelopmentDebug;
 		};
-		DD2D24332BFF9C5300C97F36 /* Release */ = {
+		DD2D24332BFF9C5300C97F36 /* DevelopmentRelease */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7E52922C11832F00053555 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -1527,10 +2006,11 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = DevelopmentRelease;
 		};
-		DD2D24352BFF9C5300C97F36 /* Debug */ = {
+		DD2D24352BFF9C5300C97F36 /* DevelopmentDebug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7E52922C11832F00053555 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1558,10 +2038,11 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = DevelopmentDebug;
 		};
-		DD2D24362BFF9C5300C97F36 /* Release */ = {
+		DD2D24362BFF9C5300C97F36 /* DevelopmentRelease */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7E52922C11832F00053555 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1589,10 +2070,11 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = DevelopmentRelease;
 		};
-		DD2D24382BFF9C5300C97F36 /* Debug */ = {
+		DD2D24382BFF9C5300C97F36 /* DevelopmentDebug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7E52922C11832F00053555 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1609,10 +2091,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-FitAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS-FitAI";
 			};
-			name = Debug;
+			name = DevelopmentDebug;
 		};
-		DD2D24392BFF9C5300C97F36 /* Release */ = {
+		DD2D24392BFF9C5300C97F36 /* DevelopmentRelease */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7E52922C11832F00053555 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1629,10 +2112,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-FitAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS-FitAI";
 			};
-			name = Release;
+			name = DevelopmentRelease;
 		};
-		DD2D243B2BFF9C5300C97F36 /* Debug */ = {
+		DD2D243B2BFF9C5300C97F36 /* DevelopmentDebug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7E52922C11832F00053555 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1647,10 +2131,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "iOS-FitAI";
 			};
-			name = Debug;
+			name = DevelopmentDebug;
 		};
-		DD2D243C2BFF9C5300C97F36 /* Release */ = {
+		DD2D243C2BFF9C5300C97F36 /* DevelopmentRelease */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7E52922C11832F00053555 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1665,7 +2150,270 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "iOS-FitAI";
 			};
-			name = Release;
+			name = DevelopmentRelease;
+		};
+		DDAF84F12C12E01D009D2BB9 /* ProductionDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7E52932C11833F00053555 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = ProductionDebug;
+		};
+		DDAF84F22C12E01D009D2BB9 /* ProductionDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7E52932C11833F00053555 /* Production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS-FitAI/Preview Content\"";
+				DEVELOPMENT_TEAM = 7Y8QP7UN32;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS-FitAI/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobven.iOS-FitAI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ProductionDebug;
+		};
+		DDAF84F32C12E01D009D2BB9 /* ProductionDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7E52932C11833F00053555 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7Y8QP7UN32;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobven.iOS-FitAITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-FitAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS-FitAI";
+			};
+			name = ProductionDebug;
+		};
+		DDAF84F42C12E01D009D2BB9 /* ProductionDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7E52932C11833F00053555 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7Y8QP7UN32;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobven.iOS-FitAIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iOS-FitAI";
+			};
+			name = ProductionDebug;
+		};
+		DDAF84F52C12E030009D2BB9 /* ProductionRelease */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7E52932C11833F00053555 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = ProductionRelease;
+		};
+		DDAF84F62C12E030009D2BB9 /* ProductionRelease */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7E52932C11833F00053555 /* Production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS-FitAI/Preview Content\"";
+				DEVELOPMENT_TEAM = 7Y8QP7UN32;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS-FitAI/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobven.iOS-FitAI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ProductionRelease;
+		};
+		DDAF84F72C12E030009D2BB9 /* ProductionRelease */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7E52932C11833F00053555 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7Y8QP7UN32;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobven.iOS-FitAITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-FitAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS-FitAI";
+			};
+			name = ProductionRelease;
+		};
+		DDAF84F82C12E030009D2BB9 /* ProductionRelease */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7E52932C11833F00053555 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7Y8QP7UN32;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobven.iOS-FitAIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iOS-FitAI";
+			};
+			name = ProductionRelease;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1673,38 +2421,46 @@
 		DD2D240B2BFF9C5200C97F36 /* Build configuration list for PBXProject "iOS-FitAI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD2D24322BFF9C5300C97F36 /* Debug */,
-				DD2D24332BFF9C5300C97F36 /* Release */,
+				DD2D24322BFF9C5300C97F36 /* DevelopmentDebug */,
+				DDAF84F12C12E01D009D2BB9 /* ProductionDebug */,
+				DD2D24332BFF9C5300C97F36 /* DevelopmentRelease */,
+				DDAF84F52C12E030009D2BB9 /* ProductionRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = DevelopmentRelease;
 		};
 		DD2D24342BFF9C5300C97F36 /* Build configuration list for PBXNativeTarget "iOS-FitAI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD2D24352BFF9C5300C97F36 /* Debug */,
-				DD2D24362BFF9C5300C97F36 /* Release */,
+				DD2D24352BFF9C5300C97F36 /* DevelopmentDebug */,
+				DDAF84F22C12E01D009D2BB9 /* ProductionDebug */,
+				DD2D24362BFF9C5300C97F36 /* DevelopmentRelease */,
+				DDAF84F62C12E030009D2BB9 /* ProductionRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = DevelopmentRelease;
 		};
 		DD2D24372BFF9C5300C97F36 /* Build configuration list for PBXNativeTarget "iOS-FitAITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD2D24382BFF9C5300C97F36 /* Debug */,
-				DD2D24392BFF9C5300C97F36 /* Release */,
+				DD2D24382BFF9C5300C97F36 /* DevelopmentDebug */,
+				DDAF84F32C12E01D009D2BB9 /* ProductionDebug */,
+				DD2D24392BFF9C5300C97F36 /* DevelopmentRelease */,
+				DDAF84F72C12E030009D2BB9 /* ProductionRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = DevelopmentRelease;
 		};
 		DD2D243A2BFF9C5300C97F36 /* Build configuration list for PBXNativeTarget "iOS-FitAIUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD2D243B2BFF9C5300C97F36 /* Debug */,
-				DD2D243C2BFF9C5300C97F36 /* Release */,
+				DD2D243B2BFF9C5300C97F36 /* DevelopmentDebug */,
+				DDAF84F42C12E01D009D2BB9 /* ProductionDebug */,
+				DD2D243C2BFF9C5300C97F36 /* DevelopmentRelease */,
+				DDAF84F82C12E030009D2BB9 /* ProductionRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = DevelopmentRelease;
 		};
 /* End XCConfigurationList section */
 	};

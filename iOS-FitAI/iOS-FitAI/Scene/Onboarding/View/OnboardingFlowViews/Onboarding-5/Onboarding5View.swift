@@ -9,38 +9,43 @@ import SwiftUI
 
 struct Onboarding5View: View {
     @EnvironmentObject var coordinator: Coordinator<FlowRouter>
-    @ObservedObject var onboardingScreen = OnboardingViewModel()
-    @ObservedObject var personalInfoVM = PersonalInfosViewModel()
+    @ObservedObject var onboardingScreen: OnboardingViewModel
+    @ObservedObject var personalInfoVM: PersonalInfosViewModel
     var body: some View {
-        GeometryReader{ geometry in
-            ZStack(alignment: .topLeading){
-                Image("Onboarding-5")
-                    .resizable()
-                    .frame(width: geometry.size.width, height: geometry.size.height)
-                    .aspectRatio(contentMode: .fill)
-                    .ignoresSafeArea()
-                VStack{
-                    Image("Onboarding-5-Icon")
-                        .resizable()
-                        .frame(width: 40, height: 40, alignment: .center)
-                    
-                    MFAIText(title: "FitAI")
-                    Spacer()
-                    MFAIButton(buttontitle: OnboardingModel.ButtonContent.buttonTextRegister){
-                        personalInfoVM.pageStep = .welcome
-                    }
-                    MFAIButton(buttontitle: OnboardingModel.ButtonContent.buttonTextLogin)
-                }.onAppear(perform: {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-                        coordinator.show(.personalInfos)
-                    })
-                })
+        VStack{
+            Spacer(minLength: 50)
+            Image("Onboarding-5-Icon")
+                .resizable()
+                .frame(width: 72, height: 81,   alignment: .center)
+            
+            MFAIText(title: "FitAI")
+            Spacer()
+            MFAIButton(buttontitle: OnboardingModel.ButtonContent.buttonTextRegister, buttonBackgroundColor: .buttonGreen){
+                personalInfoVM.pageStep = .welcome
             }
+            .padding(.bottom, 30)
+            MFAIButton(buttontitle: OnboardingModel.ButtonContent.buttonTextLogin,
+                       buttonBackgroundColor: .white)
+            .padding(.bottom)
         }
+        .navigationBarBackButtonHidden(true)
+        .padding(40)
+        .background{
+            Image(.onboarding5)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+        }.ignoresSafeArea()
+        .onAppear(perform: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+                coordinator.show(.register)
+            })
+        })
+        
     }
 }
 
 #Preview {
-    Onboarding5View(onboardingScreen: OnboardingViewModel(), personalInfoVM: PersonalInfosViewModel())
-        .environmentObject(Coordinator<FlowRouter>())
+    @State var env = Coordinator<FlowRouter>()
+    return Onboarding5View(onboardingScreen: OnboardingViewModel(), personalInfoVM: PersonalInfosViewModel())
+        .environmentObject(env)
 }

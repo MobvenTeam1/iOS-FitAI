@@ -12,6 +12,7 @@ import UIKit
 public enum FlowRouter: NavigationRouter {
 
     case splash
+    case register
     case onboarding
     case personalInfos
     case login
@@ -32,6 +33,8 @@ public enum FlowRouter: NavigationRouter {
             SplashView()
         case .onboarding:
             OnboardingView()
+        case .register:
+            RegisterView()
         case .personalInfos:
             PersonalInfosView()
         case .login:

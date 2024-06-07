@@ -15,8 +15,10 @@ struct PersonalInfosView: View {
         ZStack {
             VStack{
                 ProgressView(value: progressBarValue)
-                
-                if viewmodel.pageStep == .gender {
+                    .progressViewStyle(CustomProgressViewStyle(trackColor: .gray, progressColor: .buttonGreen))
+                    .padding()
+                                    
+                if viewmodel.pageStep == .gender{
                     GenderView(personelInfoVM: viewmodel, progressBarValue: $progressBarValue)
                 }else if viewmodel.pageStep == .height{
                     HeightView(personalInfoVM: viewmodel, progressBarValue: $progressBarValue)
@@ -28,6 +30,8 @@ struct PersonalInfosView: View {
                     BirthdayView(personalInfoVM: viewmodel, progressBarValue: $progressBarValue)
                 }else if viewmodel.pageStep == .targets{
                     TargetsView(personalInfoVM: viewmodel, progressBarValue: $progressBarValue)
+                } else {
+                    Text("There is nothing")
                 }
                 
             }

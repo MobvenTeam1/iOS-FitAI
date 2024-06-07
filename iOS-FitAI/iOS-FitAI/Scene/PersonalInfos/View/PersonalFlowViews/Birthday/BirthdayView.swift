@@ -18,13 +18,19 @@ struct BirthdayView: View {
                 HStack(spacing: 20) {
                     Text(birthDate.formatted(.dateTime.day()))
                         .font(.system(size: 13, weight: .semibold))
+                        .padding(12)
+                        .border(.calenderBorder)
                     Text(birthDate.formatted(.dateTime.month()))
                         .font(.system(size: 13, weight: .semibold))
+                        .padding(12)
+                        .border(.calenderBorder)
                     Text(birthDate.formatted(.dateTime.year()))
                         .font(.system(size: 13, weight: .semibold))
-                    
-                    Image(systemName: "chevron.right")
-                        .font(.system(size: 9, weight: .bold))
+                        .padding(12)
+                        .border(.calenderBorder)
+                    Image("calender")
+
+                        .border(.calenderBorder)
                 }
                 .padding(8)
                 .foregroundColor(.black)
@@ -35,11 +41,31 @@ struct BirthdayView: View {
                         .opacity(0.011)             // <<< here
                 }
                 Spacer()
-                MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext){
+                MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext,buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.16
                     personalInfoVM.pageStep = .targets
                 }
+                .padding(.bottom, 30)
             }
+            .navigationBarBackButtonHidden(true)
+               .toolbar {
+                   ToolbarItem(placement: .topBarLeading) {
+                       Button(action: {
+                           personalInfoVM.pageStep = .targetWeight
+                       }, label: {
+                           Image("back")
+                               .resizable()
+                               .frame(width: 41, height: 41)
+                       })
+                   }
+               }
+               .toolbar {
+                         ToolbarItem(placement: .topBarTrailing) {
+                                 Image("Onboarding-5-Icon")
+                                     .resizable()
+                                     .frame(width: 32, height: 36)
+                         }
+                     }
         }
     }
 }
