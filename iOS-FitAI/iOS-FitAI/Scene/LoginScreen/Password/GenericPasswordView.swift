@@ -29,7 +29,7 @@ struct GenericPasswordView: View {
             Button {
                 isPasswordVisible.toggle()
             }label: {
-                Image( isPasswordVisible ? "şifreaçık" : "şifrekapalı")
+                Image( isPasswordVisible ? "visiblepw" : "invisiblepw")
                     .padding(.trailing, 18)
                     .foregroundStyle(Color.black102_102)
             }

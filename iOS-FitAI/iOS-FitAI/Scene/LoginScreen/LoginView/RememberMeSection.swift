@@ -7,7 +7,7 @@ struct RememberMeSection: View {
             rememberMeClicked.toggle()
         }label: {
             if rememberMeClicked {
-                Image("tikişareti")
+                Image("tick")
             }
             else {
                 Image(systemName: "circle")

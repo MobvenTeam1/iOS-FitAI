@@ -19,7 +19,7 @@ struct ProfileView: View {
                 CardView(userName: "Jane Doe", signUpDate: "5 Mayıs 2024")
                     .padding(.top, 26)
                 ProfileSettingsView(zStackFrame: (327, 284), headerText: "Kişiselleştir",
-                                    imageNameArray: ["kişiselbilgiler","beslenmeplanı","antrenmanplanı","kaloritakibi","sutakibi"],
+                                    imageNameArray: ["personalinfo","beslenmeplani","antrenmanplani","kaloritakibi","watertracking"],
                                     textArray: ["Kişisel Bilgiler", "Beslenme Planı", "Antrenman Planı", "Kalori Takibi", "Su Takibi"])
                 
                 ProfileSettingsView(zStackFrame: (327, 180), headerText: "Bağlantılı Hesaplar",
@@ -27,19 +27,19 @@ struct ProfileView: View {
                                     textArray: ["Apple Health", "Google", "Watch"])
                 
                 ProfileSettingsView(zStackFrame: (327, 180), headerText: "Takip",
-                                    imageNameArray: ["kilogüncellemesi","sutüketim","adım"],
+                                    imageNameArray: ["weightupdate","watercons","step"],
                                     textArray: ["Kilo Güncellemesi", "Su Tüketim", "Adım"],isOpenOrClosed: ["Açık","Kapalı","Kapalı"])
                 
                 ProfileSettingsView(zStackFrame: (327, 180), headerText: "Bildirim",
-                                    imageNameArray: ["görevanımsatıcısı","motivasyonbildirimi","günsonuözeti"],
+                                    imageNameArray: ["taskreminder","motivationnotif","endofdaysummary"],
                                     textArray: ["Görev Anımsatıcısı", "Motivasyon Bildirimi", "Gün Sonu Özeti"], toggleIndices: [0,1,2])
                 
                 ProfileSettingsView(zStackFrame: (327, 232), headerText: "Destek",
-                                    imageNameArray: ["yardımmerkezi","güvenlik","fitainasılçalışır","geribildirimdebulunun"],
+                                    imageNameArray: ["helpdesk","security","howdoesfitaiwork","feedback"],
                                     textArray: ["Yardım Merkezi", "Güvenlik", "FitAI Nasıl Çalışır?", "Geri Bildirimde Bulunun"])
                 
                 ProfileSettingsView(zStackFrame: (327, 128), headerText: "Yasal",
-                                    imageNameArray: ["kullanımşartları","gizlilikpolitikası"],
+                                    imageNameArray: ["termsofuse","gizlilikpolitikası"],
                                     textArray: ["Kullanım Şartları", "Gizlilik Politikası"])
                 ScreenModeView(imageName: ["sistem","light","dark"], actions: [
                     {print("Ekranı modu sistem olarak ayarlandı")},
