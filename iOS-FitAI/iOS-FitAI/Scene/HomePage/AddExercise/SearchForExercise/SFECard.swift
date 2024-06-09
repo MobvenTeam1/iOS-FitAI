@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct SFECard: View {
-    let exercise: Exercise
+   var exercise: Exercise
     @State private var isButtonTapped: Bool = false
-    
+    @EnvironmentObject var appState: AppState
     var body: some View {
         ZStack {
             Color.white
@@ -35,6 +35,7 @@ struct SFECard: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
                 Button {
+                    appState.isaddExerciseButtonTapped = true
                     isButtonTapped = true
                 }label: {
                     ZStack {
@@ -46,7 +47,7 @@ struct SFECard: View {
                             .frame(width: 14, height: 14)
                     }
                     .sheet(isPresented: $isButtonTapped, content: {
-                        DurationForExercise()
+                        DurationForExercise(exercise: exercise)
                             .presentationDetents([.large, .fraction(0.4)])
                     })
                 }
@@ -55,8 +56,3 @@ struct SFECard: View {
         }
     }
 }
-
-
-//#Preview {
-//    DurationForExercise()
-//}

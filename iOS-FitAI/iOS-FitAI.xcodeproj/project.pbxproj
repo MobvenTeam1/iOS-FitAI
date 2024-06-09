@@ -112,6 +112,10 @@
 		1FC20BBD2C0B42F5005C7326 /* Font + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BBB2C0B42F4005C7326 /* Font + Ext.swift */; };
 		1FC20BBE2C0B42F5005C7326 /* Color + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BBC2C0B42F4005C7326 /* Color + Ext.swift */; };
 		1FC20BE42C0B4A5B005C7326 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BE32C0B4A5B005C7326 /* OnboardingViewModel.swift */; };
+		1FCCD5F72C15197500A726CA /* NoResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCD5F62C15197500A726CA /* NoResultView.swift */; };
+		1FCCD5FA2C153A6600A726CA /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCD5F92C153A6600A726CA /* Protocol.swift */; };
+		1FCCD5FC2C153A8000A726CA /* SwiftDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCD5FB2C153A8000A726CA /* SwiftDataViewModel.swift */; };
+		1FCCD5FE2C153A9B00A726CA /* GenericDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCD5FD2C153A9B00A726CA /* GenericDataSource.swift */; };
 		DD2A75762C09E33300FFF114 /* Onboarding5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A75752C09E33300FFF114 /* Onboarding5View.swift */; };
 		DD2D24142BFF9C5200C97F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24132BFF9C5200C97F36 /* AppDelegate.swift */; };
 		DD2D24182BFF9C5300C97F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D24172BFF9C5300C97F36 /* Assets.xcassets */; };
@@ -314,6 +318,10 @@
 		1FC20BBC2C0B42F4005C7326 /* Color + Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color + Ext.swift"; sourceTree = "<group>"; };
 		1FC20BE02C0B464F005C7326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1FC20BE32C0B4A5B005C7326 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		1FCCD5F62C15197500A726CA /* NoResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoResultView.swift; sourceTree = "<group>"; };
+		1FCCD5F92C153A6600A726CA /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		1FCCD5FB2C153A8000A726CA /* SwiftDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataViewModel.swift; sourceTree = "<group>"; };
+		1FCCD5FD2C153A9B00A726CA /* GenericDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataSource.swift; sourceTree = "<group>"; };
 		DD2A75752C09E33300FFF114 /* Onboarding5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding5View.swift; sourceTree = "<group>"; };
 		DD2D24102BFF9C5200C97F36 /* iOS-FitAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-FitAI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2D24132BFF9C5200C97F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -362,7 +370,6 @@
 		DD7E529C2C11D57600053555 /* RegisterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVM.swift; sourceTree = "<group>"; };
 		DDAF84EB2C125931009D2BB9 /* AppStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageManager.swift; sourceTree = "<group>"; };
 		DDAF84EE2C125D05009D2BB9 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
-		DDAF84F02C125F17009D2BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DDAF84FC2C12E361009D2BB9 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		DDAF84FE2C12E373009D2BB9 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		DDB406FC2C0BA4AE00D4223E /* DietTypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietTypeModel.swift; sourceTree = "<group>"; };
@@ -797,6 +804,7 @@
 				1F675D752C107FB9000F073A /* AddSearchBar.swift */,
 				1F675D822C110DEB000F073A /* DurationForExercise.swift */,
 				1F675D802C110357000F073A /* MyExerciseView.swift */,
+				1FCCD5F62C15197500A726CA /* NoResultView.swift */,
 			);
 			path = SearchForExercise;
 			sourceTree = "<group>";
@@ -816,6 +824,16 @@
 				1FC20BE32C0B4A5B005C7326 /* OnboardingViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1FCCD5F82C1539FE00A726CA /* SwiftDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				1FCCD5F92C153A6600A726CA /* Protocol.swift */,
+				1FCCD5FB2C153A8000A726CA /* SwiftDataViewModel.swift */,
+				1FCCD5FD2C153A9B00A726CA /* GenericDataSource.swift */,
+			);
+			path = SwiftDataManager;
 			sourceTree = "<group>";
 		};
 		DD0AE7222C08B50600EE447A /* Onboarding */ = {
@@ -942,7 +960,6 @@
 				DDE586D42C0B8223007B3A1A /* Onboarding */,
 				DDE586D02C0B81FD007B3A1A /* ExerciseProgram */,
 				DDE586CC2C0B81C7007B3A1A /* DietType */,
-				DD2D24502BFF9F2700C97F36 /* PersonalInfos */,
 				1F156C2D2C0D240500F0E0DC /* HandleScreens */,
 				1F156BC52C0D22CC00F0E0DC /* LoginScreen */,
 				1F156B9A2C0D22CC00F0E0DC /* HomePage */,
@@ -950,7 +967,6 @@
 				1F156BB72C0D22CC00F0E0DC /* TabBar */,
 				DD2D244C2BFF9F0700C97F36 /* Splash */,
 				DD0AE7222C08B50600EE447A /* Onboarding */,
-				DDEA0A042BFFAE0200EEC4E6 /* Subviews */,
 				DD2D24502BFF9F2700C97F36 /* PersonalInfos */,
 			);
 			path = Scene;
@@ -1193,6 +1209,7 @@
 		DD7E529E2C12568A00053555 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				1FCCD5F82C1539FE00A726CA /* SwiftDataManager */,
 				DDAF84EB2C125931009D2BB9 /* AppStorageManager.swift */,
 			);
 			path = Managers;
@@ -1287,7 +1304,6 @@
 		DDB407222C0BB91200D4223E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				DD5A0E9A2C07C4F2006464D7 /* Binding+Extension */,
 				DDB407262C0BBBD100D4223E /* UIApplication+Extension.swift */,
 				DDAF84EE2C125D05009D2BB9 /* String+Extension.swift */,
 			);
@@ -1389,7 +1405,6 @@
 		DDE586D62C0B823D007B3A1A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DD5A0ED32C088E08006464D7 /* OnboardingModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1397,7 +1412,6 @@
 		DDE586D72C0B8243007B3A1A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DD5A0E882C07BCE2006464D7 /* OnboardingFlowViews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1709,25 +1723,20 @@
 				1F675D812C110357000F073A /* MyExerciseView.swift in Sources */,
 				DD2D244F2BFF9F1900C97F36 /* SplashView.swift in Sources */,
 				1F156C1E2C0D22CC00F0E0DC /* GenericPasswordView.swift in Sources */,
-				DDEA0A1B2C04B62900EEC4E6 /* HeightView.swift in Sources */,
 				1F156C292C0D22CD00F0E0DC /* SignUpLink.swift in Sources */,
 				1F156C032C0D22CC00F0E0DC /* AddPlanFromPlusButton.swift in Sources */,
 				DD2A75762C09E33300FFF114 /* Onboarding5View.swift in Sources */,
 				1F156C202C0D22CC00F0E0DC /* OTPTextField.swift in Sources */,
 				1F156C002C0D22CC00F0E0DC /* PersonalizedPlanButton.swift in Sources */,
-				DDEA0A102BFFB63300EEC4E6 /* MFAIPersonalInfosHeaderView.swift in Sources */,
 				1F156C082C0D22CC00F0E0DC /* ProfileSettingsView.swift in Sources */,
 				1F156C062C0D22CC00F0E0DC /* TabBarView.swift in Sources */,
 				1F156C262C0D22CD00F0E0DC /* DividerWithText.swift in Sources */,
 				1F156C242C0D22CC00F0E0DC /* LoginView.swift in Sources */,
-				DDEA0A142C00602E00EEC4E6 /* MFAIMultipleSelectionView.swift in Sources */,
 				1F156AFE2C0C7A4200F0E0DC /* GreenButtonView.swift in Sources */,
 				1F156BEE2C0D22CC00F0E0DC /* TrainingCategoriesView.swift in Sources */,
 				DD2D24142BFF9C5200C97F36 /* AppDelegate.swift in Sources */,
 				1F675D762C107FB9000F073A /* AddSearchBar.swift in Sources */,
 				1F156B8F2C0C7A8300F0E0DC /* AppState.swift in Sources */,
-				DDEA0A162C04981B00EEC4E6 /* MFAIText.swift in Sources */,
-				DDEA0A0C2BFFB5A900EEC4E6 /* MFAIButton.swift in Sources */,
 				1F156C1B2C0D22CC00F0E0DC /* PasswordCriteriaView.swift in Sources */,
 				1F675D6D2C0FCB43000F073A /* UpdateButton.swift in Sources */,
 				1FC20BBD2C0B42F5005C7326 /* Font + Ext.swift in Sources */,
@@ -1747,6 +1756,7 @@
 				DD5A0E962C07BE1D006464D7 /* OnboardingView.swift in Sources */,
 				DD2D24442BFF9DF200C97F36 /* NavigationRouter.swift in Sources */,
 				DDB4071A2C0BB34800D4223E /* MFAIPersonalInfosHeaderView.swift in Sources */,
+				1FCCD5FC2C153A8000A726CA /* SwiftDataViewModel.swift in Sources */,
 				DD7E528A2C107D8A00053555 /* Networkable.swift in Sources */,
 				1F63DDC12C1121FB0060B7D0 /* AddFoodView.swift in Sources */,
 				1F675D672C0FC940000F073A /* FoodItem.swift in Sources */,
@@ -1754,7 +1764,6 @@
 				1F156C1A2C0D22CC00F0E0DC /* PasswordChangedImageAndText.swift in Sources */,
 				1F675D702C1075D3000F073A /* AddExerciseView.swift in Sources */,
 				1F156BFB2C0D22CC00F0E0DC /* NutritionPlanningView.swift in Sources */,
-				DDEA0A122BFFBC0400EEC4E6 /* MFAITextField.swift in Sources */,
 				1F156C1C2C0D22CC00F0E0DC /* CreateNewPasswordTextView.swift in Sources */,
 				1F156C252C0D22CD00F0E0DC /* SocialLoginButtons.swift in Sources */,
 				1F675D832C110DEB000F073A /* DurationForExercise.swift in Sources */,
@@ -1764,6 +1773,7 @@
 				DD5A0E9C2C07C51C006464D7 /* BindingExtension.swift in Sources */,
 				DDB4071C2C0BB34800D4223E /* MFAIMultipleSelectionView.swift in Sources */,
 				DD7E52822C107D2B00053555 /* ContentType.swift in Sources */,
+				1FCCD5FA2C153A6600A726CA /* Protocol.swift in Sources */,
 				DD2D245A2BFFA1E200C97F36 /* PersonalInfosModel.swift in Sources */,
 				DDB4071B2C0BB34800D4223E /* MFAISingleSelectionView.swift in Sources */,
 				DD5A0ED42C088E08006464D7 /* OnboardingModel.swift in Sources */,
@@ -1823,7 +1833,6 @@
 				1F156C142C0D22CC00F0E0DC /* FMPEmailTextView.swift in Sources */,
 				1F156C072C0D22CC00F0E0DC /* TabBarShape.swift in Sources */,
 				1F675D742C107EE7000F073A /* SearchForExerciseView.swift in Sources */,
-				DDEA0A0E2BFFB60700EEC4E6 /* MFAISingleSelectionView.swift in Sources */,
 				DDDFB3DE2C0997C200D2A117 /* WelcomeView.swift in Sources */,
 				1FC20BE42C0B4A5B005C7326 /* OnboardingViewModel.swift in Sources */,
 				1F156BFA2C0D22CC00F0E0DC /* NutritionPlanningSubView.swift in Sources */,
@@ -1840,12 +1849,13 @@
 				1F156BF82C0D22CC00F0E0DC /* AnimatedStarView.swift in Sources */,
 				1F156C282C0D22CD00F0E0DC /* LoginButton.swift in Sources */,
 				DDE9882F2C05D12600550643 /* CurrentWeightView.swift in Sources */,
+				1FCCD5F72C15197500A726CA /* NoResultView.swift in Sources */,
 				1F156C2C2C0D22CD00F0E0DC /* RememberMeSection.swift in Sources */,
+				1FCCD5FE2C153A9B00A726CA /* GenericDataSource.swift in Sources */,
 				1F675D7B2C10C0BD000F073A /* SFECustomButtonControl.swift in Sources */,
 				1F156C232C0D22CC00F0E0DC /* Onboarding5.swift in Sources */,
 				1F675D6B2C0FCAFC000F073A /* FoodDetailsView.swift in Sources */,
 				1F156C332C0D309000F0E0DC /* AIPlanButtons.swift in Sources */,
-				DD2D244B2BFF9EFF00C97F36 /* Network.swift in Sources */,
 				1F63DDC52C11A9D90060B7D0 /* AddFood.swift in Sources */,
 				1F156BF22C0D22CC00F0E0DC /* HomePageView.swift in Sources */,
 				1F156BF92C0D22CC00F0E0DC /* StarImageView.swift in Sources */,
@@ -2004,6 +2014,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = DevelopmentRelease;
@@ -2340,6 +2351,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = ProductionRelease;

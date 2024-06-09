@@ -16,11 +16,9 @@ class AppState: ObservableObject {
     @Published var isNutritionTapped: Bool = false
     @Published  var isOTPCorrect: Bool? = nil
     @Published var number: String = "" // use it for gsmnumber
-    //a
     @Published var isUserUpdateFood = false
     @Published var selectedFoodIndex: Int? = nil
     @Published var updateFoodTargetIndex: Int? = nil
     @Published var updatedFoodItem: FoodItem? = nil
-    //b
-    @Published var isAddExerciseButtonTapped: Bool = false
+    @Published var isaddExerciseButtonTapped: Bool = false
 }

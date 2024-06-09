@@ -18,16 +18,17 @@ open class Coordinator<Router: NavigationRouter>: ObservableObject {
         self.navigationController = navigationController
         self.startingRoute = startingRoute
     }
-    
+    @MainActor
     public func start() {
         guard let route = startingRoute else { return }
         show(route)
     }
-    
+    @MainActor
     public func show(_ route: Router, animated: Bool = true) {
         let view = route.view()
         let viewWithCoordinator = view.environmentObject(self)
             .environmentObject(AppState())
+            .environmentObject(MyModelViewModel())
             .navigationBarHidden(true)
         let viewController = UIHostingController(rootView: viewWithCoordinator)
         switch route.transition {
