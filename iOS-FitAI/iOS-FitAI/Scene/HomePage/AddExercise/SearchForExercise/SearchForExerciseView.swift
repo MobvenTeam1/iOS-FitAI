@@ -11,6 +11,7 @@ struct SearchForExerciseView: View {
     @State private var searchText: String = ""
     @State private var selectedButton = "Geçmiş"
     @EnvironmentObject var appState: AppState
+    @EnvironmentObject var swiftDataModel: MyModelViewModel
     let buttons = ["Geçmiş", "Favoriler"]
     private var searchResults: [Exercise] {
         searchText.isEmpty ? Exercise.exercises : Exercise.exercises.filter  { $0.name.lowercased().contains(searchText.lowercased()) }
@@ -24,7 +25,7 @@ struct SearchForExerciseView: View {
             VStack {
                 AddSearchBar(text: $searchText)
                     .padding(.top, 16)
-                if appState.isAddExerciseButtonTapped {
+                    if swiftDataModel.items.count > 0 {
                     MyExerciseView()
                         .padding(.top, 32)
                     CheckIfSearching(searchText: searchText, selectedButton: $selectedButton, buttons: buttons, searchResults: searchResults)
