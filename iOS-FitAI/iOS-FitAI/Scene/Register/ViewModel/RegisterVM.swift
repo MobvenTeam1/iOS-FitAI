@@ -22,6 +22,17 @@ class RegisterVM : ObservableObject {
         case .failure(let error):
             AlertManager.showAlert(title: "Error", message: error.localizedDescription)
         }
+        
+        
+        
+//        NetworkManager.shared.request(with: .register, parameters: registerInfoData) { (response:Result<RegisterModel.Response, NetworkError>) in
+//            switch response {
+//            case .success(let model):
+//                AppStorageManager.shared.userToken = model.userToken.toEmpty
+//            case .failure(let error):
+//                AlertManager.showAlert(title: "Error", message: error.localizedDescription)
+//            }
+//        }
     }
 }
 

@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import iOS_FitAI
+import iOS_FitAI
 
 final class iOS_FitAITests: XCTestCase {
 

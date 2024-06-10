@@ -54,9 +54,25 @@ struct RegisterView: View {
                         }
                 }
                 .navigationBarBackButtonHidden(true)
+                .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button(action: {}
+                               , label: {
+                            Image("back")
+                                .resizable()
+                                .frame(width: 41, height: 41)
+                        })
+                    }
+                    ToolbarItem(placement: .topBarTrailing) {
+                            Image("Onboarding-5-Icon")
+                                .resizable()
+                                .frame(width: 32, height: 36)
+                    }
+                }
+                .toolbar {
+                    
+                }
             }
-            .scrollIndicators(.hidden)
-            
         }
     }
 }

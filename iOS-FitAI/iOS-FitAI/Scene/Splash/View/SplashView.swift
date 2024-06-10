@@ -13,7 +13,7 @@ struct SplashView: View {
     var body: some View {
         ZStack{
             VStack{
-                Image("FitAISplashScreen")
+                Image(.fitAISplashScreen)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 84, height: 84)

@@ -13,6 +13,7 @@ final class LoginVM: ObservableObject {
     @MainActor
     func getRequest() async {
         let response = await API.FITAI.login(params: loginInfoData).fetch(requestModel: LoginModel.Response.self)
+        
         switch response {
         case .success(let model):
                 AppStorageManager.shared.userToken = model.userToken.toEmpty

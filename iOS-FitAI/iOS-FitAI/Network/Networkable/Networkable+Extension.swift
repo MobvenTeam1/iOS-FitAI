@@ -19,7 +19,6 @@ extension Networkable {
             contentType: ContentType.json
         )
     }
-
     func getRequest<T: Encodable>(
         data: T,
         path: String,
@@ -44,6 +43,7 @@ extension Networkable {
         url: URL,
         method: RequestMethod,
         contentType: ContentType
+        
     ) -> URLRequest {
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
