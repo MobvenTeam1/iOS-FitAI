@@ -19,20 +19,6 @@ extension Networkable {
             contentType: ContentType.json
         )
     }
-
-    func getRequest<T: Decodable>(
-        data: T,
-        path: String,
-        httpMethod: RequestMethod = .post
-    ) async -> URLRequest {
-        var url = API.prepareUrl(withPath: path)
-        // TODO: Add decodable
-        return prepareRequest(
-            url: url,
-            method: httpMethod,
-            contentType: ContentType.json
-        )
-    }
     
     func getRequest<T: Encodable>(
         data: T,

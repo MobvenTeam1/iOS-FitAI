@@ -31,7 +31,7 @@ struct DailyTargetView: View {
             HStack(spacing: 8) {
                 CaloriesView(imageName: "alınan", firstText: "Alınan Kalori", calorieText: "950 cal")
                 CaloriesView(imageName: "harcanan", firstText: "Harcanan Kalori", calorieText: "1300 cal")
-                CaloriesView(imageName: "günlükkalori", firstText: "Günlük Hedef", calorieText: "2500 cal")
+                CaloriesView(imageName: "dailycalorie", firstText: "Günlük Hedef", calorieText: "2500 cal")
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.leading, 33)

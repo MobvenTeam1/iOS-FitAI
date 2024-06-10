@@ -10,7 +10,7 @@ struct CustomBackButton: ViewModifier {
                     Button(action: {
                         dismiss()
                     }, label: {
-                        Image("back")
+                        Image("customback")
                             .resizable()
                             .frame(width: 41, height: 41)
                     })

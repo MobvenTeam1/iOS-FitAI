@@ -16,7 +16,7 @@ struct CustomTabBarView: View {
             TabBarButtonView(index: 1, selectedIndex: $selectedIndex, imageName: "gelişim", selectedImageName: "gelişim.fill", title: "Gelişim")
             Spacer()
                 .frame(width: 70, height: 83)
-            TabBarButtonView(index: 2, selectedIndex: $selectedIndex, imageName: "keşfet", selectedImageName: "keşfet.fill", title: "Keşfet")
+            TabBarButtonView(index: 2, selectedIndex: $selectedIndex, imageName: "discover", selectedImageName: "discover.fill", title: "Keşfet")
             TabBarButtonView(index: 3, selectedIndex: $selectedIndex, imageName: "profile", selectedImageName: "profile.fill", title: "Profile")
                 .padding(.trailing, 20)
         }

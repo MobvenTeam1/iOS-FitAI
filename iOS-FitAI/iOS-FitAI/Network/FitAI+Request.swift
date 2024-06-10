@@ -17,7 +17,7 @@ public extension API {
         public func request() async -> URLRequest {
             switch self {
             case .login(let params):
-                await getRequest(data: params, path: "User/Login",httpMethod: .post)
+                await getRequest(data: params, path: "User/Login", httpMethod: .post)
             case .register(let params):
                 await getRequest(data: params, path: "User/Register", httpMethod: .post)
             }
