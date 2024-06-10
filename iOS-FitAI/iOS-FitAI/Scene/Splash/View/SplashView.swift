@@ -28,7 +28,7 @@ struct SplashView: View {
                     .padding(.top, -20)
             }.onAppear(perform: {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-                    if AppStorageManager.shared.accessToken.isEmpty {
+                    if AppStorageManager.shared.userToken.isEmpty {
                         coordinator.show(.onboarding)
                     }else {
                         coordinator.show(.onboarding)

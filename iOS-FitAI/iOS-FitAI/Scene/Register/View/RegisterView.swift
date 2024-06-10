@@ -17,14 +17,14 @@ struct RegisterView: View {
                     MFAIPersonalInfosHeaderView(title: RegisterModel.Constants.welcomeViewTitle)
                     MFAIText(title: RegisterModel.Constants.welcomeViewContent)
                     Spacer()
-                    MFAITextField(title: "Ad", textfieldText: $registerVM.registerInfoData.firstname.toUnwrapped(defaultValue: ""))
+                    MFAITextField(title: "Ad", textfieldText: $registerVM.registerInfoData.firstName.toUnwrapped(defaultValue: ""))
                         .frame(width: 327, height: 56)
                     
                     
                     MFAITextField(title: "Soyad", textfieldText: $registerVM.registerInfoData.lastName.toUnwrapped(defaultValue: ""))
                         .frame(width: 327, height: 56)
                     
-                    MFAITextField(title: "Kullanıcı Adı", textfieldText: $registerVM.registerInfoData.username.toUnwrapped(defaultValue: ""))
+                    MFAITextField(title: "Kullanıcı Adı", textfieldText: $registerVM.registerInfoData.userName.toUnwrapped(defaultValue: ""))
                         .frame(width: 327, height: 56)
                     
                     
@@ -49,7 +49,9 @@ struct RegisterView: View {
                     }
                     .padding(.bottom, 20)
                     MFAIText(title: PersonalInfosModel.ButtonTextContext.haveAnAccount )
-                        .onTapGesture {}
+                        .onTapGesture {
+                            coordinator.show(.login)
+                        }
                 }
                 .navigationBarBackButtonHidden(true)
             }

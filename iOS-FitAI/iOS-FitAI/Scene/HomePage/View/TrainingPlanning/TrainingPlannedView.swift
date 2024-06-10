@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TrainingPlannedView: View {
+    @StateObject var homePageVM = HomePageViewModel()
     var body: some View {
         VStack {
             Text("Setler")
@@ -16,7 +17,8 @@ struct TrainingPlannedView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 52)
             VStack(spacing: 8) {
-            ForEach(0..<3) { _ in
+                //            ForEach(0..<3) { _ in
+                ForEach(0..<homePageVM.trainingData.count) { index in
                     ZStack {
                         Color.white
                             .cornerRadius(12)
@@ -25,6 +27,16 @@ struct TrainingPlannedView: View {
                             Image("ısınmaseti")
                             VStack(alignment: .leading) {
                                 Text("Isınma Seti")
+                                VStack {
+                           
+                                        Text(homePageVM.trainingData[index].program?.exercise1 ?? "default 1")
+                                        Text(homePageVM.trainingData[index].program?.exercise2 ?? "default 2")
+                                        Text(homePageVM.trainingData[index].program?.exercise3 ?? "default 3")
+                                        Text(homePageVM.trainingData[index].program?.exercise4 ?? "default 1")
+                                        Text(homePageVM.trainingData[index].program?.exercise5 ?? "default 1")
+                                        Text(homePageVM.trainingData[index].program?.exercise6 ?? "default 1")
+                                    
+                                }
                                     .font(.urbanistBold(size: 16))
                                     .foregroundStyle(Color.black11_11)
                                 Text("Mat")
@@ -35,8 +47,10 @@ struct TrainingPlannedView: View {
                             Image("setlerimage")
                         }
                         .padding(.horizontal)
+                        .frame(width: 287, height: 74)
+                        
+                        //                            .frame(width: 287, height: 74)
                     }
-                    .frame(width: 287, height: 74)
                 }
             }
         }

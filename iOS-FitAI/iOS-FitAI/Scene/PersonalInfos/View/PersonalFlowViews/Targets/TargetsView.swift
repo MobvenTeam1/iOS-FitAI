@@ -21,6 +21,7 @@ struct TargetsView: View {
                 MFAIMultipleSelectionView(selectionList: $targetList, selectionIconList: $targetIconList, selections: $personalInfoVM.personalInfoData.targets)
                 MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextOK,buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.2
+                    coordinator.show(.homePage)
                 }
                 .padding(30)
             }
@@ -43,11 +44,11 @@ struct TargetsView: View {
                                      .frame(width: 32, height: 36)
                          }
                      }
-            .onAppear(perform: {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-                    coordinator.show(.login)
-                })
-            })
+//            .onAppear(perform: {
+//                DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+//                    coordinator.show(.login)
+//                })
+//            })
         }
     }
 }

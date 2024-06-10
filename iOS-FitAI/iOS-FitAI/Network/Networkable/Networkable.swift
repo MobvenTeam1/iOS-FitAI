@@ -14,17 +14,16 @@ public extension Networkable {
     func fetch<T: Decodable>(requestModel model: T.Type) async -> Result<T, Error> {
         do {
             let (data, response) = try await URLSession.shared.data(for: request(), delegate: nil)
-
+            
             guard let response = response as? HTTPURLResponse else {
                 return .failure(NSError.generic)
             }
-
+            
             switch response.statusCode {
-
+                
             case 401:
-                // yeni token all
                 return .failure(NSError.generic)
-
+                
             default:
                 if let json = try? JSONSerialization.jsonObject(with: data, options:  .mutableContainers),
                    let jsonData = try? JSONSerialization.data(withJSONObject: json, options: .prettyPrinted) {
@@ -34,23 +33,26 @@ public extension Networkable {
                     print("---------------------------------")
                     print("---------------------------------")
                 }
-
+                
                 if model.self is Data.Type {
                     return .success(data as! T)
                 }
-
+                
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
-                let decodingData = try decoder.decode(Response<T>.self, from: data)
+                
+                let decodingData = try? decoder.decode(T.self, from: data)
 
-                if let body = decodingData.results {
-                    return .success(body)
-                } else {
-                    return .failure(NSError.generic)
-                }
+                        if let body = decodingData {
+                          return .success(body)
+                        } else {
+                          return .failure(NSError.generic)
+                        }
             }
-
+            
         } catch {
+            print("Error: ", error.localizedDescription)
+            print("Error: ", error)
             return .failure(NSError.generic)
         }
     }

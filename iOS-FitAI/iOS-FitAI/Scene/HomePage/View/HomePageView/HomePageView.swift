@@ -11,6 +11,7 @@ struct HomePageView: View {
     @State private var goToTrainingAIPage: Bool = false
     @State private var goToNutritionAIPage: Bool = false
     @EnvironmentObject var appState: AppState
+    @StateObject var homePageViewModel = HomePageViewModel()
     var body: some View {
         NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
@@ -42,10 +43,14 @@ struct HomePageView: View {
             .toolbar(.hidden)
             .ignoresSafeArea()
         }
+//        .task {
+//            await homePageViewModel.getTraining()
+//        }
     }
 }
 
 #Preview {
     TabBarView()
         .environmentObject(AppState())
+        .environmentObject(MyModelViewModel())
 }
