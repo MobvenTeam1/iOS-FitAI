@@ -2,7 +2,7 @@
 //  OnboardingViewModel.swift
 //  iOS-FitAI
 //
-//  Created by Elif Tum on 31.05.2024.
+//  Created by Elif Tum on 10.06.2024.
 //
 import SwiftUI
 import Foundation
