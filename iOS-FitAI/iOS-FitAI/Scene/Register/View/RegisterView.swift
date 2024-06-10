@@ -49,7 +49,9 @@ struct RegisterView: View {
                     }
                     .padding(.bottom, 20)
                     MFAIText(title: PersonalInfosModel.ButtonTextContext.haveAnAccount )
-                        .onTapGesture {}
+                        .onTapGesture {
+                            coordinator.show(.login)
+                        }
                 }
                 .navigationBarBackButtonHidden(true)
                 .toolbar {

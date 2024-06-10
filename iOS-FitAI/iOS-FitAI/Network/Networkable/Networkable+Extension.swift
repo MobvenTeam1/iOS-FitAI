@@ -19,7 +19,6 @@ extension Networkable {
             contentType: ContentType.json
         )
     }
-    
     func getRequest<T: Encodable>(
         data: T,
         path: String,
@@ -34,10 +33,11 @@ extension Networkable {
         do {
           request.httpBody = try JSONEncoder().encode(data)
         } catch {
-          print("someThing Went Wrong")
+          print("something Went Wrong")
         }
         return request
       }
+    
 
     private func prepareRequest(
         url: URL,

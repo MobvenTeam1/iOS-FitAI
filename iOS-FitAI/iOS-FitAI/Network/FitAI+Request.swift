@@ -11,7 +11,7 @@ public extension API {
     enum FITAI: Networkable {
         case login(params: LoginModel.Request)
         case register(param: RegisterModel.Request)
-        
+        case training
         
         
         public func request() async -> URLRequest {
@@ -20,6 +20,8 @@ public extension API {
                 await getRequest(data: params, path: "User/Login", httpMethod: .post)
             case .register(let params):
                 await getRequest(data: params, path: "User/Register", httpMethod: .post)
+            case .training:
+                await getRequest(path: "WorkoutPlan/generateworkoutplan", httpMethod: .post)
             }
         }
     }

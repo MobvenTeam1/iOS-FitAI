@@ -14,8 +14,9 @@ public enum FlowRouter: NavigationRouter {
     case onboarding
     case personalInfos
     case login
-    case profile
     case handleScreens
+    case homePage
+    case tabBar
     
     public var transition: NavigationTransitionStyle {
         switch self {
@@ -37,10 +38,12 @@ public enum FlowRouter: NavigationRouter {
             PersonalInfosView()
         case .login:
             LoginView()
-        case .profile:
-            ProfileView()
         case .handleScreens:
             HandleScreens()
+        case .homePage:
+            HomePageView()
+        case .tabBar:
+            TabBarView()
         default:
             Text(verbatim: "There is nothing")
                 .foregroundStyle(.blue)

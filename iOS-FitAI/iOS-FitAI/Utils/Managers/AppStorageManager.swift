@@ -5,7 +5,6 @@
 //  Created by Elif Tum on 6.06.2024.
 //
 
-import Foundation
 import SwiftUI
 
 class AppStorageManager: ObservableObject {

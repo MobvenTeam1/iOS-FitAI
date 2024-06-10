@@ -22,10 +22,13 @@ struct Onboarding5View: View {
             Spacer()
             MFAIButton(buttontitle: OnboardingModel.ButtonContent.buttonTextRegister, buttonBackgroundColor: .buttonGreen){
                 personalInfoVM.pageStep = .welcome
+                coordinator.show(.register)
             }
             .padding(.bottom, 30)
             MFAIButton(buttontitle: OnboardingModel.ButtonContent.buttonTextLogin,
-                       buttonBackgroundColor: .white)
+                       buttonBackgroundColor: .white) {
+                coordinator.show(.login)
+            }
             .padding(.bottom)
         }
         .navigationBarBackButtonHidden(true)
@@ -35,12 +38,6 @@ struct Onboarding5View: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
         }.ignoresSafeArea()
-        .onAppear(perform: {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-                coordinator.show(.register)
-            })
-        })
-        
     }
 }
 

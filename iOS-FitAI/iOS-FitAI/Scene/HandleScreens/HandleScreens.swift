@@ -13,7 +13,9 @@ struct HandleScreens: View {
         if appState.isLoginSuccessful {
             TabBarView()
         } else {
-            Onboarding5()
+//            TabBarView()
+//            LoginView()
+            OnboardingView()
         }
     }
 }

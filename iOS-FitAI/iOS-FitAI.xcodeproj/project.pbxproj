@@ -115,6 +115,8 @@
 		1FCCD5FA2C153A6600A726CA /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCD5F92C153A6600A726CA /* Protocol.swift */; };
 		1FCCD5FC2C153A8000A726CA /* SwiftDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCD5FB2C153A8000A726CA /* SwiftDataViewModel.swift */; };
 		1FCCD5FE2C153A9B00A726CA /* GenericDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCD5FD2C153A9B00A726CA /* GenericDataSource.swift */; };
+		1FCCD6032C165A9400A726CA /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCD6022C165A9400A726CA /* HomePageViewModel.swift */; };
+		1FCCD6072C165B8600A726CA /* TrainingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCD6062C165B8600A726CA /* TrainingModel.swift */; };
 		DD2A75762C09E33300FFF114 /* Onboarding5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A75752C09E33300FFF114 /* Onboarding5View.swift */; };
 		DD2D24142BFF9C5200C97F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24132BFF9C5200C97F36 /* AppDelegate.swift */; };
 		DD2D24182BFF9C5300C97F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D24172BFF9C5300C97F36 /* Assets.xcassets */; };
@@ -145,7 +147,6 @@
 		DD7E51A12C0C803400053555 /* DietSpecialTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E51A02C0C803400053555 /* DietSpecialTypeView.swift */; };
 		DD7E527A2C107C8400053555 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E52792C107C8400053555 /* API.swift */; };
 		DD7E527C2C107CBE00053555 /* FitAI+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E527B2C107CBE00053555 /* FitAI+Request.swift */; };
-		DD7E527E2C107D0000053555 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E527D2C107D0000053555 /* Response.swift */; };
 		DD7E52802C107D1800053555 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E527F2C107D1800053555 /* RequestMethod.swift */; };
 		DD7E52822C107D2B00053555 /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E52812C107D2B00053555 /* ContentType.swift */; };
 		DD7E52842C107D4400053555 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E52832C107D4400053555 /* URL+Extension.swift */; };
@@ -320,6 +321,8 @@
 		1FCCD5F92C153A6600A726CA /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		1FCCD5FB2C153A8000A726CA /* SwiftDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataViewModel.swift; sourceTree = "<group>"; };
 		1FCCD5FD2C153A9B00A726CA /* GenericDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataSource.swift; sourceTree = "<group>"; };
+		1FCCD6022C165A9400A726CA /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
+		1FCCD6062C165B8600A726CA /* TrainingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingModel.swift; sourceTree = "<group>"; };
 		DD2A75752C09E33300FFF114 /* Onboarding5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding5View.swift; sourceTree = "<group>"; };
 		DD2D24102BFF9C5200C97F36 /* iOS-FitAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-FitAI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2D24132BFF9C5200C97F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -353,7 +356,6 @@
 		DD7E51A02C0C803400053555 /* DietSpecialTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietSpecialTypeView.swift; sourceTree = "<group>"; };
 		DD7E52792C107C8400053555 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		DD7E527B2C107CBE00053555 /* FitAI+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FitAI+Request.swift"; sourceTree = "<group>"; };
-		DD7E527D2C107D0000053555 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		DD7E527F2C107D1800053555 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
 		DD7E52812C107D2B00053555 /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
 		DD7E52832C107D4400053555 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
@@ -499,17 +501,9 @@
 		1F156B9A2C0D22CC00F0E0DC /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				1F63DDBF2C1121C00060B7D0 /* AddFood */,
-				1F675D6E2C1075BE000F073A /* AddExercise */,
-				1F675D642C0FC92A000F073A /* Model */,
-				1F156B9B2C0D22CC00F0E0DC /* HomePageView */,
-				1F156C342C0E7C5C00F0E0DC /* AIUpdateFoodSuggestion */,
-				1F156BAD2C0D22CC00F0E0DC /* DailyTarget */,
-				1F156BA12C0D22CC00F0E0DC /* TrainingPlanning */,
-				1F156BAA2C0D22CC00F0E0DC /* NutritionPlanning */,
-				1F156BA42C0D22CC00F0E0DC /* AISupportedTrainingPlan */,
-				1F156BB52C0D22CC00F0E0DC /* AISupportedNutritionPlan */,
-				1F156BB22C0D22CC00F0E0DC /* PersonalizedPlanButton */,
+				1FCCD6052C165B4500A726CA /* Model */,
+				1FCCD6042C165B3500A726CA /* View */,
+				1FCCD6012C165A8400A726CA /* HomePageViewModel */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -629,6 +623,7 @@
 		1F156BC52C0D22CC00F0E0DC /* LoginScreen */ = {
 			isa = PBXGroup;
 			children = (
+				DDAF84FB2C12E347009D2BB9 /* Model */,
 				1F156BE42C0D22CC00F0E0DC /* LoginView */,
 				1F156BC82C0D22CC00F0E0DC /* Password */,
 				1F156BDE2C0D22CC00F0E0DC /* OTP */,
@@ -824,6 +819,40 @@
 				1FCCD5FD2C153A9B00A726CA /* GenericDataSource.swift */,
 			);
 			path = SwiftDataManager;
+			sourceTree = "<group>";
+		};
+		1FCCD6012C165A8400A726CA /* HomePageViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1FCCD6022C165A9400A726CA /* HomePageViewModel.swift */,
+			);
+			path = HomePageViewModel;
+			sourceTree = "<group>";
+		};
+		1FCCD6042C165B3500A726CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F63DDBF2C1121C00060B7D0 /* AddFood */,
+				1F675D6E2C1075BE000F073A /* AddExercise */,
+				1F675D642C0FC92A000F073A /* Model */,
+				1F156B9B2C0D22CC00F0E0DC /* HomePageView */,
+				1F156C342C0E7C5C00F0E0DC /* AIUpdateFoodSuggestion */,
+				1F156BAD2C0D22CC00F0E0DC /* DailyTarget */,
+				1F156BA12C0D22CC00F0E0DC /* TrainingPlanning */,
+				1F156BAA2C0D22CC00F0E0DC /* NutritionPlanning */,
+				1F156BA42C0D22CC00F0E0DC /* AISupportedTrainingPlan */,
+				1F156BB52C0D22CC00F0E0DC /* AISupportedNutritionPlan */,
+				1F156BB22C0D22CC00F0E0DC /* PersonalizedPlanButton */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1FCCD6052C165B4500A726CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1FCCD6062C165B8600A726CA /* TrainingModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DD0AE7222C08B50600EE447A /* Onboarding */ = {
@@ -1145,7 +1174,6 @@
 		DD7E52902C10ACB900053555 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				DD7E527D2C107D0000053555 /* Response.swift */,
 				DD7E527F2C107D1800053555 /* RequestMethod.swift */,
 				DD7E52812C107D2B00053555 /* ContentType.swift */,
 			);
@@ -1215,18 +1243,17 @@
 		DDAF84F92C12E248009D2BB9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				DDAF84FB2C12E347009D2BB9 /* Model */,
-				DDAF84FA2C12E33E009D2BB9 /* ViewModel */,
+				DDAF84FA2C12E33E009D2BB9 /* LoginViewModel */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		DDAF84FA2C12E33E009D2BB9 /* ViewModel */ = {
+		DDAF84FA2C12E33E009D2BB9 /* LoginViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				DDAF84FC2C12E361009D2BB9 /* LoginVM.swift */,
 			);
-			path = ViewModel;
+			path = LoginViewModel;
 			sourceTree = "<group>";
 		};
 		DDAF84FB2C12E347009D2BB9 /* Model */ = {
@@ -1703,6 +1730,7 @@
 				1F675D762C107FB9000F073A /* AddSearchBar.swift in Sources */,
 				1F156B8F2C0C7A8300F0E0DC /* AppState.swift in Sources */,
 				1F156C1B2C0D22CC00F0E0DC /* PasswordCriteriaView.swift in Sources */,
+				1FCCD6072C165B8600A726CA /* TrainingModel.swift in Sources */,
 				1F675D6D2C0FCB43000F073A /* UpdateButton.swift in Sources */,
 				1FC20BBD2C0B42F5005C7326 /* Font + Ext.swift in Sources */,
 				1F156BF52C0D22CC00F0E0DC /* InitialView.swift in Sources */,
@@ -1713,6 +1741,7 @@
 				1F156C182C0D22CC00F0E0DC /* PasswordChangedView.swift in Sources */,
 				1F63DDC92C11B6000060B7D0 /* BarcodeView.swift in Sources */,
 				1F156AEF2C0C7A4200F0E0DC /* ParticleEmitterView.swift in Sources */,
+				1FCCD6032C165A9400A726CA /* HomePageViewModel.swift in Sources */,
 				1F156C102C0D22CC00F0E0DC /* FMPNumberTextField.swift in Sources */,
 				1F675D7D2C10C0E6000F073A /* SFECard.swift in Sources */,
 				1F156BFE2C0D22CC00F0E0DC /* CircularProgressView.swift in Sources */,
@@ -1785,7 +1814,6 @@
 				DDAF84EC2C125931009D2BB9 /* AppStorageManager.swift in Sources */,
 				DDE586DB2C0B844C007B3A1A /* ExerciseProgramView.swift in Sources */,
 				DDE586EF2C0B8639007B3A1A /* FocusAreaView.swift in Sources */,
-				DD7E527E2C107D0000053555 /* Response.swift in Sources */,
 				DDE9882F2C05D12600550643 /* CurrentWeightView.swift in Sources */,
 				DDB4070A2C0BACD200D4223E /* DietTypePlansIView.swift in Sources */,
 				DD7E52802C107D1800053555 /* RequestMethod.swift in Sources */,

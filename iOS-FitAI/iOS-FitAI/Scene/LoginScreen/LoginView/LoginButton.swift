@@ -6,6 +6,8 @@ struct LoginButton: View {
     @Binding var showError: Bool
     @Binding var errorMessage: String
     @EnvironmentObject var appState: AppState
+    @EnvironmentObject var coordinator: Coordinator<FlowRouter>
+    @StateObject var loginVM = LoginVM()
     var body: some View {
         GreenButtonView(text: "Giriş Yap") {
             validateInputs()
@@ -27,6 +29,10 @@ struct LoginButton: View {
             showError = false
             errorMessage = ""
             appState.isLoginSuccessful = true
+            coordinator.show(.tabBar)
+            Task {
+                await loginVM.getRequest()
+            }
         }
     }
 
