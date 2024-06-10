@@ -10,7 +10,7 @@ import SwiftUI
 
 final class SceneDelegate: NSObject, UIWindowSceneDelegate {
         
-    let coordinator: Coordinator<FlowRouter> = .init(startingRoute: .handleScreens)
+    let coordinator: Coordinator<FlowRouter> = .init(startingRoute: .splash)
     
     var window: UIWindow?
 

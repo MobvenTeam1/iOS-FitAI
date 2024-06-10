@@ -18,24 +18,24 @@ public enum RegisterModel{
     
     public struct Request: Codable{
         init(
-            firstname: String? = nil,
-            surname: String? = nil,
-            username: String? = nil,
-            ePosta: String? = nil,
+            firstName: String? = nil,
+            lastName: String? = nil,
+            userName: String? = nil,
+            email: String? = nil,
             password: String? = nil,
             passwordConfirm: String? = nil)
             {
-                self.firstname = firstname
-                self.lastName = surname
-                self.username = username
-                self.email = ePosta
+                self.firstName = firstName
+                self.lastName = lastName
+                self.userName = userName
+                self.email = email
                 self.password = password
                 self.passwordConfirm = passwordConfirm
             }
 
-        var firstname: String?
+        var firstName: String?
         var lastName: String?
-        var username: String?
+        var userName: String?
         var email: String?
         var password: String?
         var passwordConfirm:String?

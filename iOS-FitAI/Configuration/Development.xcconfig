@@ -8,4 +8,4 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-BASE_URL = https:\/\/165.22.93.225:5001/api/\
+BASE_URL = http:\/\/165.22.93.225:5001/api/\
