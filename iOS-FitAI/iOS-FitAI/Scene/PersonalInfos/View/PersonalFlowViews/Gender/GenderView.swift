@@ -18,31 +18,22 @@ struct GenderView: View {
                 MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.genderViewTitle)
                 Spacer(minLength: 50)
                 MFAISingleSelectionView(selectionList: $genderList, selectionIconList: $genderIconList, selection: $personelInfoVM.personalInfoData.gender)
-                    .padding()
+                    .padding(.bottom, 8)
                 MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext, buttonBackgroundColor: .buttonGreen) {
                     progressBarValue += 0.16
                     personelInfoVM.pageStep = .height
                 }   
                 .padding(.bottom, 30)
-            }    .navigationBarBackButtonHidden(true)
-                .toolbar {
-                    ToolbarItem(placement: .topBarLeading) {
-                        Button(action: {
-                            personelInfoVM.pageStep = .welcome
-                        }, label: {
-                            Image("back")
-                                .resizable()
-                                .frame(width: 41, height: 41)
-                        })
-                    }
+                .padding(.top, 28)
+            }   
+            .navigationBarBackButtonHidden(true)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Image("Onboarding-5-Icon")
+                        .resizable()
+                        .frame(width: 32, height: 36)
                 }
-                .toolbar {
-                          ToolbarItem(placement: .topBarTrailing) {
-                                  Image("Onboarding-5-Icon")
-                                      .resizable()
-                                      .frame(width: 32, height: 36)
-                          }
-                      }
+            }
         }
     }
 }

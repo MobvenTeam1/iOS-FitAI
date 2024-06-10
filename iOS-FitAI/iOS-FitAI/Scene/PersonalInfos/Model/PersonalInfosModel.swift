@@ -30,27 +30,27 @@ enum PersonalInfosModel {
         init(
             gender: String? = nil,
             height: String? = nil,
-            currentWeight: String? = nil,
+            firstWeight: String? = nil,
             targetWeight: String? = nil,
-            birthDate: String? = nil,
-            targets: [String]? = nil)
+            dateOfBirth: String? = nil,
+            goals: [String]? = nil)
         {
             
             self.gender = gender
             self.height = height
-            self.currentWeight = currentWeight
+            self.firstWeight = firstWeight
             self.targetWeight = targetWeight
-            self.birthDate = birthDate
-            self.targets = targets
+            self.dateOfBirth = dateOfBirth
+            self.goals = goals
         
         }
         
         var gender: String?
         var height: String?
-        var currentWeight: String?
+        var firstWeight: String?
         var targetWeight: String?
-        var birthDate: String?
-        var targets:[String]?
+        var dateOfBirth: String?
+        var goals:[String]?
         
     }
     

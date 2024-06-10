@@ -18,7 +18,7 @@ struct TargetsView: View {
             VStack{
                 MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.targetsViewTitle)
                 Spacer()
-                MFAIMultipleSelectionView(selectionList: $targetList, selectionIconList: $targetIconList, selections: $personalInfoVM.personalInfoData.targets)
+                MFAIMultipleSelectionView(selectionList: $targetList, selectionIconList: $targetIconList, selections: $personalInfoVM.personalInfoData.goals)
                 MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextOK,buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.2
                     coordinator.show(.homePage)

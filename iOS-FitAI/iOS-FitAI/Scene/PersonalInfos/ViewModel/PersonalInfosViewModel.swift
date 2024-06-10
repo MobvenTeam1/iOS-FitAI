@@ -15,9 +15,9 @@ class PersonalInfosViewModel : ObservableObject {
     
     var cancellables = Set<AnyCancellable>()
     
-    @AppStorage("personalInfos") static var personalInfoDataApp = PersonalInfosModel.PersonalInfos(gender: "",height: "", currentWeight: "", targetWeight: "", birthDate: "", targets: [""])
+    @AppStorage("personalInfos") static var personalInfoDataApp = PersonalInfosModel.PersonalInfos(gender: "",height: "", firstWeight: "", targetWeight: "", dateOfBirth: "", goals: [""])
     
-    @Published var personalInfoData = PersonalInfosModel.PersonalInfos(gender: "",height: "", currentWeight: "", targetWeight: "", birthDate: "", targets: [""])
+    @Published var personalInfoData = PersonalInfosModel.PersonalInfos(gender: "",height: "", firstWeight: "", targetWeight: "", dateOfBirth: "", goals: [""])
 
     
 }

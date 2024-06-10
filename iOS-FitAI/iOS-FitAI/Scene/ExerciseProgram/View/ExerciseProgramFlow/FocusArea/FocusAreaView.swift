@@ -18,11 +18,12 @@ struct FocusAreaView: View {
                 MFAIPersonalInfosHeaderView(title: ExerciseProgramModel.Constants.focusAreaViewtitle)
                 Spacer()
                 MFAIMultipleSelectionView(selectionList: $focusArea, selectionIconList: $focusAreaIcon, selections: $exerciseVM.exerciseProgramData.focusArea)
-                Spacer()
+                    .padding(.bottom, 8)
                 MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextCreate,buttonBackgroundColor: .buttonGreen){
                     exerciseVM.pageStep = .specialPlan
                 }
                 .padding(.bottom, 30)
+                .padding(.top, 28)
             }
             .navigationBarBackButtonHidden(true)
                .toolbar {

@@ -18,12 +18,13 @@ struct SportFrequencyView: View {
                 MFAIPersonalInfosHeaderView(title: ExerciseProgramModel.Constants.sportFrequencyViewTitle)
                     Spacer()
                 MFAISingleSelectionView(selectionList: $sportFrequency, selectionIconList: $sportFrequencyIcon, selection: $exerciseVM.exerciseProgramData.sportFrequency)
-                Spacer()
+                    .padding(.bottom, 8)
                 MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextNext,buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.25
                     exerciseVM.pageStep = .focusArea
                 }
                 .padding(.bottom, 30)
+                .padding(.top, 28)
             }
             .navigationBarBackButtonHidden(true)
                .toolbar {
