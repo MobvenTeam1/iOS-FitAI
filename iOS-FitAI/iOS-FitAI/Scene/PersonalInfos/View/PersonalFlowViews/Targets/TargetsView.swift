@@ -16,8 +16,27 @@ struct TargetsView: View {
     var body: some View {
         ZStack{
             VStack{
+                HStack{
+                    Button {
+                        personalInfoVM.pageStep = .birthDate
+                    }
+                        label: {
+                        Image("back")
+                                .resizable()
+                                .frame(width: 41, height: 41)
+                                    }
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                    Button {}
+                        label: {
+                        Image("Onboarding-5-Icon")
+                                .resizable()
+                                .frame(width: 41, height: 41)
+                                    }
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+                }
+                .padding(20)
                 MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.targetsViewTitle)
-                Spacer()
+                    .padding(.bottom, 300)
                 MFAIMultipleSelectionView(selectionList: $targetList, selectionIconList: $targetIconList, selections: $personalInfoVM.personalInfoData.goals)
                 MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextOK,buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.2
@@ -26,29 +45,6 @@ struct TargetsView: View {
                 .padding(30)
             }
             .navigationBarBackButtonHidden(true)
-               .toolbar {
-                   ToolbarItem(placement: .topBarLeading) {
-                       Button(action: {
-                           personalInfoVM.pageStep = .birthDate
-                       }, label: {
-                           Image("back")
-                               .resizable()
-                               .frame(width: 41, height: 41)
-                       })
-                   }
-               }
-               .toolbar {
-                         ToolbarItem(placement: .topBarTrailing) {
-                                 Image("Onboarding-5-Icon")
-                                     .resizable()
-                                     .frame(width: 32, height: 36)
-                         }
-                     }
-//            .onAppear(perform: {
-//                DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-//                    coordinator.show(.login)
-//                })
-//            })
         }
     }
 }

@@ -10,8 +10,8 @@ import Foundation
 import Combine
 
 class PersonalInfosViewModel : ObservableObject {
-    @Published var pageStep : PersonalInfosModel.PersonalInfosFlow = .welcome
-    @Published var kVKKEnabled = false
+    @Published var pageStep : PersonalInfosModel.PersonalInfosFlow = .gender
+   
     
     var cancellables = Set<AnyCancellable>()
     

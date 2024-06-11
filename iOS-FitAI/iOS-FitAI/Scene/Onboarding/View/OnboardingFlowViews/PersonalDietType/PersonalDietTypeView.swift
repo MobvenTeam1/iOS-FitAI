@@ -20,7 +20,7 @@ struct PersonalDietTypeView: View {
                     MFAIText(title: OnboardingModel.Constants.personalDietTypeView)
                         .font(.title)
                         .bold()
-                        .padding(.trailing, 50)
+                        .padding(.trailing, 72)
                     MFAIText(title: OnboardingModel.ContentConstants.personalDietTypeViewContent)
                         .padding(.top, -40)
                     MFAIButton(buttontitle: OnboardingModel.ButtonContent.buttonTextSkip, buttonBackgroundColor: .white){

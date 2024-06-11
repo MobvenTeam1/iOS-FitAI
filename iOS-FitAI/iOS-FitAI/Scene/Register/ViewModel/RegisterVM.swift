@@ -11,6 +11,7 @@ import Combine
 
 class RegisterVM : ObservableObject {
     var cancellables = Set<AnyCancellable>()
+    @Published var kVKKEnabled = false
     @Published var registerInfoData = RegisterModel.Request(firstName: "", lastName: "", userName: "", email: "", password: "", passwordConfirm: "")
     
     @MainActor

@@ -10,7 +10,7 @@ import Foundation
 enum OnboardingModel {
     enum Constants {
         static let personalTargetView = "Bireysel Hedeflerinizi Belirleyin"
-        static let personalDietTypeView = "Sağlık hedeflerinizi paylaşın, hedefleriniz için size özel bir yol haritası oluşturalım."
+        static let personalDietTypeView = "Kişiselleştirilmiş Beslenme Programı"
         static let personalExerciseView = "Kişiselleştirilmiş Antrenmanlar "
         static let dailyCalorieView = "Günlük Kalori Takibi  "
         
