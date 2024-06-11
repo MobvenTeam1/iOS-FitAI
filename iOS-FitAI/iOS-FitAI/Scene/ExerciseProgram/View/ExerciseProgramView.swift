@@ -20,7 +20,6 @@ struct ExerciseProgramView: View {
                     .padding(.top)
                 if viewmodel.pageStep == .workoutPlans{
                     WorkoutPlansView(exerciseVM: viewmodel)
-                        
                 }else if viewmodel.pageStep == .healthProblem{
                     HealthProblemView(exerciseVM: viewmodel, progressBarValue: $progressBarValue)
                 }else if viewmodel.pageStep == .sportOption{
