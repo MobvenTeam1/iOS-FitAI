@@ -10,15 +10,17 @@ import SwiftUI
 struct ExerciseProgramView: View {
     @StateObject var viewmodel = ExerciseProgramViewModel()
     @State var progressBarValue: Double = 0.0
+    @State var progressBarView = ProgressView()
     var body: some View {
         ZStack{
             VStack{
                 ProgressView(value: progressBarValue)
                     .progressViewStyle(CustomProgressViewStyle(trackColor: .gray, progressColor: .buttonGreen))
-                    .padding()
-                
+                    .frame(width: 327, height: 4)
+                    .padding(.top)
                 if viewmodel.pageStep == .workoutPlans{
                     WorkoutPlansView(exerciseVM: viewmodel)
+                        
                 }else if viewmodel.pageStep == .healthProblem{
                     HealthProblemView(exerciseVM: viewmodel, progressBarValue: $progressBarValue)
                 }else if viewmodel.pageStep == .sportOption{
