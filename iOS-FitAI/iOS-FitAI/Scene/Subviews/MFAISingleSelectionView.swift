@@ -52,17 +52,21 @@ struct MFAISingleSelectionView: View {
     }
     
     
-    func selectionTickChecker(title: String) -> Image {
+    func selectionTickChecker(title: String) ->  Image {
         let image: Image
-        if selection == title {
-            image =  Image(.check)
-                .resizable()
-        } else {
+        if let selection{
+            if selection.contains(title){
+                image =  Image(.check)
+                    .resizable()
+            }else {
+                image = Image(.ellipse)
+                    .resizable()
+            }
+        }else {
             image = Image(.ellipse)
                 .resizable()
         }
         return image
-        
     }
 }
 

@@ -1,0 +1,52 @@
+//
+//  AIPlanButtons.swift
+//  iOS-FitAI
+//
+//  Created by Ahmet Yasin Atakan on 3.06.2024.
+//
+
+import SwiftUI
+
+struct AIPlanButtons: View {
+    @EnvironmentObject var appState: AppState
+    @Binding var goToTrainingAIPage: Bool
+    @Binding var goToNutritionAIPage: Bool
+    
+    var body: some View {
+        VStack(spacing: -12) {
+            if !appState.isTrainingPlanned {
+                PersonalizedPlanButton(imageName: "dumbell", text: "Kişiselleştirilmiş Antrenman\nPlanını Oluştur ") {
+                    startTrainingPlan()
+                }
+            } else {
+                TrainingPlannedSubView(isTrainingTapped: $appState.isTrainingTapped,
+                                       typeOfExercise: "Pilates",
+                                       duration: "15 dakika",
+                                       calories: "150 kcal")
+            }
+            if !appState.isNutritionPlanned {
+                PersonalizedPlanButton(imageName: "beslenme", text: "Kişiselleştirilmiş Beslenme\nPlanını Oluştur ") {
+                    startNutritionPlan()
+                }
+            } else {
+                NutritionPlanningSubView(isNutritionTapped: $appState.isNutritionTapped,
+                                         typeOfMeal: "Kahvaltı",
+                                         duration: "15 dakika",
+                                         calories: "515 kcal")
+            }
+        }
+    }
+    private func startTrainingPlan() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            appState.isTrainingPlanned = true
+        }
+        goToTrainingAIPage = true
+        
+    }
+    private func startNutritionPlan() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            appState.isNutritionPlanned = true
+        }
+        goToNutritionAIPage = true
+    }
+}

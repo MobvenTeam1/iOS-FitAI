@@ -14,6 +14,25 @@ struct BirthdayView: View {
     var body: some View {
         ZStack{
             VStack{
+                HStack{
+                    Button {
+                        personalInfoVM.pageStep = .height
+                    }
+                        label: {
+                        Image("back")
+                                .resizable()
+                                .frame(width: 41, height: 41)
+                                    }
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                    Button {}
+                        label: {
+                        Image("Onboarding-5-Icon")
+                                .resizable()
+                                .frame(width: 41, height: 41)
+                                    }
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+                }
+                .padding(20)
                 MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.birthdayViewTitle)
                 HStack(spacing: 20) {
                     Text(birthDate.formatted(.dateTime.day()))
@@ -40,7 +59,7 @@ struct BirthdayView: View {
                         .contentShape(Rectangle())
                         .opacity(0.011)             // <<< here
                 }
-                Spacer()
+                .padding(.bottom, 500)
                 MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext,buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.16
                     personalInfoVM.pageStep = .targets
@@ -48,24 +67,6 @@ struct BirthdayView: View {
                 .padding(.bottom, 30)
             }
             .navigationBarBackButtonHidden(true)
-               .toolbar {
-                   ToolbarItem(placement: .topBarLeading) {
-                       Button(action: {
-                           personalInfoVM.pageStep = .targetWeight
-                       }, label: {
-                           Image("back")
-                               .resizable()
-                               .frame(width: 41, height: 41)
-                       })
-                   }
-               }
-               .toolbar {
-                         ToolbarItem(placement: .topBarTrailing) {
-                                 Image("Onboarding-5-Icon")
-                                     .resizable()
-                                     .frame(width: 32, height: 36)
-                         }
-                     }
         }
     }
 }
