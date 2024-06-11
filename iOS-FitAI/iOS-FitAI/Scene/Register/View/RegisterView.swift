@@ -46,6 +46,7 @@ struct RegisterView: View {
                         } else {
                             AlertManager.showAlert(title: "Hata", message: "Şifreler aynı değil")
                         }
+                        coordinator.show(.personalInfos)
                     }
                     .padding(.bottom, 20)
                     MFAIText(title: PersonalInfosModel.ButtonTextContext.haveAnAccount )
