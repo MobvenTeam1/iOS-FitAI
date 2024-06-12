@@ -7,14 +7,21 @@ struct LoginButton: View {
     @Binding var errorMessage: String
     @EnvironmentObject var appState: AppState
     @EnvironmentObject var coordinator: Coordinator<FlowRouter>
-    @StateObject var loginVM = LoginVM()
+    @ObservedObject var loginVM: LoginVM
+    
     var body: some View {
         GreenButtonView(text: "Giriş Yap") {
             validateInputs()
+            postLoginData()
         }
         .padding(.top, 12)
+        .onChange(of: loginVM.isLoginSuccessful) { isSuccessful in
+                    if isSuccessful {
+                        coordinator.show(.tabBar)
+                    }
+                }
     }
-
+    
     private func validateInputs() {
         if !isValidEmail(email) {
             showError = true
@@ -29,13 +36,18 @@ struct LoginButton: View {
             showError = false
             errorMessage = ""
             appState.isLoginSuccessful = true
-            coordinator.show(.tabBar)
+        }
+    }
+    private func postLoginData() {
+        if !showError {
+            loginVM.loginInfoData.email = email
+            loginVM.loginInfoData.password = password
             Task {
                 await loginVM.getRequest()
             }
         }
     }
-
+    
     private func isValidEmail(_ email: String) -> Bool {
         let emailRegEx = "^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$"
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)

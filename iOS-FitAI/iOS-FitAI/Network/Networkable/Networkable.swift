@@ -21,6 +21,8 @@ public extension Networkable {
             
             switch response.statusCode {
                 
+//            case 400: // it should be 409 but it comes 400 from backend
+//                return .failure(NSError.genericError(message: "Bu e-posta ile daha önce kayıt oluşturuldu."))
             case 401:
                 return .failure(NSError.generic)
                 
@@ -41,13 +43,15 @@ public extension Networkable {
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
                 
-                let decodingData = try? decoder.decode(T.self, from: data)
-
-                        if let body = decodingData {
-                          return .success(body)
-                        } else {
-                          return .failure(NSError.generic)
-                        }
+                
+                do {
+                    let decodedData =  try JSONDecoder().decode(T.self, from: data)
+                    return .success(decodedData)
+                } catch {
+                    print("Decoding error: ", error.localizedDescription)
+                    print("Decoding error: ", error)
+                    return .failure(NSError.generic)
+                }
             }
             
         } catch {
@@ -56,4 +60,29 @@ public extension Networkable {
             return .failure(NSError.generic)
         }
     }
+    //a
+//    func sendRequest() async -> Result<Void, Error> {
+//            do {
+//                let (data, response) = try await URLSession.shared.data(for: request(), delegate: nil)
+//                
+//                guard let response = response as? HTTPURLResponse else {
+//                    return .failure(NSError.generic)
+//                }
+//                
+//                switch response.statusCode {
+//                case 200...299:
+//                    return .success(())
+//                case 401:
+//                    return .failure(NSError(domain: "", code: response.statusCode, userInfo: [NSLocalizedDescriptionKey : "Unauthorized"]))
+//                default:
+//                    return .failure(NSError(domain: "", code: response.statusCode, userInfo: [NSLocalizedDescriptionKey : "Unexpected Error: \(response.statusCode)"]))
+//                }
+//                
+//            } catch {
+//                print("Error: ", error.localizedDescription)
+//                print("Error: ", error)
+//                return .failure(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey : error.localizedDescription]))
+//            }
+//        }
+    //B
 }

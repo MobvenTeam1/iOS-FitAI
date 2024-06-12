@@ -17,11 +17,11 @@ struct SportFrequencyView: View {
             VStack{
                 MFAIPersonalInfosHeaderView(title: ExerciseProgramModel.Constants.sportFrequencyViewTitle)
                     Spacer()
-                MFAISingleSelectionView(selectionList: $sportFrequency, selectionIconList: $sportFrequencyIcon, selection: $exerciseVM.exerciseProgramData.sportFrequency)
+                MFAISingleSelectionView(selectionList: $sportFrequency, selectionIconList: $sportFrequencyIcon, selection: $exerciseVM.exerciseProgramData.workoutFrequency)
                 Spacer()
                 MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextNext,buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.25
-                    exerciseVM.pageStep = .focusArea
+                    exerciseVM.pageStep = .focusAreas
                 }
                 .padding(.bottom, 30)
             }
@@ -29,7 +29,7 @@ struct SportFrequencyView: View {
                .toolbar {
                    ToolbarItem(placement: .topBarLeading) {
                        Button(action: {
-                           exerciseVM.pageStep = .sportOption
+                           exerciseVM.pageStep = .preferredActivities
                        }, label: {
                            Image("back")
                                .resizable()

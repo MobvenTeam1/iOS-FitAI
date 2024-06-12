@@ -8,7 +8,8 @@
 import SwiftUI
 
 class AppStorageManager: ObservableObject {
-    @AppStorage("userToken") var userToken: String = ""
-    
     static let shared = AppStorageManager()
+    @AppStorage("userToken") var userToken: String?
+       
+       private init() {}
 }

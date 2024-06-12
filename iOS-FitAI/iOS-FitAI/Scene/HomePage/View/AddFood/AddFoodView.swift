@@ -22,7 +22,7 @@ struct AddFoodView: View {
                 Color.white
                 .clipShape(UnevenRoundedRectangle(cornerRadii: .init(topLeading: 30, topTrailing: 30)))
                 .offset(y: -40)
-                VStack {
+                VStack(spacing: 8) {
                     AddSearchBar(text: $searchText)
                         .padding(.top, 24)
                         .padding(.horizontal, 24)
@@ -37,10 +37,9 @@ struct AddFoodView: View {
                     ForEach(searchResults) { food in
                         AddFoodCard(addFood: food)
                     }
-                    .padding(.top, 12)
+                    
                 }
             }
-            
         }
         .ignoresSafeArea()
         .toolbar(.hidden)
@@ -49,4 +48,5 @@ struct AddFoodView: View {
 
 #Preview {
     AddFoodView()
+        .environmentObject(AddFoodViewModel())
 }

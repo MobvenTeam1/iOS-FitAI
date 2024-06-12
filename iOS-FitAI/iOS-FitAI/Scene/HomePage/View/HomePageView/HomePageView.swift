@@ -17,6 +17,7 @@ struct HomePageView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
                     HelloView(userName: "Simge")
+//                    HelloView(userName: appState.userName )
                         .frame(height: 187)
                     ZStack(alignment: .center) {
                         Color.white
@@ -43,9 +44,9 @@ struct HomePageView: View {
             .toolbar(.hidden)
             .ignoresSafeArea()
         }
-//        .task {
-//            await homePageViewModel.getTraining()
-//        }
+        .task {
+            await homePageViewModel.getTraining()
+        }
     }
 }
 

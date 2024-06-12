@@ -10,6 +10,7 @@ import SwiftUI
 struct RegisterView: View {
     @EnvironmentObject var coordinator: Coordinator<FlowRouter>
     @StateObject var registerVM: RegisterVM = RegisterVM()
+    @EnvironmentObject var appState: AppState
     var body: some View {
         ZStack{
             ScrollView{
@@ -26,10 +27,11 @@ struct RegisterView: View {
                     
                     MFAITextField(title: "Kullanıcı Adı", textfieldText: $registerVM.registerInfoData.userName.toUnwrapped(defaultValue: ""))
                         .frame(width: 327, height: 56)
-                    
+                        .autocapitalization(.none)
                     
                     MFAITextField(title: "E-posta",keyboardType: .emailAddress, textfieldText: $registerVM.registerInfoData.email.toUnwrapped(defaultValue: ""))
                         .frame(width: 327, height: 56)
+                        .autocapitalization(.none)
                     
                     MFAITextField(title: "Parola", textfieldText: $registerVM.registerInfoData.password.toUnwrapped(defaultValue: ""))
                         .frame(width: 327, height: 56)
@@ -43,9 +45,21 @@ struct RegisterView: View {
                             Task {
                                 await registerVM.getRegisterRequest()
                             }
+                            //a
+                            appState.userName = registerVM.registerInfoData.firstName ?? "Simgee"
+                            //b
                         } else {
                             AlertManager.showAlert(title: "Hata", message: "Şifreler aynı değil")
                         }
+                        // TODO: Handle
+//                        if AppStorageManager.shared.userToken != "" {
+//                        appState.userName = registerVM.registerInfoData.firstName ?? "Simgee"
+//                            print("Register DEBUg: ", AppStorageManager.shared.userToken)
+//                            coordinator.show(.personalInfos)
+//                    }
+//                        else {
+//                            AlertManager.showAlert(title: "Kullanıcı kaydı mevcut", message: "")
+//                        }
                     }
                     .padding(.bottom, 20)
                     MFAIText(title: PersonalInfosModel.ButtonTextContext.haveAnAccount )

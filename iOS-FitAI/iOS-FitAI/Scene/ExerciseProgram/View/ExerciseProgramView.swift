@@ -21,11 +21,11 @@ struct ExerciseProgramView: View {
                     WorkoutPlansView(exerciseVM: viewmodel)
                 }else if viewmodel.pageStep == .healthProblem{
                     HealthProblemView(exerciseVM: viewmodel, progressBarValue: $progressBarValue)
-                }else if viewmodel.pageStep == .sportOption{
+                }else if viewmodel.pageStep == .preferredActivities{
                     SportOptionsView(exerciseVM: viewmodel, progressBarValue: $progressBarValue)
-                }else if viewmodel.pageStep == .sportFrequency{
+                }else if viewmodel.pageStep == .workoutFrequency{
                     SportFrequencyView(exerciseVM: viewmodel, progressBarValue: $progressBarValue)
-                }else if viewmodel.pageStep == .focusArea{
+                }else if viewmodel.pageStep == .focusAreas{
                     FocusAreaView(exerciseVM: viewmodel, progressBarValue: $progressBarValue)
                 }else {
                     SpecialPlanView(exerciseVM: viewmodel)

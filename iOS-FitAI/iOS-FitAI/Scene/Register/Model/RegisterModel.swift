@@ -7,16 +7,15 @@
 
 import Foundation
 
-public enum RegisterModel{
+public enum RegisterModel {
     
     enum Constants{
         static let buttonTextRegister = "Kayıt Ol"
         static let welcomeViewTitle = "Hoşgeldin!"
         static let welcomeViewContent = "Sağlıklı yaşama adım atmak için kayıt olun"
-
     }
     
-    public struct Request: Codable{
+    public struct Request: Codable {
         init(
             firstName: String? = nil,
             lastName: String? = nil,
@@ -40,9 +39,15 @@ public enum RegisterModel{
         var password: String?
         var passwordConfirm:String?
     }
-    
-    public struct Response: Codable {
-        let userToken: String?
+
+   public struct Response: Codable {
+        let userToken: UserToken?
+    }
+
+    // MARK: - UserToken
+    struct UserToken: Codable {
+        let token: String?
+        let isFirstLogin: Bool?
     }
 }
 

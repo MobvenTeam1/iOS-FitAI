@@ -3,12 +3,11 @@ import SwiftUI
 struct StartButton: View {
     @Binding var showAnimation: Bool
     @StateObject var homePageViewModel = HomePageViewModel()
+    @EnvironmentObject var coordinator: Coordinator<FlowRouter>
     var body: some View {
         GreenButtonView(text: "Başla") {
-            showAnimation = true
-                Task {
-                    await homePageViewModel.getTraining()
-                }
+//            coordinator.show(.exerciseProgramView)
+                showAnimation = true
         }
     }
 }

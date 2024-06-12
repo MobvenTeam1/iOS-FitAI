@@ -13,42 +13,38 @@ struct TargetsView: View {
     @Binding var progressBarValue: Double
     @State var targetList = ["Kilo Kaybı","Kilo Alma","Kas Yapma","Sağlıklı Yaşam"]
     @State var targetIconList = ["loseWeight","increase","muscleUp","healthyLife"]
+//    
+
     var body: some View {
         ZStack{
             VStack{
                 MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.targetsViewTitle)
                 Spacer()
-                MFAIMultipleSelectionView(selectionList: $targetList, selectionIconList: $targetIconList, selections: $personalInfoVM.personalInfoData.targets)
+                MFAIMultipleSelectionView(selectionList: $targetList, selectionIconList: $targetIconList, selections: $personalInfoVM.personalInfoData.goals)
                 MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextOK,buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.2
-                    coordinator.show(.homePage)
+                    coordinator.show(.login)
+                    //a
+                    // TODO: //
+//                    Task {
+//                     await  personalInfoVM.postPersonalInfo()
+//                    }
+                    //b
                 }
                 .padding(30)
             }
             .navigationBarBackButtonHidden(true)
-               .toolbar {
-                   ToolbarItem(placement: .topBarLeading) {
-                       Button(action: {
-                           personalInfoVM.pageStep = .birthDate
-                       }, label: {
-                           Image("back")
-                               .resizable()
-                               .frame(width: 41, height: 41)
-                       })
-                   }
-               }
-               .toolbar {
-                         ToolbarItem(placement: .topBarTrailing) {
-                                 Image("Onboarding-5-Icon")
-                                     .resizable()
-                                     .frame(width: 32, height: 36)
-                         }
-                     }
-//            .onAppear(perform: {
-//                DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-//                    coordinator.show(.login)
-//                })
-//            })
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button(action: {
+                        personalInfoVM.pageStep = .birthDate
+                    }, label: {
+                        Image("back")
+                            .resizable()
+                            .frame(width: 41, height: 41)
+                    })
+                }
+            }
         }
     }
 }

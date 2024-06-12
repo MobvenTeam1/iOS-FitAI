@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 
-enum PersonalInfosModel {
+public enum PersonalInfosModel {
     enum Constants {
         static let genderViewTitle = "Cinsiyetiniz nedir?"
         static let heightViewTitle = "Boyunuz kaç?"
@@ -20,39 +20,63 @@ enum PersonalInfosModel {
         static let conditionAndPrivacy = "Şartları ve gizlilik politikasını kabul ediyorum."
         
     }
-    enum ButtonTextContext{
+    enum ButtonTextContext {
         static let buttonTextNext = "Sonraki"
         static let buttonTextOK = "Tamamlandı"  
         static let haveAnAccount = "Zaten hesabınız var mı? Giriş Yap"
     }
     
-    struct PersonalInfos: Codable, RawRepresentable{
+   public struct PersonalInfos: Codable, RawRepresentable {
         init(
             gender: String? = nil,
             height: String? = nil,
-            currentWeight: String? = nil,
+            firstWeight: String? = nil,
             targetWeight: String? = nil,
-            birthDate: String? = nil,
-            targets: [String]? = nil)
+            dateOfBirth: String? = nil,
+            goals: [String]? = nil)
         {
             
             self.gender = gender
             self.height = height
-            self.currentWeight = currentWeight
+            self.firstWeight = firstWeight
             self.targetWeight = targetWeight
-            self.birthDate = birthDate
-            self.targets = targets
+            self.dateOfBirth = dateOfBirth
+            self.goals = goals
         
         }
         
         var gender: String?
         var height: String?
-        var currentWeight: String?
+        var firstWeight: String?
         var targetWeight: String?
-        var birthDate: String?
-        var targets:[String]?
+        var dateOfBirth: String?
+        var goals: [String]?
         
     }
+//    public struct PersonalInfos: Codable, RawRepresentable {
+//        init(
+//            gender: String? = nil,
+//            height: Int? = nil,
+//            firstWeight: Int? = nil,
+//            targetWeight: Int? = nil,
+//            dateOfBirth: String? = nil,
+//            goals: String? = nil)
+//        {
+//            self.gender = gender
+//            self.height = height
+//            self.firstWeight = firstWeight
+//            self.targetWeight = targetWeight
+//            self.dateOfBirth = dateOfBirth
+//            self.goals = goals
+//        }
+//        
+//        var gender: String?
+//        var height: Int?
+//        var firstWeight: Int?
+//        var targetWeight: Int?
+//        var dateOfBirth: String?
+//        var goals: String?
+//    }
     
     enum PersonalInfosFlow: String {
         case welcome

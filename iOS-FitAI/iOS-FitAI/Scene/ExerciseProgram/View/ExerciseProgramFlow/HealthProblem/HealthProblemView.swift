@@ -19,11 +19,11 @@ struct HealthProblemView: View {
                 MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextNo, buttonBackgroundColor: .white)
                 {
                     progressBarValue += 0.25
-                    exerciseVM.pageStep = .sportOption
+                    exerciseVM.pageStep = .preferredActivities
                 }
                 MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextNext, buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.25
-                    exerciseVM.pageStep = .sportOption
+                    exerciseVM.pageStep = .preferredActivities
                 }
                 .padding(50)
             }

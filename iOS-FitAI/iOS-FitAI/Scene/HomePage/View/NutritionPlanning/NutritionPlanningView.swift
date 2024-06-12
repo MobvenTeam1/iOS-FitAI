@@ -70,6 +70,9 @@ struct NutritionPlanningView: View {
                 }
             }
             .padding(.horizontal, 16)
+            GreenButtonView(text: "Öğünü Tamamla") {
+                // TODO: //
+            }
         }
         .onChange(of: appState.isUserUpdateFood) { isUserUpdateFood in
                     if isUserUpdateFood, let index = appState.selectedFoodIndex, let updatedItem = appState.updatedFoodItem,

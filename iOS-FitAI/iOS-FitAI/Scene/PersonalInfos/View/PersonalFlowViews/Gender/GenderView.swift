@@ -9,41 +9,33 @@ import SwiftUI
 
 struct GenderView: View {
     @ObservedObject var personelInfoVM: PersonalInfosViewModel
-    @State var genderList = ["Erkek","Kadın","Belirtmek istemiyorum"]
-    @State var genderIconList = ["male","female","gender"]
+    @State var genderList = ["Kadın","Erkek","Belirtmek istemiyorum"]
+    @State var genderIconList = ["female","male","gender"]
     @Binding var progressBarValue: Double
+    @EnvironmentObject var coordinator: Coordinator<FlowRouter>
     var body: some View {
-        ZStack {
-            VStack {
-                MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.genderViewTitle)
-                Spacer(minLength: 50)
-                MFAISingleSelectionView(selectionList: $genderList, selectionIconList: $genderIconList, selection: $personelInfoVM.personalInfoData.gender)
-                    .padding()
-                MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext, buttonBackgroundColor: .buttonGreen) {
-                    progressBarValue += 0.16
-                    personelInfoVM.pageStep = .height
-                }   
-                .padding(.bottom, 30)
-            }    .navigationBarBackButtonHidden(true)
-                .toolbar {
-                    ToolbarItem(placement: .topBarLeading) {
-                        Button(action: {
-                            personelInfoVM.pageStep = .welcome
-                        }, label: {
-                            Image("back")
-                                .resizable()
-                                .frame(width: 41, height: 41)
-                        })
+            ZStack {
+                VStack {
+                                    Button {
+                                        coordinator.show(.register)
+                                    }label: {
+                                        Image("back")
+                                    }
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                    MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.genderViewTitle)
+                    Spacer(minLength: 50)
+                    MFAISingleSelectionView(selectionList: $genderList, selectionIconList: $genderIconList, selection: $personelInfoVM.personalInfoData.gender)
+                        .padding()
+                    MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext, buttonBackgroundColor: .buttonGreen) {
+                        progressBarValue += 0.16
+                        personelInfoVM.pageStep = .height
                     }
+                    .padding(.bottom, 30)
                 }
-                .toolbar {
-                          ToolbarItem(placement: .topBarTrailing) {
-                                  Image("Onboarding-5-Icon")
-                                      .resizable()
-                                      .frame(width: 32, height: 36)
-                          }
-                      }
-        }
+                //            .navigationBarBackButtonHidden(true)
+               
+            }
+        
     }
 }
 

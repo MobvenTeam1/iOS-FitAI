@@ -11,7 +11,7 @@ struct AIPlanButtons: View {
     @EnvironmentObject var appState: AppState
     @Binding var goToTrainingAIPage: Bool
     @Binding var goToNutritionAIPage: Bool
-    
+    @StateObject var userDetailsVM = UserDetailsViewModel()
     var body: some View {
         VStack(spacing: -12) {
             if !appState.isTrainingPlanned {
@@ -20,7 +20,8 @@ struct AIPlanButtons: View {
                 }
             } else {
                 TrainingPlannedSubView(isTrainingTapped: $appState.isTrainingTapped,
-                                       typeOfExercise: "Pilates",
+                                       typeOfExercise: userDetailsVM.userDetails?.preferredActivities ?? "",
+//                                       typeOfExercise: "Pilates",
                                        duration: "15 dakika",
                                        calories: "150 kcal")
             }
@@ -34,6 +35,9 @@ struct AIPlanButtons: View {
                                          duration: "15 dakika",
                                          calories: "515 kcal")
             }
+        }
+        .task {
+            await userDetailsVM.getUserDetails()
         }
     }
     private func startTrainingPlan() {
