@@ -7,7 +7,7 @@ struct LoginButton: View {
     @Binding var errorMessage: String
     @EnvironmentObject var appState: AppState
     @EnvironmentObject var coordinator: Coordinator<FlowRouter>
-    @StateObject var loginVM = LoginVM()
+    @ObservedObject var loginVM : LoginVM
     var body: some View {
         GreenButtonView(text: "Giriş Yap") {
             validateInputs()

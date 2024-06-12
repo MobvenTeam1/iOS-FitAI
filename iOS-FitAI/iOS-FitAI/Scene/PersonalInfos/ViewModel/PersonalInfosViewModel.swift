@@ -11,13 +11,19 @@ import Combine
 
 class PersonalInfosViewModel : ObservableObject {
     @Published var pageStep : PersonalInfosModel.PersonalInfosFlow = .gender
-   
-    
-    var cancellables = Set<AnyCancellable>()
-    
-    @AppStorage("personalInfos") static var personalInfoDataApp = PersonalInfosModel.PersonalInfos(gender: "",height: "", firstWeight: "", targetWeight: "", dateOfBirth: "", goals: [""])
-    
+    @Published var isPersonalInfoFlowFinished = false
     @Published var personalInfoData = PersonalInfosModel.PersonalInfos(gender: "",height: "", firstWeight: "", targetWeight: "", dateOfBirth: "", goals: [""])
-
     
+    @MainActor
+    func getPersonalInfoRequest() async {
+        let response = await
+        API.FITAI.personalInfo(params: personalInfoData).fetch(requestModel: String.self)
+        switch response {
+        case .success(let model):
+            isPersonalInfoFlowFinished = true
+        case .failure(let failure):
+            AlertManager.showAlert(title: "Error!", message: failure.localizedDescription)
+            
+        }
+    }
 }

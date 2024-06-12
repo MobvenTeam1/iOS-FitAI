@@ -20,6 +20,11 @@ public enum LoginModel{
         var password: String?
     }
     public struct Response: Codable {
-        let userToken: String?
+        let userToken: UserToken?
+    }
+    
+    public struct UserToken: Codable {
+        let token: String?
+        let isFirstLogin: Bool?
     }
 }

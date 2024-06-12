@@ -14,25 +14,6 @@ struct BirthdayView: View {
     var body: some View {
         ZStack{
             VStack{
-                HStack{
-                    Button {
-                        personalInfoVM.pageStep = .height
-                    }
-                        label: {
-                        Image("back")
-                                .resizable()
-                                .frame(width: 41, height: 41)
-                                    }
-                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                    Button {}
-                        label: {
-                        Image("Onboarding-5-Icon")
-                                .resizable()
-                                .frame(width: 41, height: 41)
-                                    }
-                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-                }
-                .padding(20)
                 MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.birthdayViewTitle)
                 HStack(spacing: 20) {
                     Text(birthDate.formatted(.dateTime.day()))
@@ -59,14 +40,20 @@ struct BirthdayView: View {
                         .contentShape(Rectangle())
                         .opacity(0.011)             // <<< here
                 }
-                .padding(.bottom, 500)
+                .padding()
+                Spacer()
                 MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext,buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.16
                     personalInfoVM.pageStep = .targets
                 }
+                
                 .padding(.bottom, 30)
             }
-            .navigationBarBackButtonHidden(true)
+            .onAppear(perform: {
+                progressBarValue = 0.8
+                
+            })
+
         }
     }
 }

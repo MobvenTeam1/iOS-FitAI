@@ -16,24 +16,13 @@ class RegisterVM : ObservableObject {
     
     @MainActor
     func getRegisterRequest() async {
-        let response = await API.FITAI.register(param: registerInfoData).fetch(requestModel: RegisterModel.Response.self)
+        let response = await API.FITAI.register(params: registerInfoData).fetch(requestModel: RegisterModel.Response.self)
         switch response {
         case .success(let model):
-            AppStorageManager.shared.userToken = model.userToken.toEmpty
+            AppStorageManager.shared.userToken = (model.userToken?.token).toEmpty
         case .failure(let error):
             AlertManager.showAlert(title: "Error", message: error.localizedDescription)
         }
-        
-        
-        
-//        NetworkManager.shared.request(with: .register, parameters: registerInfoData) { (response:Result<RegisterModel.Response, NetworkError>) in
-//            switch response {
-//            case .success(let model):
-//                AppStorageManager.shared.userToken = model.userToken.toEmpty
-//            case .failure(let error):
-//                AlertManager.showAlert(title: "Error", message: error.localizedDescription)
-//            }
-//        }
     }
 }
 

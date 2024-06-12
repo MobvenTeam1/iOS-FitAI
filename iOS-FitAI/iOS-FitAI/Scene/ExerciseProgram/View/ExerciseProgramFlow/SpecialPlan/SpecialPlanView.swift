@@ -26,6 +26,9 @@ struct SpecialPlanView: View {
                     .multilineTextAlignment(.center)
                 Spacer()
             }
+            .onAppear(perform: {
+//                exerciseVM
+            })
         }
     }
 }
