@@ -29,19 +29,19 @@ public enum PersonalInfosModel {
     public struct PersonalInfos: Codable, RawRepresentable{
         init(
             gender: String? = nil,
-            height: String? = nil,
-            firstWeight: String? = nil,
-            targetWeight: String? = nil,
-            dateOfBirth: String? = nil,
-            goals: [String]? = nil)
+            heldHeight: String? = nil,
+            currentWeight: String? = nil,
+            goalWeight: String? = nil,
+            dateOfBirth: Date? = nil,
+            targets: [String]? = nil)
         {
             
             self.gender = gender
-            self.heldHeight = height
-            self.currentWeight = firstWeight
-            self.goalWeight = targetWeight
+            self.heldHeight = heldHeight
+            self.currentWeight = currentWeight
+            self.goalWeight = goalWeight
             self.dateOfBirth = dateOfBirth
-            self.goals = goals
+            self.targets = targets
         
         }
         
@@ -58,8 +58,11 @@ public enum PersonalInfosModel {
         lazy var targetWeight: Int? = {
             return Int(self.goalWeight ?? "0")
         }()
-        var dateOfBirth: String?
-        var goals:[String]?
+        var dateOfBirth: Date?
+        var targets: [String]?
+        lazy var goals:String? = {
+            return targets?.joined(separator:"-")
+        }()
         
     }
     
