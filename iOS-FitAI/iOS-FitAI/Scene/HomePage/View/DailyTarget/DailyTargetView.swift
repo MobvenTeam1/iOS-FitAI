@@ -11,6 +11,7 @@ struct DailyTargetView: View {
     @State private var kgLeftToTarget: Int = 5
     @State private var addExercise: Bool = false
     @State private var addFood: Bool = false
+    @StateObject var userDetailsVM = UserDetailsViewModel()
     var body: some View {
         VStack(alignment: .center, spacing: 12) {
             Text("Günlük Hedefler")
@@ -31,7 +32,12 @@ struct DailyTargetView: View {
             HStack(spacing: 8) {
                 CaloriesView(imageName: "alınan", firstText: "Alınan Kalori", calorieText: "950 cal")
                 CaloriesView(imageName: "harcanan", firstText: "Harcanan Kalori", calorieText: "1300 cal")
-                CaloriesView(imageName: "dailycalorie", firstText: "Günlük Hedef", calorieText: "2500 cal")
+//                CaloriesView(imageName: "dailycalorie", firstText: "Günlük Hedef", calorieText: "2500 cal")
+                if let goalCalorie = userDetailsVM.userDetails?.dailyKcalGoal {
+                    CaloriesView(imageName: "dailycalorie",
+                                 firstText: "Günlük Hedef",
+                                 calorieText: String(describing: goalCalorie) + " cal")
+                }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.leading, 33)
@@ -42,6 +48,9 @@ struct DailyTargetView: View {
         }
         .navigationDestination(isPresented: $addFood) {
             AddFoodView()
+        }
+        .task {
+            await userDetailsVM.getUserDetails()
         }
     }
 }

@@ -109,6 +109,9 @@
 		1F675D7F2C10D044000F073A /* CheckIfSearching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D7E2C10D044000F073A /* CheckIfSearching.swift */; };
 		1F675D812C110357000F073A /* MyExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D802C110357000F073A /* MyExerciseView.swift */; };
 		1F675D832C110DEB000F073A /* DurationForExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D822C110DEB000F073A /* DurationForExercise.swift */; };
+		1FAD78722C17C1EA004B7694 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD78712C17C1EA004B7694 /* UserDetails.swift */; };
+		1FAD78742C17C204004B7694 /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD78732C17C204004B7694 /* UserDetailsViewModel.swift */; };
+		1FAD78772C17CE7D004B7694 /* AddFoodFavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD78762C17CE7D004B7694 /* AddFoodFavoriteView.swift */; };
 		1FC20BBD2C0B42F5005C7326 /* Font + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BBB2C0B42F4005C7326 /* Font + Ext.swift */; };
 		1FC20BBE2C0B42F5005C7326 /* Color + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC20BBC2C0B42F4005C7326 /* Color + Ext.swift */; };
 		1FCCD5F72C15197500A726CA /* NoResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCD5F62C15197500A726CA /* NoResultView.swift */; };
@@ -313,6 +316,9 @@
 		1F675D7E2C10D044000F073A /* CheckIfSearching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIfSearching.swift; sourceTree = "<group>"; };
 		1F675D802C110357000F073A /* MyExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyExerciseView.swift; sourceTree = "<group>"; };
 		1F675D822C110DEB000F073A /* DurationForExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationForExercise.swift; sourceTree = "<group>"; };
+		1FAD78712C17C1EA004B7694 /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
+		1FAD78732C17C204004B7694 /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
+		1FAD78762C17CE7D004B7694 /* AddFoodFavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodFavoriteView.swift; sourceTree = "<group>"; };
 		1FC20BBB2C0B42F4005C7326 /* Font + Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font + Ext.swift"; sourceTree = "<group>"; };
 		1FC20BBC2C0B42F4005C7326 /* Color + Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color + Ext.swift"; sourceTree = "<group>"; };
 		1FC20BE02C0B464F005C7326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -499,6 +505,7 @@
 		1F156B9A2C0D22CC00F0E0DC /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				1FAD786E2C17C190004B7694 /* GetUserDetails */,
 				1FCCD6052C165B4500A726CA /* Model */,
 				1FCCD6042C165B3500A726CA /* View */,
 				1FCCD6012C165A8400A726CA /* HomePageViewModel */,
@@ -735,8 +742,8 @@
 			isa = PBXGroup;
 			children = (
 				1F63DDC22C11A9A90060B7D0 /* Model */,
+				1FAD78752C17CC98004B7694 /* AddFoodCard */,
 				1F63DDC02C1121FB0060B7D0 /* AddFoodView.swift */,
-				1F63DDC62C11B1520060B7D0 /* AddFoodCard.swift */,
 				1F63DDC82C11B6000060B7D0 /* BarcodeView.swift */,
 			);
 			path = AddFood;
@@ -807,6 +814,40 @@
 				1F675D712C107ECA000F073A /* AddHeaderView.swift */,
 			);
 			path = AddExerciseView;
+			sourceTree = "<group>";
+		};
+		1FAD786E2C17C190004B7694 /* GetUserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				1FAD78702C17C19C004B7694 /* ViewModel */,
+				1FAD786F2C17C199004B7694 /* Model */,
+			);
+			path = GetUserDetails;
+			sourceTree = "<group>";
+		};
+		1FAD786F2C17C199004B7694 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1FAD78712C17C1EA004B7694 /* UserDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1FAD78702C17C19C004B7694 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1FAD78732C17C204004B7694 /* UserDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1FAD78752C17CC98004B7694 /* AddFoodCard */ = {
+			isa = PBXGroup;
+			children = (
+				1F63DDC62C11B1520060B7D0 /* AddFoodCard.swift */,
+				1FAD78762C17CE7D004B7694 /* AddFoodFavoriteView.swift */,
+			);
+			path = AddFoodCard;
 			sourceTree = "<group>";
 		};
 		1FCCD5F82C1539FE00A726CA /* SwiftDataManager */ = {
@@ -1780,7 +1821,9 @@
 				1F156BFC2C0D22CC00F0E0DC /* CaloriesView.swift in Sources */,
 				1F63DDC72C11B1520060B7D0 /* AddFoodCard.swift in Sources */,
 				DD2D24492BFF9E4300C97F36 /* FlowRouter.swift in Sources */,
+				1FAD78772C17CE7D004B7694 /* AddFoodFavoriteView.swift in Sources */,
 				DDE988332C05D62900550643 /* TargetWeightView.swift in Sources */,
+				1FAD78722C17C1EA004B7694 /* UserDetails.swift in Sources */,
 				1F156C042C0D22CC00F0E0DC /* CustomTabBarView.swift in Sources */,
 				DD5A0E8C2C07BD40006464D7 /* PersonalDietTypeView.swift in Sources */,
 				1F156C272C0D22CD00F0E0DC /* WelcomeTextView.swift in Sources */,
@@ -1831,6 +1874,7 @@
 				1FCCD5F72C15197500A726CA /* NoResultView.swift in Sources */,
 				1F156C2C2C0D22CD00F0E0DC /* RememberMeSection.swift in Sources */,
 				1FCCD5FE2C153A9B00A726CA /* GenericDataSource.swift in Sources */,
+				1FAD78742C17C204004B7694 /* UserDetailsViewModel.swift in Sources */,
 				1F675D7B2C10C0BD000F073A /* SFECustomButtonControl.swift in Sources */,
 				1F156C232C0D22CC00F0E0DC /* Onboarding5.swift in Sources */,
 				1F675D6B2C0FCAFC000F073A /* FoodDetailsView.swift in Sources */,
@@ -2007,7 +2051,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOS-FitAI/Preview Content\"";
-				DEVELOPMENT_TEAM = 7Y8QP7UN32;
+				DEVELOPMENT_TEAM = LA2DV5XFY8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS-FitAI/Info.plist";
@@ -2039,7 +2083,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOS-FitAI/Preview Content\"";
-				DEVELOPMENT_TEAM = 7Y8QP7UN32;
+				DEVELOPMENT_TEAM = LA2DV5XFY8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS-FitAI/Info.plist";
@@ -2216,7 +2260,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOS-FitAI/Preview Content\"";
-				DEVELOPMENT_TEAM = 7Y8QP7UN32;
+				DEVELOPMENT_TEAM = LA2DV5XFY8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS-FitAI/Info.plist";
@@ -2345,7 +2389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOS-FitAI/Preview Content\"";
-				DEVELOPMENT_TEAM = 7Y8QP7UN32;
+				DEVELOPMENT_TEAM = LA2DV5XFY8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS-FitAI/Info.plist";

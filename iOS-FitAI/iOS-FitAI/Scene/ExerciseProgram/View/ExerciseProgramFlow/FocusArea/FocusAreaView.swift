@@ -12,6 +12,9 @@ struct FocusAreaView: View {
     @Binding var progressBarValue: Double
     @State var focusArea = ["Hepsi","Kolar","Göğüs","Bel","Kalça","Bacaklar"]
     @State var focusAreaIcon = ["all","arms","chest","waist","butt","leg"]
+    //a
+    @EnvironmentObject var coordinator: Coordinator<FlowRouter>
+    //b
     var body: some View {
         ZStack{
             VStack{
@@ -20,7 +23,14 @@ struct FocusAreaView: View {
                 MFAIMultipleSelectionView(selectionList: $focusArea, selectionIconList: $focusAreaIcon, selections: $exerciseVM.exerciseProgramData.directArea)
                     .padding(.bottom, 8)
                 MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextCreate,buttonBackgroundColor: .buttonGreen){
-                    exerciseVM.pageStep = .specialPlan
+//                    exerciseVM.pageStep = .specialPlan
+                    //a
+                    // TODO: //
+//                    Task {
+//                        await exerciseVM.postWorkoutDetails()
+//                    }
+                    coordinator.show(.homePage)
+                    //b
                 }
                 .padding(.bottom, 30)
                 .padding(.top, 28)

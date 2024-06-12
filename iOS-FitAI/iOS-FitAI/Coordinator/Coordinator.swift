@@ -29,6 +29,7 @@ open class Coordinator<Router: NavigationRouter>: ObservableObject {
         let viewWithCoordinator = view.environmentObject(self)
             .environmentObject(AppState())
             .environmentObject(MyModelViewModel())
+            .environmentObject(AddFoodViewModel())
             .navigationBarHidden(true)
         let viewController = UIHostingController(rootView: viewWithCoordinator)
         switch route.transition {

@@ -17,6 +17,8 @@ public enum FlowRouter: NavigationRouter {
     case handleScreens
     case homePage
     case tabBar
+    case dietTypeflow
+    case exerciseProgramView
     case exerciseProgramQuestions
     case dietTypeQuestions
     case onboarding5

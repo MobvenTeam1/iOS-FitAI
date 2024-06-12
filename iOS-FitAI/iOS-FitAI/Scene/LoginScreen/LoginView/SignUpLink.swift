@@ -3,7 +3,7 @@ import SwiftUI
 struct SignUpLink: View {
     var body: some View {
         NavigationLink {
-            
+            RegisterView()
         }label: {
             Text("Hesabın yok mu? ")
                 .font(.urbanistMedium(size: 15)) +

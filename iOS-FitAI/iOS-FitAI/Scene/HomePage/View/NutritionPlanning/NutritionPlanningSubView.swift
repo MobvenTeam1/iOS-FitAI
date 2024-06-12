@@ -8,7 +8,7 @@ struct NutritionPlanningSubView: View {
     @EnvironmentObject var appState: AppState
     @State private var foodItems: [FoodItem] = [
             FoodItem(name: "Haşlanmış Yumurta", imageName: "yumurta", secondaryText: "2 tane, 180 kcal"),
-            FoodItem(name: "Avokado", imageName: "avokado", secondaryText: "Yarım, 200kcal"),
+            FoodItem(name: "Avokado", imageName: "avocado", secondaryText: "Yarım, 200kcal"),
             FoodItem(name: "Ezine Peyniri", imageName: "ezinepeyniri", secondaryText: "1 Porsiyon, 100 kcal")
         ]
     

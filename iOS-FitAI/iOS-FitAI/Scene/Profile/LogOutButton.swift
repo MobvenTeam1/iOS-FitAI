@@ -1,9 +1,10 @@
 import SwiftUI
 
 struct LogOutButton: View {
+    @EnvironmentObject var appState: AppState
     var body: some View {
-        Button {
-            
+        NavigationLink {
+            LoginView()
         }label: {
             ZStack {
                 Color.white

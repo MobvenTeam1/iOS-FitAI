@@ -20,13 +20,13 @@ public enum PersonalInfosModel {
         static let conditionAndPrivacy = "Şartları ve gizlilik politikasını kabul ediyorum."
         
     }
-    enum ButtonTextContext{
+    enum ButtonTextContext {
         static let buttonTextNext = "Sonraki"
         static let buttonTextOK = "Tamamlandı"
         static let haveAnAccount = "Zaten hesabınız var mı? Giriş Yap"
     }
     
-    public struct PersonalInfos: Codable, RawRepresentable{
+    public struct PersonalInfos: Codable {
         init(
             gender: String? = nil,
             heldHeight: String? = nil,
@@ -74,36 +74,6 @@ public enum PersonalInfosModel {
     }
     
     
-}
-
-extension PersonalInfosModel.PersonalInfos {
-    
-    public init?(rawValue: String) {
-        guard let data = rawValue.data(using: .utf8) else {
-            print("Hata: String'i verilere dönüştürme başarısız.")
-            return nil
-        }
-        guard let result = try? JSONDecoder().decode(PersonalInfosModel.PersonalInfos.self, from: data) else {
-            print("Hata: Verileri PersonalInfos'a decode etme başarısız.")
-            return nil
-        }
-        self = result
-    }
-    
-    public var rawValue: String {
-        do {
-            
-            let data = try JSONEncoder().encode(self)
-            guard let result = String(data: data, encoding: .utf8) else {
-                print("Hata: Verileri string'e dönüştürme başarısız.")
-                return "[]"
-            }
-            return result
-        } catch {
-            print("Hata: \(error)")
-            return "[]"
-        }
-    }
 }
 
 struct CustomProgressViewStyle: ProgressViewStyle {
