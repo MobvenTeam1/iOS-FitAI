@@ -8,22 +8,6 @@
 import Foundation
 import SwiftUI
 
-//class RegisterVM : ObservableObject {
-//    @Published var registerInfoData = RegisterModel.Request(firstName: "", lastName: "", userName: "", email: "", password: "", passwordConfirm: "")
-//    
-//    @MainActor
-//    func getRegisterRequest() async {
-//        let response = await API.FITAI.register(param: registerInfoData).fetch(requestModel: RegisterModel.Response.self)
-//        switch response {
-//        case .success(let model):
-//            AppStorageManager.shared.userToken = model.userToken?.token ?? "12359"
-//            print("Register token is: ", AppStorageManager.shared.userToken)
-//        case .failure(let error):
-//            AlertManager.showAlert(title: "Error", message: error.localizedDescription)
-//        }
-//    }
-//}
-
 class RegisterVM : ObservableObject {
     @Published var registerInfoData = RegisterModel.Request(firstName: "", lastName: "", userName: "", email: "", password: "", passwordConfirm: "")
     
