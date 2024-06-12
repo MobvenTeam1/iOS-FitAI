@@ -22,7 +22,7 @@ class PersonalInfosViewModel : ObservableObject {
     @MainActor
     func getPersonalInfoRequest() async {
         let response = await
-        API.FITAI.personalInfo(params: personalInfoData).fetch(requestModel: String.self)
+        API.FITAI.personalInfo(param: personalInfoData).fetch(requestModel: String.self)
         switch response {
         case .success(let model):
             isPersonalInfoFlowFinished = true

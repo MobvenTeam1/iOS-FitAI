@@ -39,7 +39,7 @@ struct FocusAreaView: View {
                .toolbar {
                    ToolbarItem(placement: .topBarLeading) {
                        Button(action: {
-                           exerciseVM.pageStep = .workoutFrequency
+                           exerciseVM.pageStep = .sportFrequency
                        }, label: {
                            Image("back")
                                .resizable()

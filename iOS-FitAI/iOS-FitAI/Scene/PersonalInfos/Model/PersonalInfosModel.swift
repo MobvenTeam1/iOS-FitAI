@@ -26,7 +26,7 @@ public enum PersonalInfosModel {
         static let haveAnAccount = "Zaten hesabınız var mı? Giriş Yap"
     }
     
-    public struct PersonalInfos: Codable, RawRepresentable{
+    public struct PersonalInfos: Codable {
         init(
             gender: String? = nil,
             heldHeight: String? = nil,

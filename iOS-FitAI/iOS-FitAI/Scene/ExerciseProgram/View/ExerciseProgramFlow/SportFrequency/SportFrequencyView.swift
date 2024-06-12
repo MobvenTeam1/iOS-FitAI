@@ -30,7 +30,7 @@ struct SportFrequencyView: View {
                .toolbar {
                    ToolbarItem(placement: .topBarLeading) {
                        Button(action: {
-                           exerciseVM.pageStep = .preferredActivities
+                           exerciseVM.pageStep = .sportOption
                        }, label: {
                            Image("back")
                                .resizable()

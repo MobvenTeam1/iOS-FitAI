@@ -22,6 +22,9 @@ struct TargetsView: View {
                 MFAISingleSelectionView(selectionList: $targetList, selectionIconList: $targetIconList, selection: $personalInfoVM.personalInfoData.goals)
                 MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextOK,buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.2
+                    Task {
+                        await personalInfoVM.getPersonalInfoRequest()
+                    }
                 }
                 .padding(30)
             }

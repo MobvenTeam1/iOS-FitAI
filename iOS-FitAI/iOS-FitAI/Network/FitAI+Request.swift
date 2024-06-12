@@ -15,9 +15,6 @@ public extension API {
         case exerciseProgram(param: ExerciseProgramModel.ExerciseProgramInfo)
         case training
         case userDetails
-        case register(params: RegisterModel.Request)
-        case training
-        case personalInfo(params: PersonalInfosModel.PersonalInfos)
         case exerciseProgramQuestion(params: ExerciseProgramModel.ExerciseProgramInfo)
         
         
@@ -35,6 +32,8 @@ public extension API {
                 await getRequest(path: "WorkoutPlan/generateworkoutplan", httpMethod: .get)
             case .userDetails:
                 await getRequest(path: "User/GetUserDetails", httpMethod: .get)
+            case .exerciseProgramQuestion(params: let params):
+                await getRequest(data: params, path: "User/WorkoutDetails", httpMethod: .post)
             }
         }
     }

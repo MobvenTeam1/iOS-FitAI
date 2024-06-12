@@ -9,13 +9,12 @@ import Foundation
 import SwiftUI
 
 class RegisterVM : ObservableObject {
-    var cancellables = Set<AnyCancellable>()
     @Published var kVKKEnabled = false
     @Published var registerInfoData = RegisterModel.Request(firstName: "", lastName: "", userName: "", email: "", password: "", passwordConfirm: "")
     
     @MainActor
     func getRegisterRequest() async {
-        let response = await API.FITAI.register(params: registerInfoData).fetch(requestModel: RegisterModel.Response.self)
+        let response = await API.FITAI.register(param: registerInfoData).fetch(requestModel: RegisterModel.Response.self)
         switch response {
         case .success(let model):
             AppStorageManager.shared.userToken = (model.userToken?.token).toEmpty

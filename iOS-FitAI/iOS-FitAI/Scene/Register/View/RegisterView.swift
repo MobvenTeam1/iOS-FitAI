@@ -87,6 +87,7 @@ struct RegisterView: View {
                             }
                             //a
                             appState.userName = registerVM.registerInfoData.firstName ?? "Simgee"
+                            coordinator.show(.personalInfos)
                             //b
                         } else {
                             AlertManager.showAlert(title: "Hata", message: "Şifreler aynı değil")
