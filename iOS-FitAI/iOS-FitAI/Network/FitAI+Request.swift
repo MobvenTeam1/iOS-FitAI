@@ -13,7 +13,7 @@ public extension API {
         case register(params: RegisterModel.Request)
         case training
         case personalInfo(params: PersonalInfosModel.PersonalInfos)
-//        case exerciseProgramQuestion(params: ExerciseProgramModel.ExerciseProgramInfo)
+        case exerciseProgramQuestion(params: ExerciseProgramModel.ExerciseProgramInfo)
         
         
         public func request() async -> URLRequest {
@@ -26,8 +26,8 @@ public extension API {
                 await getRequest(path: "WorkoutPlan/generateworkoutplan", httpMethod: .get)
             case .personalInfo(let params):
                 await getRequest(data: params, path: "User/SaveFirstLoginDetails", httpMethod: .post)
-//            case .exerciseProgramQuestion(params: let params):
-                
+            case .exerciseProgramQuestion(let params):
+                await getRequest(data: params, path: "User/Workout-Details", httpMethod: .post)
             }
         }
     }

@@ -26,7 +26,7 @@ struct ExerciseProgramView: View {
                     SportOptionsView(exerciseVM: viewmodel, progressBarValue: $progressBarValue)
                 }else if viewmodel.pageStep == .sportFrequency{
                     SportFrequencyView(exerciseVM: viewmodel, progressBarValue: $progressBarValue)
-                }else if viewmodel.pageStep == .focusArea{
+                }else if viewmodel.pageStep == .directArea{
                     FocusAreaView(exerciseVM: viewmodel, progressBarValue: $progressBarValue)
                 }else {
                     SpecialPlanView(exerciseVM: viewmodel)
