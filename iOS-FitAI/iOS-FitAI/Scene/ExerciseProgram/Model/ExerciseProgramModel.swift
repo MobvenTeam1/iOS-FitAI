@@ -43,7 +43,7 @@ public enum ExerciseProgramModel {
         {
             self.healthProblem = healthProblem
             self.sportOption = sportOption
-            self.sportFrequency = sportFrequency
+            self.workoutFrequency = sportFrequency
             self.directArea = directArea
         }
         
@@ -52,7 +52,7 @@ public enum ExerciseProgramModel {
         lazy var preferredActivities: String? = {
             return sportOption?.joined(separator:"-")
         }()
-        var sportFrequency: String?
+        var workoutFrequency: String?
         var directArea: [String]?
         lazy var focusArea: String? = {
            return  directArea?.joined(separator: "-")
