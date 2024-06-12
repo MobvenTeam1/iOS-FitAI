@@ -178,7 +178,6 @@
 		DDB4071F2C0BB3BA00D4223E /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4071E2C0BB3BA00D4223E /* HeightView.swift */; };
 		DDB407242C0BBB2F00D4223E /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB407232C0BBB2F00D4223E /* AlertManager.swift */; };
 		DDB407272C0BBBD100D4223E /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB407262C0BBBD100D4223E /* UIApplication+Extension.swift */; };
-		DDDFB3DE2C0997C200D2A117 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFB3DD2C0997C200D2A117 /* WelcomeView.swift */; };
 		DDE586DB2C0B844C007B3A1A /* ExerciseProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE586DA2C0B844C007B3A1A /* ExerciseProgramView.swift */; };
 		DDE586E32C0B859B007B3A1A /* ExerciseProgramViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE586E22C0B859B007B3A1A /* ExerciseProgramViewModel.swift */; };
 		DDE586E52C0B85AE007B3A1A /* ExerciseProgramModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE586E42C0B85AE007B3A1A /* ExerciseProgramModel.swift */; };
@@ -389,7 +388,6 @@
 		DDB4071E2C0BB3BA00D4223E /* HeightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeightView.swift; sourceTree = "<group>"; };
 		DDB407232C0BBB2F00D4223E /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		DDB407262C0BBBD100D4223E /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
-		DDDFB3DD2C0997C200D2A117 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		DDE586DA2C0B844C007B3A1A /* ExerciseProgramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgramView.swift; sourceTree = "<group>"; };
 		DDE586E22C0B859B007B3A1A /* ExerciseProgramViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgramViewModel.swift; sourceTree = "<group>"; };
 		DDE586E42C0B85AE007B3A1A /* ExerciseProgramModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgramModel.swift; sourceTree = "<group>"; };
@@ -1408,14 +1406,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		DDE586D82C0B8272007B3A1A /* Welcome */ = {
-			isa = PBXGroup;
-			children = (
-				DDDFB3DD2C0997C200D2A117 /* WelcomeView.swift */,
-			);
-			path = Welcome;
-			sourceTree = "<group>";
-		};
 		DDE586D92C0B841C007B3A1A /* ExerciseProgramFlow */ = {
 			isa = PBXGroup;
 			children = (
@@ -1504,7 +1494,6 @@
 		DDEA0A002BFFAD8000EEC4E6 /* PersonalFlowViews */ = {
 			isa = PBXGroup;
 			children = (
-				DDE586D82C0B8272007B3A1A /* Welcome */,
 				DD5A0E972C07BFC3006464D7 /* Targets */,
 				DDE988312C05D60E00550643 /* Birthday */,
 				DDE988302C05D5F300550643 /* TargetWeight */,
@@ -1808,7 +1797,6 @@
 				DDB407272C0BBBD100D4223E /* UIApplication+Extension.swift in Sources */,
 				DD7E528C2C107DA800053555 /* Networkable+Extension.swift in Sources */,
 				DDE586E72C0B85E7007B3A1A /* WorkoutPlansView.swift in Sources */,
-				DDDFB3DE2C0997C200D2A117 /* WelcomeView.swift in Sources */,
 				DDB407042C0BA5F500D4223E /* KnownHealthProblemView.swift in Sources */,
 				DD5A0E992C07BFD6006464D7 /* TargetsView.swift in Sources */,
 				DDAF84EC2C125931009D2BB9 /* AppStorageManager.swift in Sources */,
@@ -1826,7 +1814,6 @@
 				1F156C142C0D22CC00F0E0DC /* FMPEmailTextView.swift in Sources */,
 				1F156C072C0D22CC00F0E0DC /* TabBarShape.swift in Sources */,
 				1F675D742C107EE7000F073A /* SearchForExerciseView.swift in Sources */,
-				DDDFB3DE2C0997C200D2A117 /* WelcomeView.swift in Sources */,
 				1F156BFA2C0D22CC00F0E0DC /* NutritionPlanningSubView.swift in Sources */,
 				1F156C122C0D22CC00F0E0DC /* FMPLoginWithEmailButton.swift in Sources */,
 				1F156C2A2C0D22CD00F0E0DC /* ForgotPasswordLink.swift in Sources */,

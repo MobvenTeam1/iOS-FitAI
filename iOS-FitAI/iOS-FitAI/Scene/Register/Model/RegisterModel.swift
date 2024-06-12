@@ -42,7 +42,11 @@ public enum RegisterModel{
     }
     
     public struct Response: Codable {
-        let userToken: String?
+        let userToken: UserToken?
+    }
+    
+    public struct UserToken: Codable {
+        let token: String?
+        let isFirstLogin: Bool?
     }
 }
-

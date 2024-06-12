@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ExerciseProgramModel{
+public enum ExerciseProgramModel {
     
     enum Constants{
         static let workoutPlansViewTitle = "AI Destekli  Antreman Planı"
@@ -20,14 +20,14 @@ enum ExerciseProgramModel{
         static let specialPlansViewContent = "Kişiselleştirilmiş planlarınız yapay zeka desteğiyle oluşturuluyor."
     }
     
-    enum ButtonTextContext{
+    enum ButtonTextContext {
         static let buttonTextStart = "Başla"
         static let buttonTextNext = "Sonraki"
         static let buttonTextCreate = "Oluştur"
         static let buttonTextNo = "Yok / Belirtmek İstemiyorum"
     }
     
-    enum ExerciseProgramFlow: String{
+    enum ExerciseProgramFlow: String {
         case workoutPlans
         case healthProblem
         case sportOption
@@ -35,8 +35,12 @@ enum ExerciseProgramModel{
         case focusArea
         case specialPlan
     }
-    struct ExerciseProgramInfo: Codable, RawRepresentable{
-        init(healthProblem: String? = nil, sportOption: [String]? = nil, sportFrequency: String? = nil, focusArea: [String]? = nil) {
+    public struct ExerciseProgramInfo: Codable, RawRepresentable {
+        init(healthProblem: String? = nil,
+             sportOption: [String]? = nil,
+             sportFrequency: String? = nil,
+             focusArea: [String]? = nil) 
+        {
             self.healthProblem = healthProblem
             self.sportOption = sportOption
             self.sportFrequency = sportFrequency

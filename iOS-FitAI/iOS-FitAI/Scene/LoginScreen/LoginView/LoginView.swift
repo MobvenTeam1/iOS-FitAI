@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
+    @StateObject var viewmodel = LoginVM()
     @State private var email: String = ""
     @State private var rememberMeClicked: Bool = false
     @State private var password: String = ""
@@ -19,18 +20,20 @@ struct LoginView: View {
             Spacer()
             VStack(alignment: .center, spacing: 10) {
                 WelcomeTextView()
-                EmailTextField(showError: $showError, errorMessage: $errorMessage, email: $email)
-                GenericPasswordView(password: $password, placeholder: "Parola")
+                EmailTextField(showError: $showError, errorMessage: $errorMessage, email: $viewmodel.loginInfoData.email.toUnwrapped(defaultValue: ""))
+                GenericPasswordView(password: $viewmodel.loginInfoData.password.toUnwrapped(defaultValue: ""), placeholder: "Parola")
                 HStack {
                     RememberMeSection(rememberMeClicked: $rememberMeClicked)
                     Spacer()
                     ForgotPasswordLink()
                 }
+                
                 LoginButton(email: email,
                             password: password,
                             showError: $showError,
-                            errorMessage: $errorMessage
-                )
+                            errorMessage: $errorMessage,
+                            loginVM: viewmodel)
+                
                 DividerWithText()
                 SocialLoginButtons()
                 Spacer()

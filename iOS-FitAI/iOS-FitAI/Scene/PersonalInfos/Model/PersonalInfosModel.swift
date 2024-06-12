@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 
-enum PersonalInfosModel {
+public enum PersonalInfosModel {
     enum Constants {
         static let genderViewTitle = "Cinsiyetiniz nedir?"
         static let heightViewTitle = "Boyunuz kaç?"
@@ -26,7 +26,7 @@ enum PersonalInfosModel {
         static let haveAnAccount = "Zaten hesabınız var mı? Giriş Yap"
     }
     
-    struct PersonalInfos: Codable, RawRepresentable{
+    public struct PersonalInfos: Codable, RawRepresentable{
         init(
             gender: String? = nil,
             height: String? = nil,
@@ -37,24 +37,33 @@ enum PersonalInfosModel {
         {
             
             self.gender = gender
-            self.height = height
-            self.firstWeight = firstWeight
-            self.targetWeight = targetWeight
+            self.heldHeight = height
+            self.currentWeight = firstWeight
+            self.goalWeight = targetWeight
             self.dateOfBirth = dateOfBirth
             self.goals = goals
         
         }
         
         var gender: String?
-        var height: String?
-        var firstWeight: String?
-        var targetWeight: String?
+        var heldHeight: String?
+        lazy var height: Int? = {
+            return Int(self.heldHeight ?? "0")
+        }()
+        var currentWeight: String?
+        lazy var firstWeight: Int? = {
+            return Int(self.currentWeight ?? "0")
+        }()
+        var goalWeight: String?
+        lazy var targetWeight: Int? = {
+            return Int(self.goalWeight ?? "0")
+        }()
         var dateOfBirth: String?
         var goals:[String]?
         
     }
     
-    enum PersonalInfosFlow: String {
+    enum PersonalInfosFlow: Int {
         case welcome
         case gender
         case height
