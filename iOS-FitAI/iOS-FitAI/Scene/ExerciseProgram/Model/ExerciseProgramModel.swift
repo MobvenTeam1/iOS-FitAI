@@ -20,7 +20,7 @@ public enum ExerciseProgramModel {
         static let specialPlansViewContent = "Kişiselleştirilmiş planlarınız yapay zeka desteğiyle oluşturuluyor."
     }
     
-    enum ButtonTextContext{
+    enum ButtonTextContext {
         static let buttonTextStart = "Başla"
         static let buttonTextNext = "Sonraki"
         static let buttonTextCreate = "Oluştur"
@@ -30,23 +30,34 @@ public enum ExerciseProgramModel {
     enum ExerciseProgramFlow: String {
         case workoutPlans
         case healthProblem
-        case preferredActivities
-        case workoutFrequency
-        case focusAreas
+        case sportOption
+        case sportFrequency
+        case directArea
         case specialPlan
     }
     public struct ExerciseProgramInfo: Codable, RawRepresentable {
-        init(healthProblem: String? = nil, preferredActivities: [String]? = nil, workoutFrequency: String? = nil, focusAreas: [String]? = nil) {
+        init(healthProblem: String? = nil,
+             sportOption: [String]? = nil,
+             sportFrequency: String? = nil,
+             directArea: [String]? = nil)
+        {
             self.healthProblem = healthProblem
-            self.preferredActivities = preferredActivities
-            self.workoutFrequency = workoutFrequency
-            self.focusAreas = focusAreas
+            self.sportOption = sportOption
+            self.workoutFrequency = sportFrequency
+            self.directArea = directArea
         }
         
         var healthProblem: String?
-        var preferredActivities: [String]?
+        var sportOption: [String]?
+        lazy var preferredActivities: String? = {
+            return sportOption?.joined(separator:"-")
+        }()
         var workoutFrequency: String?
-        var focusAreas: [String]?
+        var directArea: [String]?
+        lazy var focusArea: String? = {
+           return  directArea?.joined(separator: "-")
+        }()
+        
     }
 }
 

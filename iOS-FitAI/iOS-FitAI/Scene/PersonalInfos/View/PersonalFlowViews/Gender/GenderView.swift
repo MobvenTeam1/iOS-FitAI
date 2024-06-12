@@ -14,28 +14,24 @@ struct GenderView: View {
     @Binding var progressBarValue: Double
     @EnvironmentObject var coordinator: Coordinator<FlowRouter>
     var body: some View {
-            ZStack {
-                VStack {
-                                    Button {
-                                        coordinator.show(.register)
-                                    }label: {
-                                        Image("back")
-                                    }
-                                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                    MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.genderViewTitle)
-                    Spacer(minLength: 50)
-                    MFAISingleSelectionView(selectionList: $genderList, selectionIconList: $genderIconList, selection: $personelInfoVM.personalInfoData.gender)
-                        .padding()
-                    MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext, buttonBackgroundColor: .buttonGreen) {
-                        progressBarValue += 0.16
-                        personelInfoVM.pageStep = .height
-                    }
-                    .padding(.bottom, 30)
-                }
-                //            .navigationBarBackButtonHidden(true)
-               
+        ZStack {
+            VStack {
+                MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.genderViewTitle)
+                Spacer(minLength: 50)
+                MFAISingleSelectionView(selectionList: $genderList, selectionIconList: $genderIconList, selection: $personelInfoVM.personalInfoData.gender)
+                    .padding(.bottom, 8)
+                MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext, buttonBackgroundColor: .buttonGreen) {
+                    
+                    personelInfoVM.pageStep = .height
+                }   
+                .padding(.bottom, 30)
+                .padding(.top, 28)
             }
-        
+            .onAppear(perform: {
+                progressBarValue = 0.0
+                
+            })
+        }
     }
 }
 

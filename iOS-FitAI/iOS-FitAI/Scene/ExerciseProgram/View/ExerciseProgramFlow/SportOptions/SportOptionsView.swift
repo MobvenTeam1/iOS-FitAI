@@ -17,13 +17,14 @@ struct SportOptionsView: View {
             VStack{
                 MFAIPersonalInfosHeaderView(title: ExerciseProgramModel.Constants.sportOptionsViewTitle)
                 Spacer()
-                MFAIMultipleSelectionView(selectionList: $sportOptions, selectionIconList: $sportOptionsIcon, selections: $exerciseVM.exerciseProgramData.preferredActivities)
-                Spacer()
+                MFAIMultipleSelectionView(selectionList: $sportOptions, selectionIconList: $sportOptionsIcon, selections: $exerciseVM.exerciseProgramData.sportOption)
+                    .padding(.bottom, 8)
                 MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextNext,buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.25
                     exerciseVM.pageStep = .workoutFrequency
                 }
                 .padding(.bottom, 30)
+                .padding(.top, 28)
             }
             .navigationBarBackButtonHidden(true)
                .toolbar {

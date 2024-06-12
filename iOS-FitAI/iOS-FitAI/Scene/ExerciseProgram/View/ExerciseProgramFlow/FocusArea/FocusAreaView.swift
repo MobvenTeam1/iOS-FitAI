@@ -20,8 +20,8 @@ struct FocusAreaView: View {
             VStack{
                 MFAIPersonalInfosHeaderView(title: ExerciseProgramModel.Constants.focusAreaViewtitle)
                 Spacer()
-                MFAIMultipleSelectionView(selectionList: $focusArea, selectionIconList: $focusAreaIcon, selections: $exerciseVM.exerciseProgramData.focusAreas)
-                Spacer()
+                MFAIMultipleSelectionView(selectionList: $focusArea, selectionIconList: $focusAreaIcon, selections: $exerciseVM.exerciseProgramData.directArea)
+                    .padding(.bottom, 8)
                 MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextCreate,buttonBackgroundColor: .buttonGreen){
 //                    exerciseVM.pageStep = .specialPlan
                     //a
@@ -33,6 +33,7 @@ struct FocusAreaView: View {
                     //b
                 }
                 .padding(.bottom, 30)
+                .padding(.top, 28)
             }
             .navigationBarBackButtonHidden(true)
                .toolbar {

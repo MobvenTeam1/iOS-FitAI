@@ -23,7 +23,7 @@ struct MFAIMultipleSelectionView: View {
             HStack {
                 Image(iconSelected)
                     .resizable()
-                    .frame(width: 30,height: 30)
+                    .frame(width: 20,height: 20)
                     .aspectRatio(contentMode: .fit)
                     .padding(.leading)
                 Text(title)
@@ -33,9 +33,13 @@ struct MFAIMultipleSelectionView: View {
                 Spacer(minLength: 20)
                 selectionTickChecker(title: title)
                     .padding(.trailing)
-                    .frame(width: 30, height: 30)
+                    .frame(width: 17, height: 17)
+                
+                if selections == [title]{
+                    border(.buttonGreen)
+                }
             }
-            .frame(height: 50)
+            .frame(width: 327, height: 56)
             .onTapGesture {
                 print("pressed")
                 if let selections{

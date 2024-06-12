@@ -23,38 +23,21 @@ struct HeightView: View {
                 MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.heightViewTitle)
                 MFAITextField(title: "155 cm",
                               keyboardType: .decimalPad,
-                              textfieldText: $personalInfoVM.personalInfoData.height.toUnwrapped(defaultValue: ""))
-                
-                Spacer()
+                              textfieldText: $personalInfoVM.personalInfoData.heldHeight.toUnwrapped(defaultValue: ""))
+                .padding(.bottom, 450)
                 MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext,buttonBackgroundColor: .buttonGreen){
-                    progressBarValue += 0.16
                     personalInfoVM.pageStep = .currentWeight
                 }
                 .padding(.bottom, 30)
+                .padding(.top, 28)
             }
-            .navigationBarBackButtonHidden(true)
-               .toolbar {
-                   ToolbarItem(placement: .topBarLeading) {
-                       Button(action: {
-                           personalInfoVM.pageStep = .gender
-                       }, label: {
-                           Image("back")
-                               .resizable()
-                               .frame(width: 41, height: 41)
-                       })
-                   }
-               }
-               .toolbar {
-                         ToolbarItem(placement: .topBarTrailing) {
-                                 Image("Onboarding-5-Icon")
-                                     .resizable()
-                                     .frame(width: 32, height: 36)
-                         }
-                     }
+            .onAppear(perform: {
+                progressBarValue = 0.2
+                
+            })
         }
     }
 }
-
 #Preview {
     HeightView(personalInfoVM: PersonalInfosViewModel(), progressBarValue: .constant(0.2))
 }

@@ -11,24 +11,24 @@ import Combine
 
 class PersonalInfosViewModel : ObservableObject {
     @Published var pageStep : PersonalInfosModel.PersonalInfosFlow = .gender
-    @Published var kVKKEnabled = false
-    
-    var cancellables = Set<AnyCancellable>()
-    
-//    @AppStorage("personalInfos") static var personalInfoDataApp = PersonalInfosModel.PersonalInfos(gender: "", height: "", firstWeight: "", targetWeight: "", dateOfBirth: "", goals: [""])
-    
-    @Published var personalInfoData = PersonalInfosModel.PersonalInfos(gender: "", height: "", firstWeight: "", targetWeight: "", dateOfBirth: "", goals: [""])
-
+    @Published var isPersonalInfoFlowFinished = false
+    @Published var personalInfoData = PersonalInfosModel.PersonalInfos(gender: "",
+                                                                       heldHeight: "",
+                                                                       currentWeight: "",
+                                                                       goalWeight: "",
+                                                                       dateOfBirth: .now,
+                                                                       goals: "")
     
     @MainActor
-    func postPersonalInfo() async {
-        let response = await API.FITAI.personalInfo(param: personalInfoData).fetch(requestModel: PersonalInfosModel.PersonalInfos.self)
-        print("Personal Info response: ", response)
+    func getPersonalInfoRequest() async {
+        let response = await
+        API.FITAI.personalInfo(params: personalInfoData).fetch(requestModel: String.self)
         switch response {
         case .success(let model):
-            print("Personal Info model: ", model)
-        case .failure(let error):
-            AlertManager.showAlert(title: "Error", message: error.localizedDescription)
+            isPersonalInfoFlowFinished = true
+        case .failure(let failure):
+            AlertManager.showAlert(title: "Error!", message: failure.localizedDescription)
+            
         }
     }
 }

@@ -11,17 +11,15 @@ class ExerciseProgramViewModel: ObservableObject {
     
     @Published var pageStep: ExerciseProgramModel.ExerciseProgramFlow = .workoutPlans
     
-    @AppStorage("exerciseProgram") static var exerciseProgramDataApp = ExerciseProgramModel.ExerciseProgramInfo(healthProblem: "", preferredActivities: [""], workoutFrequency: "", focusAreas: [""])
+    @AppStorage("exerciseProgram") static var exerciseProgramDataApp = ExerciseProgramModel.ExerciseProgramInfo(healthProblem: "", sportOption: [""], sportFrequency: "", directArea: [""])
     
-    @Published var exerciseProgramData = ExerciseProgramModel.ExerciseProgramInfo(healthProblem: "", preferredActivities: [""], workoutFrequency: "", focusAreas: [""])
+    @Published var exerciseProgramData = ExerciseProgramModel.ExerciseProgramInfo(healthProblem: "", sportOption: [""], sportFrequency: "", directArea: [""])
     
-    @MainActor
-    func postWorkoutDetails() async {
-        let response = await API.FITAI.exerciseProgram(param: exerciseProgramData).fetch(requestModel: ExerciseProgramModel.ExerciseProgramInfo.self)
-        print("Workout Details response: ", response)
+    func getRegisterRequest() async {
+        let response = await API.FITAI.exerciseProgramQuestion(params: exerciseProgramData).fetch(requestModel: ExerciseProgramModel.ExerciseProgramInfo.self)
         switch response {
         case .success(let model):
-            print("Workout Details model: ", model)
+            print("Success")
         case .failure(let error):
             AlertManager.showAlert(title: "Error", message: error.localizedDescription)
         }

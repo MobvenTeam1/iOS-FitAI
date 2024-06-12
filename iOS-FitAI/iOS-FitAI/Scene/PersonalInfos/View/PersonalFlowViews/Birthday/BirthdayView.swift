@@ -10,7 +10,7 @@ import SwiftUI
 struct BirthdayView: View {
     @ObservedObject var personalInfoVM: PersonalInfosViewModel
     @Binding var progressBarValue: Double
-    @State var birthDate = Date.now
+    @State var birthDate: Date = Date.now
     var body: some View {
         ZStack{
             VStack{
@@ -29,7 +29,7 @@ struct BirthdayView: View {
                         .padding(12)
                         .border(.calenderBorder)
                     Image("calender")
-
+                    
                         .border(.calenderBorder)
                 }
                 .padding(8)
@@ -38,34 +38,26 @@ struct BirthdayView: View {
                     DatePicker(selection: $birthDate, displayedComponents: .date) {}
                         .labelsHidden()
                         .contentShape(Rectangle())
-                        .opacity(0.011)             // <<< here
+                        .opacity(0.011)
                 }
+                .padding()
                 Spacer()
                 MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext,buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.16
                     personalInfoVM.pageStep = .targets
                 }
+                
                 .padding(.bottom, 30)
             }
-            .navigationBarBackButtonHidden(true)
-               .toolbar {
-                   ToolbarItem(placement: .topBarLeading) {
-                       Button(action: {
-                           personalInfoVM.pageStep = .targetWeight
-                       }, label: {
-                           Image("back")
-                               .resizable()
-                               .frame(width: 41, height: 41)
-                       })
-                   }
-               }
-               .toolbar {
-                         ToolbarItem(placement: .topBarTrailing) {
-                                 Image("Onboarding-5-Icon")
-                                     .resizable()
-                                     .frame(width: 32, height: 36)
-                         }
-                     }
+            .onAppear(perform: {
+                progressBarValue = 0.8
+                
+            })
+            .onChange(of: birthDate) {
+                personalInfoVM.personalInfoData.dateOfBirth = birthDate
+            }
+            
+            
         }
     }
 }

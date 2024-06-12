@@ -13,34 +13,20 @@ struct TargetWeightView: View {
     var body: some View {
         ZStack{
             VStack{
+                
                 MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.targetWeightViewTitle)
-                MFAITextField(title: "46kg", keyboardType: .decimalPad, textfieldText: $personalInfoVM.personalInfoData.targetWeight.toUnwrapped(defaultValue: ""))
-                Spacer()
+                MFAITextField(title: "46kg", keyboardType: .decimalPad, textfieldText: $personalInfoVM.personalInfoData.goalWeight.toUnwrapped(defaultValue: ""))
+                .padding(.bottom, 400)
                 MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext,buttonBackgroundColor: .buttonGreen){
-                    progressBarValue += 0.16
                     personalInfoVM.pageStep = .birthDate
                 }
                 .padding(.bottom, 30)
+                .padding(.top, 28)
             }
-            .navigationBarBackButtonHidden(true)
-               .toolbar {
-                   ToolbarItem(placement: .topBarLeading) {
-                       Button(action: {
-                           personalInfoVM.pageStep = .currentWeight
-                       }, label: {
-                           Image("back")
-                               .resizable()
-                               .frame(width: 41, height: 41)
-                       })
-                   }
-               }
-               .toolbar {
-                         ToolbarItem(placement: .topBarTrailing) {
-                                 Image("Onboarding-5-Icon")
-                                     .resizable()
-                                     .frame(width: 32, height: 36)
-                         }
-                     }
+            .onAppear(perform: {
+                progressBarValue = 0.6
+                
+            })
         }
     }
 }

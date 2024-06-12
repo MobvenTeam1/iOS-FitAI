@@ -26,6 +26,11 @@ struct SpecialPlanView: View {
                     .multilineTextAlignment(.center)
                 Spacer()
             }
+            .onAppear(perform: {
+                Task{
+                    await self.exerciseVM.getRegisterRequest()
+                }
+            })
         }
     }
 }

@@ -10,7 +10,10 @@ import SwiftUI
 struct MFAITextField: View {
     let title: String
     var keyboardType: UIKeyboardType = .default
+    @State private var isFocused: Bool = false
+
     @Binding var textfieldText: String
+    
     var body: some View {
         TextField(title, text: $textfieldText)
             .keyboardType(keyboardType)
@@ -19,7 +22,6 @@ struct MFAITextField: View {
             .background {
                 Color.welcomeTextField
             }
-            .border(.textFieldBorder, width: 2)
             .clipShape(RoundedRectangle(cornerRadius: 8))
             .padding()
     }

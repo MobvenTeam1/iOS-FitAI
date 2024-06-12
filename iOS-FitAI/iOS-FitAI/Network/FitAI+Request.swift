@@ -15,6 +15,10 @@ public extension API {
         case exerciseProgram(param: ExerciseProgramModel.ExerciseProgramInfo)
         case training
         case userDetails
+        case register(params: RegisterModel.Request)
+        case training
+        case personalInfo(params: PersonalInfosModel.PersonalInfos)
+        case exerciseProgramQuestion(params: ExerciseProgramModel.ExerciseProgramInfo)
         
         
         public func request() async -> URLRequest {

@@ -15,9 +15,32 @@ struct RegisterView: View {
         ZStack{
             ScrollView{
                 VStack{
+                    HStack{
+                        Button {
+                            coordinator.show(.onboarding5)
+                                }label: {
+                                    Image("back")
+                                        .resizable()
+                                        .frame(width: 41, height: 41)
+                                        }
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                        
+                        Button {
+                            }label: {
+                                Image("Onboarding-5-Icon")
+                                    .resizable()
+                                    .frame(width: 41, height: 41)
+                                    }
+                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+                    }
+                
                     MFAIPersonalInfosHeaderView(title: RegisterModel.Constants.welcomeViewTitle)
+                        .font(.urbanistBold(size: 30))
+                        .bold()
                     MFAIText(title: RegisterModel.Constants.welcomeViewContent)
-                    Spacer()
+                        .padding(.trailing, 46)
+
+                        .font(.urbanistLight(size: 16))
                     MFAITextField(title: "Ad", textfieldText: $registerVM.registerInfoData.firstName.toUnwrapped(defaultValue: ""))
                         .frame(width: 327, height: 56)
                     
@@ -38,8 +61,25 @@ struct RegisterView: View {
                     
                     MFAITextField(title: "Parola Tekrar", textfieldText: $registerVM.registerInfoData.passwordConfirm.toUnwrapped(defaultValue: ""))
                         .frame(width: 327, height: 56)
-                    Spacer()
-                        .padding(.bottom)
+                    HStack{
+                        if registerVM.kVKKEnabled{
+                            Image(.on)
+                                .resizable()
+                                .frame(width: 17, height: 17)
+                                .scaledToFill()
+                        }else {
+                            Image(.ellipse)
+                                .resizable()
+                                .frame(width: 17, height: 17)
+                                .scaledToFill()
+                        }
+                        MFAIText(title: PersonalInfosModel.Constants.conditionAndPrivacy)
+                            .font(.caption)
+                            .onTapGesture {
+                                registerVM.kVKKEnabled.toggle()
+                            }
+                    }
+                    .padding(.top, 4)
                     MFAIButton(buttontitle: RegisterModel.Constants.buttonTextRegister,buttonBackgroundColor: .buttonGreen){
                         if registerVM.registerInfoData.password == registerVM.registerInfoData.passwordConfirm {
                             Task {
@@ -61,36 +101,35 @@ struct RegisterView: View {
 //                            AlertManager.showAlert(title: "Kullanıcı kaydı mevcut", message: "")
 //                        }
                     }
-                    .padding(.bottom, 20)
+                    .padding(.top, 8)
                     MFAIText(title: PersonalInfosModel.ButtonTextContext.haveAnAccount )
                         .onTapGesture {
                             coordinator.show(.login)
                         }
+                        .padding(.top,5)
                 }
                 .navigationBarBackButtonHidden(true)
-                .toolbar {
-                    ToolbarItem(placement: .topBarLeading) {
-                        Button(action: {}
-                               , label: {
-                            Image("back")
-                                .resizable()
-                                .frame(width: 41, height: 41)
-                        })
-                    }
-                    ToolbarItem(placement: .topBarTrailing) {
-                            Image("Onboarding-5-Icon")
-                                .resizable()
-                                .frame(width: 32, height: 36)
-                    }
-                }
-                .toolbar {
-                    
-                }
+//                .toolbar {
+//                    ToolbarItem(placement: .topBarLeading) {
+//                        Button(action: {
+//                            coordinator.show(.onboarding5)
+//                        }
+//                               , label: {
+//                            Image("back")
+//                                .resizable()
+//                                .frame(width: 41, height: 41)
+//                        })
+//                    }
+//                    ToolbarItem(placement: .topBarTrailing) {
+//                        Image("Onboarding-5-Icon")
+//                            .resizable()
+//                            .frame(width: 32, height: 36)
+//                    }
+//                }
             }
         }
     }
 }
-
 #Preview {
     @State var env = Coordinator<FlowRouter>()
     return RegisterView()

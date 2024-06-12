@@ -23,7 +23,7 @@ struct MFAISingleSelectionView: View {
         HStack {
             Image(iconSelected)
                 .resizable()
-                .frame(width:30,height: 30)
+                .frame(width:20,height: 20)
                 .aspectRatio(contentMode: .fit)
                 .padding(.leading)
             Text(title)
@@ -34,9 +34,16 @@ struct MFAISingleSelectionView: View {
             Spacer(minLength: 20)
             selectionTickChecker(title: title)
                 .padding(.trailing)
-                .frame(width: 40, height: 30)
+                .frame(width: 17, height: 17)
+                .background(title == selection.toEmpty ? .black : .red)
+            
+            if selection == title{
+                border(.buttonGreen)
+            }
         }
-        .frame(height: 50)
+        .frame(width: 327, height: 56)
+       
+       
         .onTapGesture {
             DispatchQueue.main.async {
                 self.selection = title
@@ -46,17 +53,19 @@ struct MFAISingleSelectionView: View {
     }
     
     
-    func selectionTickChecker(title: String) -> Image {
+    func selectionTickChecker(title: String) ->  Image {
         let image: Image
-        if selection == title {
-            image =  Image(.check)
-                .resizable()
-        } else {
+        if let selection,
+           selection == (title){
+                image =  Image(.check)
+                    .resizable()
+                   
+        }else {
             image = Image(.ellipse)
                 .resizable()
         }
         return image
-        
+    
     }
 }
 

@@ -39,15 +39,13 @@ public enum RegisterModel {
         var password: String?
         var passwordConfirm:String?
     }
-
-   public struct Response: Codable {
+    
+    public struct Response: Codable {
         let userToken: UserToken?
     }
-
-    // MARK: - UserToken
-    struct UserToken: Codable {
+    
+    public struct UserToken: Codable {
         let token: String?
         let isFirstLogin: Bool?
     }
 }
-

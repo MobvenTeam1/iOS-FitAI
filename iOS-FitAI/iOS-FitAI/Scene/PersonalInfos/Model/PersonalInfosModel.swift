@@ -22,39 +22,48 @@ public enum PersonalInfosModel {
     }
     enum ButtonTextContext {
         static let buttonTextNext = "Sonraki"
-        static let buttonTextOK = "Tamamlandı"  
+        static let buttonTextOK = "Tamamlandı"
         static let haveAnAccount = "Zaten hesabınız var mı? Giriş Yap"
     }
     
-   public struct PersonalInfos: Codable {
+    public struct PersonalInfos: Codable, RawRepresentable{
         init(
             gender: String? = nil,
-            height: String? = nil,
-            firstWeight: String? = nil,
-            targetWeight: String? = nil,
-            dateOfBirth: String? = nil,
-            goals: [String]? = nil)
+            heldHeight: String? = nil,
+            currentWeight: String? = nil,
+            goalWeight: String? = nil,
+            dateOfBirth: Date? = nil,
+            goals: String? = nil)
         {
             
             self.gender = gender
-            self.height = height
-            self.firstWeight = firstWeight
-            self.targetWeight = targetWeight
+            self.heldHeight = heldHeight
+            self.currentWeight = currentWeight
+            self.goalWeight = goalWeight
             self.dateOfBirth = dateOfBirth
             self.goals = goals
-        
+            
         }
         
         var gender: String?
-        var height: String?
-        var firstWeight: String?
-        var targetWeight: String?
-        var dateOfBirth: String?
-        var goals: [String]?
+        var heldHeight: String?
+        lazy var height: Int? = {
+            return Int(self.heldHeight ?? "0")
+        }()
+        var currentWeight: String?
+        lazy var firstWeight: Int? = {
+            return Int(self.currentWeight ?? "0")
+        }()
+        var goalWeight: String?
+        lazy var targetWeight: Int? = {
+            return Int(self.goalWeight ?? "0")
+        }()
+        var dateOfBirth: Date?
+        var goals: String?
         
     }
     
-    enum PersonalInfosFlow: String {
+    enum PersonalInfosFlow: Int {
         case welcome
         case gender
         case height
@@ -70,14 +79,14 @@ public enum PersonalInfosModel {
 struct CustomProgressViewStyle: ProgressViewStyle {
     var trackColor: Color
     var progressColor: Color
-
+    
     func makeBody(configuration: Configuration) -> some View {
         ZStack(alignment: .leading) {
             Rectangle()
                 .frame(height: 4)
                 .foregroundColor(trackColor)
                 .cornerRadius(4)
-
+            
             Rectangle()
                 .frame(width: (configuration.fractionCompleted ?? 0) * UIScreen.main.bounds.width, height: 8)
                 .foregroundColor(progressColor)
