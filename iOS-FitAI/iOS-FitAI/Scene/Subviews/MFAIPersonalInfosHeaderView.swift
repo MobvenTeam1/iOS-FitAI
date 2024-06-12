@@ -12,9 +12,11 @@ struct MFAIPersonalInfosHeaderView: View {
     var body: some View {
         HStack {
             Text(title)
-                .font(.title)
-            .foregroundStyle(.black)
-            .padding(.leading)
+                .font(.urbanistBold(size: 30))
+                .foregroundStyle(Color.black11_11)
+                .padding(.top, 12)
+                .padding(.leading, 32)
+                .padding(.bottom, -16)
             Spacer(minLength: 10)
         }
     }

@@ -39,9 +39,8 @@ struct MFAIButton: View {
                         .frame(width: 30,height: 40)
                 }
                 Text(buttontitle)
-                    .font(.title2)
-                    .foregroundStyle(.black)
-                    .fontWeight(.medium)
+                    .font(.urbanistSemibold(size: 16))
+                    .foregroundStyle(Color.black11_11)
                     
                 if let buttonBackImage {
                     buttonBackImage

@@ -45,21 +45,49 @@ struct BirthdayView: View {
                 MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext,buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.16
                     personalInfoVM.pageStep = .targets
+                    // Tarihi ISO 8601 formatına dönüştür
+                    //a
+                    if let isoDate = createFullDate(from: birthDate) {
+                        personalInfoVM.personalInfoData.dateOfBirth = isoDate
+                    }
+                    //b
                 }
-                
                 .padding(.bottom, 30)
+                
+                
+                
             }
             .onAppear(perform: {
                 progressBarValue = 0.8
                 
             })
-            .onChange(of: birthDate) {
-                personalInfoVM.personalInfoData.dateOfBirth = birthDate
-            }
+            //            .onChange(of: birthDate) {
+            //                personalInfoVM.personalInfoData.dateOfBirth = birthDate
+            //            }
             
+            //a
+            .onChange(of: birthDate) { newValue in
+                if let isoDate = createFullDate(from: newValue) {
+                    personalInfoVM.personalInfoData.dateOfBirth = isoDate
+                }
+            }
+            //b
             
         }
     }
+    //a
+    func createFullDate(from date: Date) -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)  // UTC zaman dilimi
+        
+        // Kullanıcıdan alınan tarihi string formatına çevirin
+        let dateString = DateFormatter.localizedString(from: date, dateStyle: .medium, timeStyle: .none)
+        let fullDateString = "\(dateString)T00:00:00.000Z"
+        
+        return dateFormatter.date(from: fullDateString)
+    }
+    //b
 }
 
 #Preview {
