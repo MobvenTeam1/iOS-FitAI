@@ -26,7 +26,7 @@ public enum PersonalInfosModel {
         static let haveAnAccount = "Zaten hesabınız var mı? Giriş Yap"
     }
     
-   public struct PersonalInfos: Codable, RawRepresentable {
+   public struct PersonalInfos: Codable {
         init(
             gender: String? = nil,
             height: String? = nil,
@@ -53,30 +53,6 @@ public enum PersonalInfosModel {
         var goals: [String]?
         
     }
-//    public struct PersonalInfos: Codable, RawRepresentable {
-//        init(
-//            gender: String? = nil,
-//            height: Int? = nil,
-//            firstWeight: Int? = nil,
-//            targetWeight: Int? = nil,
-//            dateOfBirth: String? = nil,
-//            goals: String? = nil)
-//        {
-//            self.gender = gender
-//            self.height = height
-//            self.firstWeight = firstWeight
-//            self.targetWeight = targetWeight
-//            self.dateOfBirth = dateOfBirth
-//            self.goals = goals
-//        }
-//        
-//        var gender: String?
-//        var height: Int?
-//        var firstWeight: Int?
-//        var targetWeight: Int?
-//        var dateOfBirth: String?
-//        var goals: String?
-//    }
     
     enum PersonalInfosFlow: String {
         case welcome
@@ -89,36 +65,6 @@ public enum PersonalInfosModel {
     }
     
     
-}
-
-extension PersonalInfosModel.PersonalInfos {
-    
-    public init?(rawValue: String) {
-        guard let data = rawValue.data(using: .utf8) else {
-            print("Hata: String'i verilere dönüştürme başarısız.")
-            return nil
-        }
-        guard let result = try? JSONDecoder().decode(PersonalInfosModel.PersonalInfos.self, from: data) else {
-            print("Hata: Verileri PersonalInfos'a decode etme başarısız.")
-            return nil
-        }
-        self = result
-    }
-    
-    public var rawValue: String {
-        do {
-            
-            let data = try JSONEncoder().encode(self)
-            guard let result = String(data: data, encoding: .utf8) else {
-                print("Hata: Verileri string'e dönüştürme başarısız.")
-                return "[]"
-            }
-            return result
-        } catch {
-            print("Hata: \(error)")
-            return "[]"
-        }
-    }
 }
 
 struct CustomProgressViewStyle: ProgressViewStyle {
