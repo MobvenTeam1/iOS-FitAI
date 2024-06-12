@@ -32,25 +32,32 @@ public enum ExerciseProgramModel {
         case healthProblem
         case sportOption
         case sportFrequency
-        case focusArea
+        case directArea
         case specialPlan
     }
     public struct ExerciseProgramInfo: Codable, RawRepresentable {
         init(healthProblem: String? = nil,
              sportOption: [String]? = nil,
              sportFrequency: String? = nil,
-             focusArea: [String]? = nil) 
+             directArea: [String]? = nil)
         {
             self.healthProblem = healthProblem
             self.sportOption = sportOption
             self.sportFrequency = sportFrequency
-            self.focusArea = focusArea
+            self.directArea = directArea
         }
         
         var healthProblem: String?
         var sportOption: [String]?
+        lazy var preferredActivities: String? = {
+            return sportOption?.joined(separator:"-")
+        }()
         var sportFrequency: String?
-        var focusArea: [String]?
+        var directArea: [String]?
+        lazy var focusArea: String? = {
+           return  directArea?.joined(separator: "-")
+        }()
+        
     }
 }
 

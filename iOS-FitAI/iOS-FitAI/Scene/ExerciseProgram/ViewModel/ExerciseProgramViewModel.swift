@@ -12,9 +12,9 @@ class ExerciseProgramViewModel: ObservableObject {
     
     @Published var pageStep: ExerciseProgramModel.ExerciseProgramFlow = .workoutPlans
     
-    @AppStorage("exerciseProgram") static var exerciseProgramDataApp = ExerciseProgramModel.ExerciseProgramInfo(healthProblem: "", sportOption: [""], sportFrequency: "", focusArea: [""])
+    @AppStorage("exerciseProgram") static var exerciseProgramDataApp = ExerciseProgramModel.ExerciseProgramInfo(healthProblem: "", sportOption: [""], sportFrequency: "", directArea: [""])
     
-    @Published var exerciseProgramData = ExerciseProgramModel.ExerciseProgramInfo(healthProblem: "", sportOption: [""], sportFrequency: "", focusArea: [""])
+    @Published var exerciseProgramData = ExerciseProgramModel.ExerciseProgramInfo(healthProblem: "", sportOption: [""], sportFrequency: "", directArea: [""])
     
     func getRegisterRequest() async {
         let response = await API.FITAI.exerciseProgramQuestion(params: exerciseProgramData).fetch(requestModel: ExerciseProgramModel.ExerciseProgramInfo.self)

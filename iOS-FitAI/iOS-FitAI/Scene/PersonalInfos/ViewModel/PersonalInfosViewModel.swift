@@ -12,7 +12,12 @@ import Combine
 class PersonalInfosViewModel : ObservableObject {
     @Published var pageStep : PersonalInfosModel.PersonalInfosFlow = .gender
     @Published var isPersonalInfoFlowFinished = false
-    @Published var personalInfoData = PersonalInfosModel.PersonalInfos(gender: "",height: "", firstWeight: "", targetWeight: "", dateOfBirth: "", goals: [""])
+    @Published var personalInfoData = PersonalInfosModel.PersonalInfos(gender: "",
+                                                                       heldHeight: "",
+                                                                       currentWeight: "",
+                                                                       goalWeight: "",
+                                                                       dateOfBirth: .now,
+                                                                       goals: "")
     
     @MainActor
     func getPersonalInfoRequest() async {

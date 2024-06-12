@@ -27,7 +27,9 @@ struct SpecialPlanView: View {
                 Spacer()
             }
             .onAppear(perform: {
-//                exerciseVM
+                Task{
+                    await self.exerciseVM.getRegisterRequest()
+                }
             })
         }
     }

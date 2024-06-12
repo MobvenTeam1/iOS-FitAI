@@ -22,27 +22,27 @@ public enum PersonalInfosModel {
     }
     enum ButtonTextContext{
         static let buttonTextNext = "Sonraki"
-        static let buttonTextOK = "Tamamlandı"  
+        static let buttonTextOK = "Tamamlandı"
         static let haveAnAccount = "Zaten hesabınız var mı? Giriş Yap"
     }
     
     public struct PersonalInfos: Codable, RawRepresentable{
         init(
             gender: String? = nil,
-            height: String? = nil,
-            firstWeight: String? = nil,
-            targetWeight: String? = nil,
-            dateOfBirth: String? = nil,
-            goals: [String]? = nil)
+            heldHeight: String? = nil,
+            currentWeight: String? = nil,
+            goalWeight: String? = nil,
+            dateOfBirth: Date? = nil,
+            goals: String? = nil)
         {
             
             self.gender = gender
-            self.heldHeight = height
-            self.currentWeight = firstWeight
-            self.goalWeight = targetWeight
+            self.heldHeight = heldHeight
+            self.currentWeight = currentWeight
+            self.goalWeight = goalWeight
             self.dateOfBirth = dateOfBirth
             self.goals = goals
-        
+            
         }
         
         var gender: String?
@@ -58,8 +58,8 @@ public enum PersonalInfosModel {
         lazy var targetWeight: Int? = {
             return Int(self.goalWeight ?? "0")
         }()
-        var dateOfBirth: String?
-        var goals:[String]?
+        var dateOfBirth: Date?
+        var goals: String?
         
     }
     
@@ -109,14 +109,14 @@ extension PersonalInfosModel.PersonalInfos {
 struct CustomProgressViewStyle: ProgressViewStyle {
     var trackColor: Color
     var progressColor: Color
-
+    
     func makeBody(configuration: Configuration) -> some View {
         ZStack(alignment: .leading) {
             Rectangle()
                 .frame(height: 4)
                 .foregroundColor(trackColor)
                 .cornerRadius(4)
-
+            
             Rectangle()
                 .frame(width: (configuration.fractionCompleted ?? 0) * UIScreen.main.bounds.width, height: 8)
                 .foregroundColor(progressColor)

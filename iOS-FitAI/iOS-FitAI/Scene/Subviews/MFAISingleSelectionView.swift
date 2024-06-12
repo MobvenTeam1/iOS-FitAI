@@ -35,6 +35,7 @@ struct MFAISingleSelectionView: View {
             selectionTickChecker(title: title)
                 .padding(.trailing)
                 .frame(width: 17, height: 17)
+                .background(title == selection.toEmpty ? .black : .red)
             
             if selection == title{
                 border(.buttonGreen)
@@ -54,19 +55,17 @@ struct MFAISingleSelectionView: View {
     
     func selectionTickChecker(title: String) ->  Image {
         let image: Image
-        if let selection{
-            if selection.contains(title){
+        if let selection,
+           selection == (title){
                 image =  Image(.check)
                     .resizable()
-            }else {
-                image = Image(.ellipse)
-                    .resizable()
-            }
+                   
         }else {
             image = Image(.ellipse)
                 .resizable()
         }
         return image
+    
     }
 }
 

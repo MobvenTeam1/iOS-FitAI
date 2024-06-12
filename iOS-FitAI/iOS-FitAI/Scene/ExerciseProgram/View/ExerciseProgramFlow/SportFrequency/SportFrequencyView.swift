@@ -21,7 +21,7 @@ struct SportFrequencyView: View {
                     .padding(.bottom, 8)
                 MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextNext,buttonBackgroundColor: .buttonGreen){
                     progressBarValue += 0.25
-                    exerciseVM.pageStep = .focusArea
+                    exerciseVM.pageStep = .directArea
                 }
                 .padding(.bottom, 30)
                 .padding(.top, 28)
