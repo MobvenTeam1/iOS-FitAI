@@ -20,7 +20,7 @@ final class HomePageViewModel: ObservableObject {
             }
             print("DEBUG: \(String(describing: self.trainingProgram))" )
         case .failure(let error):
-            print("123", error.localizedDescription, error)
+            print("Error: ", error.localizedDescription, error)
         }
     }
 }

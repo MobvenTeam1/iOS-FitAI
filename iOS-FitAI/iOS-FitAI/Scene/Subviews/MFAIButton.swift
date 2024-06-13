@@ -56,7 +56,7 @@ struct MFAIButton: View {
         .border(.clear, width: 12)
         .background{
             buttonBackgroundColor
-                .frame(width: 327, height: 60)
+                .frame(width: 327, height: 56)
                 .cornerRadius(12)
         }
        

@@ -55,8 +55,8 @@ struct DurationForExercise: View {
                     }
                 } else {
                     // Add new exercise if not exists
-//                    let newExercise = Exercise(name: exercise.name, secondaryText: exercise.secondaryText, imageName: exercise.imageName, calorie: exercise.calorie, duration: durationForExercise)
-//                    swiftDataModel.appendItem(newExercise)
+                    let newExercise = Exercise(name: exercise.name, secondaryText: exercise.secondaryText, imageName: exercise.imageName, calorie: exercise.calorie, duration: durationForExercise)
+                    swiftDataModel.appendItem(newExercise)
                 }
                 swiftDataModel.objectWillChange.send() // Notify views of change
             }

@@ -22,7 +22,7 @@ public enum API {
 
     static func getHeader(contentType: ContentType) -> [String: String] {
         var headers: [String: String] = [:]
-        headers["Authorization"] = "Bearer \(AppStorageManager.shared.userToken )"
+        headers["Authorization"] = "Bearer \(AppStorageManager.shared.userToken)"
         headers["Content-Type"] = contentType.rawValue
         return headers
     }

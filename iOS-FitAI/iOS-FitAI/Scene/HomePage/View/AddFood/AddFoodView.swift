@@ -48,5 +48,5 @@ struct AddFoodView: View {
 
 #Preview {
     AddFoodView()
-        .environmentObject(AddFoodViewModel())
+//        .environmentObject(AddFoodViewModel())
 }

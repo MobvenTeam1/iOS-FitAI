@@ -32,7 +32,7 @@ public enum PersonalInfosModel {
             heldHeight: String? = nil,
             currentWeight: String? = nil,
             goalWeight: String? = nil,
-            dateOfBirth: Date? = nil,
+            dateOfBirth: String? = nil,
             goals: String? = nil)
         {
             
@@ -58,7 +58,7 @@ public enum PersonalInfosModel {
         lazy var targetWeight: Int? = {
             return Int(self.goalWeight ?? "0")
         }()
-        var dateOfBirth: Date?
+        var dateOfBirth: String?
         var goals: String?
         
     }
