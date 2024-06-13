@@ -22,13 +22,13 @@ class PersonalInfosViewModel : ObservableObject {
     @MainActor
     func getPersonalInfoRequest() async {
         let response = await
-        API.FITAI.personalInfo(params: personalInfoData).fetch(requestModel: String.self)
+        API.FITAI.personalInfo(param: personalInfoData).fetch(requestModel: Bool.self)
         switch response {
         case .success(let model):
             isPersonalInfoFlowFinished = true
+            print("personal info: ", model)
         case .failure(let failure):
             AlertManager.showAlert(title: "Error!", message: failure.localizedDescription)
-            
         }
     }
 }

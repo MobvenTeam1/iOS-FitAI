@@ -9,20 +9,20 @@ import Foundation
 import SwiftData
 
 @Model
- class Exercise {
-     @Attribute(.unique) var id = UUID()
+class Exercise {
+    @Attribute(.unique) var id = UUID()
     let name: String
     let secondaryText: String
     let imageName: String
-     let calorie: String
-     var duration: String
-     init(id: UUID = UUID(), name: String, secondaryText: String, imageName: String, calorie: String, duration: String) {
+    let calorie: String
+    var duration: String
+    init(id: UUID = UUID(), name: String, secondaryText: String, imageName: String, calorie: String, duration: String) {
         self.id = id
         self.name = name
         self.secondaryText = secondaryText
         self.imageName = imageName
         self.calorie = calorie
-         self.duration = duration
+        self.duration = duration
     }
 }
 

@@ -12,9 +12,13 @@ struct FocusAreaView: View {
     @Binding var progressBarValue: Double
     @State var focusArea = ["Hepsi","Kolar","Göğüs","Bel","Kalça","Bacaklar"]
     @State var focusAreaIcon = ["all","arms","chest","waist","butt","leg"]
+    //a
+    @EnvironmentObject var coordinator: Coordinator<FlowRouter>
+    //b
     var body: some View {
         ZStack{
             VStack{
+
                   MFAIPersonalInfosHeaderView(title: ExerciseProgramModel.Constants.focusAreaViewtitle)
                   Spacer()
                   MFAIMultipleSelectionView(selectionList: $focusArea, selectionIconList: $focusAreaIcon, selections:     $exerciseVM.exerciseProgramData.directArea)

@@ -16,7 +16,6 @@ struct MFAISingleSelectionView: View {
         ForEach(Array(zip(selectionList, selectionIconList)),id: \.0) { title, iconSelected in
             VStack {
                 singleRow(title: title, iconSelected: iconSelected)
-                   
             }
         }
     }
@@ -33,6 +32,7 @@ struct MFAISingleSelectionView: View {
                 .font(.urbanistBlack(size: 15))
                 .padding(.trailing)
             Spacer(minLength: 20)
+            
             Image(selection == title ? .selectedGreenCheck : .nonSelectedCheck)
                 .resizable()
                 .frame(width: 20,height: 20)
@@ -54,5 +54,5 @@ struct MFAISingleSelectionView: View {
 }
 
 #Preview {
-    MFAISingleSelectionView(selectionList: .constant(["ddddd","ssssss"]), selectionIconList: .constant(["ddddd","ddddd"]), selection: .constant("ss"))
+    MFAISingleSelectionView(selectionList: .constant(["ddddd","ssssss"]), selectionIconList: .constant(["fitaiimage","ddddd"]), selection: .constant("ss"))
 }

@@ -15,18 +15,32 @@ struct MFAITextField: View {
     @Binding var textfieldText: String
     
     var body: some View {
-        TextField(title, text: $textfieldText)
-            .keyboardType(keyboardType)
-            .padding(.leading, 18)
-            .frame(width: 327, height: 56)
-            .background {
-                Color.welcomeTextField
-            }
-            .clipShape(RoundedRectangle(cornerRadius: 8))
-            .padding()
+        ZStack {
+            TextField("", text: $textfieldText)
+                .placeholder(when: textfieldText.isEmpty, placeholder: {
+                    Text(title)
+                })
+                .keyboardType(keyboardType)
+                .padding(.leading, 18)
+                .frame(width: 327, height: 56)
+                .background {
+                    Color.welcomeTextField
+                }
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color.gray232_232, lineWidth: 1)
+                )
+                .clipShape(RoundedRectangle(cornerRadius: 8))
+                .padding()
+//            Image(.visiblepw)
+        }
     }
 }
 
 #Preview {
-    MFAITextField(title: "String", textfieldText: .constant(""))
+//    MFAITextField(title: "String", textfieldText: .constant(""))
+    @State var env = Coordinator<FlowRouter>()
+    return RegisterView()
+        .environmentObject(env)
 }
+

@@ -12,14 +12,13 @@ struct Onboarding5View: View {
     @ObservedObject var onboardingScreen: OnboardingViewModel
     @ObservedObject var personalInfoVM: PersonalInfosViewModel
     var body: some View {
-        VStack{
+        VStack(spacing: 16) {
             Spacer(minLength: 50)
             Image("Onboarding-5-Icon")
                 .resizable()
-                .frame(width: 72, height: 81,   alignment: .center)
-            
-            MFAIText(title: "FitAI")
-            Spacer()
+                .frame(width: 72, height: 81, alignment: .center)
+            Image(.fitAIText)
+                .padding(.bottom, 180)
             MFAIButton(buttontitle: OnboardingModel.ButtonContent.buttonTextRegister, buttonBackgroundColor: .buttonGreen){
                 personalInfoVM.pageStep = .welcome
                 coordinator.show(.register)
@@ -29,10 +28,16 @@ struct Onboarding5View: View {
                        buttonBackgroundColor: .white) {
                 coordinator.show(.login)
             }
-            .padding(.bottom)
+            .overlay(
+            RoundedRectangle(cornerRadius: 12)
+                .stroke(Color.black11_11, lineWidth: 1)
+                .frame(width: 327, height: 56)
+                
+            )
         }
         .navigationBarBackButtonHidden(true)
         .padding(40)
+        .padding(.bottom, 40)
         .background{
             Image(.onboarding5)
                 .resizable()

@@ -12,6 +12,7 @@ struct GenderView: View {
     @State var genderList = ["Kadın","Erkek","Belirtmek istemiyorum"]
     @State var genderIconList = ["female","male","gender"]
     @Binding var progressBarValue: Double
+    @EnvironmentObject var coordinator: Coordinator<FlowRouter>
     var body: some View {
         ZStack {
             VStack {

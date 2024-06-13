@@ -21,6 +21,13 @@ public extension Networkable {
             
             switch response.statusCode {
                 
+            case 400:
+                let apiError = try JSONDecoder().decode(APIError.self, from: data)
+                return .failure(apiError)
+                
+            case 500:
+                let apiError = try JSONDecoder().decode(APIError.self, from: data)
+                return .failure(apiError)
             case 401:
                 return .failure(NSError.generic)
                 
@@ -41,13 +48,14 @@ public extension Networkable {
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
                 
-                let decodingData = try? decoder.decode(T.self, from: data)
-
-                        if let body = decodingData {
-                          return .success(body)
-                        } else {
-                          return .failure(NSError.generic)
-                        }
+                do {
+                    let decodedData =  try JSONDecoder().decode(T.self, from: data)
+                    return .success(decodedData)
+                } catch {
+                    print("Decoding error: ", error.localizedDescription)
+                    print("Decoding error: ", error)
+                    return .failure(NSError.generic)
+                }
             }
             
         } catch {

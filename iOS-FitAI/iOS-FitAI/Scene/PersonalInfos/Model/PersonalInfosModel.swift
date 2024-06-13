@@ -20,13 +20,13 @@ public enum PersonalInfosModel {
         static let conditionAndPrivacy = "Şartları ve gizlilik politikasını kabul ediyorum."
         
     }
-    enum ButtonTextContext{
+    enum ButtonTextContext {
         static let buttonTextNext = "Sonraki"
         static let buttonTextOK = "Tamamlandı"
         static let haveAnAccount = "Zaten hesabınız var mı? Giriş Yap"
     }
     
-    public struct PersonalInfos: Codable{
+    public struct PersonalInfos: Codable {
         init(
             gender: String? = nil,
             heldHeight: String? = nil,
@@ -75,7 +75,6 @@ public enum PersonalInfosModel {
     
     
 }
-
 
 
 struct CustomProgressViewStyle: ProgressViewStyle {

@@ -11,7 +11,8 @@ struct TargetsView: View {
     @ObservedObject var personalInfoVM: PersonalInfosViewModel
     @Binding var progressBarValue: Double
     @State var targetList = ["Kilo Kaybı","Kilo Alma","Kas Yapma","Sağlıklı Yaşam"]
-    @State var targetIconList = ["loseWeight","increase","muscleUp","healthyLife"]
+    @State var targetIconList = ["loseWeight","increase","muscleUp","healthyLife"]   
+
     var body: some View {
         ZStack{
             VStack{
@@ -19,6 +20,10 @@ struct TargetsView: View {
                     .padding(.bottom, 300)
                 MFAISingleSelectionView(selectionList: $targetList, selectionIconList: $targetIconList, selection: $personalInfoVM.personalInfoData.goals.toUnwrapped(defaultValue: ""))
                 MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextOK,buttonBackgroundColor: .buttonGreen){
+                    progressBarValue += 0.2
+                    Task {
+                        await personalInfoVM.getPersonalInfoRequest()
+                    }
                 }
                 .padding(30)
             }

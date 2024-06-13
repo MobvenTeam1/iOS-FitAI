@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+
 struct PersonalInfosView: View {
     @EnvironmentObject var coordinator: Coordinator<FlowRouter>
     @StateObject var viewmodel = PersonalInfosViewModel()
@@ -57,7 +59,6 @@ struct PersonalInfosView: View {
                 } else {
                     Text("There is nothing")
                 }
-                
             }
         }
         .onChange(of: viewmodel.isPersonalInfoFlowFinished) { changed in

@@ -17,6 +17,7 @@ struct HomePageView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
                     HelloView(userName: "Simge")
+//                    HelloView(userName: appState.userName )
                         .frame(height: 187)
                     ZStack(alignment: .center) {
                         Color.white
@@ -27,7 +28,7 @@ struct HomePageView: View {
                             CalendarView()
                             DailyTargetView()
                             AIPlanButtons(goToTrainingAIPage: $goToTrainingAIPage, goToNutritionAIPage: $goToNutritionAIPage)
-                            TrainingCategoriesView(imageName: ["pilates", "fitness", "HIIT"])
+                            TrainingCategoriesView(imageName: ["pilates", "fitnessHome", "HIIT"])
                             MealCategories(imageName: ["kahvaltı", "kahvaltı"],
                                            actions: [
                                             { print("Kahvaltı tıklandı")},
@@ -43,9 +44,9 @@ struct HomePageView: View {
             .toolbar(.hidden)
             .ignoresSafeArea()
         }
-//        .task {
-//            await homePageViewModel.getTraining()
-//        }
+        .task {
+            await homePageViewModel.getTraining()
+        }
     }
 }
 

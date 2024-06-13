@@ -7,22 +7,32 @@
 
 import Foundation
 import SwiftUI
-import Combine
+
+struct APIError: Decodable, Error {
+    let message: String?
+    let details: String?
+}
 
 class RegisterVM : ObservableObject {
-    var cancellables = Set<AnyCancellable>()
     @Published var kVKKEnabled = false
     @Published var registerInfoData = RegisterModel.Request(firstName: "", lastName: "", userName: "", email: "", password: "", passwordConfirm: "")
+    @Published var isRegisterSuccessful: Bool = false
     
     @MainActor
     func getRegisterRequest() async {
-        let response = await API.FITAI.register(params: registerInfoData).fetch(requestModel: RegisterModel.Response.self)
+        let response = await API.FITAI.register(param: registerInfoData).fetch(requestModel: RegisterModel.Response.self)
         switch response {
         case .success(let model):
-            AppStorageManager.shared.userToken = (model.userToken?.token).toEmpty
+            AppStorageManager.shared.userToken = (model.token).toEmpty
+            print("Register Token is", AppStorageManager.shared.userToken)
+            isRegisterSuccessful = true
         case .failure(let error):
-            AlertManager.showAlert(title: "Error", message: error.localizedDescription)
+            if let apiError = error as? APIError, let message = apiError.message {
+                           AlertManager.showAlert(title: "Error", message: message)
+                       } else {
+                           AlertManager.showAlert(title: "Error", message: error.localizedDescription)
+                       }
+            isRegisterSuccessful = false
         }
     }
 }
-

@@ -43,6 +43,7 @@ struct DurationForExercise: View {
             }
         }
     }
+
     private func updateExerciseDuration() {
             if let newDuration = Int(durationForExercise) {
                 if let existingIndex = swiftDataModel.items.firstIndex(where: { $0.name == exercise.name }) {

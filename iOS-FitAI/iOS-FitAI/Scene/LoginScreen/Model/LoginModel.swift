@@ -7,23 +7,20 @@
 
 import Foundation
 
-public enum LoginModel{
+public enum LoginModel {
     
-    public struct Request: Codable{
+    public struct Request: Codable {
         init(
             email: String? = nil,
-            password: String? = nil){
+            password: String? = nil) {
                 self.email = email
                 self.password = password
             }
         var email: String?
         var password: String?
     }
-    public struct Response: Codable {
-        let userToken: UserToken?
-    }
     
-    public struct UserToken: Codable {
+    public struct Response: Codable {
         let token: String?
         let isFirstLogin: Bool?
     }
