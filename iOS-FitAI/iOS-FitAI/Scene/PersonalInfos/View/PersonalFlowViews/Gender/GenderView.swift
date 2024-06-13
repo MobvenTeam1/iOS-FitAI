@@ -37,4 +37,5 @@ struct GenderView: View {
 
 #Preview {
     GenderView(personelInfoVM: PersonalInfosViewModel(), progressBarValue: .constant(0.2))
+        .environmentObject(Coordinator<FlowRouter>())
 }

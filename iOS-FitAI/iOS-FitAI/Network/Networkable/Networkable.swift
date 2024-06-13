@@ -21,8 +21,13 @@ public extension Networkable {
             
             switch response.statusCode {
                 
-//            case 400: // it should be 409 but it comes 400 from backend
-//                return .failure(NSError.genericError(message: "Bu e-posta ile daha önce kayıt oluşturuldu."))
+//            case 400:
+//                let apiError = try JSONDecoder().decode(APIError.self, from: data)
+//                return .failure(apiError)
+//                
+//            case 500:
+//                let apiError = try JSONDecoder().decode(APIError.self, from: data)
+//                return .failure(apiError)
             case 401:
                 return .failure(NSError.generic)
                 
@@ -42,7 +47,6 @@ public extension Networkable {
                 
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
-                
                 
                 do {
                     let decodedData =  try JSONDecoder().decode(T.self, from: data)

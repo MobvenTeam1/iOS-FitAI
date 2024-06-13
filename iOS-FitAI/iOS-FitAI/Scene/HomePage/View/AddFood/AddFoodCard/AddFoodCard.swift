@@ -11,7 +11,7 @@ struct AddFoodCard: View {
     let addFood: AddFood
     @State private var isButtonTapped: Bool = false
     @State private var isFoodFavorited: Bool = false
-    @EnvironmentObject var swiftDataVM: AddFoodViewModel
+//    @EnvironmentObject var swiftDataVM: AddFoodViewModel
     
     var body: some View {
         ZStack {
@@ -37,7 +37,7 @@ struct AddFoodCard: View {
                 }
                 HStack {
                     Button {
-                        swiftDataVM.toggleFavorite(for: addFood)
+//                        swiftDataVM.toggleFavorite(for: addFood)
                     }label: {
                         ZStack {
                             Circle()
@@ -51,9 +51,9 @@ struct AddFoodCard: View {
                     }
                     Button {
                         isButtonTapped = true
-                        swiftDataVM.appendItem(.init(name: addFood.name,
-                                                     secondaryText: addFood.secondaryText,
-                                                     imageName: addFood.imageName))
+//                        swiftDataVM.appendItem(.init(name: addFood.name,
+//                                                     secondaryText: addFood.secondaryText,
+//                                                     imageName: addFood.imageName))
                     }label: {
                         ZStack {
                             Circle()
@@ -75,5 +75,5 @@ struct AddFoodCard: View {
 
 #Preview {
     AddFoodView()
-        .environmentObject(AddFoodViewModel())
+//        .environmentObject(AddFoodViewModel())
 }

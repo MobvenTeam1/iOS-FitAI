@@ -35,7 +35,7 @@ struct MFAISingleSelectionView: View {
             selectionTickChecker(title: title)
                 .padding(.trailing)
                 .frame(width: 17, height: 17)
-                .background(title == selection.toEmpty ? .black : .red)
+                .background(title == selection.toEmpty ? Color.green177_235 : .white)
             
             if selection == title{
                 border(.buttonGreen)
@@ -70,5 +70,5 @@ struct MFAISingleSelectionView: View {
 }
 
 #Preview {
-    MFAISingleSelectionView(selectionList: .constant(["ddddd","ssssss"]), selectionIconList: .constant(["ddddd","ddddd"]), selection: .constant("ss"))
+    MFAISingleSelectionView(selectionList: .constant(["ddddd","ssssss"]), selectionIconList: .constant(["fitaiimage","ddddd"]), selection: .constant("ss"))
 }

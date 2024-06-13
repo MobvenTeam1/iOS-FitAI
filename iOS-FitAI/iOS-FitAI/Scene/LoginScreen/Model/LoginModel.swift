@@ -19,11 +19,8 @@ public enum LoginModel {
         var email: String?
         var password: String?
     }
-    public struct Response: Codable {
-        let userToken: UserToken?
-    }
     
-    public struct UserToken: Codable {
+    public struct Response: Codable {
         let token: String?
         let isFirstLogin: Bool?
     }

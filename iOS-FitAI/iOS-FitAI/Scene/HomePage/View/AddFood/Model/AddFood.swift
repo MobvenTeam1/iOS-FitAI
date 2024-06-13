@@ -1,8 +1,23 @@
 import SwiftData
 import Foundation
 
-@Model
-class AddFood {
+//@Model
+//class AddFood {
+//    @Attribute(.unique) var id = UUID()
+//    let name: String
+//    let secondaryText: String
+//    let imageName: String?
+//    var isFavorited: Bool = false
+//    init(id: UUID = UUID(), name: String, secondaryText: String, imageName: String?, isFavorited: Bool = false) {
+//        self.id = id
+//        self.name = name
+//        self.secondaryText = secondaryText
+//        self.imageName = imageName
+//        self.isFavorited = isFavorited
+//    }
+//}
+
+struct AddFood: Identifiable {
     @Attribute(.unique) var id = UUID()
     let name: String
     let secondaryText: String
@@ -29,16 +44,11 @@ extension AddFood {
     ]
 }
 
-@MainActor
-final class AddFoodViewModel: SwiftDataViewModel<AddFood, GenericDataSource<AddFood>> {
-    init() {
-        let dataSource = GenericDataSource<AddFood>()
-        super.init(dataSource: dataSource)
-    }
-    
-    func toggleFavorite(for food: AddFood) {
-        if let index = AddFoodViewModel().items.firstIndex(where: { $0.name == food.name }) {
-                   items[index].isFavorited.toggle()
-               }
-        }
-}
+//@MainActor
+//final class AddFoodViewModel: SwiftDataViewModel<AddFood, GenericDataSource<AddFood>> {
+//    init() {
+//        let dataSource = GenericDataSource<AddFood>()
+//        super.init(dataSource: dataSource)
+//    }
+//
+//}

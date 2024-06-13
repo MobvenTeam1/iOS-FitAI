@@ -28,7 +28,7 @@ struct HomePageView: View {
                             CalendarView()
                             DailyTargetView()
                             AIPlanButtons(goToTrainingAIPage: $goToTrainingAIPage, goToNutritionAIPage: $goToNutritionAIPage)
-                            TrainingCategoriesView(imageName: ["pilates", "fitness", "HIIT"])
+                            TrainingCategoriesView(imageName: ["pilates", "fitnessHome", "HIIT"])
                             MealCategories(imageName: ["kahvaltı", "kahvaltı"],
                                            actions: [
                                             { print("Kahvaltı tıklandı")},

@@ -95,8 +95,9 @@ struct RegisterView: View {
                             Task {
                                 await registerVM.getRegisterRequest()
                             }
+                            // TODO: Check if it's success to navigate
                             //a
-//                            coordinator.show(.personalInfos)
+                            coordinator.show(.personalInfos)
                             //b
                         } else {
                             AlertManager.showAlert(title: "Hata", message: "Şifreler aynı değil")
