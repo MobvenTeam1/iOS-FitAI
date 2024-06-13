@@ -95,16 +95,17 @@ struct RegisterView: View {
                             Task {
                                 await registerVM.getRegisterRequest()
                             }
-                            // TODO: Check if it's success to navigate
-                            //a
-                            coordinator.show(.personalInfos)
-                            //b
                         } else {
                             AlertManager.showAlert(title: "Hata", message: "Şifreler aynı değil")
                         }
                         validatePassword = true
                         createPassword()
                     }
+                    .onChange(of: registerVM.isRegisterSuccessful) { isSuccessful in
+                                if isSuccessful {
+                                    coordinator.show(.personalInfos)
+                                }
+                            }
                     .padding(.top, 8)
                    
                     MFAIText(title: PersonalInfosModel.ButtonTextContext.haveAnAccount )

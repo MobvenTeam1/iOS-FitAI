@@ -16,6 +16,7 @@ struct APIError: Decodable, Error {
 class RegisterVM : ObservableObject {
     @Published var kVKKEnabled = false
     @Published var registerInfoData = RegisterModel.Request(firstName: "", lastName: "", userName: "", email: "", password: "", passwordConfirm: "")
+    @Published var isRegisterSuccessful: Bool = false
     
     @MainActor
     func getRegisterRequest() async {
@@ -24,12 +25,14 @@ class RegisterVM : ObservableObject {
         case .success(let model):
             AppStorageManager.shared.userToken = (model.token).toEmpty
             print("Register Token is", AppStorageManager.shared.userToken)
+            isRegisterSuccessful = true
         case .failure(let error):
             if let apiError = error as? APIError, let message = apiError.message {
                            AlertManager.showAlert(title: "Error", message: message)
                        } else {
                            AlertManager.showAlert(title: "Error", message: error.localizedDescription)
                        }
+            isRegisterSuccessful = false
         }
     }
 }
