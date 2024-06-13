@@ -17,9 +17,8 @@ struct TargetsView: View {
             VStack{
                 MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.targetsViewTitle)
                     .padding(.bottom, 300)
-                MFAISingleSelectionView(selectionList: $targetList, selectionIconList: $targetIconList, selection: $personalInfoVM.personalInfoData.goals)
+                MFAISingleSelectionView(selectionList: $targetList, selectionIconList: $targetIconList, selection: $personalInfoVM.personalInfoData.goals.toUnwrapped(defaultValue: ""))
                 MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextOK,buttonBackgroundColor: .buttonGreen){
-                    progressBarValue += 0.2
                 }
                 .padding(30)
             }

@@ -16,7 +16,7 @@ class PersonalInfosViewModel : ObservableObject {
                                                                        heldHeight: "",
                                                                        currentWeight: "",
                                                                        goalWeight: "",
-                                                                       dateOfBirth: .now,
+                                                                       dateOfBirth: "",
                                                                        goals: "")
     
     @MainActor

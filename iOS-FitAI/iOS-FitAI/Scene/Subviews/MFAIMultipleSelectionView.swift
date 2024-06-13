@@ -21,14 +21,14 @@ struct MFAIMultipleSelectionView: View {
     }
         func singleRow(title: String, iconSelected: String) -> some View {
             HStack {
+                
                 Image(iconSelected)
                     .resizable()
                     .frame(width: 20,height: 20)
                     .aspectRatio(contentMode: .fit)
                     .padding(.leading)
                 Text(title)
-                    .font(.subheadline)
-                    .fontWeight(.regular)
+                    .font(.urbanistBlack(size: 15))
                     .padding(.trailing)
                 Spacer(minLength: 20)
                 selectionTickChecker(title: title)
@@ -40,6 +40,7 @@ struct MFAIMultipleSelectionView: View {
                 }
             }
             .frame(width: 327, height: 56)
+            
             .onTapGesture {
                 print("pressed")
                 if let selections{
@@ -57,14 +58,14 @@ struct MFAIMultipleSelectionView: View {
             let image: Image
             if let selections{
                 if selections.contains(title){
-                    image =  Image(.check)
+                    image =  Image(.selectedGreenCheck)
                         .resizable()
                 }else {
-                    image = Image(.ellipse)
+                    image = Image(.nonSelectedCheck)
                         .resizable()
                 }
             }else {
-                image = Image(.ellipse)
+                image = Image(.nonSelectedCheck)
                     .resizable()
             }
             return image

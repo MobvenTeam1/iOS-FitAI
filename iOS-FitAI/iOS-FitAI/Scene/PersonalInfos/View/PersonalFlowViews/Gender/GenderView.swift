@@ -17,23 +17,26 @@ struct GenderView: View {
             VStack {
                 MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.genderViewTitle)
                 Spacer(minLength: 50)
-                MFAISingleSelectionView(selectionList: $genderList, selectionIconList: $genderIconList, selection: $personelInfoVM.personalInfoData.gender)
+                MFAISingleSelectionView(selectionList: $genderList,
+                                        selectionIconList: $genderIconList, selection: $personelInfoVM.personalInfoData.gender.toUnwrapped(defaultValue: ""))
                     .padding(.bottom, 8)
-                MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext, buttonBackgroundColor: .buttonGreen) {
+                MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext, 
+                           buttonBackgroundColor: .buttonGreen) {
                     
                     personelInfoVM.pageStep = .height
                 }   
-                .padding(.bottom, 30)
-                .padding(.top, 28)
+                .padding(30)
+
             }
             .onAppear(perform: {
+                print("onAppear genderview")
                 progressBarValue = 0.0
-                
             })
         }
     }
 }
 
 #Preview {
-    GenderView(personelInfoVM: PersonalInfosViewModel(), progressBarValue: .constant(0.2))
+    @StateObject var vm = PersonalInfosViewModel()
+    return GenderView(personelInfoVM: vm, progressBarValue: .constant(0.0))
 }

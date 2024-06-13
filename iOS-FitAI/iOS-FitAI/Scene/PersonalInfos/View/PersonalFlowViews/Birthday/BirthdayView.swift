@@ -43,18 +43,17 @@ struct BirthdayView: View {
                 .padding()
                 Spacer()
                 MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext,buttonBackgroundColor: .buttonGreen){
-                    progressBarValue += 0.16
                     personalInfoVM.pageStep = .targets
                 }
                 
-                .padding(.bottom, 30)
+                .padding(30)
             }
             .onAppear(perform: {
                 progressBarValue = 0.8
                 
             })
             .onChange(of: birthDate) {
-                personalInfoVM.personalInfoData.dateOfBirth = birthDate
+                personalInfoVM.personalInfoData.dateOfBirth = birthDate.formattedDate()
             }
             
             

@@ -66,7 +66,7 @@ struct RegisterView: View {
                                 .frame(width: 17, height: 17)
                                 .scaledToFill()
                         }else {
-                            Image(.ellipse)
+                            Image(.nonSelectedCheck)
                                 .resizable()
                                 .frame(width: 17, height: 17)
                                 .scaledToFill()

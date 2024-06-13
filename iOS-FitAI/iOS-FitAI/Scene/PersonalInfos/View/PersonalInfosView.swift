@@ -22,28 +22,26 @@ struct PersonalInfosView: View {
                             if index > 0 {
                                 viewmodel.pageStep = PersonalInfosModel.PersonalInfosFlow(rawValue: index-1) ?? .gender
                             }
-                            
                         }
                     label: {
                         Image("back")
                             .resizable()
-                            .frame(width: 41, height: 41)
+                            .frame(width: 32, height: 36)
                     }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                    .frame(alignment: .topLeading)
                     }
-                    
                     Button {}
                 label: {
                     Image("Onboarding-5-Icon")
                         .resizable()
-                        .frame(width: 41, height: 41)
+                        .frame(width: 32, height: 36)
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+                .frame(maxWidth: .infinity,alignment: .topTrailing)
                 }
+                .padding(16)
                 ProgressView(value: progressBarValue)
                     .progressViewStyle(CustomProgressViewStyle(trackColor: .gray, progressColor: .buttonGreen))
                     .padding()
-                
                 if viewmodel.pageStep == .gender{
                     GenderView(personelInfoVM: viewmodel, progressBarValue: $progressBarValue)
                 }else if viewmodel.pageStep == .height{

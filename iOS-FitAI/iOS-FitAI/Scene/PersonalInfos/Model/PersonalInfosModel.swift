@@ -26,13 +26,13 @@ public enum PersonalInfosModel {
         static let haveAnAccount = "Zaten hesabınız var mı? Giriş Yap"
     }
     
-    public struct PersonalInfos: Codable, RawRepresentable{
+    public struct PersonalInfos: Codable{
         init(
             gender: String? = nil,
             heldHeight: String? = nil,
             currentWeight: String? = nil,
             goalWeight: String? = nil,
-            dateOfBirth: Date? = nil,
+            dateOfBirth: String? = nil,
             goals: String? = nil)
         {
             
@@ -58,7 +58,7 @@ public enum PersonalInfosModel {
         lazy var targetWeight: Int? = {
             return Int(self.goalWeight ?? "0")
         }()
-        var dateOfBirth: Date?
+        var dateOfBirth: String?
         var goals: String?
         
     }
@@ -76,35 +76,7 @@ public enum PersonalInfosModel {
     
 }
 
-extension PersonalInfosModel.PersonalInfos {
-    
-    public init?(rawValue: String) {
-        guard let data = rawValue.data(using: .utf8) else {
-            print("Hata: String'i verilere dönüştürme başarısız.")
-            return nil
-        }
-        guard let result = try? JSONDecoder().decode(PersonalInfosModel.PersonalInfos.self, from: data) else {
-            print("Hata: Verileri PersonalInfos'a decode etme başarısız.")
-            return nil
-        }
-        self = result
-    }
-    
-    public var rawValue: String {
-        do {
-            
-            let data = try JSONEncoder().encode(self)
-            guard let result = String(data: data, encoding: .utf8) else {
-                print("Hata: Verileri string'e dönüştürme başarısız.")
-                return "[]"
-            }
-            return result
-        } catch {
-            print("Hata: \(error)")
-            return "[]"
-        }
-    }
-}
+
 
 struct CustomProgressViewStyle: ProgressViewStyle {
     var trackColor: Color
