@@ -11,7 +11,7 @@ struct BirthdayView: View {
     @ObservedObject var personalInfoVM: PersonalInfosViewModel
     @Binding var progressBarValue: Double
     @State var birthDate: Date = Date.now
-    //    @State var birthDate: String = ""
+    
     var body: some View {
         ZStack{
             VStack{
@@ -43,7 +43,6 @@ struct BirthdayView: View {
                 .padding()
                 Spacer()
                 MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext,buttonBackgroundColor: .buttonGreen){
-                    progressBarValue += 0.16
                     personalInfoVM.pageStep = .targets
                 }
                 .padding(.bottom, 30)
@@ -51,11 +50,8 @@ struct BirthdayView: View {
             .onAppear(perform: {
                 progressBarValue = 0.8
             })
-            .onChange(of: birthDate) { newDate in
-                let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "yyyy-MM-dd"
-                personalInfoVM.personalInfoData.dateOfBirth = dateFormatter.string(from: newDate)
-                print(personalInfoVM.personalInfoData.dateOfBirth ?? "")
+            .onChange(of: birthDate) {
+                personalInfoVM.personalInfoData.dateOfBirth = birthDate.formattedDate()
             }
         }
     }

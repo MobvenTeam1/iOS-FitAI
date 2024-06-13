@@ -76,6 +76,7 @@ public enum PersonalInfosModel {
     
 }
 
+
 struct CustomProgressViewStyle: ProgressViewStyle {
     var trackColor: Color
     var progressColor: Color

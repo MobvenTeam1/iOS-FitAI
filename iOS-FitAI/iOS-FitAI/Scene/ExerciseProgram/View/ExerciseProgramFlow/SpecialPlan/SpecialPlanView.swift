@@ -12,6 +12,7 @@ struct SpecialPlanView: View {
     var body: some View {
         ZStack{
             VStack{
+                
                 Spacer()
                 Image("specialEllipse")
                     .resizable()

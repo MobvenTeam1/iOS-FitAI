@@ -120,6 +120,7 @@
 		1FCCD5FE2C153A9B00A726CA /* GenericDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCD5FD2C153A9B00A726CA /* GenericDataSource.swift */; };
 		1FCCD6032C165A9400A726CA /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCD6022C165A9400A726CA /* HomePageViewModel.swift */; };
 		1FCCD6072C165B8600A726CA /* TrainingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCD6062C165B8600A726CA /* TrainingModel.swift */; };
+		DD10B8482C1B41DE008EAB27 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD10B8472C1B41DE008EAB27 /* Date+Extension.swift */; };
 		DD2A75762C09E33300FFF114 /* Onboarding5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A75752C09E33300FFF114 /* Onboarding5View.swift */; };
 		DD2D24142BFF9C5200C97F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D24132BFF9C5200C97F36 /* AppDelegate.swift */; };
 		DD2D24182BFF9C5300C97F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D24172BFF9C5300C97F36 /* Assets.xcassets */; };
@@ -328,6 +329,7 @@
 		1FCCD5FD2C153A9B00A726CA /* GenericDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataSource.swift; sourceTree = "<group>"; };
 		1FCCD6022C165A9400A726CA /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
 		1FCCD6062C165B8600A726CA /* TrainingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingModel.swift; sourceTree = "<group>"; };
+		DD10B8472C1B41DE008EAB27 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		DD2A75752C09E33300FFF114 /* Onboarding5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding5View.swift; sourceTree = "<group>"; };
 		DD2D24102BFF9C5200C97F36 /* iOS-FitAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-FitAI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2D24132BFF9C5200C97F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -1369,6 +1371,7 @@
 			children = (
 				DDB407262C0BBBD100D4223E /* UIApplication+Extension.swift */,
 				DDAF84EE2C125D05009D2BB9 /* String+Extension.swift */,
+				DD10B8472C1B41DE008EAB27 /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1784,6 +1787,7 @@
 				DD7E528A2C107D8A00053555 /* Networkable.swift in Sources */,
 				1F63DDC12C1121FB0060B7D0 /* AddFoodView.swift in Sources */,
 				1F675D672C0FC940000F073A /* FoodItem.swift in Sources */,
+				DD10B8482C1B41DE008EAB27 /* Date+Extension.swift in Sources */,
 				1F156AFC2C0C7A4200F0E0DC /* CustomBackButton.swift in Sources */,
 				1F156C1A2C0D22CC00F0E0DC /* PasswordChangedImageAndText.swift in Sources */,
 				1F675D702C1075D3000F073A /* AddExerciseView.swift in Sources */,

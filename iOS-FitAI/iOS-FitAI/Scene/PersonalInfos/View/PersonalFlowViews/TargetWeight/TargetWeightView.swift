@@ -20,8 +20,7 @@ struct TargetWeightView: View {
                 MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext,buttonBackgroundColor: .buttonGreen){
                     personalInfoVM.pageStep = .birthDate
                 }
-                .padding(.bottom, 30)
-                .padding(.top, 28)
+                .padding(30)
             }
             .onAppear(perform: {
                 progressBarValue = 0.6
