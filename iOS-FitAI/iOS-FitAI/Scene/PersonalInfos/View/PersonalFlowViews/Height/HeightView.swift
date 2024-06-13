@@ -10,34 +10,35 @@ import SwiftUI
 struct HeightView: View {
     @ObservedObject var personalInfoVM: PersonalInfosViewModel
     @Binding var progressBarValue: Double
-    @State private var ifClicked: Bool = false
+    @State private var heightInput: String = ""  // Kullanıcıdan alınan inputu saklamak için geçici bir değişken
+    
     var body: some View {
-        ZStack{
-            VStack{
-//                ZStack {
-//                    
-//                    RoundedRectangle(cornerRadius: 16)
-//                        .stroke(.black, lineWidth: 1)
-//                        .frame(width: 200, height: 100)
-//                }
+        ZStack {
+            VStack {
                 MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.heightViewTitle)
                 MFAITextField(title: "155 cm",
                               keyboardType: .decimalPad,
-                              textfieldText: $personalInfoVM.personalInfoData.heldHeight.toUnwrapped(defaultValue: ""))
+                              textfieldText: $heightInput)
                 .padding(.bottom, 450)
-                MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext,buttonBackgroundColor: .buttonGreen){
-                    personalInfoVM.pageStep = .currentWeight
+                
+                MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext, buttonBackgroundColor: .buttonGreen) {
+                    if let heightDouble = Double(heightInput) {
+                        personalInfoVM.personalInfoData.height = heightDouble
+                        personalInfoVM.pageStep = .currentWeight
+                    } else {
+                        AlertManager.showAlert(title: "Error", message: "Invalid height input")
+                    }
+                   
                 }
                 .padding(30)
-
             }
-            .onAppear(perform: {
+            .onAppear {
                 progressBarValue = 0.2
-                
-            })
+            }
         }
     }
 }
+
 #Preview {
     HeightView(personalInfoVM: PersonalInfosViewModel(), progressBarValue: .constant(0.2))
 }
