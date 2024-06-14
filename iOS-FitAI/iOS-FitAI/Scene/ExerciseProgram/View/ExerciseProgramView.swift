@@ -14,10 +14,11 @@ struct ExerciseProgramView: View {
     var body: some View {
         ZStack{
             VStack{
-                ProgressView(value: progressBarValue)
-                    .progressViewStyle(CustomProgressViewStyle(trackColor: .gray, progressColor: .buttonGreen))
-                    .frame(width: 327, height: 4)
-                    .padding(.top)
+                    ProgressView(value: progressBarValue)
+                        .progressViewStyle(CustomProgressViewStyle(trackColor: .gray, progressColor: .buttonGreen))
+                        .frame(width: 327, height: 4)
+                        .padding(.top)
+                    
                 if viewmodel.pageStep == .workoutPlans{
                     WorkoutPlansView(exerciseVM: viewmodel)
                 }else if viewmodel.pageStep == .healthProblem{

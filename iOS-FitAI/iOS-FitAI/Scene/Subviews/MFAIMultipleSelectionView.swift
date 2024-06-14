@@ -35,12 +35,7 @@ struct MFAIMultipleSelectionView: View {
                     .padding(.trailing)
                     .frame(width: 17, height: 17)
                 
-                if selections == [title]{
-                    border(.buttonGreen)
-                }
             }
-            .frame(width: 327, height: 56)
-            
             .onTapGesture {
                 print("pressed")
                 if let selections{
@@ -53,6 +48,9 @@ struct MFAIMultipleSelectionView: View {
                 }
                 
             }
+            .frame(height: 56)
+            .cornerRadius(8)
+            .padding(.horizontal)
         }
         func selectionTickChecker(title: String) -> Image {
             let image: Image

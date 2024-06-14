@@ -49,6 +49,7 @@ struct MFAISingleSelectionView: View {
         }
         .frame(height: 56)
         .border(selection == title ? .buttonGreen : .clear)
+        .cornerRadius(8)
         .padding(.horizontal)
     }
 }
