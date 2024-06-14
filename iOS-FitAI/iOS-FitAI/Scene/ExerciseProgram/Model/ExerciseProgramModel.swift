@@ -43,15 +43,15 @@ public enum ExerciseProgramModel {
         var healthProblem: String?
         
         init(
-            preferredActivities: String? = nil,
-            workoutFrequency: String? = nil,
-            focusAreas: String? = nil,
-            healthProblem: String? = nil)
+            preferredActivities: String? = "Hepsi",
+            workoutFrequency: String? = "Haftada 3-4",
+            focusAreas: String? = "Pilates",
+            healthProblem: String? = "Yok")
         {
-            self.preferredActivities = preferredActivities
-            self.workoutFrequency = workoutFrequency
-            self.focusAreas = focusAreas
-            self.healthProblem = healthProblem
+            self.preferredActivities = preferredActivities ?? "Hepsi"
+            self.workoutFrequency = workoutFrequency ?? "Haftada 3-4"
+            self.focusAreas = focusAreas ?? "Pilates"
+            self.healthProblem = healthProblem ?? "Yok"
         }
     }
 }

@@ -18,15 +18,14 @@ final class ExerciseProgramViewModel: ObservableObject {
 //    @Published var exerciseProgramData = ExerciseProgramModel.ExerciseProgramInfo(healthProblem: "Hayır", sportOption: [""], sportFrequency: "Haftada 3-4", directArea: ["Ketojenik"])
 
     @Published var exerciseProgramData = ExerciseProgramModel.ExerciseProgramInfo(preferredActivities: "", workoutFrequency: "", focusAreas: "", healthProblem: "")
-//    
+//
     @MainActor
     func getExercise() async {
         let response = await
         API.FITAI.exerciseProgramQuestion(params: exerciseProgramData).fetch(requestModel: Bool.self)
         switch response {
-        case .success:
+        case .success(let data):
             print("Exercise program sent")
-//            isPersonalInfoFlowFinished = true
         case .failure(let failure):
             AlertManager.showAlert(title: "Error!", message: failure.localizedDescription)
         }

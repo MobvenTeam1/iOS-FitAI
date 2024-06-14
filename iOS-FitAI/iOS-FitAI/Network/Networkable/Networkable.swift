@@ -21,13 +21,13 @@ public extension Networkable {
             
             switch response.statusCode {
                 
-                //            case 400:
-                //                let apiError = try JSONDecoder().decode(APIError.self, from: data)
-                //                return .failure(apiError)
-                //
-                //            case 500:
-                //                let apiError = try JSONDecoder().decode(APIError.self, from: data)
-                //                return .failure(apiError)
+                            case 400:
+                                let apiError = try JSONDecoder().decode(APIError.self, from: data)
+                                return .failure(apiError)
+                
+                            case 500:
+                                let apiError = try JSONDecoder().decode(APIError.self, from: data)
+                                return .failure(apiError)
                 
                 
             case 401:

@@ -25,9 +25,9 @@ struct FocusAreaView: View {
                 MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextCreate,buttonBackgroundColor: .buttonGreen){
                     
                     //aa
-                    //                    Task {
-                    //                        await exerciseVM.getExercise()
-                    //                    }
+                                        Task {
+                                            await exerciseVM.getExercise()
+                                        }
                     //bb
                     
                     exerciseVM.pageStep = .specialPlan
