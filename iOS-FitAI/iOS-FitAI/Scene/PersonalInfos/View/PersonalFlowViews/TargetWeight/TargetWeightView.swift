@@ -37,7 +37,7 @@ struct TargetWeightView: View {
     var body: some View {
         ZStack {
             VStack {
-                                MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.targetWeightViewTitle)
+                MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.targetWeightViewTitle)
                 MFAITextField(title: "46 kg",
                               keyboardType: .decimalPad,
                               textfieldText: $targetWeightInput)
