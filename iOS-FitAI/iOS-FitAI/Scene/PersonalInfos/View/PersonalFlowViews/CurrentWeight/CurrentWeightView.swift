@@ -10,22 +10,31 @@ import SwiftUI
 struct CurrentWeightView: View {
     @ObservedObject var personalInfoVM: PersonalInfosViewModel
     @Binding var progressBarValue: Double
-
+    @State private var currentWeightInput: String = ""
+    
     var body: some View {
-        ZStack{
-            VStack{
+        ZStack {
+            VStack {
                 MFAIPersonalInfosHeaderView(title: PersonalInfosModel.Constants.currentWeightViewTitle)
-                MFAITextField(title: "50kg", keyboardType: .decimalPad, textfieldText: $personalInfoVM.personalInfoData.currentWeight.toUnwrapped(defaultValue: ""))
-                    .padding(.bottom, 400)
-                MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext,buttonBackgroundColor: .buttonGreen){
-                    personalInfoVM.pageStep = .targetWeight
+                MFAITextField(title: "55 kg",
+                              keyboardType: .decimalPad,
+                              textfieldText: $currentWeightInput)
+                .padding(.bottom, 450)
+                
+                MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext, buttonBackgroundColor: .buttonGreen) {
+                    if let currentWeightDouble = Double(currentWeightInput) {
+                        personalInfoVM.personalInfoData.firstWeight = currentWeightDouble
+                        personalInfoVM.pageStep = .targetWeight
+                    } else {
+                        AlertManager.showAlert(title: "Error", message: "Invalid weight input")
+                    }
+                    
                 }
                 .padding(30)
             }
-            .onAppear(perform: {
+            .onAppear {
                 progressBarValue = 0.4
-                
-            })
+            }
         }
     }
 }

@@ -20,14 +20,12 @@ struct GenderView: View {
                 Spacer(minLength: 50)
                 MFAISingleSelectionView(selectionList: $genderList,
                                         selectionIconList: $genderIconList, selection: $personelInfoVM.personalInfoData.gender.toUnwrapped(defaultValue: ""))
-                    .padding(.bottom, 8)
-                MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext, 
+                .padding(.bottom, 8)
+                MFAIButton(buttontitle: PersonalInfosModel.ButtonTextContext.buttonTextNext,
                            buttonBackgroundColor: .buttonGreen) {
-                    
                     personelInfoVM.pageStep = .height
-                }   
-                .padding(30)
-
+                }
+                           .padding(30)
             }
             .onAppear(perform: {
                 print("onAppear genderview")
