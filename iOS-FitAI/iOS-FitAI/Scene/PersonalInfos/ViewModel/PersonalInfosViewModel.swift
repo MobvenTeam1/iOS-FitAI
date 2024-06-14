@@ -19,7 +19,6 @@ class PersonalInfosViewModel : ObservableObject {
         switch response {
         case .success(let model):
             isPersonalInfoFlowFinished = true
-            print("personal info: ", model)
             print(personalInfoData)
         case .failure(let failure):
             AlertManager.showAlert(title: "Error!", message: failure.localizedDescription)

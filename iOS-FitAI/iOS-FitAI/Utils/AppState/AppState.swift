@@ -7,10 +7,11 @@
 
 import SwiftUI
 
-class AppState: ObservableObject {
+final class AppState: ObservableObject {
+    static let shared = AppState()
     @Published var isLoginSuccessful: Bool = false
     @Published var selectedIndex: Int = 0 // use it for tabBar
-    @Published var isTrainingPlanned: Bool = false
+    @Published var isTrainingPlanned: Bool = false //appstorage dene
     @Published var isTrainingTapped: Bool = false
     @Published var isNutritionPlanned: Bool = false
     @Published var isNutritionTapped: Bool = false
@@ -23,4 +24,7 @@ class AppState: ObservableObject {
     @Published var isaddExerciseButtonTapped: Bool = false
     
     @Published var userName: String = ""
+    //a
+    @Published var showAnimation: Bool = false
+    //b
 }

@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct TrainingPlannedView: View {
-    @StateObject var homePageVM = HomePageViewModel()
-    
+    @EnvironmentObject var homePageVM: HomePageViewModel
+    @State private var isNavigate: Bool = false
     var body: some View {
         VStack {
             Text("Setler")
@@ -17,7 +17,11 @@ struct TrainingPlannedView: View {
                 .foregroundStyle(Color.black26_27)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 52)
-            if let trainingProgram = homePageVM.trainingProgram {
+            if homePageVM.isLoading {
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle())
+                    .padding()
+            } else if let trainingProgram = homePageVM.trainingProgram {
                 ForEach(trainingProgram.keys.sorted(), id: \.self) { key in
                     if let value = trainingProgram[key] {
                         ZStack {
@@ -42,19 +46,26 @@ struct TrainingPlannedView: View {
                         .frame(width: 287, height: 74)
                     }
                 }
-            } else {
-                Text("Veri yok")
-                    .font(.urbanistRegular(size: 14))
-                    .foregroundColor(Color.gray)
+            }
+            GreenButtonView(text: "Antrenmanını Görüntüle") {
+               isNavigate = true
             }
         }
         .padding()
-        // TODO: move this .task to homepageview after show it tuesday
-        .task {
-            await homePageVM.getTraining()
+        .onAppear {
+                    if homePageVM.trainingProgram == nil {
+                        Task {
+                            await homePageVM.getTraining()
+                        }
+                    }
+                }
+        .navigationDestination(isPresented: $isNavigate) {
+            TrainingProgramView()
         }
     }
 }
+
 #Preview {
     TrainingPlannedView()
+        .environmentObject(HomePageViewModel())
 }

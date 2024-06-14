@@ -27,7 +27,8 @@ open class Coordinator<Router: NavigationRouter>: ObservableObject {
     public func show(_ route: Router, animated: Bool = true) {
         let view = route.view()
         let viewWithCoordinator = view.environmentObject(self)
-            .environmentObject(AppState())
+            .environmentObject(AppState.shared)
+            .environmentObject(HomePageViewModel())
             .environmentObject(MyModelViewModel())
 //            .environmentObject(AddFoodViewModel())
             .navigationBarHidden(true)

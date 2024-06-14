@@ -7,7 +7,7 @@
 
 import SwiftUI
 struct CountdownTimerView: View {
-    @State private var timeRemaining = 20
+    @State private var timeRemaining = 60
     @State private var timerActive = false
     @State private var timer: Timer?
     @EnvironmentObject var appState: AppState
@@ -64,7 +64,7 @@ struct CountdownTimerView: View {
     
     func startTimer() {
         timerActive = true
-        timeRemaining = 3
+        timeRemaining = 60
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
             if self.timeRemaining > 0 {
                 self.timeRemaining -= 1

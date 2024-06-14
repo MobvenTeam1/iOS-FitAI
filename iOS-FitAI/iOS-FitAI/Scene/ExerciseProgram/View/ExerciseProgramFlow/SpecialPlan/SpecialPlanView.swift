@@ -9,15 +9,14 @@ import SwiftUI
 
 struct SpecialPlanView: View {
     @ObservedObject var exerciseVM: ExerciseProgramViewModel
+    @EnvironmentObject var coordinator: Coordinator<FlowRouter>
     var body: some View {
-        ZStack{
-            VStack{
-                
+        ZStack {
+            VStack {
                 Spacer()
-                Image("specialEllipse")
+                Image(.starforanimation)
                     .resizable()
                     .frame(width: 176, height: 176)
-                
                 MFAIText(title: ExerciseProgramModel.Constants.specialPlansViewTitle)
                     .bold()
                     .font(.title2)
@@ -28,14 +27,14 @@ struct SpecialPlanView: View {
                 Spacer()
             }
             .onAppear(perform: {
-                Task{
-                    await self.exerciseVM.getRegisterRequest()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    coordinator.show(.animatedStarView)
                 }
             })
         }
     }
 }
 
-#Preview {
-    SpecialPlanView(exerciseVM: ExerciseProgramViewModel())
-}
+//#Preview {
+//    SpecialPlanView(exerciseVM: ExerciseProgramViewModel())
+//}

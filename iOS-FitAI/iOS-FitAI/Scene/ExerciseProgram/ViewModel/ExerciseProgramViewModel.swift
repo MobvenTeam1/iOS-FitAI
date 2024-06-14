@@ -7,21 +7,28 @@
 
 import SwiftUI
 
-class ExerciseProgramViewModel: ObservableObject {
+final class ExerciseProgramViewModel: ObservableObject {
     
-    @Published var pageStep: ExerciseProgramModel.ExerciseProgramFlow = .workoutPlans
+//    @Published var pageStep: ExerciseProgramModel.ExerciseProgramFlow = .workoutPlans
     
-    @AppStorage("exerciseProgram") static var exerciseProgramDataApp = ExerciseProgramModel.ExerciseProgramInfo(healthProblem: "", sportOption: [""], sportFrequency: "", directArea: [""])
+    @Published var pageStep: ExerciseProgramModel.ExerciseProgramFlow = .healthProblem
     
-    @Published var exerciseProgramData = ExerciseProgramModel.ExerciseProgramInfo(healthProblem: "", sportOption: [""], sportFrequency: "", directArea: [""])
-    
-    func getRegisterRequest() async {
-        let response = await API.FITAI.exerciseProgramQuestion(params: exerciseProgramData).fetch(requestModel: ExerciseProgramModel.ExerciseProgramInfo.self)
+//    @AppStorage("exerciseProgram") static var exerciseProgramDataApp = ExerciseProgramModel.ExerciseProgramInfo(healthProblem: "", sportOption: [""], sportFrequency: "", directArea: [""])
+//    
+//    @Published var exerciseProgramData = ExerciseProgramModel.ExerciseProgramInfo(healthProblem: "Hayır", sportOption: [""], sportFrequency: "Haftada 3-4", directArea: ["Ketojenik"])
+
+    @Published var exerciseProgramData = ExerciseProgramModel.ExerciseProgramInfo(preferredActivities: "", workoutFrequency: "", focusAreas: "", healthProblem: "")
+//    
+    @MainActor
+    func getExercise() async {
+        let response = await
+        API.FITAI.exerciseProgramQuestion(params: exerciseProgramData).fetch(requestModel: Bool.self)
         switch response {
-        case .success(let model):
-            print("Success")
-        case .failure(let error):
-            AlertManager.showAlert(title: "Error", message: error.localizedDescription)
+        case .success:
+            print("Exercise program sent")
+//            isPersonalInfoFlowFinished = true
+        case .failure(let failure):
+            AlertManager.showAlert(title: "Error!", message: failure.localizedDescription)
         }
     }
 }

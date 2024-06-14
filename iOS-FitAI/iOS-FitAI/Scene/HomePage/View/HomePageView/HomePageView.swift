@@ -11,13 +11,13 @@ struct HomePageView: View {
     @State private var goToTrainingAIPage: Bool = false
     @State private var goToNutritionAIPage: Bool = false
     @EnvironmentObject var appState: AppState
-    @StateObject var homePageViewModel = HomePageViewModel()
+    @StateObject var userDetailsVM = UserDetailsViewModel()
     var body: some View {
         NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
-                    HelloView(userName: "Simge")
-//                    HelloView(userName: appState.userName )
+//                    HelloView(userName: "Simge")
+                    HelloView(userName: userDetailsVM.userDetails?.firstName ?? "Ahmet")
                         .frame(height: 187)
                     ZStack(alignment: .center) {
                         Color.white
@@ -45,7 +45,7 @@ struct HomePageView: View {
             .ignoresSafeArea()
         }
         .task {
-            await homePageViewModel.getTraining()
+            await userDetailsVM.getUserDetails()
         }
     }
 }

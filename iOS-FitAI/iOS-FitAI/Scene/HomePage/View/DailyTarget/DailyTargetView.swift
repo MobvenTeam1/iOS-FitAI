@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct DailyTargetView: View {
-    @State private var kgLeftToTarget: Int = 5
     @State private var addExercise: Bool = false
     @State private var addFood: Bool = false
     @StateObject var userDetailsVM = UserDetailsViewModel()
@@ -27,11 +26,13 @@ struct DailyTargetView: View {
                     addFood = true
                 }
             }
-            CircularProgressView(totalKgToLose: 10, kgToLoseForTarget: 5)
-            Text("Hedefe kalan: \(kgLeftToTarget) kg")
+            CircularProgressView(totalKgToLose: 10, kgToLoseForTarget: 7.2)
             HStack(spacing: 8) {
                 CaloriesView(imageName: "alınan", firstText: "Alınan Kalori", calorieText: "950 cal")
-                CaloriesView(imageName: "harcanan", firstText: "Harcanan Kalori", calorieText: "1300 cal")
+//                CaloriesView(imageName: "harcanan", firstText: "Harcanan Kalori", calorieText: "1800 cal")
+                if let basalMetabolism = userDetailsVM.userDetails?.basalMetabolism {
+                    CaloriesView(imageName: "harcanan", firstText: "Harcanan Kalori", calorieText: String(describing: basalMetabolism) + " cal")
+                }
 //                CaloriesView(imageName: "dailycalorie", firstText: "Günlük Hedef", calorieText: "2500 cal")
                 if let goalCalorie = userDetailsVM.userDetails?.dailyKcalGoal {
                     CaloriesView(imageName: "dailycalorie",
@@ -42,15 +43,15 @@ struct DailyTargetView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.leading, 33)
         }
+        .task {
+            await userDetailsVM.getUserDetails()
+        }
         .padding(.top, 20)
         .navigationDestination(isPresented: $addExercise) {
             AddExerciseView()
         }
         .navigationDestination(isPresented: $addFood) {
             AddFoodView()
-        }
-        .task {
-            await userDetailsVM.getUserDetails()
         }
     }
 }

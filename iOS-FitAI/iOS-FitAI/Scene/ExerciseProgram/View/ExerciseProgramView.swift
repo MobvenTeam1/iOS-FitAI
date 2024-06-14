@@ -11,6 +11,9 @@ struct ExerciseProgramView: View {
     @StateObject var viewmodel = ExerciseProgramViewModel()
     @State var progressBarValue: Double = 0.0
     @State var progressBarView = ProgressView()
+    //a
+    @State private var showAnimation: Bool = false
+    //b
     var body: some View {
         ZStack{
             VStack{
@@ -36,6 +39,6 @@ struct ExerciseProgramView: View {
     }
 }
 
-#Preview {
-    ExerciseProgramView()
-}
+//#Preview {
+//    ExerciseProgramView()
+//}

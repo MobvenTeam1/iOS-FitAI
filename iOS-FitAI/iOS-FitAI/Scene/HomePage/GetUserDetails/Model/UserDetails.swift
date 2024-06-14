@@ -7,7 +7,9 @@
 
 import Foundation
 
+// MARK: - UserDetails
 struct UserDetails: Codable {
+    let userName, firstName, lastName, email: String?
     let gender: String?
     let height, firstWeight: Int?
     let dateOfBirth: String?
@@ -15,4 +17,4 @@ struct UserDetails: Codable {
     let goals, preferredActivities, workoutFrequency, focusAreas: String?
     let healthProblem: String?
     let basalMetabolism, dailyKcalGoal: Int?
-}
+    }

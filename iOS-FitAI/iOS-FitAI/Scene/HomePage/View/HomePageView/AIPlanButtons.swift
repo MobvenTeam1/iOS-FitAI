@@ -20,20 +20,18 @@ struct AIPlanButtons: View {
                 }
             } else {
                 TrainingPlannedSubView(isTrainingTapped: $appState.isTrainingTapped,
-                                       typeOfExercise: userDetailsVM.userDetails?.preferredActivities ?? "",
-//                                       typeOfExercise: "Pilates",
-                                       duration: "15 dakika",
-                                       calories: "150 kcal")
-            }
+                                       typeOfExercise: userDetailsVM.userDetails?.preferredActivities ?? ""
+//                                       typeOfExercise: "Pilates",)
+            )}
+                                       
             if !appState.isNutritionPlanned {
                 PersonalizedPlanButton(imageName: "beslenme", text: "Kişiselleştirilmiş Beslenme\nPlanını Oluştur ") {
                     startNutritionPlan()
                 }
             } else {
                 NutritionPlanningSubView(isNutritionTapped: $appState.isNutritionTapped,
-                                         typeOfMeal: "Kahvaltı",
-                                         duration: "15 dakika",
-                                         calories: "515 kcal")
+                                         typeOfMeal: "Kahvaltı"
+                                        )
             }
         }
         .task {
@@ -53,4 +51,9 @@ struct AIPlanButtons: View {
         }
         goToNutritionAIPage = true
     }
+}
+
+#Preview {
+    AIPlanButtons(goToTrainingAIPage: .constant(true), goToNutritionAIPage: .constant(true))
+        .environmentObject(AppState())
 }
