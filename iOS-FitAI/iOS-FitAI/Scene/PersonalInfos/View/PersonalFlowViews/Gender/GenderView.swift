@@ -28,7 +28,6 @@ struct GenderView: View {
                            .padding(30)
             }
             .onAppear(perform: {
-                print("onAppear genderview")
                 progressBarValue = 0.0
             })
         }

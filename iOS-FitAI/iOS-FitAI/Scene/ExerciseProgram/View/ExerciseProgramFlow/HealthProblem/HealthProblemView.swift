@@ -26,15 +26,16 @@ struct HealthProblemView: View {
                 Spacer()
                 MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextNo, buttonBackgroundColor: .white)
                 {
-                    progressBarValue += 0.25
                     exerciseVM.pageStep = .sportOption
                 }
                 MFAIButton(buttontitle: ExerciseProgramModel.ButtonTextContext.buttonTextNext, buttonBackgroundColor: .buttonGreen){
-                    progressBarValue += 0.25
                     exerciseVM.pageStep = .sportOption
                 }
                 .padding(50)
             }
+            .onAppear(perform: {
+                progressBarValue = 0.0
+            })
         }
     }
 }

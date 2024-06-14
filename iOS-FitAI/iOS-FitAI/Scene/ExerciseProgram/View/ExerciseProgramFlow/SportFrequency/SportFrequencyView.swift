@@ -26,25 +26,9 @@ struct SportFrequencyView: View {
                 .padding(.bottom, 30)
                 .padding(.top, 28)
             }
-            .navigationBarBackButtonHidden(true)
-               .toolbar {
-                   ToolbarItem(placement: .topBarLeading) {
-                       Button(action: {
-                           exerciseVM.pageStep = .sportOption
-                       }, label: {
-                           Image("back")
-                               .resizable()
-                               .frame(width: 41, height: 41)
-                       })
-                   }
-               }
-               .toolbar {
-                         ToolbarItem(placement: .topBarTrailing) {
-                                 Image("Onboarding-5-Icon")
-                                     .resizable()
-                                     .frame(width: 32, height: 36)
-                         }
-                     }
+            .onAppear(perform: {
+                progressBarValue = 0.66
+            })
         }
     }
 }
