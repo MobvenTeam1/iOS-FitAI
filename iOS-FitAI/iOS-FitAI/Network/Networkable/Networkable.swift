@@ -21,13 +21,15 @@ public extension Networkable {
             
             switch response.statusCode {
                 
-//            case 400:
-//                let apiError = try JSONDecoder().decode(APIError.self, from: data)
-//                return .failure(apiError)
-//                
-//            case 500:
-//                let apiError = try JSONDecoder().decode(APIError.self, from: data)
-//                return .failure(apiError)
+                //            case 400:
+                //                let apiError = try JSONDecoder().decode(APIError.self, from: data)
+                //                return .failure(apiError)
+                //
+                //            case 500:
+                //                let apiError = try JSONDecoder().decode(APIError.self, from: data)
+                //                return .failure(apiError)
+                
+                
             case 401:
                 return .failure(NSError.generic)
                 
@@ -40,6 +42,8 @@ public extension Networkable {
                     print("---------------------------------")
                     print("---------------------------------")
                 }
+                
+                
                 
                 if model.self is Data.Type {
                     return .success(data as! T)
@@ -64,4 +68,5 @@ public extension Networkable {
             return .failure(NSError.generic)
         }
     }
+
 }

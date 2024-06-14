@@ -18,10 +18,10 @@ public enum FlowRouter: NavigationRouter {
     case homePage
     case tabBar
     case dietTypeflow
-    case exerciseProgramView
     case exerciseProgramQuestions
     case dietTypeQuestions
     case onboarding5
+    case animatedStarView
     
     public var transition: NavigationTransitionStyle {
         switch self {
@@ -55,6 +55,8 @@ public enum FlowRouter: NavigationRouter {
             DietTypeflow()
         case .onboarding5:
             Onboarding5View(onboardingScreen: OnboardingViewModel(), personalInfoVM: PersonalInfosViewModel())
+        case .animatedStarView:
+            AnimatedStarView()
         default:
             Text(verbatim: "There is nothing")
                 .foregroundStyle(.blue)

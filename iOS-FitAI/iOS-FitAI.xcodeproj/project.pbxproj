@@ -91,6 +91,7 @@
 		1F156C332C0D309000F0E0DC /* AIPlanButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156C322C0D309000F0E0DC /* AIPlanButtons.swift */; };
 		1F156C362C0E7C9600F0E0DC /* AIUpdateFoodSuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156C352C0E7C9600F0E0DC /* AIUpdateFoodSuggestion.swift */; };
 		1F2614D62C1334BA0092EE1F /* AddExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2614D52C1334BA0092EE1F /* AddExercise.swift */; };
+		1F60DFE72C1BEC9F00AF318F /* TrainingProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60DFE62C1BEC9F00AF318F /* TrainingProgramView.swift */; };
 		1F63DDC12C1121FB0060B7D0 /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63DDC02C1121FB0060B7D0 /* AddFoodView.swift */; };
 		1F63DDC52C11A9D90060B7D0 /* AddFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63DDC42C11A9D90060B7D0 /* AddFood.swift */; };
 		1F63DDC72C11B1520060B7D0 /* AddFoodCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63DDC62C11B1520060B7D0 /* AddFoodCard.swift */; };
@@ -299,6 +300,7 @@
 		1F156C322C0D309000F0E0DC /* AIPlanButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIPlanButtons.swift; sourceTree = "<group>"; };
 		1F156C352C0E7C9600F0E0DC /* AIUpdateFoodSuggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIUpdateFoodSuggestion.swift; sourceTree = "<group>"; };
 		1F2614D52C1334BA0092EE1F /* AddExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExercise.swift; sourceTree = "<group>"; };
+		1F60DFE62C1BEC9F00AF318F /* TrainingProgramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingProgramView.swift; sourceTree = "<group>"; };
 		1F63DDC02C1121FB0060B7D0 /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
 		1F63DDC42C11A9D90060B7D0 /* AddFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFood.swift; sourceTree = "<group>"; };
 		1F63DDC62C11B1520060B7D0 /* AddFoodCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodCard.swift; sourceTree = "<group>"; };
@@ -740,6 +742,14 @@
 			path = AIUpdateFoodSuggestion;
 			sourceTree = "<group>";
 		};
+		1F60DFE52C1BEC8B00AF318F /* TrainingProgram */ = {
+			isa = PBXGroup;
+			children = (
+				1F60DFE62C1BEC9F00AF318F /* TrainingProgramView.swift */,
+			);
+			path = TrainingProgram;
+			sourceTree = "<group>";
+		};
 		1F63DDBF2C1121C00060B7D0 /* AddFood */ = {
 			isa = PBXGroup;
 			children = (
@@ -1014,6 +1024,7 @@
 		DD2D243F2BFF9CE200C97F36 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				1F60DFE52C1BEC8B00AF318F /* TrainingProgram */,
 				DDAF84F92C12E248009D2BB9 /* Login */,
 				DD7E52942C11D13900053555 /* Register */,
 				DDB407112C0BB32600D4223E /* Subviews */,
@@ -1727,6 +1738,7 @@
 				1F156C362C0E7C9600F0E0DC /* AIUpdateFoodSuggestion.swift in Sources */,
 				DDA7D6A52C16CC4B007B7AF5 /* OnboardingViewModel.swift in Sources */,
 				DD2D24462BFF9E1C00C97F36 /* NavigationTransitionStyle.swift in Sources */,
+				1F60DFE72C1BEC9F00AF318F /* TrainingProgramView.swift in Sources */,
 				1F675D792C10C087000F073A /* SFECustomButton.swift in Sources */,
 				1F156C0C2C0D22CC00F0E0DC /* ScreenModeView.swift in Sources */,
 				1F675D722C107ECA000F073A /* AddHeaderView.swift in Sources */,

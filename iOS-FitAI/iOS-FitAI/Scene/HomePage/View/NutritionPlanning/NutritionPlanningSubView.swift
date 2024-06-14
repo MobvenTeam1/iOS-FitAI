@@ -3,8 +3,6 @@ import SwiftUI
 struct NutritionPlanningSubView: View {
     @Binding var isNutritionTapped: Bool
     let typeOfMeal: String
-    let duration: String
-    let calories: String
     @EnvironmentObject var appState: AppState
     @State private var foodItems: [FoodItem] = [
             FoodItem(name: "Haşlanmış Yumurta", imageName: "yumurta", secondaryText: "2 tane, 180 kcal"),
@@ -33,17 +31,17 @@ struct NutritionPlanningSubView: View {
                     }
                     .padding(.horizontal, 38)
                     .offset(y: -16)
-                    HStack {
-                        Image("clock")
-                            .padding(.trailing, -4)
-                        Text(duration)
-                        Image("caloriesmeal")
-                            .padding(.trailing, -4)
-                        Text(calories)
-                    }
-                    .foregroundStyle(.white)
-                    .font(.urbanistRegular(size: 16))
-                    .offset(x: -54, y: 20)
+//                    HStack {
+//                        Image("clock")
+//                            .padding(.trailing, -4)
+//                        Text(duration)
+//                        Image("caloriesmeal")
+//                            .padding(.trailing, -4)
+//                        Text(calories)
+//                    }
+//                    .foregroundStyle(.white)
+//                    .font(.urbanistRegular(size: 16))
+//                    .offset(x: -54, y: 20)
                 }
                 .frame(width: 327, height: 102)
             }

@@ -6,7 +6,7 @@ struct StarImageView: View {
     @Binding var moveUp: Bool
     @Binding var starOpacity: Double
     @Binding var showParticles: Bool
-    let dismiss: DismissAction
+//    let dismiss: DismissAction
     
     var body: some View {
         Image("starforanimation")

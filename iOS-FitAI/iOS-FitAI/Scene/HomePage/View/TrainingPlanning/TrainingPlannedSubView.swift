@@ -3,8 +3,8 @@ import SwiftUI
 struct TrainingPlannedSubView: View {
     @Binding var isTrainingTapped: Bool
     let typeOfExercise: String
-    let duration: String
-    let calories: String
+//    let duration: String
+//    let calories: String
     var body: some View {
         VStack {
             Text("Kişiselleştirilmiş Antrenman Planı")
@@ -26,17 +26,17 @@ struct TrainingPlannedSubView: View {
                     }
                     .padding(.horizontal, 38)
                     .offset(y: -16)
-                    HStack {
-                        Image("clock")
-                            .padding(.trailing, -4)
-                        Text(duration)
-                        Image("calories")
-                            .padding(.trailing, -4)
-                        Text(calories)
-                    }
-                    .foregroundStyle(.white)
-                    .font(.urbanistRegular(size: 16))
-                    .offset(x: -54, y: 20)
+//                    HStack {
+//                        Image("clock")
+//                            .padding(.trailing, -4)
+//                        Text(duration)
+//                        Image("calories")
+//                            .padding(.trailing, -4)
+//                        Text(calories)
+//                    }
+//                    .foregroundStyle(.white)
+//                    .font(.urbanistRegular(size: 16))
+//                    .offset(x: -54, y: 20)
                 }
                 .frame(width: 327, height: 102)
             }

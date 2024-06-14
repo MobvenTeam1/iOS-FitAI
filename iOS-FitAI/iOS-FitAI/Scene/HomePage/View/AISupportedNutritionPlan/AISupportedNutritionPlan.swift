@@ -14,9 +14,9 @@ struct AISupportedNutritionPlan: View {
     var body: some View {
         ZStack {
             if showAnimation {
-                AnimatedStarView(dismiss: dismiss)
+                AnimatedStarView()
             } else {
-                InitialView(showAnimation: $showAnimation,
+                InitialViewForFood(showAnimation: $showAnimation,
                             firstText: "AI Destekli\nBeslenme Planı",
                             secondText: "Size özel beslenme planınızı oluşturmamız için kişisel bilgilerinize ihtiyacımız var.\nLütfen soruları cevaplayın.")
             }

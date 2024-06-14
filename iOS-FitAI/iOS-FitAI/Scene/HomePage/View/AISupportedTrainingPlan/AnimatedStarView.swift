@@ -6,14 +6,17 @@ struct AnimatedStarView: View {
     @State private var rotationAngle: Double = 0
     @State private var moveUp = false
     @State private var starOpacity: Double = 0
-    let dismiss: DismissAction
-    
+//    let dismiss: DismissAction
+    //a
+    @EnvironmentObject var coordinator: Coordinator<FlowRouter>
+    @StateObject var appState = AppState()
+    //b
     var body: some View {
         HomePageView()
             .blur(radius: 10)
             .overlay(
                 ZStack {
-                    StarImageView(isAnimating: $isAnimating, rotationAngle: $rotationAngle, moveUp: $moveUp, starOpacity: $starOpacity, showParticles: $showParticles, dismiss: dismiss)
+                    StarImageView(isAnimating: $isAnimating, rotationAngle: $rotationAngle, moveUp: $moveUp, starOpacity: $starOpacity, showParticles: $showParticles)
                     if showParticles {
                         ParticleEmitterView(particles: 75, duration: 2, image: Image("starforanimation"))
                     }
@@ -38,7 +41,8 @@ struct AnimatedStarView: View {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             showParticles = true
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-                dismiss()
+                coordinator.show(.tabBar)
+//                dismiss()
             }
         }
     }

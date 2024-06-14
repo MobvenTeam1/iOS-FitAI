@@ -9,16 +9,16 @@ import SwiftUI
 
 struct AISupportedTrainingPlan: View {
     @Environment(\.dismiss) var dismiss
-    @State private var showAnimation = false
-
+    @EnvironmentObject var appState: AppState
+    @StateObject var exerciseVM = ExerciseProgramViewModel()
     var body: some View {
         ZStack {
-            if showAnimation {
-                AnimatedStarView(dismiss: dismiss)
+            if appState.showAnimation {
+                AnimatedStarView()
             } else {
-                InitialView(showAnimation: $showAnimation,
-                            firstText: "AI Destekli\nAntrenman Planı",
+                InitialView(firstText: "AI Destekli\nAntrenman Planı",
                             secondText: "Size özel antrenman planınızı oluşturmamız için kişisel bilgilerinize ihtiyacımız var.\nLütfen soruları cevaplayın.")
+                //b
             }
         }
         .padding(.bottom, 40)

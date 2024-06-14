@@ -2,9 +2,11 @@ import SwiftUI
 
 struct LogOutButton: View {
     @EnvironmentObject var appState: AppState
+    @EnvironmentObject var coordinator: Coordinator<FlowRouter>
     var body: some View {
-        NavigationLink {
-            LoginView()
+        Button {
+            AppStorageManager.shared.userToken = ""
+            coordinator.show(.login)
         }label: {
             ZStack {
                 Color.white

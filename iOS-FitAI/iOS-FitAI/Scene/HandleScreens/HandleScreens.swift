@@ -14,8 +14,9 @@ struct HandleScreens: View {
             TabBarView()
         } else {
 //            TabBarView()
+            SplashView()
 //            LoginView()
-            OnboardingView()
+//            OnboardingView()
 //            PersonalInfosView()
         }
     }

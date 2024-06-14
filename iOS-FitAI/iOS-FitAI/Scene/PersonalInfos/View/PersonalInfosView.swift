@@ -63,7 +63,7 @@ struct PersonalInfosView: View {
         }
         .onChange(of: viewmodel.isPersonalInfoFlowFinished) { changed in
             if changed {
-                coordinator.show(.homePage)
+                coordinator.show(.login)
             }
         }
     }
