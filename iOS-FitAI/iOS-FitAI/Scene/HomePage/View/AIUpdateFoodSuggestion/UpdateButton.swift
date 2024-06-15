@@ -8,13 +8,16 @@ struct UpdateButton: View {
 
     var body: some View {
         GreenButtonView(text: "Öğünümü Güncelle") {
-            if let selectedIndex = selectedFoodIndex, let targetIndex = appState.updateFoodTargetIndex,
-               selectedIndex < foodItems.count {
-                appState.selectedFoodIndex = targetIndex
-                appState.updatedFoodItem = foodItems[selectedIndex]
-                appState.isUserUpdateFood = true
-            }
-            dismiss()
+            updateFood()
         }
+    }
+   private func updateFood() {
+        if let selectedIndex = selectedFoodIndex, let targetIndex = appState.updateFoodTargetIndex,
+           selectedIndex < foodItems.count {
+            appState.selectedFoodIndex = targetIndex
+            appState.updatedFoodItem = foodItems[selectedIndex]
+            appState.isUserUpdateFood = true
+        }
+        dismiss()
     }
 }

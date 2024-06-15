@@ -110,6 +110,7 @@
 		1F675D7F2C10D044000F073A /* CheckIfSearching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D7E2C10D044000F073A /* CheckIfSearching.swift */; };
 		1F675D812C110357000F073A /* MyExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D802C110357000F073A /* MyExerciseView.swift */; };
 		1F675D832C110DEB000F073A /* DurationForExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D822C110DEB000F073A /* DurationForExercise.swift */; };
+		1F788CE62C1DCBF7004CD710 /* PasswordHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F788CE52C1DCBF7004CD710 /* PasswordHelper.swift */; };
 		1FAD78722C17C1EA004B7694 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD78712C17C1EA004B7694 /* UserDetails.swift */; };
 		1FAD78742C17C204004B7694 /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD78732C17C204004B7694 /* UserDetailsViewModel.swift */; };
 		1FAD78772C17CE7D004B7694 /* AddFoodFavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD78762C17CE7D004B7694 /* AddFoodFavoriteView.swift */; };
@@ -319,6 +320,7 @@
 		1F675D7E2C10D044000F073A /* CheckIfSearching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIfSearching.swift; sourceTree = "<group>"; };
 		1F675D802C110357000F073A /* MyExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyExerciseView.swift; sourceTree = "<group>"; };
 		1F675D822C110DEB000F073A /* DurationForExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationForExercise.swift; sourceTree = "<group>"; };
+		1F788CE52C1DCBF7004CD710 /* PasswordHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordHelper.swift; sourceTree = "<group>"; };
 		1FAD78712C17C1EA004B7694 /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
 		1FAD78732C17C204004B7694 /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
 		1FAD78762C17CE7D004B7694 /* AddFoodFavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodFavoriteView.swift; sourceTree = "<group>"; };
@@ -828,6 +830,14 @@
 			path = AddExerciseView;
 			sourceTree = "<group>";
 		};
+		1F788CE42C1DCBE5004CD710 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1F788CE52C1DCBF7004CD710 /* PasswordHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		1FAD786E2C17C190004B7694 /* GetUserDetails */ = {
 			isa = PBXGroup;
 			children = (
@@ -997,6 +1007,7 @@
 		DD2D243D2BFF9CC700C97F36 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1F788CE42C1DCBE5004CD710 /* Helpers */,
 				DD7E529E2C12568A00053555 /* Managers */,
 				DDB407212C0BB8EA00D4223E /* UIKits */,
 				DDB407222C0BB91200D4223E /* Extensions */,
@@ -1855,6 +1866,7 @@
 				DDB406FF2C0BA51200D4223E /* DietTypeflow.swift in Sources */,
 				DDB407272C0BBBD100D4223E /* UIApplication+Extension.swift in Sources */,
 				DD7E528C2C107DA800053555 /* Networkable+Extension.swift in Sources */,
+				1F788CE62C1DCBF7004CD710 /* PasswordHelper.swift in Sources */,
 				DDE586E72C0B85E7007B3A1A /* WorkoutPlansView.swift in Sources */,
 				DDB407042C0BA5F500D4223E /* KnownHealthProblemView.swift in Sources */,
 				DD5A0E992C07BFD6006464D7 /* TargetsView.swift in Sources */,

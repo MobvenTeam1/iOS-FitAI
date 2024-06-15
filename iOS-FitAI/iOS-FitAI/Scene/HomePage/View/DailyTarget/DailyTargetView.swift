@@ -29,16 +29,11 @@ struct DailyTargetView: View {
             CircularProgressView(totalKgToLose: 10, kgToLoseForTarget: 7.2)
             HStack(spacing: 8) {
                 CaloriesView(imageName: "alınan", firstText: "Alınan Kalori", calorieText: "950 cal")
-//                CaloriesView(imageName: "harcanan", firstText: "Harcanan Kalori", calorieText: String(describing: userDetailsVM.userDetails?.basalMetabolism ?? 1800) + "cal")
-                
                 if let basalMetabolism = userDetailsVM.userDetails?.basalMetabolism {
                     CaloriesView(imageName: "harcanan", firstText: "Harcanan Kalori", calorieText: String(describing: basalMetabolism) + " cal")
                 } else {
                     CaloriesView(imageName: "harcanan", firstText: "Harcanan Kalori", calorieText: "1600" + "cal")
                 }
-                
-//                CaloriesView(imageName: "dailycalorie", firstText: "Günlük Hedef", calorieText: String(userDetailsVM.userDetails?.dailyKcalGoal ?? 2500) + " cal")
-                
                 if let goalCalorie = userDetailsVM.userDetails?.dailyKcalGoal {
                     CaloriesView(imageName: "dailycalorie",
                                  firstText: "Günlük Hedef",

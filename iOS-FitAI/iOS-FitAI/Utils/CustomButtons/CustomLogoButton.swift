@@ -1,6 +1,5 @@
 import SwiftUI
 struct CustomLogoButton: ViewModifier {
- 
     func body(content: Content) -> some View {
         content
             .toolbar {

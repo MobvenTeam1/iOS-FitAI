@@ -6,11 +6,9 @@ struct AnimatedStarView: View {
     @State private var rotationAngle: Double = 0
     @State private var moveUp = false
     @State private var starOpacity: Double = 0
-//    let dismiss: DismissAction
-    //a
     @EnvironmentObject var coordinator: Coordinator<FlowRouter>
     @StateObject var appState = AppState()
-    //b
+
     var body: some View {
         HomePageView()
             .blur(radius: 10)
@@ -42,7 +40,6 @@ struct AnimatedStarView: View {
             showParticles = true
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
                 coordinator.show(.tabBar)
-//                dismiss()
             }
         }
     }

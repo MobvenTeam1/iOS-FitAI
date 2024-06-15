@@ -46,10 +46,11 @@ struct TrainingPlannedView: View {
                         .frame(width: 287, height: 74)
                     }
                 }
+                GreenButtonView(text: "Antrenmanını Görüntüle") {
+                   isNavigate = true
+                }
             }
-            GreenButtonView(text: "Antrenmanını Görüntüle") {
-               isNavigate = true
-            }
+            
         }
         .padding()
         .onAppear {
