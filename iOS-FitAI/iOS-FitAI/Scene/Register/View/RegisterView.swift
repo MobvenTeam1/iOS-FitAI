@@ -13,6 +13,10 @@ struct RegisterView: View {
     @State private var validatePassword: Bool = false
     @State private var confirmPasswordError: String?
     @State private var passwordSetSuccessfully = false
+    private var passwordHelper: PasswordHelperProtocol
+    init(passwordHelper: PasswordHelperProtocol = PasswordHelper()) {
+        self.passwordHelper = passwordHelper
+    }
     var body: some View {
         ZStack{
             ScrollView{
@@ -57,10 +61,15 @@ struct RegisterView: View {
                         .autocapitalization(.none)
                     
                     GenericPasswordView(password: $registerVM.registerInfoData.password.toUnwrapped(defaultValue: ""), placeholder: "Parola")
+//                    HStack(spacing: 0) {
+//                        PasswordCriteriaView(text: "Min 8 karakter, ", isValid: registerVM.registerInfoData.password.toEmpty.count >= 8 || !validatePassword)
+//                        PasswordCriteriaView(text: "bir büyük, ", isValid: PasswordHelper.shared.containsUppercase(registerVM.registerInfoData.password.toEmpty) || !validatePassword)
+//                        PasswordCriteriaView(text: "bir küçük harften oluşmalıdır.", isValid: PasswordHelper.shared.containsLowercase(registerVM.registerInfoData.password.toEmpty) || !validatePassword)
+//                    }
                     HStack(spacing: 0) {
                         PasswordCriteriaView(text: "Min 8 karakter, ", isValid: registerVM.registerInfoData.password.toEmpty.count >= 8 || !validatePassword)
-                        PasswordCriteriaView(text: "bir büyük, ", isValid: PasswordHelper.shared.containsUppercase(registerVM.registerInfoData.password.toEmpty) || !validatePassword)
-                        PasswordCriteriaView(text: "bir küçük harften oluşmalıdır.", isValid: PasswordHelper.shared.containsLowercase(registerVM.registerInfoData.password.toEmpty) || !validatePassword)
+                        PasswordCriteriaView(text: "bir büyük, ", isValid: passwordHelper.containsUppercase(registerVM.registerInfoData.password.toEmpty) || !validatePassword)
+                        PasswordCriteriaView(text: "bir küçük harften oluşmalıdır.", isValid: passwordHelper.containsLowercase(registerVM.registerInfoData.password.toEmpty) || !validatePassword)
                     }
                     .padding(.trailing, 24)
                     GenericPasswordView(password: $registerVM.registerInfoData.passwordConfirm.toUnwrapped(defaultValue: ""), placeholder: "Parola Tekrar")
@@ -91,7 +100,7 @@ struct RegisterView: View {
                     .padding(.leading, 16)
                     MFAIButton(buttontitle: RegisterModel.Constants.buttonTextRegister,buttonBackgroundColor: .buttonGreen){
                         validatePassword = true
-                        PasswordHelper.shared.createPassword(password: registerVM.registerInfoData.password.toEmpty,
+                        passwordHelper.createPassword(password: registerVM.registerInfoData.password.toEmpty,
                                                              confirmPassword: registerVM.registerInfoData.passwordConfirm.toEmpty,
                                                              onError: { error in
                             confirmPasswordError = error
@@ -131,6 +140,7 @@ struct RegisterView: View {
 
 #Preview {
     @State var env = Coordinator<FlowRouter>()
-    return RegisterView()
+    @State var passwordHelper = PasswordHelper()
+    return RegisterView(passwordHelper: passwordHelper)
         .environmentObject(env)
 }

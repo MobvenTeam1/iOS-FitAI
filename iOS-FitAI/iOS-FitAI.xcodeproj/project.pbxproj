@@ -110,7 +110,10 @@
 		1F675D7F2C10D044000F073A /* CheckIfSearching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D7E2C10D044000F073A /* CheckIfSearching.swift */; };
 		1F675D812C110357000F073A /* MyExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D802C110357000F073A /* MyExerciseView.swift */; };
 		1F675D832C110DEB000F073A /* DurationForExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F675D822C110DEB000F073A /* DurationForExercise.swift */; };
-		1F788CE62C1DCBF7004CD710 /* PasswordHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F788CE52C1DCBF7004CD710 /* PasswordHelper.swift */; };
+		1F788CE92C207FC2004CD710 /* MockPasswordHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F788CE82C207FC2004CD710 /* MockPasswordHelper.swift */; };
+		1F788CED2C2080D3004CD710 /* PaswordHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F788CEC2C2080D3004CD710 /* PaswordHelperTests.swift */; };
+		1F788CEF2C2088C0004CD710 /* PasswordHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F788CE52C1DCBF7004CD710 /* PasswordHelper.swift */; };
+		1F788CF02C2088CB004CD710 /* PasswordHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F788CE52C1DCBF7004CD710 /* PasswordHelper.swift */; };
 		1FAD78722C17C1EA004B7694 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD78712C17C1EA004B7694 /* UserDetails.swift */; };
 		1FAD78742C17C204004B7694 /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD78732C17C204004B7694 /* UserDetailsViewModel.swift */; };
 		1FAD78772C17CE7D004B7694 /* AddFoodFavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD78762C17CE7D004B7694 /* AddFoodFavoriteView.swift */; };
@@ -321,6 +324,8 @@
 		1F675D802C110357000F073A /* MyExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyExerciseView.swift; sourceTree = "<group>"; };
 		1F675D822C110DEB000F073A /* DurationForExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationForExercise.swift; sourceTree = "<group>"; };
 		1F788CE52C1DCBF7004CD710 /* PasswordHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordHelper.swift; sourceTree = "<group>"; };
+		1F788CE82C207FC2004CD710 /* MockPasswordHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPasswordHelper.swift; sourceTree = "<group>"; };
+		1F788CEC2C2080D3004CD710 /* PaswordHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaswordHelperTests.swift; sourceTree = "<group>"; };
 		1FAD78712C17C1EA004B7694 /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
 		1FAD78732C17C204004B7694 /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
 		1FAD78762C17CE7D004B7694 /* AddFoodFavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodFavoriteView.swift; sourceTree = "<group>"; };
@@ -838,6 +843,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		1F788CE72C207FAE004CD710 /* TestPasswordHelper */ = {
+			isa = PBXGroup;
+			children = (
+				1F788CE82C207FC2004CD710 /* MockPasswordHelper.swift */,
+				1F788CEC2C2080D3004CD710 /* PaswordHelperTests.swift */,
+			);
+			path = TestPasswordHelper;
+			sourceTree = "<group>";
+		};
 		1FAD786E2C17C190004B7694 /* GetUserDetails */ = {
 			isa = PBXGroup;
 			children = (
@@ -990,6 +1004,7 @@
 		DD2D24232BFF9C5300C97F36 /* iOS-FitAITests */ = {
 			isa = PBXGroup;
 			children = (
+				1F788CE72C207FAE004CD710 /* TestPasswordHelper */,
 				DD2D24242BFF9C5300C97F36 /* iOS_FitAITests.swift */,
 			);
 			path = "iOS-FitAITests";
@@ -1866,7 +1881,7 @@
 				DDB406FF2C0BA51200D4223E /* DietTypeflow.swift in Sources */,
 				DDB407272C0BBBD100D4223E /* UIApplication+Extension.swift in Sources */,
 				DD7E528C2C107DA800053555 /* Networkable+Extension.swift in Sources */,
-				1F788CE62C1DCBF7004CD710 /* PasswordHelper.swift in Sources */,
+				1F788CEF2C2088C0004CD710 /* PasswordHelper.swift in Sources */,
 				DDE586E72C0B85E7007B3A1A /* WorkoutPlansView.swift in Sources */,
 				DDB407042C0BA5F500D4223E /* KnownHealthProblemView.swift in Sources */,
 				DD5A0E992C07BFD6006464D7 /* TargetsView.swift in Sources */,
@@ -1919,6 +1934,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F788CE92C207FC2004CD710 /* MockPasswordHelper.swift in Sources */,
+				1F788CED2C2080D3004CD710 /* PaswordHelperTests.swift in Sources */,
+				1F788CF02C2088CB004CD710 /* PasswordHelper.swift in Sources */,
 				DD2D24252BFF9C5300C97F36 /* iOS_FitAITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2050,6 +2068,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -2145,7 +2164,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7Y8QP7UN32;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mobven.iOS-FitAITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2166,7 +2185,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7Y8QP7UN32;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mobven.iOS-FitAITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2297,6 +2316,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2320,7 +2340,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7Y8QP7UN32;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mobven.iOS-FitAITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2388,6 +2408,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -2426,6 +2447,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2450,7 +2472,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7Y8QP7UN32;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mobven.iOS-FitAITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";

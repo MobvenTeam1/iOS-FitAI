@@ -1,19 +1,14 @@
 //
-//  PasswordHelper.swift
-//  iOS-FitAI
+//  MockPasswordHelper.swift
+//  iOS-FitAITests
 //
-//  Created by Ahmet Yasin Atakan on 15.06.2024.
+//  Created by Ahmet Yasin Atakan on 17.06.2024.
 //
 
+import XCTest
 import Foundation
 
-protocol PasswordHelperProtocol {
-    func createPassword(password: String, confirmPassword: String, onError: @escaping (String) -> Void, onSuccess: @escaping () -> Void)
-    func containsUppercase(_ text: String) -> Bool
-    func containsLowercase(_ text: String) -> Bool
-}
-
-final class PasswordHelper: PasswordHelperProtocol {
+final class MockPasswordHelper: PasswordHelperProtocol {
     func createPassword(password: String, confirmPassword: String, onError: @escaping (String) -> Void, onSuccess: @escaping () -> Void) {
         if password.isEmpty || confirmPassword.isEmpty {
             onError("Parola boş kalamaz.")
@@ -40,4 +35,3 @@ final class PasswordHelper: PasswordHelperProtocol {
         return text.unicodeScalars.contains { lowercaseLetters.contains($0) }
     }
 }
-

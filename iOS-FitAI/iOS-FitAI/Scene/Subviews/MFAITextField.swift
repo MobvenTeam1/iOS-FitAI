@@ -40,7 +40,8 @@ struct MFAITextField: View {
 #Preview {
 //    MFAITextField(title: "String", textfieldText: .constant(""))
     @State var env = Coordinator<FlowRouter>()
-    return RegisterView()
+    @State var passwordHelper = PasswordHelper()
+    return RegisterView(passwordHelper: passwordHelper)
         .environmentObject(env)
 }
 

@@ -13,7 +13,10 @@ struct CreateNewPassword: View {
     @State private var passwordSetSuccessfully = false
     @State private var confirmPasswordError: String?
     @State private var validatePassword: Bool = false
-
+    private var passwordHelper: PasswordHelperProtocol
+    init(passwordHelper: PasswordHelperProtocol = PasswordHelper()) {
+        self.passwordHelper = passwordHelper
+    }
     var body: some View {
         NavigationStack {
             VStack(alignment: .center, spacing: 10) {
@@ -22,8 +25,8 @@ struct CreateNewPassword: View {
                     .padding(.top, 22)
                 HStack(spacing: 0) {
                     PasswordCriteriaView(text: "Min 8 karakter, ", isValid: password.count >= 8 || !validatePassword)
-                    PasswordCriteriaView(text: "bir büyük, ", isValid: PasswordHelper.shared.containsUppercase(password) || !validatePassword)
-                    PasswordCriteriaView(text: "bir küçük harften oluşmalıdır.", isValid: PasswordHelper.shared.containsLowercase(password) || !validatePassword)
+                    PasswordCriteriaView(text: "bir büyük, ", isValid: passwordHelper.containsUppercase(password) || !validatePassword)
+                    PasswordCriteriaView(text: "bir küçük harften oluşmalıdır.", isValid: passwordHelper.containsLowercase(password) || !validatePassword)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 42)
@@ -39,7 +42,7 @@ struct CreateNewPassword: View {
                 Spacer()
                 GreenButtonView(text: "Parolayı Sıfırla") {
                     validatePassword = true
-                    PasswordHelper.shared.createPassword(password: password,
+                    passwordHelper.createPassword(password: password,
                                                          confirmPassword: confirmPassword,
                                                          onError: { error in
                         confirmPasswordError = error
