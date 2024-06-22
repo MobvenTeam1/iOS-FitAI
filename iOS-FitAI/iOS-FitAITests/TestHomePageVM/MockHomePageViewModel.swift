@@ -1,20 +1,19 @@
 //
-//  HomePageViewModel.swift
-//  iOS-FitAI
+//  MockHomePageViewModel.swift
+//  iOS-FitAITests
 //
-//  Created by Ahmet Yasin Atakan on 10.06.2024.
+//  Created by Ahmet Yasin Atakan on 22.06.2024.
 //
 
-import Foundation
+@testable
+import iOS_FitAI
 
- class HomePageViewModel: ObservableObject {
-    @Published var trainingProgram: [String: String]?
-    @Published var isLoading: Bool = false
+final class MockHomePageViewModel: HomePageViewModel {
+    var mockNetworkService: MockNetworkService?
     
-    @MainActor
-    func getTraining() async {
+    override func getTraining() async {
         isLoading = true
-        let response = await API.FITAI.training.fetch(requestModel: TrainingModel.self)
+        let response = await mockNetworkService?.fetch(requestModel: TrainingModel.self)
         switch response {
         case .success(let data):
             if let firstDay = data.fitnessAntrenman?.first(where: { $0.day == "day_one" }) {
@@ -23,6 +22,8 @@ import Foundation
             print("DEBUG: \(String(describing: self.trainingProgram))" )
         case .failure(let error):
             print("Error: ", error.localizedDescription, error)
+        case .none:
+            break
         }
         isLoading = false
     }

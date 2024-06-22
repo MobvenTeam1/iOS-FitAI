@@ -61,11 +61,6 @@ struct RegisterView: View {
                         .autocapitalization(.none)
                     
                     GenericPasswordView(password: $registerVM.registerInfoData.password.toUnwrapped(defaultValue: ""), placeholder: "Parola")
-//                    HStack(spacing: 0) {
-//                        PasswordCriteriaView(text: "Min 8 karakter, ", isValid: registerVM.registerInfoData.password.toEmpty.count >= 8 || !validatePassword)
-//                        PasswordCriteriaView(text: "bir büyük, ", isValid: PasswordHelper.shared.containsUppercase(registerVM.registerInfoData.password.toEmpty) || !validatePassword)
-//                        PasswordCriteriaView(text: "bir küçük harften oluşmalıdır.", isValid: PasswordHelper.shared.containsLowercase(registerVM.registerInfoData.password.toEmpty) || !validatePassword)
-//                    }
                     HStack(spacing: 0) {
                         PasswordCriteriaView(text: "Min 8 karakter, ", isValid: registerVM.registerInfoData.password.toEmpty.count >= 8 || !validatePassword)
                         PasswordCriteriaView(text: "bir büyük, ", isValid: passwordHelper.containsUppercase(registerVM.registerInfoData.password.toEmpty) || !validatePassword)

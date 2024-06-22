@@ -36,6 +36,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "DD2D240F2BFF9C5200C97F36"
+            BuildableName = "iOS-FitAI.app"
+            BlueprintName = "iOS-FitAI"
+            ReferencedContainer = "container:iOS-FitAI.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "DevelopmentRelease"
@@ -43,6 +53,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "DD2D240F2BFF9C5200C97F36"
+            BuildableName = "iOS-FitAI.app"
+            BlueprintName = "iOS-FitAI"
+            ReferencedContainer = "container:iOS-FitAI.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "DevelopmentRelease">

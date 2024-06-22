@@ -114,6 +114,9 @@
 		1F788CED2C2080D3004CD710 /* PaswordHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F788CEC2C2080D3004CD710 /* PaswordHelperTests.swift */; };
 		1F788CEF2C2088C0004CD710 /* PasswordHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F788CE52C1DCBF7004CD710 /* PasswordHelper.swift */; };
 		1F788CF02C2088CB004CD710 /* PasswordHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F788CE52C1DCBF7004CD710 /* PasswordHelper.swift */; };
+		1F788CF32C244174004CD710 /* TestsHomePageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F788CF22C244174004CD710 /* TestsHomePageVM.swift */; };
+		1F788CF52C26C588004CD710 /* MockHomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F788CF42C26C588004CD710 /* MockHomePageViewModel.swift */; };
+		1F788CF72C26C5D4004CD710 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F788CF62C26C5D4004CD710 /* MockNetworkService.swift */; };
 		1FAD78722C17C1EA004B7694 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD78712C17C1EA004B7694 /* UserDetails.swift */; };
 		1FAD78742C17C204004B7694 /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD78732C17C204004B7694 /* UserDetailsViewModel.swift */; };
 		1FAD78772C17CE7D004B7694 /* AddFoodFavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD78762C17CE7D004B7694 /* AddFoodFavoriteView.swift */; };
@@ -326,6 +329,9 @@
 		1F788CE52C1DCBF7004CD710 /* PasswordHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordHelper.swift; sourceTree = "<group>"; };
 		1F788CE82C207FC2004CD710 /* MockPasswordHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPasswordHelper.swift; sourceTree = "<group>"; };
 		1F788CEC2C2080D3004CD710 /* PaswordHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaswordHelperTests.swift; sourceTree = "<group>"; };
+		1F788CF22C244174004CD710 /* TestsHomePageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsHomePageVM.swift; sourceTree = "<group>"; };
+		1F788CF42C26C588004CD710 /* MockHomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomePageViewModel.swift; sourceTree = "<group>"; };
+		1F788CF62C26C5D4004CD710 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
 		1FAD78712C17C1EA004B7694 /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
 		1FAD78732C17C204004B7694 /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
 		1FAD78762C17CE7D004B7694 /* AddFoodFavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodFavoriteView.swift; sourceTree = "<group>"; };
@@ -852,6 +858,16 @@
 			path = TestPasswordHelper;
 			sourceTree = "<group>";
 		};
+		1F788CF12C244119004CD710 /* TestHomePageVM */ = {
+			isa = PBXGroup;
+			children = (
+				1F788CF22C244174004CD710 /* TestsHomePageVM.swift */,
+				1F788CF42C26C588004CD710 /* MockHomePageViewModel.swift */,
+				1F788CF62C26C5D4004CD710 /* MockNetworkService.swift */,
+			);
+			path = TestHomePageVM;
+			sourceTree = "<group>";
+		};
 		1FAD786E2C17C190004B7694 /* GetUserDetails */ = {
 			isa = PBXGroup;
 			children = (
@@ -1004,6 +1020,7 @@
 		DD2D24232BFF9C5300C97F36 /* iOS-FitAITests */ = {
 			isa = PBXGroup;
 			children = (
+				1F788CF12C244119004CD710 /* TestHomePageVM */,
 				1F788CE72C207FAE004CD710 /* TestPasswordHelper */,
 				DD2D24242BFF9C5300C97F36 /* iOS_FitAITests.swift */,
 			);
@@ -1935,6 +1952,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F788CE92C207FC2004CD710 /* MockPasswordHelper.swift in Sources */,
+				1F788CF72C26C5D4004CD710 /* MockNetworkService.swift in Sources */,
+				1F788CF32C244174004CD710 /* TestsHomePageVM.swift in Sources */,
+				1F788CF52C26C588004CD710 /* MockHomePageViewModel.swift in Sources */,
 				1F788CED2C2080D3004CD710 /* PaswordHelperTests.swift in Sources */,
 				1F788CF02C2088CB004CD710 /* PasswordHelper.swift in Sources */,
 				DD2D24252BFF9C5300C97F36 /* iOS_FitAITests.swift in Sources */,
