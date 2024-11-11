@@ -40,7 +40,6 @@
 		1F156BFA2C0D22CC00F0E0DC /* NutritionPlanningSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BAB2C0D22CC00F0E0DC /* NutritionPlanningSubView.swift */; };
 		1F156BFB2C0D22CC00F0E0DC /* NutritionPlanningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BAC2C0D22CC00F0E0DC /* NutritionPlanningView.swift */; };
 		1F156BFC2C0D22CC00F0E0DC /* CaloriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BAE2C0D22CC00F0E0DC /* CaloriesView.swift */; };
-		1F156BFD2C0D22CC00F0E0DC /* DailyTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BAF2C0D22CC00F0E0DC /* DailyTargetView.swift */; };
 		1F156BFE2C0D22CC00F0E0DC /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BB02C0D22CC00F0E0DC /* CircularProgressView.swift */; };
 		1F156BFF2C0D22CC00F0E0DC /* DailyTargetButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BB12C0D22CC00F0E0DC /* DailyTargetButtonsView.swift */; };
 		1F156C002C0D22CC00F0E0DC /* PersonalizedPlanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156BB32C0D22CC00F0E0DC /* PersonalizedPlanButton.swift */; };
@@ -91,6 +90,7 @@
 		1F156C332C0D309000F0E0DC /* AIPlanButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156C322C0D309000F0E0DC /* AIPlanButtons.swift */; };
 		1F156C362C0E7C9600F0E0DC /* AIUpdateFoodSuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F156C352C0E7C9600F0E0DC /* AIUpdateFoodSuggestion.swift */; };
 		1F2614D62C1334BA0092EE1F /* AddExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2614D52C1334BA0092EE1F /* AddExercise.swift */; };
+		1F56B8262CE290BC008CB4B6 /* DailyTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F56B8252CE290BC008CB4B6 /* DailyTargetView.swift */; };
 		1F60DFE72C1BEC9F00AF318F /* TrainingProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60DFE62C1BEC9F00AF318F /* TrainingProgramView.swift */; };
 		1F63DDC12C1121FB0060B7D0 /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63DDC02C1121FB0060B7D0 /* AddFoodView.swift */; };
 		1F63DDC52C11A9D90060B7D0 /* AddFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63DDC42C11A9D90060B7D0 /* AddFood.swift */; };
@@ -256,7 +256,6 @@
 		1F156BAB2C0D22CC00F0E0DC /* NutritionPlanningSubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionPlanningSubView.swift; sourceTree = "<group>"; };
 		1F156BAC2C0D22CC00F0E0DC /* NutritionPlanningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionPlanningView.swift; sourceTree = "<group>"; };
 		1F156BAE2C0D22CC00F0E0DC /* CaloriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaloriesView.swift; sourceTree = "<group>"; };
-		1F156BAF2C0D22CC00F0E0DC /* DailyTargetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyTargetView.swift; sourceTree = "<group>"; };
 		1F156BB02C0D22CC00F0E0DC /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		1F156BB12C0D22CC00F0E0DC /* DailyTargetButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyTargetButtonsView.swift; sourceTree = "<group>"; };
 		1F156BB32C0D22CC00F0E0DC /* PersonalizedPlanButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalizedPlanButton.swift; sourceTree = "<group>"; };
@@ -307,6 +306,7 @@
 		1F156C322C0D309000F0E0DC /* AIPlanButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIPlanButtons.swift; sourceTree = "<group>"; };
 		1F156C352C0E7C9600F0E0DC /* AIUpdateFoodSuggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIUpdateFoodSuggestion.swift; sourceTree = "<group>"; };
 		1F2614D52C1334BA0092EE1F /* AddExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExercise.swift; sourceTree = "<group>"; };
+		1F56B8252CE290BC008CB4B6 /* DailyTargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTargetView.swift; sourceTree = "<group>"; };
 		1F60DFE62C1BEC9F00AF318F /* TrainingProgramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingProgramView.swift; sourceTree = "<group>"; };
 		1F63DDC02C1121FB0060B7D0 /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
 		1F63DDC42C11A9D90060B7D0 /* AddFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFood.swift; sourceTree = "<group>"; };
@@ -577,10 +577,10 @@
 		1F156BAD2C0D22CC00F0E0DC /* DailyTarget */ = {
 			isa = PBXGroup;
 			children = (
-				1F156BAF2C0D22CC00F0E0DC /* DailyTargetView.swift */,
 				1F156BAE2C0D22CC00F0E0DC /* CaloriesView.swift */,
 				1F156BB02C0D22CC00F0E0DC /* CircularProgressView.swift */,
 				1F156BB12C0D22CC00F0E0DC /* DailyTargetButtonsView.swift */,
+				1F56B8252CE290BC008CB4B6 /* DailyTargetView.swift */,
 			);
 			path = DailyTarget;
 			sourceTree = "<group>";
@@ -1765,6 +1765,7 @@
 				1F156C052C0D22CC00F0E0DC /* TabBarButtonView.swift in Sources */,
 				1F156C0E2C0D22CC00F0E0DC /* FMPNumberTextView.swift in Sources */,
 				1F156BEF2C0D22CC00F0E0DC /* MealCategories.swift in Sources */,
+				1F56B8262CE290BC008CB4B6 /* DailyTargetView.swift in Sources */,
 				1F156C212C0D22CC00F0E0DC /* OTPEmail.swift in Sources */,
 				1F156C1D2C0D22CC00F0E0DC /* CreateNewPassword.swift in Sources */,
 				DD5A0E8E2C07BD5E006464D7 /* PersonalExerciseView.swift in Sources */,
@@ -1773,7 +1774,6 @@
 				1F156C112C0D22CC00F0E0DC /* FMPNumberSendCodeButton.swift in Sources */,
 				1F156AFB2C0C7A4200F0E0DC /* CustomLogoButton.swift in Sources */,
 				1F156AFD2C0C7A4200F0E0DC /* CountdownTimerView.swift in Sources */,
-				1F156BFD2C0D22CC00F0E0DC /* DailyTargetView.swift in Sources */,
 				1F156C2F2C0D240500F0E0DC /* HandleScreens.swift in Sources */,
 				1F156AF02C0C7A4200F0E0DC /* ParticleView.swift in Sources */,
 				1F156BF72C0D22CC00F0E0DC /* StartButton.swift in Sources */,
